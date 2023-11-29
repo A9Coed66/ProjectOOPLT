@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="bytedeco.javacpp.presets.opencv" type="repository">
+    <properties maven-id="org.bytedeco.javacpp-presets:opencv:3.4.2-1.4.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/opencv/3.4.2-1.4.2/opencv-3.4.2-1.4.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp/1.4.2/javacpp-1.4.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/opencv/3.4.2-1.4.2/opencv-3.4.2-1.4.2-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp/1.4.2/javacpp-1.4.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
