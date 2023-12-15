@@ -10,7 +10,7 @@ import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.Duration;
 
-public class Post extends JPanel {
+public class Post extends JFrame {
     private JLabel avatarLabel;
     private JLabel nameLabel;
     private JLabel timeLabel;
@@ -18,10 +18,10 @@ public class Post extends JPanel {
     private JLabel imageLabel;
 
     public Post() {
-        setLayout(new GridBagLayout());
-        setBorder(new LineBorder(Color.GRAY, 15, true));
-        setBackground(Color.GRAY);
-        setPreferredSize(new Dimension(600, 600));
+        Container cp = new Container();
+        cp.setLayout(new GridBagLayout());
+        cp.setBackground(Color.GRAY);
+        cp.setPreferredSize(new Dimension(600, 600));
 
         avatarLabel = new JLabel();
         nameLabel = new JLabel();
@@ -37,24 +37,24 @@ public class Post extends JPanel {
         constraints.gridy = 0;
         constraints.gridheight = 2;
         constraints.anchor = GridBagConstraints.NORTH;
-        add(avatarLabel, constraints);
+        cp.add(avatarLabel, constraints);
 
         constraints.gridx = 1;
         constraints.gridy = 0;
         constraints.gridheight = 1;
         constraints.anchor = GridBagConstraints.WEST;
-        add(nameLabel, constraints);
+        cp.add(nameLabel, constraints);
 
         constraints.gridy = 1;
-        add(timeLabel, constraints);
+        cp.add(timeLabel, constraints);
 
         constraints.gridx = 0;
         constraints.gridy = 2;
         constraints.gridwidth = 2;
-        add(contentArea, constraints);
+        cp.add(contentArea, constraints);
 
         constraints.gridy = 3;
-        add(imageLabel, constraints);
+        cp.add(imageLabel, constraints);
         contentArea.setPreferredSize(new Dimension(500, 20));
         contentArea.setMinimumSize(new Dimension(500, 20));
     }
