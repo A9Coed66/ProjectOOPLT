@@ -5,7 +5,6 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.IOException;
 
-
 public class FacebookMockup {
     private static final JButton previousButton = null;
     private static final JButton currentButton = null;
