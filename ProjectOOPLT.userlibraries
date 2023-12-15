@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="opencsv">
+    <archive path="D:/a_learning_code/java/ProjectOOPLT/lib/opencsv-5.9.jar" />
+    <archive path="D:/a_learning_code/java/ProjectOOPLT/lib/commons-lang3-3.13.0.jar" />
+    <archive path="D:/a_learning_code/java/ProjectOOPLT/lib/commons-text-1.11.0.jar" />
+    <archive path="D:/a_learning_code/java/ProjectOOPLT/lib/commons-beanutils-1.9.4.jar" />
+    <archive path="D:/a_learning_code/java/ProjectOOPLT/lib/commons-logging-1.2.jar" />
+    <archive path="D:/a_learning_code/java/ProjectOOPLT/lib/commons-collections-3.2.2.jar" />
+    <archive path="D:/a_learning_code/java/ProjectOOPLT/lib/commons-collections4-4.4.jar" />
+  </library>
+  <library name="bytedeco.javacpp.presets.opencv">
+    <archive path="C:/Users/Admin/.m2/repository/org/bytedeco/javacpp-presets/opencv/3.4.2-1.4.2/opencv-3.4.2-1.4.2.jar" />
+    <archive path="C:/Users/Admin/.m2/repository/org/bytedeco/javacpp/1.4.2/javacpp-1.4.2.jar" />
+  </library>
+</eclipse-userlibraries>
+

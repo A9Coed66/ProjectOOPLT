@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
 
-public abstract class Page {
+public abstract class Page extends JFrame{
     private static JPanel mainPanel = new JPanel();
     private JButton button = new JButton();
     private Dimension buttonDimension = new Dimension(200, 80);

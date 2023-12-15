@@ -38,9 +38,9 @@ public class FacebookMockup {
         homePage.generateButton();
         choosePage(homePage);
 
-        SearchPage searchPage = new SearchPage("Search Page");
-        searchPage.generateButton();
-        choosePage(searchPage);
+//        SearchPage searchPage = new SearchPage("Search Page");
+//        searchPage.generateButton();
+//        choosePage(searchPage);
 
         ExplorePage explorePage = new ExplorePage("Explore Page");
         explorePage.generateButton();
@@ -49,7 +49,7 @@ public class FacebookMockup {
         // Add buttons to the menu bar
         menuBar.add(Box.createHorizontalGlue());
         menuBar.add(homePage.getButton());
-        menuBar.add(searchPage.getButton());
+//        menuBar.add(searchPage.getButton());
         menuBar.add(explorePage.getButton());
         menuBar.add(Box.createHorizontalGlue());
 
