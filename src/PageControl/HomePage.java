@@ -5,14 +5,12 @@ import javax.swing.*;
 import java.awt.image.BufferedImage;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 import com.opencsv.CSVReader;
 
-import PageControl.Post;
 import com.opencsv.exceptions.CsvValidationException;
 
 public class HomePage extends Page {
