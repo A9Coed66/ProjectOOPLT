@@ -4,11 +4,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeOptions;
-
 import java.time.Duration;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -23,31 +18,27 @@ import java.util.Map;
 
 
 public class TwitterCrawler {
-	    public static void main(String[] args) {
+		private static String query;
+	    public static void main(String args) {
+	    	query = args;
 	        // Đặt đường dẫn đến Chromedriver.exe
-	        System.setProperty("webdriver.chrome.driver", "D:\\Data\\chormedriver\\chromedriver.exe");
-	
-	        // Tạo ChromeOptions để tắt cảnh báo thông báo Chrome
-	        ChromeOptions options = new ChromeOptions();
-	        options.addArguments("--disable-notifications");
-	
+	        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Downloads\\Compressed\\chromedriver-win64\\chromedriver.exe");       
 	        // Khởi tạo WebDriver
-	        WebDriver driver = new ChromeDriver(options);
+	        WebDriver driver = new ChromeDriver();
 	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	
 	        // Mở trang đăng nhập Twitter
 	        driver.get("https://twitter.com/login");
-	
+	        driver.manage().window().maximize();
+	        driver.manage().deleteAllCookies();
 	        // Tìm kiếm và đặt các yếu tố cần thiết
-	        WebElement usernameInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='text']")));
-	        WebElement passwordInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='password']")));
-	        WebElement loginButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(),'Log in')]")));
-	
-	        // Điền thông tin đăng nhập và đăng nhập
-	        usernameInput.sendKeys("crawl_nigh12359");
-	        passwordInput.sendKeys("onlyforcrawl1");
-	        loginButton.click();
-	
+	        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='text']")));
+	        driver.findElement(By.xpath("//input[@name='text']")).sendKeys("crawl_nigh12359");
+	        driver.findElement(By.xpath("//span[contains(text(),'Next')]")).click();
+	        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='password']")));
+	        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("onlyforcrawl1");
+	        driver.findElement(By.xpath("//span[contains(text(),'Log in')]")).click();
+	        	
 	        // Chờ đến khi trang chính xuất hiện
 	        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@data-testid='SearchBox_Search_Input']")));
 	
@@ -61,61 +52,77 @@ public class TwitterCrawler {
 	        List<String> likes = new ArrayList<>();
 	
 	        // Tìm kiếm và lấy dữ liệu
-	        String subject = "#NFT min_faves:50";
+//	        String subject = "#NFT min_faves:50";
 	        WebElement searchBox = driver.findElement(By.xpath("//input[@data-testid='SearchBox_Search_Input']"));
-	        searchBox.sendKeys(subject);
+	        searchBox.sendKeys(query);
 	        searchBox.sendKeys(Keys.ENTER);
 	
 	        // Chờ đến khi nút Media xuất hiện và nhấp vào nó
-	        WebElement media = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Media')]")));
-	        media.click();
+	        //Twitter mới thay đổi giao diện nên cái này không cần dùng nữa :v
+//	        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Media')]")));
+//	        WebElement media = driver.findElement(By.xpath("//span[contains(text(),'Media')]"));
+//	        media.click();
 	
 	        // Lấy danh sách các bài đăng
 	        List<WebElement> articles = driver.findElements(By.xpath("//article[@data-testid='tweet']"));
 	
 	        // In số lượng bài đăng
 	        System.out.println(articles.size());
-	
-	        // Lặp qua từng bài đăng
-	        for (WebElement article : articles) {
-	            try {
-	                WebElement userNameElement = article.findElement(By.xpath(".//span[normalize-space()]"));
-	                WebElement timeElement = article.findElement(By.xpath(".//time"));
-	                WebElement replyElement = article.findElement(By.xpath(".//div[@data-testid='reply']"));
-	                WebElement reTweetElement = article.findElement(By.xpath(".//div[@data-testid='retweet']"));
-	                WebElement likeElement = article.findElement(By.xpath(".//div[@data-testid='like']"));
-	
-	                // Lấy thông tin từ các yếu tố
-	                String Name = userNameElement.getText();
-	                String UserName = article.findElement(By.xpath(".//span[contains(text(), '@')]")).getText();
-	                String TimeStamp = timeElement.getAttribute("datetime");
-	                String Reply = replyElement.getText();
-	                String reTweet = reTweetElement.getText();
-	                String Like = likeElement.getText();
-	
-	                // Thêm thông tin vào danh sách
-	                names.add(Name);
-	                userNames.add(UserName);
-	                timeStamps.add(TimeStamp);
-	                replys.add(Reply);
-	                reTweets.add(reTweet);
-	                likes.add(Like);
-	
-	                // In thông tin
-	                System.out.println("Name: " + Name);
-	                System.out.println("UserName: " + UserName);
-	                System.out.println("TimeStamp: " + TimeStamp);
-	                System.out.println("Reply: " + Reply);
-	                System.out.println("reTweet: " + reTweet);
-	                System.out.println("Like: " + Like);
-	
-	                // Lấy thông tin tweet (đoạn mã đã bị comment bỏ)
-	                // ...
-	
-	            } catch (Exception e) {
-	                e.printStackTrace();
-	            }
+	        while (true) {
+	        	// Lặp qua từng bài đăng
+	        	for (WebElement article : articles) {
+		            try {
+		            	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//span[normalize-space()]")));
+		                WebElement userNameElement = article.findElement(By.xpath(".//span[normalize-space()]"));
+		                WebElement timeElement = article.findElement(By.xpath(".//time"));
+		                WebElement replyElement = article.findElement(By.xpath(".//div[@data-testid='reply']"));
+		                WebElement reTweetElement = article.findElement(By.xpath(".//div[@data-testid='retweet']"));
+		                WebElement likeElement = article.findElement(By.xpath(".//div[@data-testid='like']"));
+		                WebElement tweetElement = article.findElement(By.xpath(".//div[@data-testid='tweetText']"));
+		
+		                // Lấy thông tin từ các yếu tố
+		                String Name = userNameElement.getText();
+		                String UserName = article.findElement(By.xpath(".//span[contains(text(), '@')]")).getText();
+		                String TimeStamp = timeElement.getAttribute("datetime");
+		                String Reply = replyElement.getText();
+		                String reTweet = reTweetElement.getText();
+		                String Like = likeElement.getText();
+		                String Tweet = tweetElement.getText();
+		
+		                // Thêm thông tin vào danh sách
+		                names.add(Name);
+		                userNames.add(UserName);
+		                timeStamps.add(TimeStamp);
+		                replys.add(Reply);
+		                reTweets.add(reTweet);
+		                likes.add(Like);
+		                tweets.add(Tweet);
+		
+		                // In thông tin
+		                System.out.println("Name: " + Name);
+		                System.out.println("UserName: " + UserName);
+		                System.out.println("TimeStamp: " + TimeStamp);
+		                System.out.println("Reply: " + Reply);
+		                System.out.println("reTweet: " + reTweet);
+		                System.out.println("Like: " + Like);
+		
+		                // Lấy thông tin tweet (đoạn mã đã bị comment bỏ)
+		                // ...
+		
+		            } catch (Exception e) {
+		                e.printStackTrace();
+		            }
+		        }
+	        	try {
+					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//article[@data-testid='tweet']")));
+					articles = driver.findElements(By.xpath("//article[@data-testid='tweet']"));
+				} catch (Exception e) {
+					System.out.println("Khong tim them tweets");
+					break;
+				}
+	        	if(tweets.size() > 20)  break;
 	        }
+	        
 	
 	        // Đóng trình duyệt
 	        driver.quit();
@@ -137,7 +144,7 @@ public class TwitterCrawler {
 	            List<Map<String, String>> jsonData = createJsonData(dataFrame);
 	
 	            // Xuất dữ liệu ra file JSON
-	            writeJsonFile(jsonData, "/data/json/datatwitter.json");
+	            writeJsonFile(jsonData, "D:\\a_learning_code\\java\\ProjectOOPLT\\data\\json\\datatwitter.json");
 	
 	            System.out.println("Dữ liệu đã được xuất ra file JSON thành công.");
 	        } catch (IOException e) {
