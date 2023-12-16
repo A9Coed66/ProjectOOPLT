@@ -10,24 +10,42 @@
             <version>4.15.0</version>
         </dependency>
 		<dependency>
-   			 <groupId>com.opencsv</groupId>
-   			 <artifactId>opencsv</artifactId>
-   			 <version>5.9</version>
-		</dependency>
-		<dependency>
     		<groupId>com.fasterxml.jackson.core</groupId>
     		<artifactId>jackson-databind</artifactId>
-    		<version>2.13.0</version> <!-- (Số phiên bản có thể thay đổi) -->
+    		<version>2.13.4.1</version> <!-- (Số phiên bản có thể thay đổi) -->
 		</dependency>
+
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>21.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>5.7.1</version>
+        </dependency>
+
 	</dependencies>
-  <build>
+   <build>
     <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
           <release>20</release>
+          <compilerArgs>
+            <arg>--enable-preview</arg>
+          </compilerArgs>
         </configuration>
       </plugin>
     </plugins>
