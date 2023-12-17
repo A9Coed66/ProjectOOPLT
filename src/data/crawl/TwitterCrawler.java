@@ -16,7 +16,6 @@ import java.util.List;
 import java.util.Map;
 
 
-
 public class TwitterCrawler {
 		static String query;
 		final static String[] LABELS ={"Name","UserName","TimeStamp","Tweet","Reply","Retweet","like","PostUrl","Hastags","Tags","Image"};

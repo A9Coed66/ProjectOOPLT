@@ -1,11 +1,10 @@
-package data.crawl.controller;
+package data.crawl;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import data.crawl.TwitterCrawler;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
