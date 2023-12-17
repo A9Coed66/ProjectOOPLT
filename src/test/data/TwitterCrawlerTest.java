@@ -1,5 +1,5 @@
 package test.data;
-import data.crawl.controller.TwitterCrawlerController;
+import data.crawl.TwitterCrawlerController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

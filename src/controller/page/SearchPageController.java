@@ -1,4 +1,4 @@
-package search.controller;
+package controller.page;
 
 public class SearchPageController {
 

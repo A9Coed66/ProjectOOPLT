@@ -1,11 +1,10 @@
-package data.crawl.controller;
+package data.crawl;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import data.crawl.TwitterCrawler;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -120,7 +119,7 @@ public class TwitterCrawlerController  {
 			query.append(" since:"+toYear.getValue()+"-"+MonthConverter.convertMonthToNumber(toMonth.getValue())+"-"+toDay.getValue());
 		}
 		
-		TwitterCrawler.main(query.toString());;
+		TwitterCrawler.main(query.toString(),Integer.parseInt(postNumber.getText()));;
 	}
 	 
 	 // Cài đặt thời gian cho combobox
@@ -195,6 +194,8 @@ public class TwitterCrawlerController  {
 	        // Xử lý khi thay đổi năm
 	    }
 
+	@FXML
+	private TextField postNumber;
 	
     @FXML
     private TextField allWords;
