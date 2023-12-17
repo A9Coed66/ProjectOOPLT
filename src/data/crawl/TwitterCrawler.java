@@ -50,6 +50,8 @@ public class TwitterCrawler {
 	        List<String> replys = new ArrayList<>();
 	        List<String> reTweets = new ArrayList<>();
 	        List<String> likes = new ArrayList<>();
+
+	        
 	
 	        // Tìm kiếm và lấy dữ liệu
 //	        String subject = "#NFT min_faves:50";
@@ -105,6 +107,7 @@ public class TwitterCrawler {
 		                System.out.println("Reply: " + Reply);
 		                System.out.println("reTweet: " + reTweet);
 		                System.out.println("Like: " + Like);
+		                
 		
 		                // Lấy thông tin tweet (đoạn mã đã bị comment bỏ)
 		                // ...
