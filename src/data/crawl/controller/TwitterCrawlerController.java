@@ -120,7 +120,7 @@ public class TwitterCrawlerController  {
 			query.append(" since:"+toYear.getValue()+"-"+MonthConverter.convertMonthToNumber(toMonth.getValue())+"-"+toDay.getValue());
 		}
 		
-		TwitterCrawler.main(query.toString());;
+		TwitterCrawler.main(query.toString(),Integer.parseInt(postNumber.getText()));;
 	}
 	 
 	 // Cài đặt thời gian cho combobox
@@ -195,6 +195,8 @@ public class TwitterCrawlerController  {
 	        // Xử lý khi thay đổi năm
 	    }
 
+	@FXML
+	private TextField postNumber;
 	
     @FXML
     private TextField allWords;

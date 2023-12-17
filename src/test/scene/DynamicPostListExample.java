@@ -23,7 +23,7 @@ public class DynamicPostListExample extends Application {
         ObservableList<Post> posts = FXCollections.observableArrayList();
         posts.add(new Post("Bài viết 1", new Image("https://pbs.twimg.com/media/GBhfmLyWwAAtGTk?format=jpg")));
         posts.add(new Post("Bài viết 2", new Image("https://pbs.twimg.com/media/GBhfmLyWwAAtGTk?format=jpg")));
-        posts.add(new Post("Bài viết 3", new Image("https://pbs.twimg.com/media/GBhfmLyWwAAtGTk?format=jpg")));
+        posts.add(new Post("Bài viết 3", new Image("https://pbs.twimg.com/media/GBhfmLyWwAAtGTk?format=jpgi")));
 
         // Tạo ListView và cài đặt CellFactory để hiển thị các bài viết
         ListView<Post> listView = new ListView<>(posts);

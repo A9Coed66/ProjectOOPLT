@@ -29,7 +29,8 @@
                         <Font name="System Bold" size="17.0" />
                      </font>
                   </Text>
-                  <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <Region prefHeight="47.0" prefWidth="84.0" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="postNumber" prefHeight="25.0" prefWidth="96.0" promptText="Post Number" />
                   <Button fx:id="btnOk" blendMode="SRC_ATOP" mnemonicParsing="false" onAction="#btnOkPressed" text="OK">
                      <font>
                         <Font name="System Bold" size="12.0" />
