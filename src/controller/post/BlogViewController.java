@@ -36,7 +36,7 @@ public class BlogViewController {
     	postTitlelbl.setText(blogPost.getpostTitle());
     	postDatelbl.setText(blogPost.getPostDate());
     	authorlbl.setText(blogPost.getAuthor());
-    	hashTagslbl.setText(blogPost.getHashTags());
+    	taglbl.setText(blogPost.getTag());
     	//contentlbl.setText(blogPost.getContent());
     	pricelbl.setText("Price: "+blogPost.getNftPrice()+"");
     	votelbl.setText("Votes: "+blogPost.getPostVoteNumber()+"");
@@ -93,7 +93,7 @@ public class BlogViewController {
     private Label contentlbl;
 
     @FXML
-    private Label hashTagslbl;
+    private Label taglbl;
 
     @FXML
     private Label postDatelbl;
@@ -121,7 +121,7 @@ public class BlogViewController {
         assert authorlbl != null : "fx:id=\"authorlbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
         assert blogimageview != null : "fx:id=\"blogimageview\" was not injected: check your FXML file 'blogPostView.fxml'.";
         assert contentlbl != null : "fx:id=\"contentlbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
-        assert hashTagslbl != null : "fx:id=\"hashTagslbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
+        assert taglbl != null : "fx:id=\"hashTagslbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
         assert postDatelbl != null : "fx:id=\"postDatelbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
         assert postTitlelbl != null : "fx:id=\"postTitlelbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
         assert pricelbl != null : "fx:id=\"pricelbl\" was not injected: check your FXML file 'blogPostView.fxml'.";

@@ -22,7 +22,7 @@ public class TweeterPost extends Post{
     private String timeStamp;
     
     @JsonProperty("Tags")
-    private String tags;
+    private String hashtag;
     
     @JsonProperty("Name")
     private String name;
@@ -70,12 +70,12 @@ public class TweeterPost extends Post{
 		this.timeStamp = timeStamp;
 	}
 
-	public String getTags() {
-		return tags;
+	public String getHashtag() {
+		return hashtag;
 	}
 
-	public void setTags(String tags) {
-		this.tags = tags;
+	public void setHashtag(String hashtag) {
+		this.hashtag = hashtag;
 	}
 
 
@@ -95,14 +95,14 @@ public class TweeterPost extends Post{
 		// TODO Auto-generated constructor stub
 	}
 
-public TweeterPost(String hashTags, String content, String imageLink, String author, String like, String postUrl, String reply, String retweet, String timeStamp, String tags, String name) {
-	super(hashTags, content, imageLink, author);
+public TweeterPost(String tag, String content, String imageLink, String author, String like, String postUrl, String reply, String retweet, String timeStamp, String hashtag, String name) {
+	super(tag, content, imageLink, author);
 	this.like = like;
 	this.postUrl = postUrl;
 	this.reply = reply;
 	this.retweet = retweet;
 	this.timeStamp = timeStamp;
-	this.tags = tags;
+	this.hashtag = hashtag;
 	this.name = name;
 }
     

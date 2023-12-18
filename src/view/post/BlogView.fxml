@@ -42,7 +42,7 @@
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="hashTagslbl" text="hashTags" textFill="#8a8f7cc8">
+                  <Label fx:id="taglbl" text="hashTags" textFill="#8a8f7cc8">
                      <font>
                         <Font size="24.0" />
                      </font>

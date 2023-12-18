@@ -5,7 +5,7 @@ public class Post {
 //	**
 //	Attribute
 //	**
-	private String hashTags;
+	private String tag;
 	private String content;
 	private String imageLink;
 	private String author;
@@ -19,11 +19,11 @@ public class Post {
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	public String getHashTags() {
-		return hashTags;
+	public String getTag() {
+		return tag;
 	}
-	public void setHashTags(String hashTags) {
-		this.hashTags = hashTags;
+	public void settag(String tag) {
+		this.tag = tag;
 	}
 	public String getContent() {
 		return content;
@@ -42,9 +42,9 @@ public class Post {
 //	**
 //	Constructor
 //	**
-	public Post(String hashTags, String content, String imageLink, String author) {
+	public Post(String tag, String content, String imageLink, String author) {
 		super();
-		this.hashTags = hashTags;
+		this.tag = tag;
 		this.content = content;
 		this.imageLink = imageLink;
 		this.author = author;
