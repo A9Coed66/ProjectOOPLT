@@ -1,56 +1,34 @@
-package data.connector;
+package model.post;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class TwitterDB {
-    @JsonProperty("Hastags")
-    private String hashtags;
-
-    @JsonProperty("UserName")
-    private String userName;
-
+public class TweeterPost extends Post{
+//	**
+//	Attribute
+//	**
     @JsonProperty("like")
     private String like;
 
-    @JsonProperty("Tweet")
-    private String tweet;
-
     @JsonProperty("PostUrl")
     private String postUrl;
-
+    
     @JsonProperty("Reply")
     private String reply;
-
+    
     @JsonProperty("Retweet")
     private String retweet;
 
-    @JsonProperty("Image")
-    private String image;
-
     @JsonProperty("TimeStamp")
     private String timeStamp;
-
+    
     @JsonProperty("Tags")
     private String tags;
-
+    
     @JsonProperty("Name")
     private String name;
-
-	public String getHashtags() {
-		return hashtags;
-	}
-
-	public void setHashtags(String hashtags) {
-		this.hashtags = hashtags;
-	}
-
-	public String getUserName() {
-		return userName;
-	}
-
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
+//	**
+//	Getter and Setter
+//	**
 
 	public String getLike() {
 		return like;
@@ -58,14 +36,6 @@ public class TwitterDB {
 
 	public void setLike(String like) {
 		this.like = like;
-	}
-
-	public String getTweet() {
-		return tweet;
-	}
-
-	public void setTweet(String tweet) {
-		this.tweet = tweet;
 	}
 
 	public String getPostUrl() {
@@ -92,14 +62,6 @@ public class TwitterDB {
 		this.retweet = retweet;
 	}
 
-	public String getImage() {
-		return image;
-	}
-
-	public void setImage(String image) {
-		this.image = image;
-	}
-
 	public String getTimeStamp() {
 		return timeStamp;
 	}
@@ -116,6 +78,7 @@ public class TwitterDB {
 		this.tags = tags;
 	}
 
+
 	public String getName() {
 		return name;
 	}
@@ -124,10 +87,24 @@ public class TwitterDB {
 		this.name = name;
 	}
 
-    // Getter và Setter cho các thuộc tính
-    // ...
+//	**
+//	Constructor
+//	**
+    public TweeterPost(String hashTags, String content, String imageLink, String author) {
+		super(hashTags, content, imageLink, author);
+		// TODO Auto-generated constructor stub
+	}
 
-    // Các phương thức khác nếu cần
-    // ...
-	
+public TweeterPost(String hashTags, String content, String imageLink, String author, String like, String postUrl, String reply, String retweet, String timeStamp, String tags, String name) {
+	super(hashTags, content, imageLink, author);
+	this.like = like;
+	this.postUrl = postUrl;
+	this.reply = reply;
+	this.retweet = retweet;
+	this.timeStamp = timeStamp;
+	this.tags = tags;
+	this.name = name;
+}
+    
+    
 }

@@ -40,7 +40,7 @@ public class Post {
 	
 	
 //	**
-//	Cocstructor
+//	Constructor
 //	**
 	public Post(String hashTags, String content, String imageLink, String author) {
 		super();

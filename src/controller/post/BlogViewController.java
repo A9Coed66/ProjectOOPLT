@@ -42,18 +42,14 @@ public class BlogViewController {
     	votelbl.setText("Votes: "+blogPost.getPostVoteNumber()+"");
     	responselbl.setText("Responses: "+blogPost.getPostResponse());
     	textArea.setText(blogPost.getContent());
-    	
-    	
-    	
+
         if(blogPost.getContent().length() >= maxTextLength) {
         	textArea.setText(blogPost.getContent().substring(0, maxTextLength)+"...");
         } else {
         	textArea.setText(blogPost.getContent());
         }
         moreButton.setVisible(isRefresh);
-        
-        
-        
+
         Image image = new Image(blogPost.getImageLink(), true);
         blogimageview.setImage(image);
     }

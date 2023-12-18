@@ -42,7 +42,7 @@
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="hashTagslbl" text="hashTags" textFill="#8e9480">
+                  <Label fx:id="hashTagslbl" text="hashTags" textFill="#8a8f7cc8">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -62,10 +62,13 @@
                         <Font size="18.0" />
                      </font>
                   </Text>
-                  <Button fx:id="moreButton" mnemonicParsing="false" onAction="#moreButtonPressed" prefHeight="17.0" prefWidth="58.0" text="More...">
+                  <Button fx:id="moreButton" blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#moreButtonPressed" prefHeight="30.0" prefWidth="68.0" style="-fx-background-color: #999292; -fx-border-color: #999292;" text="More...">
                      <VBox.margin>
-                        <Insets left="10.0" />
+                        <Insets />
                      </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
                   </Button>
                </children>
             </VBox>
