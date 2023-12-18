@@ -1,4 +1,4 @@
-package application;
+package main.application;
 
 import controller.ProgramController;
 import javafx.application.Application;
@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 public class Program extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        final String PROGRAM_PATH = "/View/Program2.fxml";
+        final String PROGRAM_PATH = "/view/page/HomePage.fxml";
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PROGRAM_PATH));
         ProgramController viewStoreController = new ProgramController();
         fxmlLoader.setController(viewStoreController);

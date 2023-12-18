@@ -13,7 +13,7 @@ public class ProgramController {
     private GridPane recentTweet;
 
     public void initialize() throws IOException {
-        final String FILE_PATH = "/View/Tweet.fxml";
+        final String FILE_PATH = "/view/post/Tweet.fxml";
         int column=0, row=1;
         for(int i=0;i<1;i++){
             FXMLLoader fxmlLoader = new FXMLLoader();

@@ -1,7 +1,6 @@
-package test.scene;
+package main.test.scene;
 
 import javafx.application.Application;
-import javafx.collections.FXCollections;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.layout.StackPane;

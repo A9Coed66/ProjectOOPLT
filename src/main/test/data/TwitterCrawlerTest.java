@@ -1,4 +1,4 @@
-package test.data;
+package main.test.data;
 import data.crawl.TwitterCrawlerController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

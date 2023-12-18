@@ -1,4 +1,4 @@
-package test.scene;
+package main.test.scene;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Slider;
