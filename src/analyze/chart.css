@@ -1,9 +1,9 @@
 /* Remove line from the ScatterChart */
 .default-color0.chart-series-line {
-    -fx-stroke: transparent;
+    -fx-stroke: transparent !important;
 }
 
 /* Optional: Remove symbols from the LineChart */
 .default-color1.chart-line-symbol {
-    -fx-background-color: transparent, transparent;
+    -fx-background-color: transparent, transparent !important;
 }

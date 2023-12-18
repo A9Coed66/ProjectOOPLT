@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml/1"
+            prefHeight="400.0" prefWidth="600.0">
+    <center>
+        <Pane BorderPane.alignment="CENTER">
+            <LineChart fx:id="trendingHashtagChart"  visible="true">
+                <xAxis>
+                    <NumberAxis />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis />
+                </yAxis>
+            </LineChart>
+            
+            <LineChart fx:id="salesHashtagChart"  visible="false">
+                <xAxis>
+                    <NumberAxis />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis />
+                </yAxis>
+            </LineChart>
+            
+            <LineChart fx:id="volumeHashtagChart"  visible="false">
+                <xAxis>
+                    <NumberAxis />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis />
+                </yAxis>
+            </LineChart>
+            
+            <LineChart fx:id="trendingKeywordChart"  visible="false">
+                <xAxis>
+                    <NumberAxis />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis />
+                </yAxis>
+            </LineChart>
+            
+            <LineChart fx:id="salesKeywordChart"  visible="false">
+                <xAxis>
+                    <NumberAxis />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis />
+                </yAxis>
+            </LineChart>
+            
+            <LineChart fx:id="volumeKeywordChart"  visible="false">
+                <xAxis>
+                    <NumberAxis />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis />
+                </yAxis>
+            </LineChart>
+        </Pane>
+    </center>
+    <top>
+        <HBox BorderPane.alignment="CENTER">
+            <children>
+                <Label text="NFT Collection Aspect" />
+                <ComboBox fx:id="nftAspectComboBox" prefWidth="150.0" />
+                <Label text="Tweet/Blog Aspect" />
+                <ComboBox fx:id="tweetBlogAspectComboBox" prefWidth="150.0" />
+            </children>
+        </HBox>
+    </top>
+</BorderPane>

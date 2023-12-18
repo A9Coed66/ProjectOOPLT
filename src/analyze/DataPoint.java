@@ -3,12 +3,12 @@ package analyze;
 public class DataPoint {
     private String name;
     private int nftRanking;
-    private int hashtagRanking;
+    private int tweetblogRanking;
 
-    public DataPoint(String name, int nftRanking, int hashtagRanking) {
+    public DataPoint(String name, int nftRanking, int tweetblogRanking) {
         this.name = name;
         this.nftRanking = nftRanking;
-        this.hashtagRanking = hashtagRanking;
+        this.tweetblogRanking = tweetblogRanking;
     }
 
     public String getName() {
@@ -19,8 +19,8 @@ public class DataPoint {
         return nftRanking;
     }
 
-    public int getHashtagRanking() {
-        return hashtagRanking;
+    public int getTweetBlogRanking() {
+        return tweetblogRanking;
     }
 }
 
