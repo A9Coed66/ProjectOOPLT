@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="analyze.CorrelationGraphController">
+
+    <children>
+        <LineChart fx:id="correlationChart" layoutX="10.0" layoutY="10.0" prefHeight="380.0" prefWidth="480.0">
+            <xAxis>
+                <NumberAxis side="BOTTOM" label="NFT Collection Ranking"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" label="Hashtag Ranking"/>
+            </yAxis>
+        </LineChart>
+    </children>
+
+</AnchorPane>
