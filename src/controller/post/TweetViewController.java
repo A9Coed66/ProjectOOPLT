@@ -14,22 +14,22 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import model.post.TwitterPost;
+import model.post.Tweet;
 
 public class TweetViewController {
 	
 	
-	private TwitterPost twitterPost;
+	private Tweet twitterPost;
 	private int maxTextLength = 180; 
 	private Boolean isRefresh = true;
 	
-    public TweetViewController(TwitterPost twitterPost, int maxTextLength) {
+    public TweetViewController(Tweet twitterPost, int maxTextLength) {
 		super();
 		this.twitterPost = twitterPost;
 		this.maxTextLength = maxTextLength;
 	}
 
-    public void setData(TwitterPost twitterPost, Boolean isRefresh) {
+    public void setData(Tweet twitterPost, Boolean isRefresh) {
     	this.twitterPost = twitterPost;
     	this.isRefresh = isRefresh;
     	
