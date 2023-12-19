@@ -19,7 +19,6 @@ public class SearchPageTest extends Application{
 //	List<String> listItems = csvFileReadAlgorithm.csvFileRead();
 	
 	JsonFileReadAlgorithm jsonFileReadAlgorithm = new JsonFileReadAlgorithm("data/json/datatwitter.json");
-	List<String> listItems = jsonFileReadAlgorithm.jsonReadAlgorithm();
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
@@ -28,7 +27,6 @@ public class SearchPageTest extends Application{
 		SearchPageController searchPageController = new SearchPageController();
 		fxmlLoader.setController(searchPageController);
 		Parent root = fxmlLoader.load();
-		searchPageController.setData(listItems);
 		primaryStage.setTitle("SearchPage");
 		primaryStage.setScene(new Scene(root));
 		primaryStage.show();

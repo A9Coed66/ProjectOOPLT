@@ -10,6 +10,8 @@ import java.util.List;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import data.connector.TwitterDB;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontPosture;
@@ -27,9 +29,9 @@ public class JsonFileReadAlgorithm {
 		this.filepath = filepath;
 	}
 	
-	public List<String> jsonReadAlgorithm() {
+	public  static ObservableList<Tweet> jsonReadAlgorithm() {
 		
-		List<String> tweetPostList = new ArrayList<>();
+		ObservableList<Tweet> tweetPosts = FXCollections.observableArrayList();
 		String filePath = "data/json/datatwitter.json";
 
         // Sử dụng ObjectMapper để chuyển đổi JSON từ tệp thành List<TwitterData>
@@ -52,49 +54,11 @@ public class JsonFileReadAlgorithm {
             	String avatarUrl = twitterData.getAvatar();
             	String hashtag = twitterData.getHashtags();
             	String retweet = twitterData.getRetweet();
-            	
-//                Text text1 = new Text("This is ");
-//                text1.setFont(Font.font("Arial", 12));
-//
-//                Text text2 = new Text("bold");
-//                text2.setFont(Font.font("Arial", FontWeight.BOLD, 12));
-//                text2.setFill(Color.RED);
-//
-//                Text text3 = new Text(" and this is ");
-//                text3.setFont(Font.font("Arial", 12));
-//
-//                Text text4 = new Text("italic");
-//                text4.setFont(Font.font("Arial", FontPosture.ITALIC, 12));
-//                text4.setFill(Font.);
-//
-//                Text text5 = new Text(".");
-//                text5.setFont(Font.font("Arial", 12));
-//
-//                TextFlow textFlow = new TextFlow(text1, text2, text3, text4, text5);
-            	tweetPostList.add((new Tweet(content,imageUrl,author,dateCreated,url,reply,like,avatarUrl,hashtag,retweet)).toString());
+            	tweetPosts.add(new Tweet(content,imageUrl,author,dateCreated,url,reply,like,avatarUrl,hashtag,retweet));
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-		return tweetPostList;
+		return tweetPosts;
 	}
-	
-//	public static void main(String[] args) {
-//		String filePath = "data/json/datatwitter.json";
-//
-//        // Sử dụng ObjectMapper để chuyển đổi JSON từ tệp thành List<TwitterData>
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        try {
-//            List<TwitterDB> twitterDataList = Arrays.asList(objectMapper.readValue(new File(filePath), TwitterDB[].class));
-//
-//            // Bây giờ bạn có thể làm việc với List<TwitterData>
-//            for (TwitterDB twitterData : twitterDataList) {
-//                System.out.println("UserName: " + twitterData.getUserName());
-//                System.out.println("Tweet: " + twitterData.getTweet());
-//                System.out.println();
-//            }
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//	}
 }
