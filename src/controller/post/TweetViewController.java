@@ -14,40 +14,46 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import model.post.BlogPost;
-import model.post.TweeterPost;
+import model.post.TwitterPost;
 
 public class TweetViewController {
 	
 	
-	private TweeterPost tweeterPost;
+	private TwitterPost twitterPost;
 	private int maxTextLength = 180; 
 	private Boolean isRefresh = true;
 	
-    public TweetViewController(TweeterPost tweeterPost, int maxTextLength) {
+    public TweetViewController(TwitterPost twitterPost, int maxTextLength) {
 		super();
-		this.tweeterPost = tweeterPost;
+		this.twitterPost = twitterPost;
 		this.maxTextLength = maxTextLength;
 	}
 
-    public void setData(TweeterPost tweeterPost, Boolean isRefresh) {
-    	this.tweeterPost = tweeterPost;
+    public void setData(TwitterPost twitterPost, Boolean isRefresh) {
+    	this.twitterPost = twitterPost;
     	this.isRefresh = isRefresh;
     	
-    	authorlbl.setText(tweeterPost.getAuthor());
-    	timeStamplbl.setText(tweeterPost.getTimeStamp());
-    	hashTaglbl.setText(tweeterPost.getHashtag());
-    	taglbl.setText(tweeterPost.getTag());
+    	authorlbl.setText(twitterPost.getAuthor());
+    	timeStamplbl.setText(twitterPost.getDateCreated());
+    	hashTaglbl.setText(twitterPost.getHashtag());
+    	replylbl.setText("Reply: "+twitterPost.getReply());
+    	likelbl.setText("Like: "+twitterPost.getLike());
+    	retweetlbl.setText("Retweet: "+twitterPost.getRetweet());
     	
-        if(tweeterPost.getContent().length() >= maxTextLength) {
-        	contentlbl.setText(tweeterPost.getContent().substring(0, maxTextLength)+"...");
+        if(twitterPost.getContent().length() >= maxTextLength) {
+        	contentlbl.setText(twitterPost.getContent().substring(0, maxTextLength)+"...");
+            moreButton.setVisible(isRefresh);
         } else {
-        	contentlbl.setText(tweeterPost.getContent());
+        	contentlbl.setText(twitterPost.getContent());
+        	moreButton.setVisible(false);
         }
-        moreButton.setVisible(isRefresh);
 
-        Image image = new Image(tweeterPost.getImageLink(), true);
-//        blogimageview.setImage(image);
+
+        Image image = new Image(twitterPost.getImageUrl(), true);
+        tweeterImageView.setImage(image);
+        
+        Image avatarImage = new Image(twitterPost.getAvatarUrl(), true);
+        avatarImageView.setImage(avatarImage);
     }
 	
 
@@ -87,27 +93,31 @@ public class TweetViewController {
     @FXML
     private ImageView tweeterImageView;
     
+
     @FXML
-    void moreButtonPressed(ActionEvent event) {
-//    	maxTextLength = 1000;
-//    	if(blogPost.getContent().length() >= maxTextLength) {
-//        	textArea.setText(blogPost.getContent().substring(0, maxTextLength)+"...");
-//        } else {
-//        	textArea.setText(blogPost.getContent());
-//        }
-//    	moreButton.setVisible(false);
+    private ImageView avatarImageView;
+    
+    @FXML
+    void moreButtonPressed(ActionEvent event) throws IOException {
+    	maxTextLength = 1000;
+    	if(twitterPost.getContent().length() >= maxTextLength) {
+    		contentlbl.setText(twitterPost.getContent().substring(0, maxTextLength)+"...");
+        } else {
+        	contentlbl.setText(twitterPost.getContent());
+        }
+    	moreButton.setVisible(false);
     	
     	
-//    	Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-//    	final String BLOG_POST_FXML_FILE_PATH = "/view/post/BlogView.fxml";
-//		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(BLOG_POST_FXML_FILE_PATH));
-//		BlogViewController blogPostViewController = new BlogViewController(blogPost, maxTextLength);
-//		fxmlLoader.setController(blogPostViewController);
-//		Parent root = fxmlLoader.load();
-//		blogPostViewController.setData(blogPost, false);
-//		stage.setTitle("Blog");
-//		stage.setScene(new Scene(root));
-//		stage.show();
+    	Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    	final String TWITTER_POST_FXML_FILE_PATH = "/view/post/TweetView.fxml";
+		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(TWITTER_POST_FXML_FILE_PATH));
+		TweetViewController tweetViewController = new TweetViewController(twitterPost, maxTextLength);
+		fxmlLoader.setController(tweetViewController);
+		Parent root = fxmlLoader.load();
+		tweetViewController.setData(twitterPost, false);
+		stage.setTitle("Twitter");
+		stage.setScene(new Scene(root));
+		stage.show();
     }
 
     @FXML
