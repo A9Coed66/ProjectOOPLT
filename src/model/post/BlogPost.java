@@ -24,8 +24,15 @@ public class BlogPost extends Post{
 	public String getTag() {
 		return tag;
 	}
-
-	
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public void setNftPrice(float nftPrice) {
+		this.nftPrice = nftPrice;
+	}
+	public void setTag(String tag) {
+		this.tag = tag;
+	}
 //	**
 //	Constructor
 //	**
@@ -39,4 +46,6 @@ public class BlogPost extends Post{
 		this.nftPrice = nftPrice;
 		this.tag = tag;
 	}
+	
+
 }

@@ -16,8 +16,13 @@ public class Tweet extends Post{
 	public String getRetweet() {
 		return retweet;
 	}
-	
-//	**
+	public void setHashtag(String hashtag) {
+		this.hashtag = hashtag;
+	}
+	public void setRetweet(String retweet) {
+		this.retweet = retweet;
+	}
+	//	**
 //	Constructor
 //	**
 	public Tweet(String content, String imageUrl, String author, String dateCreated, String url, String reply, String like, String avatarUrl) {

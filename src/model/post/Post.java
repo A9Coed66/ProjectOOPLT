@@ -41,7 +41,31 @@ public class Post {
 	public String getAvatarUrl() {
 		return avatarUrl;
 	}
-//	**
+	public void setContent(String content) {
+		this.content = content;
+	}
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	public void setDateCreated(String dateCreated) {
+		this.dateCreated = dateCreated;
+	}
+	public void setUrl(String url) {
+		this.url = url;
+	}
+	public void setReply(String reply) {
+		this.reply = reply;
+	}
+	public void setLike(String like) {
+		this.like = like;
+	}
+	public void setAvatarUrl(String avatarUrl) {
+		this.avatarUrl = avatarUrl;
+	}
+	//	**
 //	Constructor
 //	**
 	public Post() {
@@ -59,4 +83,11 @@ public class Post {
 		this.like = like;
 		this.avatarUrl = avatarUrl;
 	}
+	
+	@Override
+	public String toString() {
+		return author + " " + dateCreated + " " + content;
+	}
+	
+	
 }
