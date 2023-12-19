@@ -1,6 +1,7 @@
 package model.collection;
+import data.crawl.IDataFrame;
 
-public class TopCollection {
+public class TopCollection implements IDataFrame{
 	private int top;
 	private String name ;
 	private String volume ;
@@ -10,7 +11,7 @@ public class TopCollection {
 	
 	
 	
-	public TopCollection(int top, String name, String volume, String floorPrice, String liquidity,String listed, String base) {
+	public TopCollection  (int top, String name, String volume, String floorPrice, String liquidity,String listed, String base) {
 		super();
 		this.top = top;
 		this.name = name;
@@ -19,6 +20,13 @@ public class TopCollection {
 		this.liquidity = liquidity;
 		this.listed = listed;
 		this.base = base;
+	
+	}
+	public void getAttribute(int i) {
+		
+	}
+	public void setAttribute(int i) {
+		
 	}
 	public void print() {
 		System.out.println("Top:"+this.top+" Name:"+ this.name+" Volume:"+this.volume+" FloorPrice:"+this.floorPrice+ " Liquidity:"+this.liquidity+ " Listed:"+ this.listed +" Base:" +this.base);

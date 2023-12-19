@@ -15,8 +15,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
-import model.collection.TopCollection;
-
 
 public class TrendingCollection{
 	static String url = "https://www.okx.com/vi/web3/marketplace/rankings";
@@ -27,11 +25,18 @@ public class TrendingCollection{
 	public static void runTestSelenium() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",PATH_TO_WEBDRIVER);
         WebDriver driver = new ChromeDriver();
-        List<TopCollection> collections = new ArrayList<>();
-        int top = 0;
+        List<String> collections = new ArrayList<String>();
+        List<String> volumes = new ArrayList<String>();
+        List<String> floorPrices = new ArrayList<String>();
+        List<String> liquiditys = new ArrayList<String>();
+        List<String> listeds = new ArrayList<String>();
+        List<String> bases = new ArrayList<String>();
+        
+        
 		for(int i = 1 ; i <= 21; i++) {
 			String page = String.format("%s/page/%d", url,i);
 			 driver.get(page);
+			 
 			 JavascriptExecutor js = (JavascriptExecutor) driver;
 			 int j = 0;
 			 while(true) {
@@ -42,29 +47,53 @@ public class TrendingCollection{
 					break;
 				} catch (Exception e) {
 					js.executeScript("window.scrollBy(0, 400)");
+					// TODO: handle exception
 				}
 			 }
 			 
 			 List<WebElement> webElements = driver.findElements(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div[3]/div/div[1]/div/a/div"));
 			 for (WebElement webElement : webElements) {
-				top += 1;
-				String name = webElement.findElement(By.xpath(".//div[2]/div/div[2]/div/div[1]/span")).getText();
+				String collection = webElement.findElement(By.xpath(".//div[2]/div/div[2]/div/div[1]/span")).getText();
+				System.out.println(collection);
 				String volume = webElement.findElement(By.xpath(".//div[3]/div/span")).getText();
+//				System.out.println(volume);
 				String floorPrice = webElement.findElement(By.xpath(".//div[5]")).getText();
+//				System.out.println(floorPrice);
 				String liquidity = webElement.findElement(By.xpath(".//div[6]/div")).getText();
+//				System.out.println(liquidity);
 				String listed = webElement.findElement(By.xpath(".//div[7]")).getText();
+//				System.out.println(listed);
 				String base = webElement.findElement(By.xpath(".//div[3]/img")).getAttribute("alt");
-				TopCollection collection = new TopCollection(top,name,volume,floorPrice,liquidity,listed,base);
-				collection.print();
+//				System.out.println(base);
 				collections.add(collection);
+				volumes.add(volume);
+				floorPrices.add(floorPrice);
+				liquiditys.add(liquidity);
+				listeds.add(listed);
+				bases.add(base);
 			}
 			 
-		}	
+		}
+		
+		
+        
 		// Đóng trình duyệt
         driver.quit();
         try {
-     // Tạo dữ liệu từ DataFrame
-            List<Map<String,TopCollection>> jsonData = createJsonData(collections);
+          
+
+            // Thêm dữ liệu vào DataFrame (điều này phải được điều chỉnh tùy thuộc vào cách bạn tổ chức dữ liệu)
+            List<List<String>> dataFrame = new ArrayList<>();
+            dataFrame.add(collections);
+            dataFrame.add(volumes);
+            dataFrame.add(floorPrices);
+            dataFrame.add(liquiditys);
+            dataFrame.add(listeds);
+            dataFrame.add(bases);
+        
+            
+            // Tạo dữ liệu từ DataFrame
+            List<Map<String,String>> jsonData = createJsonData(dataFrame);
 
             // Xuất dữ liệu ra file JSON
             writeJsonFile(jsonData, PATH_TO_JSON);
