@@ -57,10 +57,9 @@ public class TwitterCrawler {
 	        List<String> replys = new ArrayList<>();
 	        List<String> reTweets = new ArrayList<>();
 	        List<String> likes = new ArrayList<>();
-//	        List<String> views = new ArrayList<>();
 	        List<String> posturls = new ArrayList<>();
 	        List<String> images = new ArrayList<>();
-	        List<String> hastagss = new ArrayList<>();
+	        List<List<String>> hastagss = new ArrayList<>();
 	        List<String> tagss = new ArrayList<>();
 	        
 
@@ -74,6 +73,7 @@ public class TwitterCrawler {
 	        List<WebElement> articles = driver.findElements(By.xpath("//article[@data-testid='tweet']"));
 	        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
             long bheight = 0;
+            long height =1;
 	        // In số lượng bài đăng
 	        System.out.println(articles.size());
 	        while (true) {
@@ -89,7 +89,6 @@ public class TwitterCrawler {
 		                WebElement replyElement = article.findElement(By.xpath(".//div[@data-testid='reply']"));
 		                WebElement reTweetElement = article.findElement(By.xpath(".//div[@data-testid='retweet']"));
 		                WebElement likeElement = article.findElement(By.xpath(".//div[@data-testid='like']"));
-		                WebElement viewElement = article.findElement(By.xpath(".//a[contains(@aria-label,'view')]"));
 		                WebElement tweetElement = article.findElement(By.xpath(".//div[@data-testid='tweetText']"));
 		                WebElement postLinkElement = article.findElement(By.cssSelector("a[aria-label*='ago']"));
 		             // Lấy thông tin từ các yếu tố
@@ -104,13 +103,14 @@ public class TwitterCrawler {
 		                String posturl = postLinkElement.getAttribute("href");
 		                try {
 		                	List<WebElement> hastagElements = article.findElements(By.xpath(".//*[contains(@href,'/hashtag')]"));
-			                StringBuffer hastags = new StringBuffer();
+			                List<String> hastags = new ArrayList<String>();
 			                for(WebElement hastagElement:hastagElements) {
-			                	hastags.append(hastagElement.getText());
+			                	hastags.add(hastagElement.getText());
 			                }
-			                hastagss.add(hastags.toString());
+			                hastagss.add(hastags);
 						} catch (Exception e) {
-							hastagss.add("");
+							
+							hastagss.add(List.of(""));
 							System.out.println("Bài viết không có hastag");
 						}
 		               
@@ -174,9 +174,9 @@ public class TwitterCrawler {
 					break;
 				}
 	        	if(tweets.size() > number)  break;
-	        
+	        	bheight = height;
 	            jsExecutor = (JavascriptExecutor) driver;
-	            long height = (Long) jsExecutor.executeScript("return Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);");
+	            height = (Long) jsExecutor.executeScript("return Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);");
 	            if(bheight == height) break;
 	        }
 	        
@@ -197,7 +197,6 @@ public class TwitterCrawler {
 	            dataFrame.add(reTweets);
 	            dataFrame.add(likes);
 	            dataFrame.add(posturls);
-	            dataFrame.add(hastagss);
 	            dataFrame.add(tagss);
 	            dataFrame.add(images);
 	            
@@ -232,6 +231,21 @@ public class TwitterCrawler {
 		        ObjectMapper objectMapper = new ObjectMapper();
 		        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
 		        objectMapper.writeValue(new File(jsonFilePath), jsonData);
+		    }
+		    
+		    class TwitterDataFrame{
+		    	 	List<String> avatars = new ArrayList<>();
+			        List<String> names = new ArrayList<>();
+			        List<String> userNames = new ArrayList<>();
+			        List<String> timeStamps = new ArrayList<>();
+			        List<String> tweets = new ArrayList<>();
+			        List<String> replys = new ArrayList<>();
+			        List<String> reTweets = new ArrayList<>();
+			        List<String> likes = new ArrayList<>();
+			        List<String> posturls = new ArrayList<>();
+			        List<String> images = new ArrayList<>();
+			        List<List<String>> hastagss = new ArrayList<>();
+			        List<String> tagss = new ArrayList<>();
 		    }
 
 }
