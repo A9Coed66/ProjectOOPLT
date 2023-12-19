@@ -5,48 +5,58 @@ public class Post {
 //	**
 //	Attribute
 //	**
-	private String tag;
 	private String content;
-	private String imageLink;
+	private String imageUrl;
 	private String author;
+	private String dateCreated;
+	private String url;
+	private String reply;
+	private String like;
+	private String avatarUrl;
 	
 //	**
 //	Getter and Setter
 //	**
-	public String getAuthor() {
-		return author;
-	}
-	public void setAuthor(String author) {
-		this.author = author;
-	}
-	public String getTag() {
-		return tag;
-	}
-	public void settag(String tag) {
-		this.tag = tag;
-	}
 	public String getContent() {
 		return content;
 	}
-	public void setContent(String content) {
-		this.content = content;
+	public String getImageUrl() {
+		return imageUrl;
 	}
-	public String getImageLink() {
-		return imageLink;
+	public String getAuthor() {
+		return author;
 	}
-	public void setImageLink(String imageLink) {
-		this.imageLink = imageLink;
+	public String getDateCreated() {
+		return dateCreated;
 	}
-	
-	
+	public String getUrl() {
+		return url;
+	}
+	public String getReply() {
+		return reply;
+	}
+	public String getLike() {
+		return like;
+	}
+	public String getAvatarUrl() {
+		return avatarUrl;
+	}
 //	**
 //	Constructor
 //	**
-	public Post(String tag, String content, String imageLink, String author) {
+	public Post() {
 		super();
-		this.tag = tag;
+	}
+	
+	public Post(String content, String imageUrl, String author, String dateCreated, String url, String reply, String like, String avatarUrl) {
+		super();
 		this.content = content;
-		this.imageLink = imageLink;
+		this.imageUrl = imageUrl;
 		this.author = author;
+		this.dateCreated = dateCreated;
+		this.url = url;
+		this.reply = reply;
+		this.like = like;
+		this.avatarUrl = avatarUrl;
 	}
 }
