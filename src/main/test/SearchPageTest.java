@@ -3,6 +3,7 @@ package main.test;
 import java.util.List;
 
 import controller.algorithm.CSVFileReadAlgorithm;
+import controller.algorithm.JsonFileReadAlgorithm;
 import controller.page.SearchPageController;
 import controller.post.BlogViewController;
 import javafx.application.Application;
@@ -14,8 +15,11 @@ import model.post.BlogPost;
 
 public class SearchPageTest extends Application{
 	
-	CSVFileReadAlgorithm csvFileReadAlgorithm = new CSVFileReadAlgorithm("data/csv/blog_new (1).csv");
-	List<String> listItems = csvFileReadAlgorithm.csvFileRead();
+//	CSVFileReadAlgorithm csvFileReadAlgorithm = new CSVFileReadAlgorithm("data/csv/blog_new (1).csv");
+//	List<String> listItems = csvFileReadAlgorithm.csvFileRead();
+	
+	JsonFileReadAlgorithm jsonFileReadAlgorithm = new JsonFileReadAlgorithm("data/json/datatwitter.json");
+	List<String> listItems = jsonFileReadAlgorithm.jsonReadAlgorithm();
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub

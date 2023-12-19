@@ -1,5 +1,10 @@
 package model.post;
 
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+
 public class Tweet extends Post{
 
 //	**
@@ -32,6 +37,22 @@ public class Tweet extends Post{
 		super(content, imageUrl, author, dateCreated, url, reply, like, avatarUrl);
 		this.hashtag = hashtag;
 		this.retweet = retweet;
+	}
+	
+	@Override
+	public String toString() {
+		
+		String author = this.getAuthor();
+		String content = this.getContent();
+				content = content.replaceAll("\n", "\\n");
+		Instant instant = Instant.parse(this.getDateCreated());
+        LocalDateTime dateTime = LocalDateTime.ofInstant(instant, ZoneId.systemDefault());
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        String formattedTime = dateTime.format(formatter);
+		if(author.length()>30) author = author.substring(0,10)+"...";
+		if(content.length()>100) content = content.substring(0,40)+"...";
+		return String.format("%-20s%-50s%-25s", author, content, formattedTime);
 	}
 	
 	

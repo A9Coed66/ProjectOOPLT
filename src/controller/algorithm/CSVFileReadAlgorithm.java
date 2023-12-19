@@ -91,7 +91,7 @@ public class CSVFileReadAlgorithm {
 	                String price = data[8].replaceAll("^\"|\"$", "");
 	                String vote = data[9].replaceAll("^\"|\"$", "");
 	                String comment = data[10].replaceAll("^\"|\"$", "");
-
+	                
 	                String stringPrice = price.replace("$", "");
 	                // Chuyển đổi chuỗi thành số tiền kiểu float
 	                float floatPrice = Float.parseFloat(stringPrice);
