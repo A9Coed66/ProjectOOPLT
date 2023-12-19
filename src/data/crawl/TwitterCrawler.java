@@ -18,17 +18,20 @@ import java.util.Map;
 
 public class TwitterCrawler {
 		static String query;
-		final static String[] LABELS ={"Name","UserName","TimeStamp","Tweet","Reply","Retweet","like","PostUrl","Hastags","Tags","Image"};
-		final static String PATH_TO_JSON ="D:\\a_learning_code\\java\\ProjectOOPLT\\data\\json\\datatwitter.json";
 		static int number;
+		final static String[] LABELS ={"Avatar","Name","UserName","TimeStamp","Tweet","Reply","Retweet","Like","PostUrl","Hastags","Tags","Image"};
+		final static String PATH_TO_JSON ="D:\\a_learning_code\\java\\ProjectOOPLT\\data\\json\\datatwitter.json";
+		final static String PATH_TO_WEBDRIVER = "C:\\Users\\Admin\\Downloads\\Compressed\\chromedriver-win64\\chromedriver.exe";
+		
 	    public static void main(String args1,int args2) {
 	    	query = args1;
 	    	number = args2;
 	        // Đặt đường dẫn đến Chromedriver.exe
-	        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Downloads\\Compressed\\chromedriver-win64\\chromedriver.exe");       
+	        System.setProperty("webdriver.chrome.driver",PATH_TO_WEBDRIVER );       
 	        // Khởi tạo WebDriver
 	        WebDriver driver = new ChromeDriver();
 	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
 	
 	        // Mở trang đăng nhập Twitter
 	        driver.get("https://twitter.com/login");
@@ -46,6 +49,7 @@ public class TwitterCrawler {
 	        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@data-testid='SearchBox_Search_Input']")));
 	
 	        // Tạo danh sách để lưu trữ dữ liệu
+	        List<String> avatars = new ArrayList<>();
 	        List<String> names = new ArrayList<>();
 	        List<String> userNames = new ArrayList<>();
 	        List<String> timeStamps = new ArrayList<>();
@@ -53,10 +57,13 @@ public class TwitterCrawler {
 	        List<String> replys = new ArrayList<>();
 	        List<String> reTweets = new ArrayList<>();
 	        List<String> likes = new ArrayList<>();
+//	        List<String> views = new ArrayList<>();
 	        List<String> posturls = new ArrayList<>();
 	        List<String> images = new ArrayList<>();
 	        List<String> hastagss = new ArrayList<>();
 	        List<String> tagss = new ArrayList<>();
+	        
+
 
 	        // Tìm kiếm và lấy dữ liệu
 	        WebElement searchBox = driver.findElement(By.xpath("//input[@data-testid='SearchBox_Search_Input']"));
@@ -65,22 +72,28 @@ public class TwitterCrawler {
 	        
 	        // Lấy danh sách các bài đăng
 	        List<WebElement> articles = driver.findElements(By.xpath("//article[@data-testid='tweet']"));
-	
+	        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+            long bheight = 0;
 	        // In số lượng bài đăng
 	        System.out.println(articles.size());
 	        while (true) {
+	        	
 	        	// Lặp qua từng bài đăng
+	       
 	        	for (WebElement article : articles) {
 		            try {
 		            	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//span[normalize-space()]")));
+		            	WebElement avatarElement = article.findElement(By.xpath(".//img[contains(@src,'profile_images')]"));
 		                WebElement nameElement = article.findElement(By.xpath(".//span[normalize-space()]"));
 		                WebElement timeElement = article.findElement(By.xpath(".//time"));
 		                WebElement replyElement = article.findElement(By.xpath(".//div[@data-testid='reply']"));
 		                WebElement reTweetElement = article.findElement(By.xpath(".//div[@data-testid='retweet']"));
 		                WebElement likeElement = article.findElement(By.xpath(".//div[@data-testid='like']"));
+		                WebElement viewElement = article.findElement(By.xpath(".//a[contains(@aria-label,'view')]"));
 		                WebElement tweetElement = article.findElement(By.xpath(".//div[@data-testid='tweetText']"));
 		                WebElement postLinkElement = article.findElement(By.cssSelector("a[aria-label*='ago']"));
 		             // Lấy thông tin từ các yếu tố
+		                String avatar = avatarElement.getText();
 		                String name = nameElement.getText();
 		                String userName = article.findElement(By.xpath(".//span[contains(text(), '@')]")).getText();
 		                String timeStamp = timeElement.getAttribute("datetime");
@@ -124,6 +137,8 @@ public class TwitterCrawler {
 		                
 		
 		                // Thêm thông tin vào danh sách
+			            
+			            avatars.add(avatar);
 		                names.add(name);
 		                userNames.add(userName);
 		                timeStamps.add(timeStamp);
@@ -149,15 +164,20 @@ public class TwitterCrawler {
 		            }
 		        }
 	        	try {
+	       
 	        		JavascriptExecutor js = (JavascriptExecutor) driver;
-	        		js.executeScript("window.scrollBy(0, document.body.scrollHeight)");
+	        		js.executeScript("window.scrollBy(0,document.body.scrollHeight );");
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//article[@data-testid='tweet']")));
 					articles = driver.findElements(By.xpath("//article[@data-testid='tweet']"));
 				} catch (Exception e) {
 					System.out.println("Khong tim them tweets");
 					break;
 				}
-	        	if(tweets.size() > 10)  break;
+	        	if(tweets.size() > number)  break;
+	        
+	            jsExecutor = (JavascriptExecutor) driver;
+	            long height = (Long) jsExecutor.executeScript("return Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);");
+	            if(bheight == height) break;
 	        }
 	        
 	
@@ -168,6 +188,7 @@ public class TwitterCrawler {
 	
 	            // Thêm dữ liệu vào DataFrame (điều này phải được điều chỉnh tùy thuộc vào cách bạn tổ chức dữ liệu)
 	            List<List<String>> dataFrame = new ArrayList<>();
+	            dataFrame.add(avatars);
 	            dataFrame.add(names);
 	            dataFrame.add(userNames);
 	            dataFrame.add(timeStamps);
