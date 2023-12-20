@@ -20,15 +20,14 @@ public class TwitterCrawler {
 		static String query;
 		static int number;
 		final static String[] LABELS ={"Avatar","Name","UserName","TimeStamp","Tweet","Reply","Retweet","Like","PostUrl","Hastags","Tags","Image"};
-		final static String PATH_TO_JSON ="D:\\a_learning_code\\java\\ProjectOOPLT\\data\\json\\datatwitter.json";
-		final static String PATH_TO_WEBDRIVER = "C:\\Users\\Admin\\Downloads\\Compressed\\chromedriver-win64\\chromedriver.exe";
+		final static String PATH_TO_JSON ="data/json/datatwitter.json";
+		final static String PATH_TO_WEBDRIVER = "E:\\DOWNLOADS\\chromedriver-win64\\chromedriver.exe";
 		
 	    public static void main(String args1,int args2) {
 	    	query = args1;
 	    	number = args2;
 	        // Đặt đường dẫn đến Chromedriver.exe
 	        System.setProperty("webdriver.chrome.driver",PATH_TO_WEBDRIVER );       
-	        // Khởi tạo WebDriver
 	        WebDriver driver = new ChromeDriver();
 	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -59,7 +58,7 @@ public class TwitterCrawler {
 	        List<String> likes = new ArrayList<>();
 	        List<String> posturls = new ArrayList<>();
 	        List<String> images = new ArrayList<>();
-	        List<List<String>> hastagss = new ArrayList<>();
+	        List<String> hashtagss = new ArrayList<>();
 	        List<String> tagss = new ArrayList<>();
 	        
 
@@ -70,8 +69,10 @@ public class TwitterCrawler {
 	        searchBox.sendKeys(Keys.ENTER);
 	        
 	        // Lấy danh sách các bài đăng
+	        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//article[@data-testid='tweet']")));
 	        List<WebElement> articles = driver.findElements(By.xpath("//article[@data-testid='tweet']"));
 	        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+	        jsExecutor.executeScript("window.scrollBy(0,400);");
             long bheight = 0;
             long height =1;
 	        // In số lượng bài đăng
@@ -90,9 +91,9 @@ public class TwitterCrawler {
 		                WebElement reTweetElement = article.findElement(By.xpath(".//div[@data-testid='retweet']"));
 		                WebElement likeElement = article.findElement(By.xpath(".//div[@data-testid='like']"));
 		                WebElement tweetElement = article.findElement(By.xpath(".//div[@data-testid='tweetText']"));
-		                WebElement postLinkElement = article.findElement(By.cssSelector("a[aria-label*='ago']"));
+		                WebElement postLinkElement = article.findElement(By.xpath(".//div[2]/div/div[3]/a"));
 		             // Lấy thông tin từ các yếu tố
-		                String avatar = avatarElement.getText();
+		                String avatar = avatarElement.getAttribute("src");
 		                String name = nameElement.getText();
 		                String userName = article.findElement(By.xpath(".//span[contains(text(), '@')]")).getText();
 		                String timeStamp = timeElement.getAttribute("datetime");
@@ -101,16 +102,17 @@ public class TwitterCrawler {
 		                String like = likeElement.getText();
 		                String tweet = tweetElement.getText();
 		                String posturl = postLinkElement.getAttribute("href");
+		                StringBuffer hashtags = new StringBuffer();
 		                try {
 		                	List<WebElement> hastagElements = article.findElements(By.xpath(".//*[contains(@href,'/hashtag')]"));
-			                List<String> hastags = new ArrayList<String>();
+			                
 			                for(WebElement hastagElement:hastagElements) {
-			                	hastags.add(hastagElement.getText());
+			                	hashtags.append(hastagElement.getText());
 			                }
-			                hastagss.add(hastags);
+			                hashtagss.add(hashtags.toString());
 						} catch (Exception e) {
 							
-							hastagss.add(List.of(""));
+							hashtagss.add("");
 							System.out.println("Bài viết không có hastag");
 						}
 		               
@@ -164,7 +166,7 @@ public class TwitterCrawler {
 		            }
 		        }
 	        	try {
-	       
+	        		Thread.sleep(3000);
 	        		JavascriptExecutor js = (JavascriptExecutor) driver;
 	        		js.executeScript("window.scrollBy(0,document.body.scrollHeight );");
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//article[@data-testid='tweet']")));
@@ -197,6 +199,7 @@ public class TwitterCrawler {
 	            dataFrame.add(reTweets);
 	            dataFrame.add(likes);
 	            dataFrame.add(posturls);
+	            dataFrame.add(hashtagss);
 	            dataFrame.add(tagss);
 	            dataFrame.add(images);
 	            
@@ -232,20 +235,6 @@ public class TwitterCrawler {
 		        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
 		        objectMapper.writeValue(new File(jsonFilePath), jsonData);
 		    }
-		    
-		    class TwitterDataFrame{
-		    	 	List<String> avatars = new ArrayList<>();
-			        List<String> names = new ArrayList<>();
-			        List<String> userNames = new ArrayList<>();
-			        List<String> timeStamps = new ArrayList<>();
-			        List<String> tweets = new ArrayList<>();
-			        List<String> replys = new ArrayList<>();
-			        List<String> reTweets = new ArrayList<>();
-			        List<String> likes = new ArrayList<>();
-			        List<String> posturls = new ArrayList<>();
-			        List<String> images = new ArrayList<>();
-			        List<List<String>> hastagss = new ArrayList<>();
-			        List<String> tagss = new ArrayList<>();
-		    }
+		   
 
 }

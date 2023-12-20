@@ -13,13 +13,20 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <top>
-      <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="983.0">
+      <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="983.0" spacing="20.0">
          <children>
-            <Region prefHeight="74.0" prefWidth="793.0" HBox.hgrow="ALWAYS" />
+            <Label text="SEARCH" textFill="#2893b1b0">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Region prefHeight="70.0" prefWidth="384.0" HBox.hgrow="ALWAYS" />
             <Button mnemonicParsing="false" onAction="#btnCrawlPressed" prefHeight="50.0" prefWidth="100.0" text="Crawl" />
+            <Button fx:id="tredingButton" mnemonicParsing="false" onAction="#trendingButtonPressed" prefHeight="50.0" prefWidth="100.0" text="Trending" />
          </children>
          <BorderPane.margin>
             <Insets left="20.0" right="20.0" />
@@ -37,7 +44,13 @@
                   <Insets bottom="10.0" top="10.0" />
                </padding>
                <children>
-                  <Label text="Search" />
+                  <Label prefHeight="30.0" prefWidth="56.0" text="Search">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin></Label>
                   <TextField fx:id="tfQuery" />
                   <RadioButton fx:id="radioBtnFilterHashtag" mnemonicParsing="false" selected="true" text="By hashtag">
                      <toggleGroup>
@@ -45,9 +58,10 @@
                      </toggleGroup>
                   </RadioButton>
                   <RadioButton fx:id="radioBtnFilterContent" mnemonicParsing="false" text="Content" toggleGroup="$filterCategory" />
+                  <Button fx:id="detailButton" mnemonicParsing="false" onAction="#detailButtonPressed" prefHeight="30.0" prefWidth="66.0" text="Details" />
                </children>
             </HBox>
-            <TableView fx:id="tblPost" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+            <TableView fx:id="tblPost" prefHeight="598.0" prefWidth="970.0" VBox.vgrow="ALWAYS">
               <columns>
                 <TableColumn fx:id="colUserName" prefWidth="92.0" text="User Name" />
                 <TableColumn fx:id="colTime" prefWidth="117.0" text="Time" />
