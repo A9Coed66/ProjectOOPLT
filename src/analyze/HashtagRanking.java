@@ -22,6 +22,7 @@ public class HashtagRanking {
             int maxLikes = 0;
             int maxReplies = 0;
             int maxRetweets = 0;
+            int maxAppearances = 0;
 
             for (JsonNode tweetNode : tweetsNode) {
                 if (tweetNode.has("Hastags")) {
@@ -41,16 +42,18 @@ public class HashtagRanking {
                     for (int i = 1; i < hashtagArray.length; i++) {
                         String hashtag = "#" + hashtagArray[i].split("\\s")[0];  // Extract the hashtag, excluding any additional characters
 
+                        // Update max appearances
+                        maxAppearances = Math.max(maxAppearances, hashtagStatsMap.computeIfAbsent(hashtag, k -> new HashtagStats()).incrementAppearances());
+                        
                         // Update hashtag stats
-                        hashtagStatsMap.computeIfAbsent(hashtag, k -> new HashtagStats())
-                                .updateStats(likes, replies, retweets);
+                        hashtagStatsMap.get(hashtag).updateStats(likes, replies, retweets);
                     }
                 }
             }
 
             // Normalize the engagement metrics
             for (HashtagStats stats : hashtagStatsMap.values()) {
-                stats.normalize(maxLikes, maxReplies, maxRetweets);
+                stats.normalize(maxLikes, maxReplies, maxRetweets, maxAppearances);
             }
 
             // Create a list of hashtag entries for sorting
@@ -75,6 +78,12 @@ public class HashtagRanking {
         private double normalizedLikes;
         private double normalizedReplies;
         private double normalizedRetweets;
+        private double normalizedAppearances;
+
+        public int incrementAppearances() {
+            // Increment appearances and return the updated count
+            return (int) ++normalizedAppearances;
+        }
 
         public void updateStats(int likes, int replies, int retweets) {
             // Update normalized values
@@ -83,15 +92,17 @@ public class HashtagRanking {
             normalizedRetweets += normalize(retweets);
         }
 
-        public void normalize(int maxLikes, int maxReplies, int maxRetweets) {
+        public void normalize(int maxLikes, int maxReplies, int maxRetweets, int maxAppearances) {
             // Normalize the values to be between 0 and 1
             normalizedLikes /= maxLikes;
             normalizedReplies /= maxReplies;
             normalizedRetweets /= maxRetweets;
+            normalizedAppearances /= maxAppearances;
         }
 
         public double getNormalizedTotalEngagement() {
-            return normalizedLikes + normalizedReplies + normalizedRetweets;
+            // Calculate the total engagement with a 0.5 weight for each metric
+            return 0.5 * (0.5 * normalizedAppearances + 0.5 * (normalizedLikes + normalizedReplies + normalizedRetweets));
         }
 
         private double normalize(int value) {
@@ -101,9 +112,14 @@ public class HashtagRanking {
 
         @Override
         public String toString() {
-            return "Engagement: " + getNormalizedTotalEngagement();
+            return "Normalized Engagement - Likes: " + normalizedLikes +
+                    ", Replies: " + normalizedReplies +
+                    ", Retweets: " + normalizedRetweets +
+                    ", Appearances: " + normalizedAppearances +
+                    ", Total: " + getNormalizedTotalEngagement();
         }
     }
 }
+
 
 
