@@ -18,16 +18,19 @@ public class SearchPageTest extends Application{
 //	CSVFileReadAlgorithm csvFileReadAlgorithm = new CSVFileReadAlgorithm("data/csv/blog_new (1).csv");
 //	List<String> listItems = csvFileReadAlgorithm.csvFileRead();
 	
-	JsonFileReadAlgorithm jsonFileReadAlgorithm = new JsonFileReadAlgorithm("data/json/datatwitter.json");
-	List<String> listItems = jsonFileReadAlgorithm.jsonReadAlgorithm();
+
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
+		// Thiết lập scene builder
+		JsonFileReadAlgorithm jsonFileReadAlgorithm = new JsonFileReadAlgorithm("/data/json/datatwitter.json");
 		final String SEARCH_PAGE_FXML_FILE_PATH = "/view/page/SearchPageView.fxml";
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(SEARCH_PAGE_FXML_FILE_PATH));
+		// Thiết lập controller và khởi tạo dữ liệu
 		SearchPageController searchPageController = new SearchPageController();
 		fxmlLoader.setController(searchPageController);
 		Parent root = fxmlLoader.load();
+		List<String> listItems = jsonFileReadAlgorithm.jsonReadAlgorithm();
 		searchPageController.setData(listItems);
 		primaryStage.setTitle("SearchPage");
 		primaryStage.setScene(new Scene(root));
