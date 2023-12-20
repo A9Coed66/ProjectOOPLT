@@ -48,9 +48,10 @@ public class TweetViewController {
         	moreButton.setVisible(false);
         }
 
-
-        Image image = new Image(twitterPost.getImageUrl(), true);
-        tweeterImageView.setImage(image);
+        if(!twitterPost.getImageUrl().isEmpty() ){
+        	Image image = new Image(twitterPost.getImageUrl(), true);
+            tweeterImageView.setImage(image);
+        }
         
         Image avatarImage = new Image(twitterPost.getAvatarUrl(), true);
         avatarImageView.setImage(avatarImage);

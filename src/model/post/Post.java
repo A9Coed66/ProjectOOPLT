@@ -65,7 +65,7 @@ public class Post {
 	public void setAvatarUrl(String avatarUrl) {
 		this.avatarUrl = avatarUrl;
 	}
-	//	**
+//	**
 //	Constructor
 //	**
 	public Post() {

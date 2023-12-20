@@ -26,12 +26,12 @@
                         <Insets left="20.0" />
                      </HBox.margin>
                      <font>
-                        <Font name="System Bold" size="17.0" />
+                        <Font name="System Bold" size="24.0" />
                      </font>
                   </Text>
-                  <Region prefHeight="47.0" prefWidth="84.0" HBox.hgrow="ALWAYS" />
+                  <Region prefHeight="34.0" prefWidth="50.0" HBox.hgrow="ALWAYS" />
                   <TextField fx:id="postNumber" prefHeight="25.0" prefWidth="96.0" promptText="Post Number" />
-                  <Button fx:id="btnOk" blendMode="SRC_ATOP" mnemonicParsing="false" onAction="#btnOkPressed" text="OK">
+                  <Button fx:id="btnOk" blendMode="SRC_ATOP" mnemonicParsing="false" onAction="#btnOkPressed" prefHeight="26.0" prefWidth="61.0" text="OK">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
