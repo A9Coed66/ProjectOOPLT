@@ -5,48 +5,89 @@ public class Post {
 //	**
 //	Attribute
 //	**
-	private String tag;
 	private String content;
-	private String imageLink;
+	private String imageUrl;
 	private String author;
+	private String dateCreated;
+	private String url;
+	private String reply;
+	private String like;
+	private String avatarUrl;
 	
 //	**
 //	Getter and Setter
 //	**
+	public String getContent() {
+		return content;
+	}
+	public String getImageUrl() {
+		return imageUrl;
+	}
 	public String getAuthor() {
 		return author;
 	}
-	public void setAuthor(String author) {
-		this.author = author;
+	public String getDateCreated() {
+		return dateCreated;
 	}
-	public String getTag() {
-		return tag;
+	public String getUrl() {
+		return url;
 	}
-	public void settag(String tag) {
-		this.tag = tag;
+	public String getReply() {
+		return reply;
 	}
-	public String getContent() {
-		return content;
+	public String getLike() {
+		return like;
+	}
+	public String getAvatarUrl() {
+		return avatarUrl;
 	}
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public String getImageLink() {
-		return imageLink;
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
-	public void setImageLink(String imageLink) {
-		this.imageLink = imageLink;
-	}
-	
-	
-//	**
-//	Constructor
-//	**
-	public Post(String tag, String content, String imageLink, String author) {
-		super();
-		this.tag = tag;
-		this.content = content;
-		this.imageLink = imageLink;
+	public void setAuthor(String author) {
 		this.author = author;
 	}
+	public void setDateCreated(String dateCreated) {
+		this.dateCreated = dateCreated;
+	}
+	public void setUrl(String url) {
+		this.url = url;
+	}
+	public void setReply(String reply) {
+		this.reply = reply;
+	}
+	public void setLike(String like) {
+		this.like = like;
+	}
+	public void setAvatarUrl(String avatarUrl) {
+		this.avatarUrl = avatarUrl;
+	}
+	//	**
+//	Constructor
+//	**
+	public Post() {
+		super();
+	}
+	
+	public Post(String content, String imageUrl, String author, String dateCreated, String url, String reply, String like, String avatarUrl) {
+		super();
+		this.content = content;
+		this.imageUrl = imageUrl;
+		this.author = author;
+		this.dateCreated = dateCreated;
+		this.url = url;
+		this.reply = reply;
+		this.like = like;
+		this.avatarUrl = avatarUrl;
+	}
+	
+	@Override
+	public String toString() {
+		return author + " " + dateCreated + " " + content;
+	}
+	
+	
 }

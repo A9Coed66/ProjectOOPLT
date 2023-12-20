@@ -5,11 +5,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class TwitterDB {
     @JsonProperty("Hastags")
     private String hashtags;
+    
+    @JsonProperty("Avatar")
+    private String avatar;
 
     @JsonProperty("UserName")
     private String userName;
 
-    @JsonProperty("like")
+    @JsonProperty("Like")
     private String like;
 
     @JsonProperty("Tweet")
@@ -106,6 +109,14 @@ public class TwitterDB {
 
 	public void setTimeStamp(String timeStamp) {
 		this.timeStamp = timeStamp;
+	}
+
+	public String getAvatar() {
+		return avatar;
+	}
+
+	public void setAvatar(String avatar) {
+		this.avatar = avatar;
 	}
 
 	public String getTags() {

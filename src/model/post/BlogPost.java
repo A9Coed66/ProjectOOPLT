@@ -7,94 +7,45 @@ public class BlogPost extends Post{
 //	**
 //	Attribute
 //	**
-	private String postTitle;
-	private String postLink;
-	private String postDate;
-	private String postResponse;
-	private float nftPrice;
-	private int postVoteNumber;
 	
+	private String title;
+	private float nftPrice;
+	private String tag;
 //	**
 //	Getter and Setter
 //	**	
-
-	public String getpostTitle() {
-		return postTitle;
+	
+	public String getTitle() {
+		return title;
 	}
-
-	public String getPostResponse() {
-		return postResponse;
-	}
-
-	public void setPostResponse(String postResponse) {
-		this.postResponse = postResponse;
-	}
-
-	public void setpostTitle(String postTitle) {
-		this.postTitle = postTitle;
-	}
-
-	public String getPostLink() {
-		return postLink;
-	}
-
-	public void setPostLink(String postLink) {
-		this.postLink = postLink;
-	}
-
-	public String getPostDate() {
-		return postDate;
-	}
-
-	public void setPostDate(String postDate) {
-		this.postDate = postDate;
-	}
-
 	public float getNftPrice() {
 		return nftPrice;
 	}
-
+	public String getTag() {
+		return tag;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
 	public void setNftPrice(float nftPrice) {
 		this.nftPrice = nftPrice;
 	}
-
-	public int getPostVoteNumber() {
-		return postVoteNumber;
+	public void setTag(String tag) {
+		this.tag = tag;
 	}
-
-	public void setPostVoteNumber(int postVoteNumber) {
-		this.postVoteNumber = postVoteNumber;
-	}
-
-	
 //	**
 //	Constructor
 //	**
-	
-	public BlogPost(String hashTags, String content, String imageLink, String author) {
-		super(hashTags, content, imageLink, author);
-		// TODO Auto-generated constructor stub
+	public BlogPost(String content, String imageUrl, String author, String dateCreated, String url, String reply, String like, String avatarUrl) {
+		super(content, imageUrl, author, dateCreated, url, reply, like, avatarUrl);
 	}
-
-	public BlogPost(String hashTags, String content, String imageLink, String author, String postTitle, String postLink, String postDate, float nftPrice, int postVoteNumber) {
-		super(hashTags, content, imageLink, author);
-		this.postTitle = postTitle;
-		this.postLink = postLink;
-		this.postDate = postDate;
+	
+	public BlogPost(String content, String imageUrl, String author, String dateCreated, String url, String reply, String like, String avatarUrl, String title, float nftPrice, String tag) {
+		super(content, imageUrl, author, dateCreated, url, reply, like, avatarUrl);
+		this.title = title;
 		this.nftPrice = nftPrice;
-		this.postVoteNumber = postVoteNumber;
+		this.tag = tag;
 	}
+	
 
-	public BlogPost(String hashTags, String content, String imageLink, String author, String postTitle, String postLink, String postDate, String postResponse, float nftPrice, int postVoteNumber) {
-		super(hashTags, content, imageLink, author);
-		this.postTitle = postTitle;
-		this.postLink = postLink;
-		this.postDate = postDate;
-		this.postResponse = postResponse;
-		this.nftPrice = nftPrice;
-		this.postVoteNumber = postVoteNumber;
-	}
-	
-	
-	
 }

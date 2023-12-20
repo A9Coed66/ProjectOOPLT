@@ -15,14 +15,20 @@
    <children>
       <VBox alignment="CENTER_LEFT" prefHeight="491.0" prefWidth="545.0">
          <children>
-            <Label fx:id="postTitlelbl" alignment="CENTER" text="postTitle" textFill="#189bdc">
-               <VBox.margin>
-                  <Insets left="10.0" right="10.0" top="10.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="26.0" />
-               </font>
-            </Label>
+            <HBox alignment="CENTER_LEFT" spacing="20.0">
+               <children>
+                  <ImageView fx:id="avatarImageView" fitHeight="62.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="postTitlelbl" alignment="CENTER" text="postTitle" textFill="#189bdc">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
             <Label fx:id="postDatelbl" text="postDate">
                <VBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -31,7 +37,6 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Line endX="454.09295654296875" startX="-100.0" />
             <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="601.0" spacing="30.0">
                <children>
                   <Label fx:id="authorlbl" text="author">
@@ -52,7 +57,8 @@
                   </Label>
                </children>
             </HBox>
-            <VBox prefHeight="59.0" prefWidth="555.0">
+            <Line endX="454.09295654296875" startX="-100.0" />
+            <VBox>
                <children>
                   <Text fx:id="textArea" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="533.2050170898438">
                      <VBox.margin>
@@ -74,7 +80,7 @@
             </VBox>
             <HBox alignment="CENTER" prefHeight="222.0" prefWidth="488.0">
                <children>
-                  <ImageView fx:id="blogimageview" fitHeight="301.0" fitWidth="479.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="blogimageview" fitHeight="301.0" fitWidth="554.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" prefHeight="92.0" prefWidth="601.0">
