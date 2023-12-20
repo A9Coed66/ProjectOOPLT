@@ -18,16 +18,33 @@ import model.post.Tweet;
 
 public class TweetViewController {
 	
-	
-	private Tweet twitterPost;
-	private int maxTextLength = 180; 
-	private Boolean isRefresh = true;
-	
+	//**
+	//Constructor
+	//**
+
     public TweetViewController(Tweet twitterPost, int maxTextLength) {
 		super();
 		this.twitterPost = twitterPost;
 		this.maxTextLength = maxTextLength;
 	}
+
+    //**
+  	//Initialization
+  	//**
+    
+    @FXML
+    void initialize() {
+        assert authorlbl != null : "fx:id=\"authorlbl\" was not injected: check your FXML file 'TweetView.fxml'.";
+        assert contentlbl != null : "fx:id=\"contentlbl\" was not injected: check your FXML file 'TweetView.fxml'.";
+        assert hashTaglbl != null : "fx:id=\"hashTaglbl\" was not injected: check your FXML file 'TweetView.fxml'.";
+        assert likelbl != null : "fx:id=\"likelbl\" was not injected: check your FXML file 'TweetView.fxml'.";
+        assert moreButton != null : "fx:id=\"moreButton\" was not injected: check your FXML file 'TweetView.fxml'.";
+        assert replylbl != null : "fx:id=\"replylbl\" was not injected: check your FXML file 'TweetView.fxml'.";
+        assert retweetlbl != null : "fx:id=\"retweetlbl\" was not injected: check your FXML file 'TweetView.fxml'.";
+        assert taglbl != null : "fx:id=\"taglbl\" was not injected: check your FXML file 'TweetView.fxml'.";
+        assert timeStamplbl != null : "fx:id=\"timeStamplbl\" was not injected: check your FXML file 'TweetView.fxml'.";
+
+    }
 
     public void setData(Tweet twitterPost, Boolean isRefresh) {
     	this.twitterPost = twitterPost;
@@ -57,6 +74,41 @@ public class TweetViewController {
         avatarImageView.setImage(avatarImage);
     }
 	
+    
+    //**
+    //Action Performed
+    //
+    
+    @FXML
+    void moreButtonPressed(ActionEvent event) throws IOException {
+    	showMoreContent(event);
+    }
+
+    //**
+    //Action
+    //**
+    
+	private void showMoreContent(ActionEvent event) throws IOException {
+		maxTextLength = 1000;
+    	if(twitterPost.getContent().length() >= maxTextLength) {
+    		contentlbl.setText(twitterPost.getContent().substring(0, maxTextLength)+"...");
+        } else {
+        	contentlbl.setText(twitterPost.getContent());
+        }
+    	moreButton.setVisible(false);
+    	
+    	
+    	Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    	final String TWITTER_POST_FXML_FILE_PATH = "/view/post/TweetView.fxml";
+		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(TWITTER_POST_FXML_FILE_PATH));
+		TweetViewController tweetViewController = new TweetViewController(twitterPost, maxTextLength);
+		fxmlLoader.setController(tweetViewController);
+		Parent root = fxmlLoader.load();
+		tweetViewController.setData(twitterPost, false);
+		stage.setTitle("Twitter");
+		stage.setScene(new Scene(root));
+		stage.show();
+	}
 
     @FXML
     private ResourceBundle resources;
@@ -98,41 +150,8 @@ public class TweetViewController {
     @FXML
     private ImageView avatarImageView;
     
-    @FXML
-    void moreButtonPressed(ActionEvent event) throws IOException {
-    	maxTextLength = 1000;
-    	if(twitterPost.getContent().length() >= maxTextLength) {
-    		contentlbl.setText(twitterPost.getContent().substring(0, maxTextLength)+"...");
-        } else {
-        	contentlbl.setText(twitterPost.getContent());
-        }
-    	moreButton.setVisible(false);
-    	
-    	
-    	Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-    	final String TWITTER_POST_FXML_FILE_PATH = "/view/post/TweetView.fxml";
-		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(TWITTER_POST_FXML_FILE_PATH));
-		TweetViewController tweetViewController = new TweetViewController(twitterPost, maxTextLength);
-		fxmlLoader.setController(tweetViewController);
-		Parent root = fxmlLoader.load();
-		tweetViewController.setData(twitterPost, false);
-		stage.setTitle("Twitter");
-		stage.setScene(new Scene(root));
-		stage.show();
-    }
-
-    @FXML
-    void initialize() {
-        assert authorlbl != null : "fx:id=\"authorlbl\" was not injected: check your FXML file 'TweetView.fxml'.";
-        assert contentlbl != null : "fx:id=\"contentlbl\" was not injected: check your FXML file 'TweetView.fxml'.";
-        assert hashTaglbl != null : "fx:id=\"hashTaglbl\" was not injected: check your FXML file 'TweetView.fxml'.";
-        assert likelbl != null : "fx:id=\"likelbl\" was not injected: check your FXML file 'TweetView.fxml'.";
-        assert moreButton != null : "fx:id=\"moreButton\" was not injected: check your FXML file 'TweetView.fxml'.";
-        assert replylbl != null : "fx:id=\"replylbl\" was not injected: check your FXML file 'TweetView.fxml'.";
-        assert retweetlbl != null : "fx:id=\"retweetlbl\" was not injected: check your FXML file 'TweetView.fxml'.";
-        assert taglbl != null : "fx:id=\"taglbl\" was not injected: check your FXML file 'TweetView.fxml'.";
-        assert timeStamplbl != null : "fx:id=\"timeStamplbl\" was not injected: check your FXML file 'TweetView.fxml'.";
-
-    }
+    private Tweet twitterPost;
+	private int maxTextLength = 180; 
+	private Boolean isRefresh = true;
 
 }

@@ -35,7 +35,7 @@ public class TwitterCrawler {
 	        // Mở trang đăng nhập Twitter
 	        driver.get("https://twitter.com/login");
 	        driver.manage().window().maximize();
-	        driver.manage().deleteAllCookies();
+//	        driver.manage().deleteAllCookies();
 	        // Tìm kiếm và đặt các yếu tố cần thiết
 	        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='text']")));
 	        driver.findElement(By.xpath("//input[@name='text']")).sendKeys("crawler21oop");

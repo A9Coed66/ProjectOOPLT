@@ -106,7 +106,7 @@
                               </TextField>
                               <Text fill="#686464" strokeType="OUTSIDE" strokeWidth="0.0" text="Example: what’s happening · contains both “what’s” and “happening”">
                                  <font>
-                                    <Font size="9.0" />
+                                    <Font size="11.0" />
                                  </font>
                                  <VBox.margin>
                                     <Insets bottom="10.0" />
@@ -122,7 +122,7 @@
                                     <Insets bottom="10.0" />
                                  </VBox.margin>
                                  <font>
-                                    <Font size="9.0" />
+                                    <Font size="11.0" />
                                  </font>
                               </Text>
                               <TextField fx:id="anyWords" promptText="Any of these words">
@@ -135,7 +135,7 @@
                                     <Insets bottom="10.0" />
                                  </VBox.margin>
                                  <font>
-                                    <Font size="9.0" />
+                                    <Font size="11.0" />
                                  </font>
                               </Text>
                               <TextField fx:id="noWords" promptText="None of these words">
@@ -148,7 +148,7 @@
                                     <Insets bottom="10.0" />
                                  </VBox.margin>
                                  <font>
-                                    <Font size="9.0" />
+                                    <Font size="11.0" />
                                  </font>
                               </Text>
                               <TextField fx:id="hashtags" promptText="These hashtags">
@@ -161,7 +161,7 @@
                                     <Insets bottom="10.0" />
                                  </VBox.margin>
                                  <font>
-                                    <Font size="9.0" />
+                                    <Font size="11.0" />
                                  </font>
                               </Text>
                            </children>
@@ -181,7 +181,7 @@
                               <TextField fx:id="fromAccounts" promptText="From these accounts" />
                               <Text fill="#686464" strokeType="OUTSIDE" strokeWidth="0.0" text="Example: @X · sent from @X">
                                  <font>
-                                    <Font size="9.0" />
+                                    <Font size="12.0" />
                                  </font>
                               </Text>
                               <TextField fx:id="toAccounts" promptText="To these accounts" VBox.vgrow="ALWAYS" />
