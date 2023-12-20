@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="800.0" spacing="30.0">
+               <children>
+                  <TextField prefHeight="26.0" prefWidth="304.0" />
+                  <RadioButton mnemonicParsing="false" selected="true" text="Hashtag">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="searchChoice" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" text="Tag" toggleGroup="$searchChoice" />
+               </children>
+            </HBox>
+            <VBox prefHeight="530.0" prefWidth="800.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="800.0" style="-fx-border-width: 0 0 0 0;" VBox.vgrow="ALWAYS" />
+                  <HBox prefHeight="458.0" prefWidth="800.0">
+                     <children>
+                        <ScrollPane hbarPolicy="NEVER" prefHeight="458.0" prefWidth="576.0">
+                           <content>
+                              <TableView fx:id="tblData" prefHeight="455.0" prefWidth="582.0">
+                                <columns>
+                                  <TableColumn fx:id="authorCol" prefWidth="90.40002137422562" text="Author" />
+                                  <TableColumn fx:id="contentCol" prefWidth="324.8000030517578" text="Content" />
+                                    <TableColumn fx:id="timeCol" minWidth="3.20001220703125" prefWidth="157.60003662109375" text="Formatted Time" />
+                                </columns>
+                              </TableView>
+                           </content>
+                        </ScrollPane>
+                        <VBox prefHeight="458.0" prefWidth="223.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="194.0" text="Top hashtag" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <GridPane>
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="1. Hello anh zai" />
+                                    <Label text="2. Ăn tối chưa em" GridPane.columnIndex="1" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
