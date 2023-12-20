@@ -14,7 +14,7 @@ public class SearchPageController {
     
     
     public void setData(List<String> listItems) {
-    	 postList.getItems().addAll(listItems);
+        postList.getItems().addAll(listItems);
     }
 	@FXML
     private ResourceBundle resources;
