@@ -68,53 +68,6 @@ public class CSVFileReadAlgorithm {
 	 }
 	 
 	 public static void main(String[] args) {
-		 try (BufferedReader br = new BufferedReader(new FileReader("data/csv/blog_new (1).csv"))) {
-			 String line = "";
-		     String cvsSplitBy = ",";
-	            // Skipping the header line
-	            br.readLine();
-	            
-	            while ((line = br.readLine()) != null) {
-	                // Use comma as separator
-	                String[] data = line.split(cvsSplitBy);
-
-	                // Assigning each field to a variable
-	                String avatarImage = data[0].replaceAll("^\"|\"$", "");
-	                
-	                String author = data[1].replaceAll("^\"|\"$", "");
-	                String title = data[2].replaceAll("^\"|\"$", "");
-	                String link = data[3].replaceAll("^\"|\"$", "");
-	                String image = data[4].replaceAll("^\"|\"$", "");
-	                String date = data[5].replaceAll("^\"|\"$", "");
-	                String tags = data[6].replaceAll("^\"|\"$", "");
-	                String contents = data[7].replaceAll("^\"|\"$", "");
-	                String price = data[8].replaceAll("^\"|\"$", "");
-	                String vote = data[9].replaceAll("^\"|\"$", "");
-	                String comment = data[10].replaceAll("^\"|\"$", "");
-	                
-	                String stringPrice = price.replace("$", "");
-	                // Chuyển đổi chuỗi thành số tiền kiểu float
-	                float floatPrice = Float.parseFloat(stringPrice);
-	                // Processing or printing out the variables
-	                
-	                
-	                
-	                System.out.println("Avatar Image: " + avatarImage);
-	                System.out.println("Author: " + author);
-	                System.out.println("Title: " + title);
-	                System.out.println("Link: " + link);
-	                System.out.println("Image: " + image);
-	                System.out.println("Date: " + date);
-	                System.out.println("Tags: " + tags);
-	                System.out.println("Contents: " + contents);
-	                System.out.println("Price: " + floatPrice);
-	                System.out.println("Vote: " + vote);
-	                System.out.println("Comment: " + comment);
-	                System.out.println();
-	            }
-
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	        }
+		 
 	 }
 }

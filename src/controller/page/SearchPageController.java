@@ -22,34 +22,55 @@ import model.post.Tweet;
 
 public class SearchPageController {
 	
+	public SearchPageController(TableView<Tweet> tblPost) {
+		this.tblPost = tblPost;
+	}
+	
+	public SearchPageController() {
+
+	}
+	
 	 @FXML
 	 void trendingButtonPressed(ActionEvent event) {
 
 	 }
 	    
 	 @FXML
+	 void btnCrawlPressed(ActionEvent event) throws IOException {
+	    final String FXML_FILE_PATH = "/data/crawl/TwitterCrawlerView.fxml";
+		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(FXML_FILE_PATH));
+		TwitterCrawlerController twitterCrawlerController = new TwitterCrawlerController(tblPost, colContent, colHashtag, colTime, colUserName);
+		fxmlLoader.setController(twitterCrawlerController);
+		Parent root = fxmlLoader.load();
+		Stage stage = new Stage();
+		stage.setTitle("Crawler");
+		stage.setScene(new Scene(root));
+		stage.show();
+	 }
+
+	 @FXML
 	 void detailButtonPressed(ActionEvent event) throws IOException {
 		Tweet tweet = tblPost.getSelectionModel().getSelectedItem();
 		
-		System.out.println(tweet.getAuthor());
-		System.out.println("--------------------------------------------------------------------------------------------");
-		System.out.println(tweet.getAvatarUrl());
-		System.out.println("--------------------------------------------------------------------------------------------");
-		System.out.println(tweet.getContent());
-		System.out.println("--------------------------------------------------------------------------------------------");
-		System.out.println(tweet.getDateCreated());
-		System.out.println("--------------------------------------------------------------------------------------------");
-		System.out.println(tweet.getHashtag());
-		System.out.println("--------------------------------------------------------------------------------------------");
-		System.out.println(tweet.getImageUrl());
-		System.out.println("--------------------------------------------------------------------------------------------");
-		System.out.println(tweet.getLike());
-		System.out.println("--------------------------------------------------------------------------------------------");
-		System.out.println(tweet.getReply());
-		System.out.println("--------------------------------------------------------------------------------------------");
-		System.out.println(tweet.getRetweet());
-		System.out.println("--------------------------------------------------------------------------------------------");
-		System.out.println(tweet.getUrl());
+//		System.out.println(tweet.getAuthor());
+//		System.out.println("--------------------------------------------------------------------------------------------");
+//		System.out.println(tweet.getAvatarUrl());
+//		System.out.println("--------------------------------------------------------------------------------------------");
+//		System.out.println(tweet.getContent());
+//		System.out.println("--------------------------------------------------------------------------------------------");
+//		System.out.println(tweet.getDateCreated());
+//		System.out.println("--------------------------------------------------------------------------------------------");
+//		System.out.println(tweet.getHashtag());
+//		System.out.println("--------------------------------------------------------------------------------------------");
+//		System.out.println(tweet.getImageUrl());
+//		System.out.println("--------------------------------------------------------------------------------------------");
+//		System.out.println(tweet.getLike());
+//		System.out.println("--------------------------------------------------------------------------------------------");
+//		System.out.println(tweet.getReply());
+//		System.out.println("--------------------------------------------------------------------------------------------");
+//		System.out.println(tweet.getRetweet());
+//		System.out.println("--------------------------------------------------------------------------------------------");
+//		System.out.println(tweet.getUrl());
 		
 		final String TWITTER_POST_FXML_FILE_PATH = "/view/post/TweetView.fxml";
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(TWITTER_POST_FXML_FILE_PATH));
@@ -111,17 +132,5 @@ public class SearchPageController {
     @FXML
     private Button tredingButton;
     
-    @FXML
-    void btnCrawlPressed(ActionEvent event) throws IOException {
-    	final String FXML_FILE_PATH = "/data/crawl/TwitterCrawlerView.fxml";
-		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(FXML_FILE_PATH));
-		TwitterCrawlerController twitterCrawlerController = new TwitterCrawlerController();
-		fxmlLoader.setController(twitterCrawlerController);
-		Parent root = fxmlLoader.load();
-		Stage stage = new Stage();
-		stage.setTitle("Crawler");
-		stage.setScene(new Scene(root));
-		stage.show();
-    }
-
+    
 }

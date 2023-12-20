@@ -19,7 +19,7 @@
    <top>
       <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="983.0" spacing="20.0">
          <children>
-            <Label text="SEARCH" textFill="#2893b1b0">
+            <Label text="SEARCH" textFill="#17687eb0">
                <font>
                   <Font size="48.0" />
                </font>

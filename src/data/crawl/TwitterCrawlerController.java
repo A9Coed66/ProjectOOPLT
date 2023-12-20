@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import controller.algorithm.JsonFileReadAlgorithm;
 import controller.page.SearchPageController;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -19,17 +20,64 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextFormatter;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import javafx.util.converter.NumberStringConverter;
+import model.post.Tweet;
 
 public class TwitterCrawlerController  {
 	
-	public TwitterCrawlerController() {
+	public TwitterCrawlerController(TableView<Tweet> tblPost, TableColumn<Tweet, String> colContent, TableColumn<Tweet, String> colHashtag,TableColumn<Tweet, String> colTime,TableColumn<Tweet,String> colUserName) {
+		this.tblPost = tblPost;
+		this.colContent = colContent;
+		this.colHashtag = colHashtag;
+		this.colTime = colTime;
+		this.colUserName = colUserName;
 	}
+	
+    @FXML
+    void refreshSearchPageButtonPressed(ActionEvent event) {
+    	colUserName.setCellValueFactory(new PropertyValueFactory<Tweet, String>("author"));
+ 	    colTime.setCellValueFactory(new PropertyValueFactory<Tweet, String>("dateCreated"));
+ 	    colHashtag.setCellValueFactory(new PropertyValueFactory<Tweet, String>("hashtag"));
+ 	    colContent.setCellValueFactory(cellData -> {
+ 	    	 	String fullContent = cellData.getValue().getContent();
+ 	    	 	String formattedContent = (fullContent.replaceAll("\n", "\\n"));
+ 	    	        
+ 	    	 	return javafx.beans.binding.Bindings.createObjectBinding(() -> formattedContent);
+ 	    });
+ 	    if(JsonFileReadAlgorithm.jsonReadAlgorithm() != null ) tblPost.setItems(JsonFileReadAlgorithm.jsonReadAlgorithm());
+    }
+    
+	public class MonthConverter {
+	    private static final Map<String, String> monthMap = new HashMap<>();
+
+	    static {
+	        monthMap.put("January", "01");
+	        monthMap.put("February", "02");
+	        monthMap.put("March", "03");
+	        monthMap.put("April", "04");
+	        monthMap.put("May", "05");
+	        monthMap.put("June", "06");
+	        monthMap.put("July", "07");
+	        monthMap.put("August", "08");
+	        monthMap.put("September", "09");
+	        monthMap.put("October", "10");
+	        monthMap.put("November", "11");
+	        monthMap.put("December", "12");
+	    }
+
+	    public static String convertMonthToNumber(String month) {
+	        return monthMap.getOrDefault(month, "00");
+	    }
+	}
+    
 	@FXML 
 	void initialize(){
 		// Thêm vào phần lọc thời gian
@@ -80,8 +128,10 @@ public class TwitterCrawlerController  {
 //        minReposts.setTextFormatter(formatter);
 
 	}
+	
+	
 	 @FXML
-	    void btnOkPressed(ActionEvent event) {
+	 void btnOkPressed(ActionEvent event) {
 		 StringBuffer query= new StringBuffer();
 		if(!allWords.getText().isEmpty()) {
 			query.append(allWords.getText());
@@ -284,28 +334,15 @@ public class TwitterCrawlerController  {
     @FXML
     private ComboBox<String> toYear;
     
+    private TableColumn<Tweet, String> colContent;
+    private TableColumn<Tweet, String> colHashtag;
+    private TableColumn<Tweet, String> colTime;
+    private TableColumn<Tweet,String> colUserName;
+    private TableView<Tweet> tblPost;
 
-    public class MonthConverter {
-        private static final Map<String, String> monthMap = new HashMap<>();
-
-        static {
-            monthMap.put("January", "01");
-            monthMap.put("February", "02");
-            monthMap.put("March", "03");
-            monthMap.put("April", "04");
-            monthMap.put("May", "05");
-            monthMap.put("June", "06");
-            monthMap.put("July", "07");
-            monthMap.put("August", "08");
-            monthMap.put("September", "09");
-            monthMap.put("October", "10");
-            monthMap.put("November", "11");
-            monthMap.put("December", "12");
-        }
-
-        public static String convertMonthToNumber(String month) {
-            return monthMap.getOrDefault(month, "00");
-        }
-    }
+    @FXML
+    private Button refreshSearchPageButton;
+    
+   
 
 }
