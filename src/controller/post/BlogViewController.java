@@ -33,25 +33,29 @@ public class BlogViewController {
     public void setData(BlogPost blogPost, Boolean isRefresh) {
     	this.blogPost = blogPost;
     	this.isRefresh = isRefresh;
-    	postTitlelbl.setText(blogPost.getpostTitle());
-    	postDatelbl.setText(blogPost.getPostDate());
+    	postTitlelbl.setText(blogPost.getTitle());
+    	postDatelbl.setText(blogPost.getDateCreated());
     	authorlbl.setText(blogPost.getAuthor());
     	taglbl.setText(blogPost.getTag());
-    	//contentlbl.setText(blogPost.getContent());
     	pricelbl.setText("Price: "+blogPost.getNftPrice()+"");
-    	votelbl.setText("Votes: "+blogPost.getPostVoteNumber()+"");
-    	responselbl.setText("Responses: "+blogPost.getPostResponse());
+    	votelbl.setText("Votes: "+blogPost.getLike()+"");
+    	responselbl.setText("Responses: "+blogPost.getReply());
     	textArea.setText(blogPost.getContent());
 
         if(blogPost.getContent().length() >= maxTextLength) {
         	textArea.setText(blogPost.getContent().substring(0, maxTextLength)+"...");
+        	moreButton.setVisible(isRefresh);
         } else {
         	textArea.setText(blogPost.getContent());
+        	moreButton.setVisible(false);
         }
-        moreButton.setVisible(isRefresh);
+        
 
-        Image image = new Image(blogPost.getImageLink(), true);
+        Image image = new Image(blogPost.getImageUrl(), true);
         blogimageview.setImage(image);
+        
+        Image avatarImage = new Image(blogPost.getAvatarUrl(), true);
+        avatarImageView.setImage(avatarImage);
     }
     
     @FXML
@@ -115,6 +119,10 @@ public class BlogViewController {
     
     @FXML
     private Button moreButton;
+    
+
+    @FXML
+    private ImageView avatarImageView;
     
     @FXML
     void initialize() {

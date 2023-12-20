@@ -29,22 +29,21 @@ public class BlogViewTest extends Application{
 	public static void main(String[] args) {
 		
 		
-		blogPost = new BlogPost(" #nft â€¢", 
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-		                + "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-		                + "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
-		                + "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in "
-		                + "reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
-		                + "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia "
-		                + "deserunt mollit anim id est laborum.", 
-				"https://steemitimages.com/640x480/https://pbs.twimg.com/media/GBgq7PFaMAAmg9F.jpg", 
-				"dzare698", 
-				"The Best NFT Game", 
-				"/hive-154886/@dzare698/1736184863219462191", 
-				"12/17/2023  12:42:00 AM", 
-				"No responses yet", 
-				200.2f, 
-				21);
+		blogPost = new BlogPost("Smart contracts are the digital architects that underpin the trust and transparency within the world of Non-Fungibleâ€"
+				+"There's a new festive season going đŸ„ I try to join these festivities when I can. There's 2 ways to join. Both need aâ€"
+				+ "đŸ¨đŸ–¼ï¸ Dive into the mesmerizing world of 'Mono Art' NFT collection ! Explore the power of minimalism and discoverâ€"
+				+ "\n\n\n"
+				+"Project: Midnight Apes (Phase 1) Not Much Time Left Till Mint ! ! ! Promotion of my friend's NFT artâ€"
+				,"https://steemitimages.com/640x480/https://cdn.steemitimages.com/DQmR2BQZpkJTihofCf3QPTB2TMDA768qSiRW6x8kV3iU8hL/NFT%20Marketplace%20Development%20(1).jpg"
+				,"bitcoinflood"
+				,"12/17/2023 15:30"
+				,"/nft/@snft/snft-2023-12-18"
+				,"9 responses"
+				,"30"
+				,"https://steemitimages.com/u/dzare698/avatar/small"
+				,"Unveiling the whimsical world"
+				,321.123f
+				," #nft");
 		
 		launch(args);
 	}
