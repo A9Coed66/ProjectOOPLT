@@ -106,9 +106,7 @@ public class CorrelationAnalysisController {
         fetchAndDisplayData(nftAspect, tweetBlogAspect);
     }
 
-    // Add a method to fetch and display data based on the selected aspects
     private void fetchAndDisplayData(String nftAspect, String tweetBlogAspect) {
-        // Placeholder logic, replace with actual implementation
         List<DataPoint> dataPoints = fetchDataFromDatabase(nftAspect, tweetBlogAspect);
 
         // Calculate linear regression
