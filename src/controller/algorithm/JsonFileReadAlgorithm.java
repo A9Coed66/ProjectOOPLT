@@ -32,7 +32,7 @@ public class JsonFileReadAlgorithm {
 	public static ObservableList<Tweet> jsonReadAlgorithm() {
 		
 		ObservableList<Tweet> tweetPosts = FXCollections.observableArrayList();
-		String filePath = "data/json/datatwitter.json";
+		String filePath = "data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json";
 
         // Sử dụng ObjectMapper để chuyển đổi JSON từ tệp thành List<TwitterData>
         ObjectMapper objectMapper = new ObjectMapper();

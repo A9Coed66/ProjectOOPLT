@@ -28,7 +28,7 @@ import data.connector.CollectionDB;
 public class TopCollectionTweetCrawler{
 	static String url = "https://nitter.net/search?f=tweets";
 	final static String[] LABELS ={"Avatar","Name","UserName","TimeStamp","Tweet","Reply","Retweet","Like","PostUrl","Hastags","Tags","Image"};
-	final static String PATH_TO_WEBDRIVER = "C:\\Users\\Admin\\Downloads\\Compressed\\chromedriver-win64\\chromedriver.exe";
+	final static String PATH_TO_WEBDRIVER = "E:\\DOWNLOADS\\chromedriver-win64\\chromedriver.exe";
 
 	
 	public static void crawler() throws InterruptedException {
@@ -51,16 +51,21 @@ public class TopCollectionTweetCrawler{
         List<String> tagss = new ArrayList<>();
         ObjectMapper objectMapper = new ObjectMapper();
 
+
         try {
             JsonNode rootNode = objectMapper.readTree(new File("data/json/collection/okx/topcollection_20231221_160726.json"));
             int i = 0;
             for (JsonNode node : rootNode) {
+            	
             	i++;
+            	driver.get(url);
             	CollectionDB collectionDB = objectMapper.treeToValue(node, CollectionDB.class);
             	String query = collectionDB.getCollection()+"\n";
-            	 driver.get(url);
                  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='q']")));
                  driver.findElement(By.xpath("//input[@name='q']")).sendKeys(query);
+                 wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='timeline-item ']")));
+                 String curl=driver.getCurrentUrl()+"&e-nativeretweets=on";
+                 driver.get(curl);
                  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='timeline-item ']")));
                  List<WebElement> items = driver.findElements(By.xpath("//div[@class='timeline-item ']"));
          	        while (true) {

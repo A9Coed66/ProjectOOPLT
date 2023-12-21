@@ -94,6 +94,13 @@ public class TwitterCrawlerController  {
 		});
 	}
 
+	
+	@FXML
+	void stop() {
+		crawlButton.setDisable(false);
+	}
+	
+	
 	//**
 	//Action Performed
 	//**
@@ -131,7 +138,7 @@ public class TwitterCrawlerController  {
 					}
  		          });
  		   
- 	    crawlButton.setVisible(true);
+ 	    crawlButton.setDisable(false);
  	    Stage currentStage = (Stage) refreshSearchPageButton.getScene().getWindow();
  	    currentStage.close();
     }

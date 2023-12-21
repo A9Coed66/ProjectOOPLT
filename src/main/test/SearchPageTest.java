@@ -18,7 +18,7 @@ public class SearchPageTest extends Application{
 //	CSVFileReadAlgorithm csvFileReadAlgorithm = new CSVFileReadAlgorithm("data/csv/blog_new (1).csv");
 //	List<String> listItems = csvFileReadAlgorithm.csvFileRead();
 	
-	JsonFileReadAlgorithm jsonFileReadAlgorithm = new JsonFileReadAlgorithm("data/json/datatwitter.json");
+	JsonFileReadAlgorithm jsonFileReadAlgorithm = new JsonFileReadAlgorithm("data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json");
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub

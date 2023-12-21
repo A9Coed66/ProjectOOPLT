@@ -90,11 +90,9 @@ public class TweetViewController {
     
 	private void showMoreContent(ActionEvent event) throws IOException {
 		maxTextLength = 1000;
-    	if(twitterPost.getContent().length() >= maxTextLength) {
-    		contentlbl.setText(twitterPost.getContent().substring(0, maxTextLength)+"...");
-        } else {
+
         	contentlbl.setText(twitterPost.getContent());
-        }
+
     	moreButton.setVisible(false);
     	
     	
@@ -151,7 +149,7 @@ public class TweetViewController {
     private ImageView avatarImageView;
     
     private Tweet twitterPost;
-	private int maxTextLength = 180; 
+	private int maxTextLength = 100; 
 	private Boolean isRefresh = true;
 
 }

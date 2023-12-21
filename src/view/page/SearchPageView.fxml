@@ -46,10 +46,10 @@
                <children>
                   <Label prefHeight="30.0" prefWidth="56.0" text="Search">
                      <font>
-                        <Font size="18.0" />
+                        <Font name="System Bold" size="16.0" />
                      </font>
                      <HBox.margin>
-                        <Insets left="10.0" />
+                        <Insets left="10.0" top="10.0" />
                      </HBox.margin></Label>
                   <TextField fx:id="tfQuery" onKeyPressed="#searching" />
                   <RadioButton fx:id="radioBtnFilterHashtag" mnemonicParsing="false" onMouseClicked="#searchByHashtagRadioButtonClicked" selected="true" text="By hashtag">
@@ -57,8 +57,11 @@
                         <ToggleGroup fx:id="filterCategory" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="radioBtnFilterContent" mnemonicParsing="false" onMouseClicked="#searchByContentRadioButtonClicked" text="Content" toggleGroup="$filterCategory" />
-                  <Button fx:id="detailButton" mnemonicParsing="false" onAction="#detailButtonPressed" prefHeight="30.0" prefWidth="66.0" text="Details" />
+                  <RadioButton fx:id="radioBtnFilterContent" mnemonicParsing="false" onMouseClicked="#searchByContentRadioButtonClicked" text="By Content" toggleGroup="$filterCategory" />
+                  <Button fx:id="detailButton" mnemonicParsing="false" onAction="#detailButtonPressed" prefHeight="30.0" prefWidth="66.0" text="Details">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin></Button>
                </children>
             </HBox>
             <TableView fx:id="tblPost" prefHeight="598.0" prefWidth="970.0" VBox.vgrow="ALWAYS">

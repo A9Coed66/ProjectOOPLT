@@ -134,7 +134,7 @@ public class SearchPageController {
 		stage.setTitle("Crawler");
 		stage.setScene(new Scene(root));
 		stage.show();
-		crawlButton.setVisible(false);
+		crawlButton.setDisable(true);
 	}
 	
 	private void tweetDetailPopUp() throws IOException {
