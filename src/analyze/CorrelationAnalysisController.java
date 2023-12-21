@@ -1,5 +1,6 @@
 package analyze;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javafx.fxml.FXML;
@@ -58,54 +59,40 @@ public class CorrelationAnalysisController {
         String nftAspect = nftAspectComboBox.getValue();
         String tweetBlogAspect = tweetBlogAspectComboBox.getValue();
 
+        // Hiển thị các bảng dựa trên lựa chọn
         if ("Trending".equals(nftAspect) && "Hashtag".equals(tweetBlogAspect)) {
-            trendingHashtagChart.setVisible(true);
-            salesHashtagChart.setVisible(false);
-            volumeHashtagChart.setVisible(false);
-            trendingKeywordChart.setVisible(false);
-            salesKeywordChart.setVisible(false);
-            volumeKeywordChart.setVisible(false);
+            activeGraph(trendingHashtagChart);
         } else if ("Sales".equals(nftAspect) && "Hashtag".equals(tweetBlogAspect)) {
-        	trendingHashtagChart.setVisible(false);
-            salesHashtagChart.setVisible(true);
-            volumeHashtagChart.setVisible(false);
-            trendingKeywordChart.setVisible(false);
-            salesKeywordChart.setVisible(false);
-            volumeKeywordChart.setVisible(false);
+            activeGraph(salesHashtagChart);
         } else if ("Volume".equals(nftAspect) && "Hashtag".equals(tweetBlogAspect)) {
-            trendingHashtagChart.setVisible(false);
-            salesHashtagChart.setVisible(false);
-            volumeHashtagChart.setVisible(true);
-            trendingKeywordChart.setVisible(false);
-            salesKeywordChart.setVisible(false);
-            volumeKeywordChart.setVisible(false);
+            activeGraph(volumeHashtagChart);
         } else if ("Trending".equals(nftAspect) && "Keyword".equals(tweetBlogAspect)) {
-        	trendingHashtagChart.setVisible(false);
-            salesHashtagChart.setVisible(false);
-            volumeHashtagChart.setVisible(false);
-            trendingKeywordChart.setVisible(true);
-            salesKeywordChart.setVisible(false);
-            volumeKeywordChart.setVisible(false);
+            activeGraph(trendingKeywordChart);
         } else if ("Sales".equals(nftAspect) && "Keyword".equals(tweetBlogAspect)) {
-        	trendingHashtagChart.setVisible(false);
-            salesHashtagChart.setVisible(false);
-            volumeHashtagChart.setVisible(false);
-            trendingKeywordChart.setVisible(false);
-            salesKeywordChart.setVisible(true);
+            activeGraph(salesKeywordChart);
             volumeKeywordChart.setVisible(false);
         } else if ("Volume".equals(nftAspect) && "Keyword".equals(tweetBlogAspect)) {
-        	trendingHashtagChart.setVisible(false);
-            salesHashtagChart.setVisible(false);
-            volumeHashtagChart.setVisible(false);
-            trendingKeywordChart.setVisible(false);
-            salesKeywordChart.setVisible(false);
-            volumeKeywordChart.setVisible(true);
+            activeGraph(volumeKeywordChart);
         }
         
         // Your logic to fetch data and update the corresponding chart
         fetchAndDisplayData(nftAspect, tweetBlogAspect);
     }
 
+    // Chọn bảng để hiện thông tin
+    private void activeGraph(LineChart<Number, Number> graph) {
+        trendingHashtagChart.setVisible(false);
+        salesHashtagChart.setVisible(false);
+        volumeHashtagChart.setVisible(false);
+        trendingKeywordChart.setVisible(false);
+        salesKeywordChart.setVisible(false);
+        volumeKeywordChart.setVisible(false);
+        graph.setVisible(true);
+    }
+
+
+
+    // Lấy dữ liệu và hiển thị lên bảng
     private void fetchAndDisplayData(String nftAspect, String tweetBlogAspect) {
         List<DataPoint> dataPoints = fetchDataFromDatabase(nftAspect, tweetBlogAspect);
 
@@ -199,5 +186,16 @@ public class CorrelationAnalysisController {
                 // Default to trending and hashtag
                 return trendingHashtagChart;
         }
+    }
+
+    private ArrayList<DataPoint> top10TrendingCollection;
+
+    // Get data of top 10 trending colelction
+    private ArrayList<DataPoint> getData(){
+        ArrayList<DataPoint> tempArr = new ArrayList<DataPoint>();
+        // Read file to get data
+        // The required of a datapoint is:
+        //1. Top ranking; 2. Name of collection; 3. Volume per hour; 4. Number of post (hashtag) in a day
+        return tempArr;
     }
 }
