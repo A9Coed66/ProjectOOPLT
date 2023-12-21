@@ -19,10 +19,10 @@ import javafx.stage.Stage;
 import model.post.BlogPost;
 
 public class BlogViewController {
-
-	private BlogPost blogPost;
-	private int maxTextLength = 180; 
-	private Boolean isRefresh = true;
+	
+	//**
+	//Constructor
+	//**
 	
     public BlogViewController(BlogPost blogPost, int maxTextLength) {
 		super();
@@ -30,6 +30,23 @@ public class BlogViewController {
 		this.maxTextLength = maxTextLength;
 	}
 
+    //**
+  	//Initialization
+  	//**
+    
+    @FXML
+    void initialize() {
+        assert authorlbl != null : "fx:id=\"authorlbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
+        assert blogimageview != null : "fx:id=\"blogimageview\" was not injected: check your FXML file 'blogPostView.fxml'.";
+        assert contentlbl != null : "fx:id=\"contentlbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
+        assert taglbl != null : "fx:id=\"hashTagslbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
+        assert postDatelbl != null : "fx:id=\"postDatelbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
+        assert postTitlelbl != null : "fx:id=\"postTitlelbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
+        assert pricelbl != null : "fx:id=\"pricelbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
+        assert responselbl != null : "fx:id=\"responselbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
+        assert votelbl != null : "fx:id=\"votelbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
+    }
+    
     public void setData(BlogPost blogPost, Boolean isRefresh) {
     	this.blogPost = blogPost;
     	this.isRefresh = isRefresh;
@@ -57,10 +74,23 @@ public class BlogViewController {
         Image avatarImage = new Image(blogPost.getAvatarUrl(), true);
         avatarImageView.setImage(avatarImage);
     }
+
+    //**
+  	//Action Performed
+  	//**
     
     @FXML
     void moreButtonPressed(ActionEvent event) throws IOException {
-    	maxTextLength = 1000;
+    	showMoreContent(event);
+    }
+
+	
+    //**
+  	//Action
+  	//**
+    
+    private void showMoreContent(ActionEvent event) throws IOException {
+		maxTextLength = 1000;
     	if(blogPost.getContent().length() >= maxTextLength) {
         	textArea.setText(blogPost.getContent().substring(0, maxTextLength)+"...");
         } else {
@@ -79,7 +109,8 @@ public class BlogViewController {
 		stage.setTitle("Blog");
 		stage.setScene(new Scene(root));
 		stage.show();
-    }
+	}
+    
     
 	@FXML
     private ResourceBundle resources;
@@ -124,17 +155,7 @@ public class BlogViewController {
     @FXML
     private ImageView avatarImageView;
     
-    @FXML
-    void initialize() {
-        assert authorlbl != null : "fx:id=\"authorlbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
-        assert blogimageview != null : "fx:id=\"blogimageview\" was not injected: check your FXML file 'blogPostView.fxml'.";
-        assert contentlbl != null : "fx:id=\"contentlbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
-        assert taglbl != null : "fx:id=\"hashTagslbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
-        assert postDatelbl != null : "fx:id=\"postDatelbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
-        assert postTitlelbl != null : "fx:id=\"postTitlelbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
-        assert pricelbl != null : "fx:id=\"pricelbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
-        assert responselbl != null : "fx:id=\"responselbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
-        assert votelbl != null : "fx:id=\"votelbl\" was not injected: check your FXML file 'blogPostView.fxml'.";
-    }
-
+    private BlogPost blogPost;
+	private int maxTextLength = 180; 
+	private Boolean isRefresh = true;
 }

@@ -6,10 +6,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import controller.algorithm.JsonFileReadAlgorithm;
 import controller.page.SearchPageController;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,27 +22,49 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextFormatter;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import javafx.util.converter.NumberStringConverter;
+import model.post.Tweet;
 
 public class TwitterCrawlerController  {
 	
-	public TwitterCrawlerController() {
+	//**
+	//Constructor
+	//**
+	public TwitterCrawlerController(TableView<Tweet> tblPost, TableColumn<Tweet, String> colContent, TableColumn<Tweet, String> colHashtag,TableColumn<Tweet, String> colTime,TableColumn<Tweet,String> colUserName, Button crawlButton, TextField tfQuery, ToggleGroup filterCategory, RadioButton radioBtnFilterContent) {
+		this.tblPost = tblPost;
+		this.colContent = colContent;
+		this.colHashtag = colHashtag;
+		this.colTime = colTime;
+		this.colUserName = colUserName;
+		this.crawlButton = crawlButton;
+		
+		this.tfQuery = tfQuery;
+		this.filterCategory = filterCategory;
+		this.radioBtnFilterContent = radioBtnFilterContent;
 	}
+	
+	//**
+	//Initialization
+	//**
+	
 	@FXML 
 	void initialize(){
 		// Thêm vào phần lọc thời gian
-		 initializeDateComboBoxes();
-		 addComboBoxListener(fromMonth);
-	     addComboBoxListener(fromDay);
-	     addComboBoxListener(fromYear);
-		 addComboBoxListener(toMonth);
-	     addComboBoxListener(toDay);
-	     addComboBoxListener(toYear);
+		initializeDateComboBoxes();
+		addComboBoxListener(fromMonth);
+	    addComboBoxListener(fromDay);
+	    addComboBoxListener(fromYear);
+		addComboBoxListener(toMonth);
+	    addComboBoxListener(toDay);
+	    addComboBoxListener(toYear);
 		// Chuyển đổi cái lựa chọn trong phần filter
 		linkToggle.selectedProperty().addListener( new ChangeListener<Boolean>() {
     		@Override
@@ -67,21 +92,78 @@ public class TwitterCrawlerController  {
     			}
     		}
 		});
-		 // Tạo một TextFormatter sử dụng UnaryOperator để kiểm tra ký tự
-//        TextFormatter<Number> formatter = new TextFormatter<>(new NumberStringConverter(), 0, change -> {
-//            String newText = change.getControlNewText();
-//            if (newText.matches("\\d*")) {
-//                return change;
-//            }
-//            return null;
-//        });
-//        minLikes.setTextFormatter(formatter);
-//        minReplies.setTextFormatter(formatter);
-//        minReposts.setTextFormatter(formatter);
-
 	}
+
+	//**
+	//Action Performed
+	//**
+	
+    @FXML
+    void refreshSearchPageButtonPressed(ActionEvent event) {
+    	colUserName.setCellValueFactory(new PropertyValueFactory<Tweet, String>("author"));
+ 	    colTime.setCellValueFactory(new PropertyValueFactory<Tweet, String>("dateCreated"));
+ 	    colHashtag.setCellValueFactory(new PropertyValueFactory<Tweet, String>("hashtag"));
+ 	    colContent.setCellValueFactory(cellData -> {
+ 	    	 String fullContent = cellData.getValue().getContent();
+ 	    	 String formattedContent = (fullContent.replaceAll("\n", "\\n"));
+ 	    	        
+ 	    	 return javafx.beans.binding.Bindings.createObjectBinding(() -> formattedContent);
+ 	    });
+ 	    
+ 	    listItems = new FilteredList<Tweet>(JsonFileReadAlgorithm.jsonReadAlgorithm());
+ 	    
+ 	    if(listItems != null ) tblPost.setItems(listItems);
+ 	    
+ 	    tfQuery.textProperty().addListener(new ChangeListener<String>(){
+ 		  			@Override
+ 		  			public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+ 		  				showFilteredPost(newValue);
+ 		  			}
+
+					private void showFilteredPost(String filter) {
+						// TODO Auto-generated method stub
+						RadioButton selectedButton = (RadioButton)filterCategory.getSelectedToggle();
+						if(selectedButton == radioBtnFilterContent) {
+							listItems.setPredicate(item -> item.getContent().contains(filter));
+						} else {
+							listItems.setPredicate(item -> item.getHashtag().contains(filter));
+						}
+					}
+ 		          });
+ 		   
+ 	    crawlButton.setVisible(true);
+ 	    Stage currentStage = (Stage) refreshSearchPageButton.getScene().getWindow();
+ 	    currentStage.close();
+    }
+    
+	public class MonthConverter {
+	    private static final Map<String, String> monthMap = new HashMap<>();
+
+	    static {
+	        monthMap.put("January", "01");
+	        monthMap.put("February", "02");
+	        monthMap.put("March", "03");
+	        monthMap.put("April", "04");
+	        monthMap.put("May", "05");
+	        monthMap.put("June", "06");
+	        monthMap.put("July", "07");
+	        monthMap.put("August", "08");
+	        monthMap.put("September", "09");
+	        monthMap.put("October", "10");
+	        monthMap.put("November", "11");
+	        monthMap.put("December", "12");
+	    }
+
+	    public static String convertMonthToNumber(String month) {
+	        return monthMap.getOrDefault(month, "00");
+	    }
+	}
+    
+	
+	
+	
 	 @FXML
-	    void btnOkPressed(ActionEvent event) {
+	 void btnOkPressed(ActionEvent event) {
 		 StringBuffer query= new StringBuffer();
 		if(!allWords.getText().isEmpty()) {
 			query.append(allWords.getText());
@@ -123,7 +205,7 @@ public class TwitterCrawlerController  {
 			query.append(" since:"+fromYear.getValue()+"-"+MonthConverter.convertMonthToNumber(fromMonth.getValue())+"-"+fromDay.getValue());
 		}
 		if((toDay.getValue()!= null)&&(toMonth.getValue()!= null)&&(toYear.getValue()!= null)) {
-			query.append(" since:"+toYear.getValue()+"-"+MonthConverter.convertMonthToNumber(toMonth.getValue())+"-"+toDay.getValue());
+			query.append(" until:"+toYear.getValue()+"-"+MonthConverter.convertMonthToNumber(toMonth.getValue())+"-"+toDay.getValue());
 		}
 		
 		TwitterCrawler.main(query.toString(),Integer.parseInt(postNumber.getText()));;
@@ -283,29 +365,19 @@ public class TwitterCrawlerController  {
 
     @FXML
     private ComboBox<String> toYear;
+   
+    @FXML
+    private Button refreshSearchPageButton;
     
-
-    public class MonthConverter {
-        private static final Map<String, String> monthMap = new HashMap<>();
-
-        static {
-            monthMap.put("January", "01");
-            monthMap.put("February", "02");
-            monthMap.put("March", "03");
-            monthMap.put("April", "04");
-            monthMap.put("May", "05");
-            monthMap.put("June", "06");
-            monthMap.put("July", "07");
-            monthMap.put("August", "08");
-            monthMap.put("September", "09");
-            monthMap.put("October", "10");
-            monthMap.put("November", "11");
-            monthMap.put("December", "12");
-        }
-
-        public static String convertMonthToNumber(String month) {
-            return monthMap.getOrDefault(month, "00");
-        }
-    }
-
+    private TableColumn<Tweet, String> colContent;
+    private TableColumn<Tweet, String> colHashtag;
+    private TableColumn<Tweet, String> colTime;
+    private TableColumn<Tweet,String> colUserName;
+    private TableView<Tweet> tblPost;
+    private Button crawlButton;
+    
+    private static FilteredList<Tweet> listItems;
+    private TextField tfQuery;
+    private ToggleGroup filterCategory;
+    private RadioButton radioBtnFilterContent;
 }

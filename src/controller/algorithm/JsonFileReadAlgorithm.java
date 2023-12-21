@@ -29,7 +29,7 @@ public class JsonFileReadAlgorithm {
 		this.filepath = filepath;
 	}
 	
-	public  static ObservableList<Tweet> jsonReadAlgorithm() {
+	public static ObservableList<Tweet> jsonReadAlgorithm() {
 		
 		ObservableList<Tweet> tweetPosts = FXCollections.observableArrayList();
 		String filePath = "data/json/datatwitter.json";
