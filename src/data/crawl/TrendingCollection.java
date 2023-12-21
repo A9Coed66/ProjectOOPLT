@@ -2,7 +2,9 @@ package data.crawl;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -18,11 +20,10 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 public class TrendingCollection{
 	static String url = "https://www.okx.com/vi/web3/marketplace/rankings";
-	final static String[] LABELS ={"Collection","Volume","FloorPrice","Liquidity","listed","base"};
-	final static String PATH_TO_JSON ="D:\\a_learning_code\\java\\ProjectOOPLT\\data\\json\\collectiontrending.json";
+	final static String[] LABELS ={"Collection","Volume","FloorPrice","Liquidity","Listed","Base"};
 	final static String PATH_TO_WEBDRIVER = "C:\\Users\\Admin\\Downloads\\Compressed\\chromedriver-win64\\chromedriver.exe";
 	
-	public static void runTestSelenium() throws InterruptedException {
+	public static void crawler() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",PATH_TO_WEBDRIVER);
         WebDriver driver = new ChromeDriver();
         List<String> collections = new ArrayList<String>();
@@ -96,7 +97,7 @@ public class TrendingCollection{
             List<Map<String,String>> jsonData = createJsonData(dataFrame);
 
             // Xuất dữ liệu ra file JSON
-            writeJsonFile(jsonData, PATH_TO_JSON);
+            writeJsonFile(jsonData);
             System.out.println("Dữ liệu đã được xuất ra file JSON thành công.");
         } catch (IOException e) {
             e.printStackTrace();
@@ -119,13 +120,23 @@ public class TrendingCollection{
 	        return jsonData;
 	    }
 	
-	    private static void writeJsonFile(List<Map<String,String>> jsonData, String jsonFilePath) throws IOException {
-	        ObjectMapper objectMapper = new ObjectMapper();
-	        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-	        objectMapper.writeValue(new File(jsonFilePath), jsonData);
+	    private static void writeJsonFile(List<Map<String,String>> jsonData) throws IOException {
+	    	ObjectMapper objectMapper = new ObjectMapper();
+	        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+	        String fileName = "data/json/collection/okx/topcollection_" + timestamp + ".json";
+
+	        try {
+	        	objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+	 	        objectMapper.writeValue(new File(fileName), jsonData);
+	            System.out.println("Đã ghi vào file " + fileName + " thành công.");
+	        } catch (IOException e) {
+	          
+	        	 e.printStackTrace();
+	        }
+	       
 	    }
 
     public static void main(String[] args) throws InterruptedException {
-		runTestSelenium();
+		crawler();
 	}
 }

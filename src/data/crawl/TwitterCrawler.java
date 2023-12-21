@@ -14,6 +14,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class TwitterCrawler {
@@ -70,76 +72,70 @@ public class TwitterCrawler {
 	        
 	        // Lấy danh sách các bài đăng
 	        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//article[@data-testid='tweet']")));
-	        List<WebElement> articles = driver.findElements(By.xpath("//article[@data-testid='tweet']"));
+	        List<WebElement> items = driver.findElements(By.xpath("//article[@data-testid='tweet']"));
 	        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 	        jsExecutor.executeScript("window.scrollBy(0,400);");
             long bheight = 0;
             long height =1;
 	        // In số lượng bài đăng
-	        System.out.println(articles.size());
+	        System.out.println(items.size());
 	        while (true) {
 	        	
 	        	// Lặp qua từng bài đăng
 	       
-	        	for (WebElement article : articles) {
+	        	for (WebElement item : items) {
 		            try {
 		            	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//span[normalize-space()]")));
-		            	WebElement avatarElement = article.findElement(By.xpath(".//img[contains(@src,'profile_images')]"));
-		                WebElement nameElement = article.findElement(By.xpath(".//span[normalize-space()]"));
-		                WebElement timeElement = article.findElement(By.xpath(".//time"));
-		                WebElement replyElement = article.findElement(By.xpath(".//div[@data-testid='reply']"));
-		                WebElement reTweetElement = article.findElement(By.xpath(".//div[@data-testid='retweet']"));
-		                WebElement likeElement = article.findElement(By.xpath(".//div[@data-testid='like']"));
-		                WebElement tweetElement = article.findElement(By.xpath(".//div[@data-testid='tweetText']"));
-		                WebElement postLinkElement = article.findElement(By.xpath(".//div[2]/div/div[3]/a"));
+		            	WebElement avatarElement = item.findElement(By.xpath(".//img[contains(@src,'profile_images')]"));
+		            	WebElement usernameElement = item.findElement(By.xpath(".//span[contains(text(), '@')]"));
+		                WebElement nameElement = item.findElement(By.xpath(".//span[normalize-space()]"));
+		                WebElement timeElement = item.findElement(By.xpath(".//time"));
+		                WebElement replyElement = item.findElement(By.xpath(".//div[@data-testid='reply']"));
+		                WebElement reTweetElement = item.findElement(By.xpath(".//div[@data-testid='retweet']"));
+		                WebElement likeElement = item.findElement(By.xpath(".//div[@data-testid='like']"));
+		                WebElement tweetElement = item.findElement(By.xpath(".//div[@data-testid='tweetText']"));
+		                WebElement postLinkElement = item.findElement(By.xpath(".//div[2]/div/div[3]/a"));
 		             // Lấy thông tin từ các yếu tố
 		                String avatar = avatarElement.getAttribute("src");
 		                String name = nameElement.getText();
-		                String userName = article.findElement(By.xpath(".//span[contains(text(), '@')]")).getText();
+		                String userName = usernameElement.getText();
 		                String timeStamp = timeElement.getAttribute("datetime");
 		                String reply = replyElement.getText();
 		                String reTweet = reTweetElement.getText();
 		                String like = likeElement.getText();
 		                String tweet = tweetElement.getText();
 		                String posturl = postLinkElement.getAttribute("href");
-		                StringBuffer hashtags = new StringBuffer();
-		                try {
-		                	List<WebElement> hastagElements = article.findElements(By.xpath(".//*[contains(@href,'/hashtag')]"));
-			                
-			                for(WebElement hastagElement:hastagElements) {
-			                	hashtags.append(hastagElement.getText());
-			                }
-			                hashtagss.add(hashtags.toString());
-						} catch (Exception e) {
-							
-							hashtagss.add("");
-							System.out.println("Bài viết không có hastag");
-						}
-		               
+		             
+		             // Không phải tweet nào cũng có ảnh, nên rất nhiều ngoại lệ
 			            try {
-			            	   WebElement imageElement = article.findElement(By.xpath(".//img[@alt='Image']"));
+			            	   WebElement imageElement = item.findElement(By.xpath(".//img[@alt='Image']"));
 			            	   String image = imageElement.getAttribute("src");
 			            	   images.add(image);
 			             } catch (Exception e) {
 			            	 	images.add("");
 			            	   System.out.println("Bài viết không có ảnh");
 			             }
+			         // Lấy hashtag thành chuỗi hashtags
+		                Pattern patternHastag = Pattern.compile("#\\w+");
+		                Matcher matcherHastag = patternHastag.matcher(tweet);
+		                StringBuilder stringBuilder1 = new StringBuilder();
+		                while (matcherHastag.find()) {
+		                    String hashtag = matcherHastag.group();
+		                    stringBuilder1.append(hashtag);
+		                }
+		                String hashtags = stringBuilder1.toString().trim();
 			            
-			            try {
-			            	List<WebElement> tagElements = article.findElements(By.xpath(".//a[starts-with(text(), '@')]"));
-			            	StringBuffer tags = new StringBuffer();
-			                for(WebElement tagElement:tagElements) {
-			                	tags.append(tagElement.getText());
-			                }
-			                tagss.add(tags.toString());
-						} catch (Exception e) {
-							tagss.add("");
-							System.out.println("Bài viết không có tag");
-						}
-		                
-		
-		                // Thêm thông tin vào danh sách
-			            
+		             // Lấy Tag thành chuỗi Tags
+		                Pattern patternTag = Pattern.compile("#\\w+");
+		                Matcher matcherTag = patternTag.matcher(tweet);
+		                StringBuilder stringBuilder2 = new StringBuilder();
+		                while (matcherTag.find()) {
+		                    String tag = matcherHastag.group();
+		                    stringBuilder2.append(tag);
+		                }
+		                String tags = stringBuilder2.toString().trim();
+		                tagss.add(tags);
+			            hashtagss.add(hashtags);
 			            avatars.add(avatar);
 		                names.add(name);
 		                userNames.add(userName);
@@ -170,7 +166,7 @@ public class TwitterCrawler {
 	        		JavascriptExecutor js = (JavascriptExecutor) driver;
 	        		js.executeScript("window.scrollBy(0,document.body.scrollHeight );");
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//article[@data-testid='tweet']")));
-					articles = driver.findElements(By.xpath("//article[@data-testid='tweet']"));
+					items = driver.findElements(By.xpath("//article[@data-testid='tweet']"));
 				} catch (Exception e) {
 					System.out.println("Khong tim them tweets");
 					break;

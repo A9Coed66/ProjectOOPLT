@@ -134,11 +134,5 @@ public class TwitterDB {
 	public void setName(String name) {
 		this.name = name;
 	}
-
-    // Getter và Setter cho các thuộc tính
-    // ...
-
-    // Các phương thức khác nếu cần
-    // ...
 	
 }

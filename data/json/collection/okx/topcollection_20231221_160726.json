@@ -1,0 +1,5321 @@
+[ {
+  "Listed" : "9,64%\n22,9K/237,2K",
+  "FloorPrice" : "0,7",
+  "Volume" : "42,28K",
+  "Liquidity" : "39,97%\nGiao dịch: 94,6K",
+  "Collection" : "Open Solmap",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,46%\n3,8K/822,2K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "50,52",
+  "Liquidity" : "0,88%\nGiao dịch: 7,2K",
+  "Collection" : "bitmap",
+  "Base" : "BTC"
+}, {
+  "Listed" : "4,68%\n466/10K",
+  "FloorPrice" : "5,898",
+  "Volume" : "864,36",
+  "Liquidity" : "1,51%\nGiao dịch: 150",
+  "Collection" : "Azuki",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,56%\n494/8,9K",
+  "FloorPrice" : "7,99",
+  "Volume" : "752,78",
+  "Liquidity" : "0,82%\nGiao dịch: 72",
+  "Collection" : "Pudgy Penguins",
+  "Base" : "ETH"
+}, {
+  "Listed" : "9,83%\n983/10K",
+  "FloorPrice" : "43,95",
+  "Volume" : "748,61",
+  "Liquidity" : "0,12%\nGiao dịch: 12",
+  "Collection" : "CryptoPunks",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,46%\n868/19,5K",
+  "FloorPrice" : "5,299",
+  "Volume" : "654,86",
+  "Liquidity" : "0,64%\nGiao dịch: 123",
+  "Collection" : "Mutant Ape Yacht Club",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,75%\n116/6,7K",
+  "FloorPrice" : "3,063",
+  "Volume" : "652",
+  "Liquidity" : "3,07%\nGiao dịch: 203",
+  "Collection" : "MATR1X KUKU",
+  "Base" : "ETH"
+}, {
+  "Listed" : "11,09%\n446/4,1K",
+  "FloorPrice" : "6",
+  "Volume" : "15,33K",
+  "Liquidity" : "71,1%\nGiao dịch: 2,9K",
+  "Collection" : "Saga Bust Of The Year 2023",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,63%\n325/9K",
+  "FloorPrice" : "2,748",
+  "Volume" : "493,55",
+  "Liquidity" : "2,05%\nGiao dịch: 183",
+  "Collection" : "DeGods",
+  "Base" : "ETH"
+}, {
+  "Listed" : "6,49%\n649/10K",
+  "FloorPrice" : "8,7",
+  "Volume" : "9,49K",
+  "Liquidity" : "15,73%\nGiao dịch: 1,6K",
+  "Collection" : "Index ONE",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,67%\n534K/32,1M",
+  "FloorPrice" : "0,013",
+  "Volume" : "353,84",
+  "Liquidity" : "0,04%\nGiao dịch: 11,7K",
+  "Collection" : "Gods Unchained Cards",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,72%\n372/10K",
+  "FloorPrice" : "0,39",
+  "Volume" : "15,14",
+  "Liquidity" : "0,38%\nGiao dịch: 38",
+  "Collection" : "Bitcoin Frogs",
+  "Base" : "BTC"
+}, {
+  "Listed" : "3,35%\n335/10K",
+  "FloorPrice" : "26,394",
+  "Volume" : "272,48",
+  "Liquidity" : "0,1%\nGiao dịch: 10",
+  "Collection" : "Bored Ape Yacht Club",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,36%\n9/2,6K",
+  "FloorPrice" : "55,4",
+  "Volume" : "268,27",
+  "Liquidity" : "0,2%\nGiao dịch: 5",
+  "Collection" : "Wrapped Cryptopunks",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,6%\n96/6K",
+  "FloorPrice" : "1,95",
+  "Volume" : "264",
+  "Liquidity" : "1,7%\nGiao dịch: 101",
+  "Collection" : "OVERWORLD INCARNA",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,33%\n699/21K",
+  "FloorPrice" : "62",
+  "Volume" : "6,67K",
+  "Liquidity" : "0,52%\nGiao dịch: 108",
+  "Collection" : "Sols SPL20",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,8%\n380/10K",
+  "FloorPrice" : "1,5",
+  "Volume" : "259,53",
+  "Liquidity" : "1,63%\nGiao dịch: 163",
+  "Collection" : "Moonbirds",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,36%\n45/3,4K",
+  "FloorPrice" : "2,65",
+  "Volume" : "218,86",
+  "Liquidity" : "2,59%\nGiao dịch: 86",
+  "Collection" : "The Grapes",
+  "Base" : "ETH"
+}, {
+  "Listed" : "12,88%\n708/5,6K",
+  "FloorPrice" : "1,46",
+  "Volume" : "5,23K",
+  "Liquidity" : "66,27%\nGiao dịch: 3,7K",
+  "Collection" : "SNB",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,52%\n242/9,7K",
+  "FloorPrice" : "2,988",
+  "Volume" : "190,74",
+  "Liquidity" : "0,62%\nGiao dịch: 57",
+  "Collection" : "Creepz by OVERLORD",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,19%\n1,2K/21,5K",
+  "FloorPrice" : "0,995",
+  "Volume" : "183,51",
+  "Liquidity" : "0,85%\nGiao dịch: 180",
+  "Collection" : "Lil Pudgys",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,37%\n298/5,6K",
+  "FloorPrice" : "0,55",
+  "Volume" : "156,78",
+  "Liquidity" : "5,17%\nGiao dịch: 286",
+  "Collection" : "BlockGames Dice",
+  "Base" : "ETH"
+}, {
+  "Listed" : "8,45%\n469/5,6K",
+  "FloorPrice" : "9,4",
+  "Volume" : "3,69K",
+  "Liquidity" : "5,87%\nGiao dịch: 336",
+  "Collection" : "Flash Trade",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,55%\n353/10K",
+  "FloorPrice" : "192",
+  "Volume" : "3,53K",
+  "Liquidity" : "0,19%\nGiao dịch: 18",
+  "Collection" : "Mad Lads",
+  "Base" : "SOL"
+}, {
+  "Listed" : "13,99%\n1,4K/10K",
+  "FloorPrice" : "2,28",
+  "Volume" : "3,49K",
+  "Liquidity" : "10,98%\nGiao dịch: 1,2K",
+  "Collection" : "Solana Punks",
+  "Base" : "SOL"
+}, {
+  "Listed" : "11,6%\n1,2K/10K",
+  "FloorPrice" : "0,199",
+  "Volume" : "130,28",
+  "Liquidity" : "6,52%\nGiao dịch: 651",
+  "Collection" : "The Warlords of Champions Tactics",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,25%\n157/7K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "129,22",
+  "Liquidity" : "0,35%\nGiao dịch: 21",
+  "Collection" : "zkSnowGlobe",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "2,8%\n14/500",
+  "FloorPrice" : "14,5",
+  "Volume" : "120,35",
+  "Liquidity" : "2%\nGiao dịch: 10",
+  "Collection" : "Alpha Prestige - Fusionist",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,9%\n292/10,1K",
+  "FloorPrice" : "0,688",
+  "Volume" : "114,3",
+  "Liquidity" : "1,46%\nGiao dịch: 147",
+  "Collection" : "Yogapetz",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,86%\n221/11,9K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "109,12",
+  "Liquidity" : "0,19%\nGiao dịch: 21",
+  "Collection" : "zkSpaceship",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "3,07%\n559/18,3K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "107,44",
+  "Liquidity" : "0,27%\nGiao dịch: 41",
+  "Collection" : "zk GODS",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "2,84%\n1,5K/50,3K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "107,23",
+  "Liquidity" : "0,5%\nGiao dịch: 241",
+  "Collection" : "zkChan",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "4,22%\n1,7K/39,3K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "107,04",
+  "Liquidity" : "1,17%\nGiao dịch: 431",
+  "Collection" : "zkJurassicWorld",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "4,51%\n455/10,2K",
+  "FloorPrice" : "0,012",
+  "Volume" : "5,4",
+  "Liquidity" : "2,33%\nGiao dịch: 231",
+  "Collection" : "MNCHRMS",
+  "Base" : "BTC"
+}, {
+  "Listed" : "1,45%\n145/10K",
+  "FloorPrice" : "0,51",
+  "Volume" : "103,49",
+  "Liquidity" : "0,6%\nGiao dịch: 60",
+  "Collection" : "Ultiverse - Electric Sheep",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,68%\n318/5,6K",
+  "FloorPrice" : "0,21",
+  "Volume" : "97,59",
+  "Liquidity" : "8,06%\nGiao dịch: 448",
+  "Collection" : "Poglin: Nycra",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,29%\n49/2,2K",
+  "FloorPrice" : "17,35",
+  "Volume" : "97,53",
+  "Liquidity" : "0,24%\nGiao dịch: 5",
+  "Collection" : "Neo Tokyo Citizens",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,68%\n284/5K",
+  "FloorPrice" : "154,9",
+  "Volume" : "2,33K",
+  "Liquidity" : "0,29%\nGiao dịch: 14",
+  "Collection" : "SMB Gen2",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,42%\n221/5K",
+  "FloorPrice" : "1,68",
+  "Volume" : "89,72",
+  "Liquidity" : "1,12%\nGiao dịch: 56",
+  "Collection" : "Pixels - Farm Land",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,6%\n248/9,6K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "88,02",
+  "Liquidity" : "0,18%\nGiao dịch: 16",
+  "Collection" : "zkCastle",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "4,98%\n915/18,5K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "88,01",
+  "Liquidity" : "0,47%\nGiao dịch: 82",
+  "Collection" : "HEROES&VILLAINS",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "3,07%\n401/13,1K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "88,01",
+  "Liquidity" : "0,3%\nGiao dịch: 39",
+  "Collection" : "BTC Cats",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "5,26%\n263/5K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "88,01",
+  "Liquidity" : "0,8%\nGiao dịch: 37",
+  "Collection" : "zk Guardians",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "2,1%\n737/35,3K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "88,01",
+  "Liquidity" : "0,12%\nGiao dịch: 37",
+  "Collection" : "zk DC",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "3,23%\n290/9K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "88,01",
+  "Liquidity" : "0,3%\nGiao dịch: 27",
+  "Collection" : "zkMinecraft",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "1,56%\n452/29K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "88,01",
+  "Liquidity" : "0,06%\nGiao dịch: 17",
+  "Collection" : "zk Crystal Toys",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "5,44%\n794/14,7K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "88,01",
+  "Liquidity" : "0,96%\nGiao dịch: 138",
+  "Collection" : "zk Dagger",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "3,52%\n352/10K",
+  "FloorPrice" : "2,48",
+  "Volume" : "86,01",
+  "Liquidity" : "0,34%\nGiao dịch: 34",
+  "Collection" : "Milady Maker",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,48%\n55/2,3K",
+  "FloorPrice" : "0,865",
+  "Volume" : "85,22",
+  "Liquidity" : "4,01%\nGiao dịch: 89",
+  "Collection" : "Mittaria Genesis",
+  "Base" : "ETH"
+}, {
+  "Listed" : "7,08%\n221/3,2K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "80,02",
+  "Liquidity" : "0,36%\nGiao dịch: 11",
+  "Collection" : "zkMonsters",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "7,15%\n2/28",
+  "FloorPrice" : "230",
+  "Volume" : "622,92",
+  "Liquidity" : "10,72%\nGiao dịch: 3",
+  "Collection" : "DeezNode",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,84%\n115/3K",
+  "FloorPrice" : "0,29",
+  "Volume" : "24,05",
+  "Liquidity" : "0,14%\nGiao dịch: 4",
+  "Collection" : "OnChainShiba",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,58%\n356/7,8K",
+  "FloorPrice" : "1,649",
+  "Volume" : "23,85",
+  "Liquidity" : "0,2%\nGiao dịch: 15",
+  "Collection" : "Kanpai Pandas",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,93%\n925/100K",
+  "FloorPrice" : "0,5",
+  "Volume" : "23,05",
+  "Liquidity" : "0,04%\nGiao dịch: 40",
+  "Collection" : "Otherdeed for Otherside",
+  "Base" : "ETH"
+}, {
+  "Listed" : "6,94%\n159/2,3K",
+  "FloorPrice" : "0,539",
+  "Volume" : "590,46",
+  "Liquidity" : "16,66%\nGiao dịch: 382",
+  "Collection" : "BasedREDACTEDGang",
+  "Base" : "SOL"
+}, {
+  "Listed" : "6,99%\n1,1K/14,6K",
+  "FloorPrice" : "0,566",
+  "Volume" : "22,43",
+  "Liquidity" : "0,27%\nGiao dịch: 39",
+  "Collection" : "Azuki Elementals",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,6%\n1,1K/28,3K",
+  "FloorPrice" : "0,219",
+  "Volume" : "22,35",
+  "Liquidity" : "0,38%\nGiao dịch: 106",
+  "Collection" : "HV-MTL",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,24%\n5/2,1K",
+  "FloorPrice" : "0,95",
+  "Volume" : "1,11",
+  "Liquidity" : "0,1%\nGiao dịch: 2",
+  "Collection" : "Ordinal Maxi Biz （OMB）",
+  "Base" : "BTC"
+}, {
+  "Listed" : "3,99%\n399/10K",
+  "FloorPrice" : "1,82",
+  "Volume" : "21,9",
+  "Liquidity" : "0,11%\nGiao dịch: 11",
+  "Collection" : "Doodles Original Collection",
+  "Base" : "ETH"
+}, {
+  "Listed" : "6,98%\n367/5,3K",
+  "FloorPrice" : "9,949",
+  "Volume" : "559,29",
+  "Liquidity" : "1,01%\nGiao dịch: 53",
+  "Collection" : "Homeowners Association （Parcl）",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,97%\n231/7,8K",
+  "FloorPrice" : "22,6",
+  "Volume" : "553,72",
+  "Liquidity" : "0,34%\nGiao dịch: 26",
+  "Collection" : "Famous Fox Federation",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,09%\n75/1,9K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "20,01",
+  "Liquidity" : "0,28%\nGiao dịch: 5",
+  "Collection" : "zkAmazons",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "8,47%\n847/9,9K",
+  "FloorPrice" : "22,9",
+  "Volume" : "509,13",
+  "Liquidity" : "0,25%\nGiao dịch: 24",
+  "Collection" : "Okay Bears",
+  "Base" : "SOL"
+}, {
+  "Listed" : "11,04%\n98/888",
+  "FloorPrice" : "0,267",
+  "Volume" : "19,81",
+  "Liquidity" : "8,9%\nGiao dịch: 79",
+  "Collection" : "Vendetta Frontier Pass",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,25%\n525/10K",
+  "FloorPrice" : "0,459",
+  "Volume" : "19,32",
+  "Liquidity" : "0,41%\nGiao dịch: 41",
+  "Collection" : "Redacted Remilio Babies",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,4%\n7/500",
+  "FloorPrice" : "1,49",
+  "Volume" : "18,75",
+  "Liquidity" : "4,4%\nGiao dịch: 22",
+  "Collection" : "Redbrick Genesis Land",
+  "Base" : "ETH"
+}, {
+  "Listed" : "100%\n4/4",
+  "FloorPrice" : "0,34",
+  "Volume" : "18,66",
+  "Liquidity" : "1,04%\nGiao dịch: 31",
+  "Collection" : "Lumiterra Genesis Mystery Box",
+  "Base" : "ARB_ETH"
+}, {
+  "Listed" : "1,19%\n60/5,1K",
+  "FloorPrice" : "0,978",
+  "Volume" : "18,53",
+  "Liquidity" : "0,42%\nGiao dịch: 21",
+  "Collection" : "Ethlizards",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,73%\n1,5K/52,9K",
+  "FloorPrice" : "0,305",
+  "Volume" : "18,24",
+  "Liquidity" : "0,08%\nGiao dịch: 38",
+  "Collection" : "Otherdeed Expanded",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,65%\n363/10K",
+  "FloorPrice" : "0,914",
+  "Volume" : "18,22",
+  "Liquidity" : "0,2%\nGiao dịch: 18",
+  "Collection" : "Cool Cats",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3%\n6/197",
+  "FloorPrice" : "159",
+  "Volume" : "458,2",
+  "Liquidity" : "1,53%\nGiao dịch: 3",
+  "Collection" : "BLOOD.IO",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,89%\n488/9,9K",
+  "FloorPrice" : "2,77",
+  "Volume" : "455,3",
+  "Liquidity" : "1,57%\nGiao dịch: 154",
+  "Collection" : "Liberty Square: The Sinister Squirrel Syndicate",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,47%\n65/4,5K",
+  "FloorPrice" : "750",
+  "Volume" : "48,58K",
+  "Liquidity" : "1,13%\nGiao dịch: 50",
+  "Collection" : "Misfits by Pluto",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "13,3%\n1,9K/14K",
+  "FloorPrice" : "0,03",
+  "Volume" : "16,75",
+  "Liquidity" : "0,54%\nGiao dịch: 75",
+  "Collection" : "AOI Engine",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,83%\n82/10K",
+  "FloorPrice" : "1,68",
+  "Volume" : "16,72",
+  "Liquidity" : "0,11%\nGiao dịch: 10",
+  "Collection" : "The Potatoz",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,61%\n16/501",
+  "FloorPrice" : "34,73",
+  "Volume" : "421,25",
+  "Liquidity" : "3%\nGiao dịch: 15",
+  "Collection" : "Alpha Gardeners",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,85%\n164/8,9K",
+  "FloorPrice" : "1,095",
+  "Volume" : "15,95",
+  "Liquidity" : "0,17%\nGiao dịch: 15",
+  "Collection" : "IO: Imaginary Ones",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,35%\n104/4,5K",
+  "FloorPrice" : "16,014",
+  "Volume" : "407,36",
+  "Liquidity" : "0,57%\nGiao dịch: 25",
+  "Collection" : "Smyths",
+  "Base" : "SOL"
+}, {
+  "Listed" : "7%\n700/10K",
+  "FloorPrice" : "0,027",
+  "Volume" : "0,79",
+  "Liquidity" : "0,25%\nGiao dịch: 25",
+  "Collection" : "Bitcoin Apes",
+  "Base" : "BTC"
+}, {
+  "Listed" : "4,15%\n139/3,4K",
+  "FloorPrice" : "0,021",
+  "Volume" : "0,78",
+  "Liquidity" : "0,78%\nGiao dịch: 26",
+  "Collection" : "Naked Bitcoin Frogs Misprints",
+  "Base" : "BTC"
+}, {
+  "Listed" : "1,83%\n366/20K",
+  "FloorPrice" : "1,195",
+  "Volume" : "15,22",
+  "Liquidity" : "0,07%\nGiao dịch: 13",
+  "Collection" : "Meebits",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,86%\n266/9,4K",
+  "FloorPrice" : "1,239",
+  "Volume" : "14,74",
+  "Liquidity" : "0,11%\nGiao dịch: 10",
+  "Collection" : "Terraforms by Mathcastles",
+  "Base" : "ETH"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,75",
+  "Liquidity" : "33,34%\nGiao dịch: 1",
+  "Collection" : "Three Wise Monkeys",
+  "Base" : "BTC"
+}, {
+  "Listed" : "7,87%\n1,6K/20K",
+  "FloorPrice" : "0,088",
+  "Volume" : "375,33",
+  "Liquidity" : "33,04%\nGiao dịch: 6,6K",
+  "Collection" : "mkbhd SPL20",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,74%\n9/520",
+  "FloorPrice" : "5,5",
+  "Volume" : "14,55",
+  "Liquidity" : "0,58%\nGiao dịch: 3",
+  "Collection" : "LaserCat NFT",
+  "Base" : "ETH"
+}, {
+  "Listed" : "16,75%\n372/2,3K",
+  "FloorPrice" : "2,548",
+  "Volume" : "373,46",
+  "Liquidity" : "5,37%\nGiao dịch: 119",
+  "Collection" : "Undead Manlets",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,1%\n31/1K",
+  "FloorPrice" : "2,65",
+  "Volume" : "14,52",
+  "Liquidity" : "0,6%\nGiao dịch: 6",
+  "Collection" : "PROOF Collective",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,84%\n766/20K",
+  "FloorPrice" : "0,39",
+  "Volume" : "14,48",
+  "Liquidity" : "0,19%\nGiao dịch: 37",
+  "Collection" : "BEANZ Official",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,65%\n113/2K",
+  "FloorPrice" : "0,555",
+  "Volume" : "14,36",
+  "Liquidity" : "1,2%\nGiao dịch: 24",
+  "Collection" : "San FranTokyo Genesis Pass",
+  "Base" : "ETH"
+}, {
+  "Listed" : "15,16%\n3,2K/20,9K",
+  "FloorPrice" : "0,415",
+  "Volume" : "368,42",
+  "Liquidity" : "3,27%\nGiao dịch: 682",
+  "Collection" : "test SPL20",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,55%\n51/2K",
+  "FloorPrice" : "1,28",
+  "Volume" : "14,14",
+  "Liquidity" : "0,5%\nGiao dịch: 10",
+  "Collection" : "Oh Ottie!",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,13%\n278/8,9K",
+  "FloorPrice" : "0,897",
+  "Volume" : "14,1",
+  "Liquidity" : "0,14%\nGiao dịch: 12",
+  "Collection" : "My Pet Hooligan",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,04%\n402/10K",
+  "FloorPrice" : "0,014",
+  "Volume" : "0,72",
+  "Liquidity" : "0,57%\nGiao dịch: 56",
+  "Collection" : "Bitdogs",
+  "Base" : "BTC"
+}, {
+  "Listed" : "3,1%\n63/2,1K",
+  "FloorPrice" : "2,85",
+  "Volume" : "13,9",
+  "Liquidity" : "0,25%\nGiao dịch: 5",
+  "Collection" : "Matr1x 2061",
+  "Base" : "ETH"
+}, {
+  "Listed" : "100%\n5/5",
+  "FloorPrice" : "<0.01",
+  "Volume" : "13,67",
+  "Liquidity" : "0,9%\nGiao dịch: 561",
+  "Collection" : "Linea Voyage",
+  "Base" : "LINEA_ETH"
+}, {
+  "Listed" : "26,14%\n52/199",
+  "FloorPrice" : "0,1",
+  "Volume" : "13,59",
+  "Liquidity" : "42,22%\nGiao dịch: 84",
+  "Collection" : "Painting with Fire: A History in GANs by Bard Ionson",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,22%\n186/4,5K",
+  "FloorPrice" : "0,48",
+  "Volume" : "13,03",
+  "Liquidity" : "0,64%\nGiao dịch: 28",
+  "Collection" : "Seedworld Vanguards",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,63%\n363/10,1K",
+  "FloorPrice" : "6,695",
+  "Volume" : "314,39",
+  "Liquidity" : "0,42%\nGiao dịch: 42",
+  "Collection" : "Ovols",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,22%\n105/3,3K",
+  "FloorPrice" : "2,39",
+  "Volume" : "12,17",
+  "Liquidity" : "0,16%\nGiao dịch: 5",
+  "Collection" : "Neo Tokyo Outer Citizens",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,8%\n32K/1,8M",
+  "FloorPrice" : "<0.01",
+  "Volume" : "11,88",
+  "Liquidity" : "0,03%\nGiao dịch: 452",
+  "Collection" : "Cross The Ages",
+  "Base" : "ETH"
+}, {
+  "Listed" : "100%\n3/3",
+  "FloorPrice" : "0,085",
+  "Volume" : "7,35",
+  "Liquidity" : "5,73%\nGiao dịch: 58",
+  "Collection" : "INUS Game Character",
+  "Base" : "ETH"
+}, {
+  "Listed" : "11,34%\n89/785",
+  "FloorPrice" : "0,15",
+  "Volume" : "7,29",
+  "Liquidity" : "1,15%\nGiao dịch: 9",
+  "Collection" : "Grails V",
+  "Base" : "ETH"
+}, {
+  "Listed" : "6,13%\n204/3,4K",
+  "FloorPrice" : "0,175",
+  "Volume" : "7,27",
+  "Liquidity" : "1,21%\nGiao dịch: 40",
+  "Collection" : "Descendants of Smurfcat",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,15%\n107/5K",
+  "FloorPrice" : "26,59",
+  "Volume" : "181,23",
+  "Liquidity" : "0,15%\nGiao dịch: 7",
+  "Collection" : "Solcasino.io",
+  "Base" : "SOL"
+}, {
+  "Listed" : "8%\n40/500",
+  "FloorPrice" : "1,12",
+  "Volume" : "7,03",
+  "Liquidity" : "1,4%\nGiao dịch: 7",
+  "Collection" : "Metacene Apostle NFT",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,95%\n6/101",
+  "FloorPrice" : "11,653",
+  "Volume" : "6,9",
+  "Liquidity" : "1%\nGiao dịch: 1",
+  "Collection" : "6529 Gradient",
+  "Base" : "ETH"
+}, {
+  "Listed" : "7,76%\n1,6K/20K",
+  "FloorPrice" : "0,157",
+  "Volume" : "6,9",
+  "Liquidity" : "0,19%\nGiao dịch: 38",
+  "Collection" : "Nakamigos",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,34%\n35/1,5K",
+  "FloorPrice" : "25",
+  "Volume" : "19,53K",
+  "Liquidity" : "0,14%\nGiao dịch: 2",
+  "Collection" : "OnChainShibaV2",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "13,07%\n87/666",
+  "FloorPrice" : "4,2",
+  "Volume" : "175,47",
+  "Liquidity" : "5,86%\nGiao dịch: 39",
+  "Collection" : "Hydra Sniper",
+  "Base" : "SOL"
+}, {
+  "Listed" : "66,93%\n87/130",
+  "FloorPrice" : "0,018",
+  "Volume" : "6,66",
+  "Liquidity" : "0,05%\nGiao dịch: 83",
+  "Collection" : "THE WHITE RABBIT",
+  "Base" : "ETH"
+}, {
+  "Listed" : "7,94%\n79/996",
+  "FloorPrice" : "46,218",
+  "Volume" : "168,1",
+  "Liquidity" : "0,41%\nGiao dịch: 4",
+  "Collection" : "Kanpai Pandas",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,38%\n340/7,8K",
+  "FloorPrice" : "0,834",
+  "Volume" : "6,49",
+  "Liquidity" : "0,11%\nGiao dịch: 8",
+  "Collection" : "0N1 Force",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,18%\n265/8,2K",
+  "FloorPrice" : "8,2",
+  "Volume" : "166,4",
+  "Liquidity" : "0,26%\nGiao dịch: 21",
+  "Collection" : "Cyber Frogs",
+  "Base" : "SOL"
+}, {
+  "Listed" : "10,8%\n108/1K",
+  "FloorPrice" : "6,93",
+  "Volume" : "6,4",
+  "Liquidity" : "0,1%\nGiao dịch: 1",
+  "Collection" : "Winds of Yawanawa by Yawanawa and Refik Anadol",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,83%\n283/10K",
+  "FloorPrice" : "1,274",
+  "Volume" : "6,38",
+  "Liquidity" : "0,05%\nGiao dịch: 5",
+  "Collection" : "World of Women",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,37%\n432/118,4K",
+  "FloorPrice" : "0,275",
+  "Volume" : "6,36",
+  "Liquidity" : "0,02%\nGiao dịch: 20",
+  "Collection" : "The Sandbox-New",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,05%\n177/400K",
+  "FloorPrice" : "0,017",
+  "Volume" : "53,21",
+  "Liquidity" : "0,88%\nGiao dịch: 3,6K",
+  "Collection" : "Skygate",
+  "Base" : "OP_BNB"
+}, {
+  "Listed" : "0,31%\n24/7,8K",
+  "FloorPrice" : "42,9",
+  "Volume" : "1,69K",
+  "Liquidity" : "0,52%\nGiao dịch: 40",
+  "Collection" : "Aptos Monkeys",
+  "Base" : "APT"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,32",
+  "Liquidity" : "2%\nGiao dịch: 2",
+  "Collection" : "Ordinal Tulips",
+  "Base" : "BTC"
+}, {
+  "Listed" : "1,8%\n24/1,4K",
+  "FloorPrice" : "0,08",
+  "Volume" : "0,32",
+  "Liquidity" : "0,38%\nGiao dịch: 5",
+  "Collection" : "Bitcoin Wizards",
+  "Base" : "BTC"
+}, {
+  "Listed" : "0,26%\n13/5,1K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,32",
+  "Liquidity" : "1,32%\nGiao dịch: 66",
+  "Collection" : "Bitcoin Babbies",
+  "Base" : "BTC"
+}, {
+  "Listed" : "6,37%\n637/10,1K",
+  "FloorPrice" : "14,75",
+  "Volume" : "158,26",
+  "Liquidity" : "0,11%\nGiao dịch: 11",
+  "Collection" : "Aurory",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,95%\n98/3,4K",
+  "FloorPrice" : "1,045",
+  "Volume" : "6,1",
+  "Liquidity" : "0,19%\nGiao dịch: 6",
+  "Collection" : "KILLABEARS",
+  "Base" : "ETH"
+}, {
+  "Listed" : "7,32%\n510/7K",
+  "FloorPrice" : "1,95",
+  "Volume" : "155,29",
+  "Liquidity" : "1%\nGiao dịch: 69",
+  "Collection" : "Bankmen",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,42%\n486/11,1K",
+  "FloorPrice" : "1,01",
+  "Volume" : "6,04",
+  "Liquidity" : "0,06%\nGiao dịch: 6",
+  "Collection" : "Parallel Avatars",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,38%\n339/10,1K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,31",
+  "Liquidity" : "1,17%\nGiao dịch: 117",
+  "Collection" : "NPC Ordinals",
+  "Base" : "BTC"
+}, {
+  "Listed" : "6,45%\n501/7,8K",
+  "FloorPrice" : "0,23",
+  "Volume" : "5,99",
+  "Liquidity" : "0,38%\nGiao dịch: 27",
+  "Collection" : "Kitaro World",
+  "Base" : "ETH"
+}, {
+  "Listed" : "31,24%\n347/1,2K",
+  "FloorPrice" : "0,054",
+  "Volume" : "152,91",
+  "Liquidity" : "83,53%\nGiao dịch: 928",
+  "Collection" : "Un Headed",
+  "Base" : "SOL"
+}, {
+  "Listed" : "6,3%\n63/1K",
+  "FloorPrice" : "409,155",
+  "Volume" : "16,85K",
+  "Liquidity" : "4,3%\nGiao dịch: 43",
+  "Collection" : "SmartCat Loot",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "1,43%\n9/630",
+  "FloorPrice" : "0,038",
+  "Volume" : "5,9",
+  "Liquidity" : "0,16%\nGiao dịch: 1",
+  "Collection" : "Tonal Muse OnChain",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,95%\n1,9K/46,9K",
+  "FloorPrice" : "101,717",
+  "Volume" : "16,53K",
+  "Liquidity" : "0,1%\nGiao dịch: 44",
+  "Collection" : "Trump Digital Trading Cards Series 2",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "2,36%\n241/10,3K",
+  "FloorPrice" : "1,536",
+  "Volume" : "5,81",
+  "Liquidity" : "0,04%\nGiao dịch: 4",
+  "Collection" : "VeeFriends",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,57%\n49/1,1K",
+  "FloorPrice" : "1,09",
+  "Volume" : "5,81",
+  "Liquidity" : "0,38%\nGiao dịch: 4",
+  "Collection" : "Fusionist - Quartan Primes",
+  "Base" : "ETH"
+}, {
+  "Listed" : "7,4%\n555/7,6K",
+  "FloorPrice" : "2,15",
+  "Volume" : "147,41",
+  "Liquidity" : "0,79%\nGiao dịch: 59",
+  "Collection" : "Gaimin Gladiators",
+  "Base" : "SOL"
+}, {
+  "Listed" : "36,78%\n10,3K/18,7K",
+  "FloorPrice" : "0,109",
+  "Volume" : "146,65",
+  "Liquidity" : "0,38%\nGiao dịch: 70",
+  "Collection" : "Bonfida: Solana Name Service",
+  "Base" : "SOL"
+}, {
+  "Listed" : "9,35%\n187/2K",
+  "FloorPrice" : "20,16",
+  "Volume" : "145,51",
+  "Liquidity" : "0,35%\nGiao dịch: 7",
+  "Collection" : "Claynosaurz: The Call of Saga",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,44%\n222/5K",
+  "FloorPrice" : "0,348",
+  "Volume" : "5,62",
+  "Liquidity" : "0,32%\nGiao dịch: 16",
+  "Collection" : "Invisible Friends",
+  "Base" : "ETH"
+}, {
+  "Listed" : "7,47%\n224/3K",
+  "FloorPrice" : "5,04",
+  "Volume" : "143,93",
+  "Liquidity" : "1,05%\nGiao dịch: 31",
+  "Collection" : "Breadheads",
+  "Base" : "SOL"
+}, {
+  "Listed" : "5,29%\n125/2,4K",
+  "FloorPrice" : "0,6",
+  "Volume" : "5,57",
+  "Liquidity" : "0,39%\nGiao dịch: 9",
+  "Collection" : "PORSCHΞ 911",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,68%\n168/10K",
+  "FloorPrice" : "5,398",
+  "Volume" : "141,43",
+  "Liquidity" : "0,25%\nGiao dịch: 24",
+  "Collection" : "AssetDash Vanta",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,71%\n8/170",
+  "FloorPrice" : "1,423",
+  "Volume" : "5,51",
+  "Liquidity" : "2,36%\nGiao dịch: 4",
+  "Collection" : "KFCdao pass",
+  "Base" : "ETH"
+}, {
+  "Listed" : "12,62%\n613/4,9K",
+  "FloorPrice" : "0,943",
+  "Volume" : "140,9",
+  "Liquidity" : "2,62%\nGiao dịch: 127",
+  "Collection" : "Kromes",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,05%\n215/7,1K",
+  "FloorPrice" : "0,055",
+  "Volume" : "5,41",
+  "Liquidity" : "1,15%\nGiao dịch: 81",
+  "Collection" : "Binary: DEX",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,3%\n180/13,9K",
+  "FloorPrice" : "0,11",
+  "Volume" : "5,25",
+  "Liquidity" : "0,29%\nGiao dịch: 40",
+  "Collection" : "Imaginary Rides",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,73%\n4/555",
+  "FloorPrice" : "3,428",
+  "Volume" : "5,17",
+  "Liquidity" : "0,37%\nGiao dịch: 2",
+  "Collection" : "On the Edge of Oblivion by Nullish",
+  "Base" : "ETH"
+}, {
+  "Listed" : "7,02%\n545/7,8K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,26",
+  "Liquidity" : "0,46%\nGiao dịch: 34",
+  "Collection" : "Shids",
+  "Base" : "BTC"
+}, {
+  "Listed" : "2,45%\n244/10K",
+  "FloorPrice" : "0,31",
+  "Volume" : "5,02",
+  "Liquidity" : "0,17%\nGiao dịch: 16",
+  "Collection" : "Pirate Nation - Founder's Pirates",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,32%\n11/207",
+  "FloorPrice" : "6,45",
+  "Volume" : "5,02",
+  "Liquidity" : "0,49%\nGiao dịch: 1",
+  "Collection" : "Sam Spratt - LUCI: Chapter 5 - The Monument Game",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,53%\n108/2K",
+  "FloorPrice" : "0,063",
+  "Volume" : "5,01",
+  "Liquidity" : "0,93%\nGiao dịch: 18",
+  "Collection" : "MEME VIP PASS",
+  "Base" : "ETH"
+}, {
+  "Listed" : "11,37%\n5/44",
+  "FloorPrice" : "5,99",
+  "Volume" : "4,97",
+  "Liquidity" : "2,28%\nGiao dịch: 1",
+  "Collection" : "MAX PAIN AND FRENS BY XCOPY",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,9%\n21/1,2K",
+  "FloorPrice" : "0,3",
+  "Volume" : "4,9",
+  "Liquidity" : "1,45%\nGiao dịch: 16",
+  "Collection" : "Beeple X VeeFriends",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,43%\n140/9,8K",
+  "FloorPrice" : "3,45",
+  "Volume" : "125,42",
+  "Liquidity" : "0,24%\nGiao dịch: 24",
+  "Collection" : "The Heist",
+  "Base" : "SOL"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,25",
+  "Liquidity" : "0,91%\nGiao dịch: 1",
+  "Collection" : "Bitcoin Toadz",
+  "Base" : "BTC"
+}, {
+  "Listed" : "4,5%\n117/2,6K",
+  "FloorPrice" : "3,1",
+  "Volume" : "124,65",
+  "Liquidity" : "1,27%\nGiao dịch: 33",
+  "Collection" : "SolRarity - Rarikeys",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,8%\n74/9,4K",
+  "FloorPrice" : "3,5",
+  "Volume" : "123,75",
+  "Liquidity" : "0,21%\nGiao dịch: 19",
+  "Collection" : "The Heist",
+  "Base" : "SOL"
+}, {
+  "Listed" : "7,2%\n72/1K",
+  "FloorPrice" : "0,468",
+  "Volume" : "4,82",
+  "Liquidity" : "0,8%\nGiao dịch: 8",
+  "Collection" : "Chameleon Travel Club",
+  "Base" : "ETH"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,24",
+  "Liquidity" : "0,5%\nGiao dịch: 1",
+  "Collection" : "Piggies World",
+  "Base" : "BTC"
+}, {
+  "Listed" : "15,5%\n155/1K",
+  "FloorPrice" : "0,28",
+  "Volume" : "119,36",
+  "Liquidity" : "44,8%\nGiao dịch: 449",
+  "Collection" : "Popo",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,32%\n46/1,1K",
+  "FloorPrice" : "0,33",
+  "Volume" : "4,65",
+  "Liquidity" : "2,26%\nGiao dịch: 24",
+  "Collection" : "Celestial by Nullish",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,84%\n183/10K",
+  "FloorPrice" : "0,19",
+  "Volume" : "4,64",
+  "Liquidity" : "0,23%\nGiao dịch: 22",
+  "Collection" : "Steady Stack Legends",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,92%\n352/9K",
+  "FloorPrice" : "0,135",
+  "Volume" : "3,81",
+  "Liquidity" : "0,33%\nGiao dịch: 29",
+  "Collection" : "Valhalla",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,6%\n167/10,5K",
+  "FloorPrice" : "0,16",
+  "Volume" : "3,8",
+  "Liquidity" : "0,2%\nGiao dịch: 20",
+  "Collection" : "FLUF World: Burrows",
+  "Base" : "ETH"
+}, {
+  "Listed" : "9,4%\n94/1K",
+  "FloorPrice" : "3,6",
+  "Volume" : "97,18",
+  "Liquidity" : "2,9%\nGiao dịch: 29",
+  "Collection" : "Tenzor Sharkz Season 3",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,7%\n70/10K",
+  "FloorPrice" : "0,125",
+  "Volume" : "3,78",
+  "Liquidity" : "0,2%\nGiao dịch: 20",
+  "Collection" : "Zinu's Zombie Mob Secret Society",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,43%\n343/10K",
+  "FloorPrice" : "0,245",
+  "Volume" : "3,77",
+  "Liquidity" : "0,11%\nGiao dịch: 11",
+  "Collection" : "a KID called BEAST",
+  "Base" : "ETH"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "3,75",
+  "Liquidity" : "1,89%\nGiao dịch: 1",
+  "Collection" : "Malachite V2",
+  "Base" : "ETH"
+}, {
+  "Listed" : "11,79%\n126/1,1K",
+  "FloorPrice" : "14,542",
+  "Volume" : "95,8",
+  "Liquidity" : "0,66%\nGiao dịch: 7",
+  "Collection" : "Zero Monke Biz",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,6%\n808/50,9K",
+  "FloorPrice" : "680",
+  "Volume" : "10,49K",
+  "Liquidity" : "0,03%\nGiao dịch: 12",
+  "Collection" : "The Sandbox",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "4,56%\n320/7,1K",
+  "FloorPrice" : "0,86",
+  "Volume" : "3,64",
+  "Liquidity" : "0,06%\nGiao dịch: 4",
+  "Collection" : "CrypToadz by GREMPLIN",
+  "Base" : "ETH"
+}, {
+  "Listed" : "22,83%\n228/999",
+  "FloorPrice" : "0,27",
+  "Volume" : "92,42",
+  "Liquidity" : "20,23%\nGiao dịch: 202",
+  "Collection" : "wif hats",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,08%\n7/10K",
+  "FloorPrice" : "0,015",
+  "Volume" : "0,19",
+  "Liquidity" : "0,18%\nGiao dịch: 17",
+  "Collection" : "Honey Badgers",
+  "Base" : "BTC"
+}, {
+  "Listed" : "12,7%\n282/2,3K",
+  "FloorPrice" : "0,075",
+  "Volume" : "3,57",
+  "Liquidity" : "2,26%\nGiao dịch: 50",
+  "Collection" : "Wanderers - RAM Beta Bundle",
+  "Base" : "ETH"
+}, {
+  "Listed" : "100%\n1/1",
+  "FloorPrice" : "0,15",
+  "Volume" : "3,56",
+  "Liquidity" : "0,52%\nGiao dịch: 17",
+  "Collection" : "The Uncharted: Chapter One, The Southern Ring",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,76%\n293/10,7K",
+  "FloorPrice" : "0,272",
+  "Volume" : "3,55",
+  "Liquidity" : "0,1%\nGiao dịch: 10",
+  "Collection" : "Checks - VV Originals",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,25%\n44/2K",
+  "FloorPrice" : "4,8",
+  "Volume" : "29,78",
+  "Liquidity" : "0,21%\nGiao dịch: 4",
+  "Collection" : "Bi-Mech",
+  "Base" : "BNB"
+}, {
+  "Listed" : "2,04%\n51/2,5K",
+  "FloorPrice" : "0,09",
+  "Volume" : "3,55",
+  "Liquidity" : "1,72%\nGiao dịch: 43",
+  "Collection" : "Heterosis",
+  "Base" : "ETH"
+}, {
+  "Listed" : "15,67%\n47/300",
+  "FloorPrice" : "2,3",
+  "Volume" : "90,21",
+  "Liquidity" : "11,67%\nGiao dịch: 35",
+  "Collection" : "Collector Crypt x The Heist Pokemon Drop",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,96%\n55/1,2K",
+  "FloorPrice" : "1,109",
+  "Volume" : "3,51",
+  "Liquidity" : "0,28%\nGiao dịch: 3",
+  "Collection" : "The Llamas",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,22%\n219/5,2K",
+  "FloorPrice" : "0,626",
+  "Volume" : "3,49",
+  "Liquidity" : "0,1%\nGiao dịch: 5",
+  "Collection" : "CryptoDickbutts",
+  "Base" : "ETH"
+}, {
+  "Listed" : "8,86%\n64/723",
+  "FloorPrice" : "0,084",
+  "Volume" : "3,48",
+  "Liquidity" : "6,09%\nGiao dịch: 44",
+  "Collection" : "Work X Genesis NFT",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,67%\n33/1,3K",
+  "FloorPrice" : "0,299",
+  "Volume" : "3,48",
+  "Liquidity" : "1,05%\nGiao dịch: 13",
+  "Collection" : "Mushboomers",
+  "Base" : "ETH"
+}, {
+  "Listed" : "13,7%\n347/2,6K",
+  "FloorPrice" : "1,2",
+  "Volume" : "88,42",
+  "Liquidity" : "2,02%\nGiao dịch: 51",
+  "Collection" : "fooks",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,18%\n109/5K",
+  "FloorPrice" : "0,689",
+  "Volume" : "3,44",
+  "Liquidity" : "0,1%\nGiao dịch: 5",
+  "Collection" : "Quirkies Originals",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,98%\n286/9,6K",
+  "FloorPrice" : "2,549",
+  "Volume" : "87,24",
+  "Liquidity" : "0,35%\nGiao dịch: 33",
+  "Collection" : "Kups by Raposa",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,3%\n146/4,5K",
+  "FloorPrice" : "72,9",
+  "Volume" : "9,62K",
+  "Liquidity" : "2,64%\nGiao dịch: 117",
+  "Collection" : "Danketsu",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "3,19%\n93/3K",
+  "FloorPrice" : "1,377",
+  "Volume" : "3,37",
+  "Liquidity" : "0,11%\nGiao dịch: 3",
+  "Collection" : "Damien Hirst - The Currency",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,15%\n315/10K",
+  "FloorPrice" : "0,868",
+  "Volume" : "86,26",
+  "Liquidity" : "0,78%\nGiao dịch: 78",
+  "Collection" : "Reavers",
+  "Base" : "SOL"
+}, {
+  "Listed" : "5,41%\n368/6,9K",
+  "FloorPrice" : "0,116",
+  "Volume" : "3,35",
+  "Liquidity" : "0,46%\nGiao dịch: 31",
+  "Collection" : "Gh0stly Gh0sts",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,78%\n800/45K",
+  "FloorPrice" : "426,203",
+  "Volume" : "9,45K",
+  "Liquidity" : "0,05%\nGiao dịch: 21",
+  "Collection" : "Trump Digital Trading Cards",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "0,98%\n24/2,5K",
+  "FloorPrice" : "0,29",
+  "Volume" : "3,31",
+  "Liquidity" : "0,53%\nGiao dịch: 13",
+  "Collection" : "Metaverse HQ",
+  "Base" : "ETH"
+}, {
+  "Listed" : "100%\n11/11",
+  "FloorPrice" : "0,041",
+  "Volume" : "3,31",
+  "Liquidity" : "0,02%\nGiao dịch: 17",
+  "Collection" : "MetaHero: United Planets",
+  "Base" : "ETH"
+}, {
+  "Listed" : "8,75%\n175/2K",
+  "FloorPrice" : "0,7",
+  "Volume" : "83,83",
+  "Liquidity" : "2,75%\nGiao dịch: 55",
+  "Collection" : "GIZMOS : Land",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,44%\n133/9,3K",
+  "FloorPrice" : "0,19",
+  "Volume" : "3,26",
+  "Liquidity" : "0,19%\nGiao dịch: 17",
+  "Collection" : "ASM Brains",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,13%\n113/3,7K",
+  "FloorPrice" : "0,499",
+  "Volume" : "3,26",
+  "Liquidity" : "0,2%\nGiao dịch: 7",
+  "Collection" : "MAX PAIN AND FRENS BY XCOPY",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,98%\n318/8,1K",
+  "FloorPrice" : "0,328",
+  "Volume" : "3,25",
+  "Liquidity" : "0,13%\nGiao dịch: 10",
+  "Collection" : "MetaHero: Generative Identities",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,31%\n33/999",
+  "FloorPrice" : "3,225",
+  "Volume" : "3,21",
+  "Liquidity" : "0,11%\nGiao dịch: 1",
+  "Collection" : "QQL Mint Pass",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,69%\n617/12,1K",
+  "FloorPrice" : "2,172",
+  "Volume" : "81,8",
+  "Liquidity" : "0,33%\nGiao dịch: 39",
+  "Collection" : "Taiyo Pilots",
+  "Base" : "SOL"
+}, {
+  "Listed" : "12,17%\n260/2,2K",
+  "FloorPrice" : "14,58",
+  "Volume" : "81,74",
+  "Liquidity" : "0,29%\nGiao dịch: 6",
+  "Collection" : "Zero Monke Biz",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2%\n2/100",
+  "FloorPrice" : "100",
+  "Volume" : "81,36",
+  "Liquidity" : "2%\nGiao dịch: 2",
+  "Collection" : "Cloak DAO Token",
+  "Base" : "SOL"
+}, {
+  "Listed" : "10,07%\n2,2K/20,7K",
+  "FloorPrice" : "0,2",
+  "Volume" : "80,54",
+  "Liquidity" : "1,86%\nGiao dịch: 384",
+  "Collection" : "$sols SBF-20",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,3%\n3/1K",
+  "FloorPrice" : "34",
+  "Volume" : "839,24",
+  "Liquidity" : "2,9%\nGiao dịch: 29",
+  "Collection" : "Pontem Dark Ages",
+  "Base" : "APT"
+}, {
+  "Listed" : "16,07%\n579/3,7K",
+  "FloorPrice" : "0,87",
+  "Volume" : "79,13",
+  "Liquidity" : "2,28%\nGiao dịch: 82",
+  "Collection" : "Sub 10K",
+  "Base" : "SOL"
+}, {
+  "Listed" : "5,38%\n536/10K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,16",
+  "Liquidity" : "0,28%\nGiao dịch: 27",
+  "Collection" : "Block Legends",
+  "Base" : "BTC"
+}, {
+  "Listed" : "1,73%\n206/12K",
+  "FloorPrice" : "0,177",
+  "Volume" : "3,05",
+  "Liquidity" : "0,17%\nGiao dịch: 20",
+  "Collection" : "HYTOPIA Avatars: Genesis",
+  "Base" : "ETH"
+}, {
+  "Listed" : "14,04%\n267/2K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,16",
+  "Liquidity" : "0,74%\nGiao dịch: 14",
+  "Collection" : "OrdiRats",
+  "Base" : "BTC"
+}, {
+  "Listed" : "11,09%\n607/5,5K",
+  "FloorPrice" : "0,03",
+  "Volume" : "3,03",
+  "Liquidity" : "1,81%\nGiao dịch: 99",
+  "Collection" : "Anonthology",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,36%\n234/7K",
+  "FloorPrice" : "0,05",
+  "Volume" : "3,01",
+  "Liquidity" : "0,94%\nGiao dịch: 65",
+  "Collection" : "LO-FI PEPE",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2%\n30/1,5K",
+  "FloorPrice" : "0,29",
+  "Volume" : "3,01",
+  "Liquidity" : "0,74%\nGiao dịch: 11",
+  "Collection" : "BULL",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,9%\n29/744",
+  "FloorPrice" : "0,055",
+  "Volume" : "0,16",
+  "Liquidity" : "0,41%\nGiao dịch: 3",
+  "Collection" : "Recursive Doodinals",
+  "Base" : "BTC"
+}, {
+  "Listed" : "2,43%\n17/700",
+  "FloorPrice" : "3,2",
+  "Volume" : "2,95",
+  "Liquidity" : "0,15%\nGiao dịch: 1",
+  "Collection" : "Memewhales by tradeAI",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,44%\n47/2K",
+  "FloorPrice" : "0,61",
+  "Volume" : "2,92",
+  "Liquidity" : "0,26%\nGiao dịch: 5",
+  "Collection" : "DigiDaigaku Heroes",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,61%\n366/10,2K",
+  "FloorPrice" : "0,314",
+  "Volume" : "2,89",
+  "Liquidity" : "0,1%\nGiao dịch: 10",
+  "Collection" : "Murakami.Flowers Official",
+  "Base" : "ETH"
+}, {
+  "Listed" : "9,67%\n923/9,6K",
+  "FloorPrice" : "0,02",
+  "Volume" : "2,89",
+  "Liquidity" : "1,45%\nGiao dịch: 138",
+  "Collection" : "Paragon Riftwalkers",
+  "Base" : "ETH"
+}, {
+  "Listed" : "22,53%\n91/404",
+  "FloorPrice" : "0,069",
+  "Volume" : "2,87",
+  "Liquidity" : "8,92%\nGiao dịch: 36",
+  "Collection" : "Lumi Paradox",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,57%\n13/506",
+  "FloorPrice" : "0,9",
+  "Volume" : "73,39",
+  "Liquidity" : "1,39%\nGiao dịch: 7",
+  "Collection" : "Xin Dragons",
+  "Base" : "SOL"
+}, {
+  "Listed" : "5,02%\n214/1,8K",
+  "FloorPrice" : "1,27",
+  "Volume" : "73,15",
+  "Liquidity" : "3,06%\nGiao dịch: 53",
+  "Collection" : "fooks: Metal Box",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,58%\n16/350",
+  "FloorPrice" : "2,9",
+  "Volume" : "2,85",
+  "Liquidity" : "0,29%\nGiao dịch: 1",
+  "Collection" : "Library Onchain",
+  "Base" : "ETH"
+}, {
+  "Listed" : "7,04%\n9/128",
+  "FloorPrice" : "1,8",
+  "Volume" : "2,85",
+  "Liquidity" : "1,57%\nGiao dịch: 2",
+  "Collection" : "Yamabushi's Horizons by Richard Nadler",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,31%\n23/999",
+  "FloorPrice" : "2,796",
+  "Volume" : "2,83",
+  "Liquidity" : "0,11%\nGiao dịch: 1",
+  "Collection" : "SERAPH Priority Pass Official",
+  "Base" : "ETH"
+}, {
+  "Listed" : "17,78%\n889/5K",
+  "FloorPrice" : "0,047",
+  "Volume" : "71,48",
+  "Liquidity" : "24,18%\nGiao dịch: 1,3K",
+  "Collection" : "SPL20",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,16%\n237/5,8K",
+  "FloorPrice" : "0,07",
+  "Volume" : "2,78",
+  "Liquidity" : "0,69%\nGiao dịch: 39",
+  "Collection" : "Mintify Genesis",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,65%\n33/2K",
+  "FloorPrice" : "0,95",
+  "Volume" : "2,76",
+  "Liquidity" : "0,15%\nGiao dịch: 3",
+  "Collection" : "Consortium Key",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2%\n1/50",
+  "FloorPrice" : "24,99",
+  "Volume" : "2,75",
+  "Liquidity" : "2%\nGiao dịch: 1",
+  "Collection" : "RKL Club Mint Pass",
+  "Base" : "ETH"
+}, {
+  "Listed" : "13,14%\n67/510",
+  "FloorPrice" : "37",
+  "Volume" : "70,57",
+  "Liquidity" : "0,4%\nGiao dịch: 2",
+  "Collection" : "Hyperglyph",
+  "Base" : "SOL"
+}, {
+  "Listed" : "8,65%\n389/4,5K",
+  "FloorPrice" : "1",
+  "Volume" : "70,44",
+  "Liquidity" : "1,34%\nGiao dịch: 59",
+  "Collection" : "Moonly",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,87%\n387/10K",
+  "FloorPrice" : "0,049",
+  "Volume" : "2,75",
+  "Liquidity" : "0,58%\nGiao dịch: 58",
+  "Collection" : "TrekkiNFT",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,27%\n14/1,2K",
+  "FloorPrice" : "0,73",
+  "Volume" : "2,74",
+  "Liquidity" : "0,46%\nGiao dịch: 5",
+  "Collection" : "Nullish Ordinal Claim Pass （DST）",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,9%\n19/1K",
+  "FloorPrice" : "3,3",
+  "Volume" : "2,73",
+  "Liquidity" : "0,1%\nGiao dịch: 1",
+  "Collection" : "Travel Tiger Club",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,78%\n92/3,4K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,14",
+  "Liquidity" : "0,7%\nGiao dịch: 23",
+  "Collection" : "Ordz Heroes",
+  "Base" : "BTC"
+}, {
+  "Listed" : "2,57%\n114/4,5K",
+  "FloorPrice" : "1,333K",
+  "Volume" : "7,73K",
+  "Liquidity" : "0,14%\nGiao dịch: 6",
+  "Collection" : "Genesis WildPass",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "10,3%\n224/2,2K",
+  "FloorPrice" : "0,18",
+  "Volume" : "60,13",
+  "Liquidity" : "16,46%\nGiao dịch: 354",
+  "Collection" : "Blood Bats",
+  "Base" : "SOL"
+}, {
+  "Listed" : "12,01%\n1,1K/9,1K",
+  "FloorPrice" : "0,511",
+  "Volume" : "60,05",
+  "Liquidity" : "1,27%\nGiao dịch: 115",
+  "Collection" : "Lucky Louie",
+  "Base" : "SOL"
+}, {
+  "Listed" : "5,92%\n142/2,4K",
+  "FloorPrice" : "0,259",
+  "Volume" : "2,32",
+  "Liquidity" : "0,42%\nGiao dịch: 10",
+  "Collection" : "Michelin 3xplorer Club",
+  "Base" : "ETH"
+}, {
+  "Listed" : "20,23%\n54/265",
+  "FloorPrice" : "1,8",
+  "Volume" : "59,41",
+  "Liquidity" : "18,5%\nGiao dịch: 49",
+  "Collection" : "SolMaps",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,95%\n71/2,5K",
+  "FloorPrice" : "3,709",
+  "Volume" : "59,16",
+  "Liquidity" : "0,17%\nGiao dịch: 4",
+  "Collection" : "Photo Finish Retired Horse Collection",
+  "Base" : "SOL"
+}, {
+  "Listed" : "94,45%\n17/18",
+  "FloorPrice" : "0,011",
+  "Volume" : "2,28",
+  "Liquidity" : "0,04%\nGiao dịch: 3",
+  "Collection" : "Pixlverse Items",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,46%\n334/9,7K",
+  "FloorPrice" : "0,22",
+  "Volume" : "2,27",
+  "Liquidity" : "0,16%\nGiao dịch: 15",
+  "Collection" : "PartyBear",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,38%\n151/6,4K",
+  "FloorPrice" : "5,4",
+  "Volume" : "57,85",
+  "Liquidity" : "0,08%\nGiao dịch: 5",
+  "Collection" : "Honeyland Genesis",
+  "Base" : "SOL"
+}, {
+  "Listed" : "6,37%\n65/1,1K",
+  "FloorPrice" : "0,792",
+  "Volume" : "57,78",
+  "Liquidity" : "8,53%\nGiao dịch: 87",
+  "Collection" : "Blacksol",
+  "Base" : "SOL"
+}, {
+  "Listed" : "14,06%\n26/184",
+  "FloorPrice" : "4,5",
+  "Volume" : "57,64",
+  "Liquidity" : "7,61%\nGiao dịch: 14",
+  "Collection" : "PixelPilotz Node",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,66%\n10/1,6K",
+  "FloorPrice" : "880,82",
+  "Volume" : "6,36K",
+  "Liquidity" : "0,47%\nGiao dịch: 7",
+  "Collection" : "MyShellGenesisPass",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "5,72%\n130/2,2K",
+  "FloorPrice" : "5,303",
+  "Volume" : "57,25",
+  "Liquidity" : "0,52%\nGiao dịch: 11",
+  "Collection" : "Lifinity Flares",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,55%\n13,5K/529,6K",
+  "FloorPrice" : "0",
+  "Volume" : "2,23",
+  "Liquidity" : "0,24%\nGiao dịch: 1,3K",
+  "Collection" : "Habbo Furni",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,27%\n188/8,4K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,12",
+  "Liquidity" : "0,17%\nGiao dịch: 14",
+  "Collection" : "BitcoinWhales",
+  "Base" : "BTC"
+}, {
+  "Listed" : "4,29%\n25/584",
+  "FloorPrice" : "0,05",
+  "Volume" : "2,23",
+  "Liquidity" : "1,2%\nGiao dịch: 7",
+  "Collection" : "Feral File ＃001 - Social Codes",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,88%\n86/2,3K",
+  "FloorPrice" : "0,59",
+  "Volume" : "2,22",
+  "Liquidity" : "0,1%\nGiao dịch: 2",
+  "Collection" : "SuperCreators Origins",
+  "Base" : "ETH"
+}, {
+  "Listed" : "27%\n27/100",
+  "FloorPrice" : "6",
+  "Volume" : "56,84",
+  "Liquidity" : "8%\nGiao dịch: 8",
+  "Collection" : "Jupsocks",
+  "Base" : "SOL"
+}, {
+  "Listed" : "5,7%\n129/2,3K",
+  "FloorPrice" : "2,38",
+  "Volume" : "2,21",
+  "Liquidity" : "0,05%\nGiao dịch: 1",
+  "Collection" : "Bit Bears by Berachain",
+  "Base" : "ETH"
+}, {
+  "Listed" : "8,19%\n225/2,8K",
+  "FloorPrice" : "2,37",
+  "Volume" : "56,44",
+  "Liquidity" : "0,99%\nGiao dịch: 27",
+  "Collection" : "Nyan Heroes",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,84%\n85/3K",
+  "FloorPrice" : "1,78",
+  "Volume" : "56,24",
+  "Liquidity" : "1,08%\nGiao dịch: 32",
+  "Collection" : "Papu Party Rock",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,62%\n140/3,1K",
+  "FloorPrice" : "0,2",
+  "Volume" : "2,18",
+  "Liquidity" : "0,37%\nGiao dịch: 11",
+  "Collection" : "Flightless Space Agency",
+  "Base" : "ETH"
+}, {
+  "Listed" : "14,96%\n16/105",
+  "FloorPrice" : "2",
+  "Volume" : "55,65",
+  "Liquidity" : "6,67%\nGiao dịch: 7",
+  "Collection" : "Cerberus Software",
+  "Base" : "SOL"
+}, {
+  "Listed" : "100%\n1/1",
+  "FloorPrice" : "0,72",
+  "Volume" : "2,16",
+  "Liquidity" : "0,6%\nGiao dịch: 3",
+  "Collection" : "DAMAGE CONTROL",
+  "Base" : "ETH"
+}, {
+  "Listed" : "68,37%\n169,9K/248,6K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "2,16",
+  "Liquidity" : "0,08%\nGiao dịch: 176",
+  "Collection" : "NFT Creation - zkSyncEra",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "3,44%\n191/5,6K",
+  "FloorPrice" : "0,085",
+  "Volume" : "2,15",
+  "Liquidity" : "0,37%\nGiao dịch: 20",
+  "Collection" : "Sofa Maker",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,35%\n7/2,1K",
+  "FloorPrice" : "0,023",
+  "Volume" : "0,11",
+  "Liquidity" : "0,25%\nGiao dịch: 5",
+  "Collection" : "Fomojis 2.0",
+  "Base" : "BTC"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,11",
+  "Liquidity" : "1,89%\nGiao dịch: 1",
+  "Collection" : "SatoshiSneks",
+  "Base" : "BTC"
+}, {
+  "Listed" : "1,42%\n142/10K",
+  "FloorPrice" : "3,465",
+  "Volume" : "53,96",
+  "Liquidity" : "0,16%\nGiao dịch: 15",
+  "Collection" : "The Heist: Orangutans",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,73%\n116/4,3K",
+  "FloorPrice" : "0,2",
+  "Volume" : "2,08",
+  "Liquidity" : "0,26%\nGiao dịch: 11",
+  "Collection" : "InfiniGods - InfiniPass",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,58%\n41/2,6K",
+  "FloorPrice" : "2",
+  "Volume" : "53,25",
+  "Liquidity" : "2,35%\nGiao dịch: 61",
+  "Collection" : "Snipy",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,61%\n34/2,2K",
+  "FloorPrice" : "55,432",
+  "Volume" : "53,07",
+  "Liquidity" : "0,05%\nGiao dịch: 1",
+  "Collection" : "Taiyo Robotics",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,04%\n4/13K",
+  "FloorPrice" : "0,35",
+  "Volume" : "17,3",
+  "Liquidity" : "<0,01%\nGiao dịch: 1",
+  "Collection" : "veThena",
+  "Base" : "BNB"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,11",
+  "Liquidity" : "0,28%\nGiao dịch: 3",
+  "Collection" : "Distortion by Nullish",
+  "Base" : "BTC"
+}, {
+  "Listed" : "5,86%\n180/3,1K",
+  "FloorPrice" : "1,02",
+  "Volume" : "2,05",
+  "Liquidity" : "0,07%\nGiao dịch: 2",
+  "Collection" : "DeepBlack",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,38%\n3,8K/272,2K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,11",
+  "Liquidity" : "<0,01%\nGiao dịch: 23",
+  "Collection" : ".btc",
+  "Base" : "BTC"
+}, {
+  "Listed" : "3,57%\n63/1,8K",
+  "FloorPrice" : "0,525",
+  "Volume" : "2,04",
+  "Liquidity" : "0,29%\nGiao dịch: 5",
+  "Collection" : "10KTF Kagami",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,03%\n302/7,5K",
+  "FloorPrice" : "0,249",
+  "Volume" : "2,02",
+  "Liquidity" : "0,11%\nGiao dịch: 8",
+  "Collection" : "ChronoForge",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,48%\n156/4,5K",
+  "FloorPrice" : "0,125",
+  "Volume" : "2,02",
+  "Liquidity" : "0,41%\nGiao dịch: 18",
+  "Collection" : "InfiniGods - The Elder Gods",
+  "Base" : "ETH"
+}, {
+  "Listed" : "7,39%\n164/2,3K",
+  "FloorPrice" : "0,128",
+  "Volume" : "2,01",
+  "Liquidity" : "0,64%\nGiao dịch: 14",
+  "Collection" : "pARticle pack",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,05%\n68/3,4K",
+  "FloorPrice" : "0,298",
+  "Volume" : "2,01",
+  "Liquidity" : "0,22%\nGiao dịch: 7",
+  "Collection" : "Proof of Narnian NFT",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,5%\n111/7,5K",
+  "FloorPrice" : "353,745",
+  "Volume" : "5,69K",
+  "Liquidity" : "0,23%\nGiao dịch: 17",
+  "Collection" : "Apeiron Planets",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "2",
+  "Liquidity" : "100%\nGiao dịch: 1",
+  "Collection" : "Monopoly moon",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,41%\n78/5,6K",
+  "FloorPrice" : "0,06",
+  "Volume" : "2",
+  "Liquidity" : "0,62%\nGiao dịch: 34",
+  "Collection" : "Hero Galaxy: Heroes",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,27%\n136/6,1K",
+  "FloorPrice" : "4,1",
+  "Volume" : "51,1",
+  "Liquidity" : "0,22%\nGiao dịch: 13",
+  "Collection" : "Alpha Pharaohs",
+  "Base" : "SOL"
+}, {
+  "Listed" : "100%\n3/3",
+  "FloorPrice" : "0,144",
+  "Volume" : "1,99",
+  "Liquidity" : "0,22%\nGiao dịch: 9",
+  "Collection" : "OCM Dessert",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,82%\n7K/382,9K",
+  "FloorPrice" : "4,263",
+  "Volume" : "5,54K",
+  "Liquidity" : "0,02%\nGiao dịch: 70",
+  "Collection" : "ZED RUN",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "8,88%\n122/1,4K",
+  "FloorPrice" : "0,05",
+  "Volume" : "1,95",
+  "Liquidity" : "1,02%\nGiao dịch: 14",
+  "Collection" : "NFToshis",
+  "Base" : "BASE_ETH"
+}, {
+  "Listed" : "1,01%\n101/10K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,1",
+  "Liquidity" : "0,38%\nGiao dịch: 38",
+  "Collection" : "Ordinowls",
+  "Base" : "BTC"
+}, {
+  "Listed" : "4,93%\n7/142",
+  "FloorPrice" : "2",
+  "Volume" : "1,94",
+  "Liquidity" : "0,71%\nGiao dịch: 1",
+  "Collection" : "Moni Wizards",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,02%\n251/5K",
+  "FloorPrice" : "0,021",
+  "Volume" : "1,94",
+  "Liquidity" : "1,92%\nGiao dịch: 96",
+  "Collection" : "FUTR One By Mintify",
+  "Base" : "ETH"
+}, {
+  "Listed" : "9,43%\n943/10K",
+  "FloorPrice" : "2,08",
+  "Volume" : "39,33",
+  "Liquidity" : "0,15%\nGiao dịch: 15",
+  "Collection" : "LILY",
+  "Base" : "SOL"
+}, {
+  "Listed" : "6,09%\n57/936",
+  "FloorPrice" : "0,1",
+  "Volume" : "1,53",
+  "Liquidity" : "0,43%\nGiao dịch: 4",
+  "Collection" : "CryptoPepes 2018",
+  "Base" : "ETH"
+}, {
+  "Listed" : "10,53%\n2/19",
+  "FloorPrice" : "25",
+  "Volume" : "38,68",
+  "Liquidity" : "31,58%\nGiao dịch: 6",
+  "Collection" : "Cerberus Software",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1%\n12/1,2K",
+  "FloorPrice" : "0,7",
+  "Volume" : "1,5",
+  "Liquidity" : "0,09%\nGiao dịch: 1",
+  "Collection" : "LegionVentures",
+  "Base" : "ETH"
+}, {
+  "Listed" : "11,6%\n29/250",
+  "FloorPrice" : "1,5",
+  "Volume" : "1,5",
+  "Liquidity" : "0,4%\nGiao dịch: 1",
+  "Collection" : "Distance by William Mapan",
+  "Base" : "ETH"
+}, {
+  "Listed" : "18,05%\n401/2,3K",
+  "FloorPrice" : "0,083",
+  "Volume" : "38,42",
+  "Liquidity" : "8,6%\nGiao dịch: 191",
+  "Collection" : "GUYS",
+  "Base" : "SOL"
+}, {
+  "Listed" : "6,68%\n126/1,9K",
+  "FloorPrice" : "0,167",
+  "Volume" : "1,5",
+  "Liquidity" : "0,53%\nGiao dịch: 10",
+  "Collection" : "Blips",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,97%\n219/7,4K",
+  "FloorPrice" : "0,251",
+  "Volume" : "1,49",
+  "Liquidity" : "0,03%\nGiao dịch: 2",
+  "Collection" : "Wilder Wheels",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,44%\n28/515",
+  "FloorPrice" : "1,375",
+  "Volume" : "1,48",
+  "Liquidity" : "0,2%\nGiao dịch: 1",
+  "Collection" : "Alpha Gate - Space Nation",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,54%\n27/5K",
+  "FloorPrice" : "7,97",
+  "Volume" : "394,89",
+  "Liquidity" : "1,02%\nGiao dịch: 51",
+  "Collection" : "MAVRIK",
+  "Base" : "APT"
+}, {
+  "Listed" : "6,36%\n159/2,5K",
+  "FloorPrice" : "0,254",
+  "Volume" : "1,47",
+  "Liquidity" : "0,24%\nGiao dịch: 6",
+  "Collection" : "ChronoForge Support Airships",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,86%\n254/8,9K",
+  "FloorPrice" : "0,065",
+  "Volume" : "1,47",
+  "Liquidity" : "0,33%\nGiao dịch: 29",
+  "Collection" : "Chubbiverse Frens",
+  "Base" : "ETH"
+}, {
+  "Listed" : "34,24%\n3,5K/10K",
+  "FloorPrice" : "1,38",
+  "Volume" : "37,58",
+  "Liquidity" : "0,21%\nGiao dịch: 20",
+  "Collection" : "Meerkat Millionaires Country Club",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,27%\n227/10K",
+  "FloorPrice" : "0,11",
+  "Volume" : "1,46",
+  "Liquidity" : "0,12%\nGiao dịch: 12",
+  "Collection" : "Quirklings",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,99%\n571/14K",
+  "FloorPrice" : "0,4",
+  "Volume" : "37,27",
+  "Liquidity" : "0,53%\nGiao dịch: 73",
+  "Collection" : "Liberty Square: The Hallowed",
+  "Base" : "SOL"
+}, {
+  "Listed" : "7,85%\n124/1,6K",
+  "FloorPrice" : "7,528",
+  "Volume" : "37,11",
+  "Liquidity" : "0,32%\nGiao dịch: 5",
+  "Collection" : "Sujiko Warrior Presale Tickets",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,12%\n312/10K",
+  "FloorPrice" : "0,17",
+  "Volume" : "1,43",
+  "Liquidity" : "0,08%\nGiao dịch: 8",
+  "Collection" : "Deadfellaz",
+  "Base" : "ETH"
+}, {
+  "Listed" : "16,19%\n1,7K/10,1K",
+  "FloorPrice" : "0,051",
+  "Volume" : "1,42",
+  "Liquidity" : "0,29%\nGiao dịch: 29",
+  "Collection" : "Kira Genesis Collection",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,11%\n75/70,8K",
+  "FloorPrice" : "0,354",
+  "Volume" : "1,42",
+  "Liquidity" : "<0,01%\nGiao dịch: 3",
+  "Collection" : "Decentraland-Land",
+  "Base" : "ETH"
+}, {
+  "Listed" : "6,4%\n128/2K",
+  "FloorPrice" : "0,45",
+  "Volume" : "1,41",
+  "Liquidity" : "0,25%\nGiao dịch: 5",
+  "Collection" : "Candy Collective: Genesis Collection",
+  "Base" : "ETH"
+}, {
+  "Listed" : "17%\n1,6K/8,9K",
+  "FloorPrice" : "0,027",
+  "Volume" : "1,41",
+  "Liquidity" : "0,48%\nGiao dịch: 42",
+  "Collection" : "ANOMALY A.I. by Star Im",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,75%\n10/364",
+  "FloorPrice" : "34,2",
+  "Volume" : "35,96",
+  "Liquidity" : "0,28%\nGiao dịch: 1",
+  "Collection" : "the worthless pixels",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,06%\n37/3,5K",
+  "FloorPrice" : "28,414",
+  "Volume" : "3,96K",
+  "Liquidity" : "8,05%\nGiao dịch: 281",
+  "Collection" : "Kungfu Casper",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "3,92%\n265/6,8K",
+  "FloorPrice" : "2,309",
+  "Volume" : "35,7",
+  "Liquidity" : "0,26%\nGiao dịch: 17",
+  "Collection" : "Cardboard Citizens",
+  "Base" : "SOL"
+}, {
+  "Listed" : "5,03%\n726/14,5K",
+  "FloorPrice" : "0,054",
+  "Volume" : "1,39",
+  "Liquidity" : "0,02%\nGiao dịch: 2",
+  "Collection" : "BrainDrops",
+  "Base" : "ETH"
+}, {
+  "Listed" : "8,9%\n79/888",
+  "FloorPrice" : "0,25",
+  "Volume" : "35,45",
+  "Liquidity" : "24,22%\nGiao dịch: 215",
+  "Collection" : "Slimes Spl20",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,35%\n16/368",
+  "FloorPrice" : "0,69",
+  "Volume" : "1,37",
+  "Liquidity" : "0,55%\nGiao dịch: 2",
+  "Collection" : "Momentum Official",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,85%\n137/16,3K",
+  "FloorPrice" : "0,03",
+  "Volume" : "1,37",
+  "Liquidity" : "0,02%\nGiao dịch: 3",
+  "Collection" : "Guild of Guardians Other",
+  "Base" : "ETH"
+}, {
+  "Listed" : "6,75%\n27/400",
+  "FloorPrice" : "3,5",
+  "Volume" : "35,06",
+  "Liquidity" : "2,5%\nGiao dịch: 10",
+  "Collection" : "GOGGs: Beast Core",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,88%\n133/3,5K",
+  "FloorPrice" : "0,209",
+  "Volume" : "1,37",
+  "Liquidity" : "0,21%\nGiao dịch: 7",
+  "Collection" : "Delabs Adventure Pass Official",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,26%\n186/14,9K",
+  "FloorPrice" : "0,121",
+  "Volume" : "1,37",
+  "Liquidity" : "0,08%\nGiao dịch: 11",
+  "Collection" : "CyberKongz VX",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,85%\n85/10K",
+  "FloorPrice" : "0,165",
+  "Volume" : "1,36",
+  "Liquidity" : "0,08%\nGiao dịch: 8",
+  "Collection" : "Ordinal Kubz",
+  "Base" : "ETH"
+}, {
+  "Listed" : "17,82%\n1,8K/10K",
+  "FloorPrice" : "0,231",
+  "Volume" : "34,79",
+  "Liquidity" : "1,35%\nGiao dịch: 134",
+  "Collection" : "FU SPL20",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,98%\n497/10K",
+  "FloorPrice" : "1,018",
+  "Volume" : "34,74",
+  "Liquidity" : "0,3%\nGiao dịch: 29",
+  "Collection" : "oogy",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,37%\n147/4,4K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,07",
+  "Liquidity" : "0,53%\nGiao dịch: 23",
+  "Collection" : "Pepe ＆ Pepita",
+  "Base" : "BTC"
+}, {
+  "Listed" : "3,88%\n773/20K",
+  "FloorPrice" : "3,14",
+  "Volume" : "34,52",
+  "Liquidity" : "0,06%\nGiao dịch: 11",
+  "Collection" : "Degenerate Trash Pandas",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,07%\n16/1,5K",
+  "FloorPrice" : "1,8",
+  "Volume" : "34,49",
+  "Liquidity" : "0,94%\nGiao dịch: 14",
+  "Collection" : "Lost City RevMarks",
+  "Base" : "SOL"
+}, {
+  "Listed" : "14,38%\n479/3,4K",
+  "FloorPrice" : "0,132",
+  "Volume" : "34,43",
+  "Liquidity" : "6,01%\nGiao dịch: 202",
+  "Collection" : "clowds",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,85%\n3,6K/91,2K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "1,35",
+  "Liquidity" : "0,39%\nGiao dịch: 350",
+  "Collection" : "Habbo Clothes",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,3%\n43/1K",
+  "FloorPrice" : "1,55",
+  "Volume" : "1,32",
+  "Liquidity" : "0,1%\nGiao dịch: 1",
+  "Collection" : "Hedz by Matt Furie",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,96%\n73/3,8K",
+  "FloorPrice" : "0,24",
+  "Volume" : "1,32",
+  "Liquidity" : "0,19%\nGiao dịch: 7",
+  "Collection" : "Moonbears NFT",
+  "Base" : "ETH"
+}, {
+  "Listed" : "12,73%\n351/2,8K",
+  "FloorPrice" : "3,25",
+  "Volume" : "33,72",
+  "Liquidity" : "0,4%\nGiao dịch: 11",
+  "Collection" : "Dappie Gang",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,59%\n235/4,6K",
+  "FloorPrice" : "1,2",
+  "Volume" : "33,64",
+  "Liquidity" : "0,51%\nGiao dịch: 24",
+  "Collection" : "Degens",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,61%\n2,6K/423,3K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,07",
+  "Liquidity" : "<0,01%\nGiao dịch: 34",
+  "Collection" : "Sats Names",
+  "Base" : "BTC"
+}, {
+  "Listed" : "1,27%\n89/7,1K",
+  "FloorPrice" : "0,115",
+  "Volume" : "1,31",
+  "Liquidity" : "0,15%\nGiao dịch: 10",
+  "Collection" : "Mythics Eggs",
+  "Base" : "ETH"
+}, {
+  "Listed" : "12,93%\n415/3,1K",
+  "FloorPrice" : "2,115",
+  "Volume" : "33,48",
+  "Liquidity" : "0,24%\nGiao dịch: 7",
+  "Collection" : "Kreechures",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,53%\n32/2,1K",
+  "FloorPrice" : "1,479",
+  "Volume" : "1,31",
+  "Liquidity" : "0,05%\nGiao dịch: 1",
+  "Collection" : "Nexus Gaming Lifetime Pass",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,91%\n7/241",
+  "FloorPrice" : "1,599",
+  "Volume" : "1,3",
+  "Liquidity" : "0,42%\nGiao dịch: 1",
+  "Collection" : "Asprey Studio Club",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,39%\n13/3,4K",
+  "FloorPrice" : "28",
+  "Volume" : "3,67K",
+  "Liquidity" : "3,96%\nGiao dịch: 134",
+  "Collection" : "Treevolve",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "8,56%\n475/5,6K",
+  "FloorPrice" : "0,19",
+  "Volume" : "32,7",
+  "Liquidity" : "2,63%\nGiao dịch: 146",
+  "Collection" : "Nuddies",
+  "Base" : "SOL"
+}, {
+  "Listed" : "7,66%\n136/1,8K",
+  "FloorPrice" : "67,69",
+  "Volume" : "3,07K",
+  "Liquidity" : "2,76%\nGiao dịch: 49",
+  "Collection" : "Captain Laserhawk: A Blood Dragon Remix Avatar Collection",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "3,91%\n391/10K",
+  "FloorPrice" : "0,071",
+  "Volume" : "1,08",
+  "Liquidity" : "0,12%\nGiao dịch: 12",
+  "Collection" : "Gray Boys",
+  "Base" : "ETH"
+}, {
+  "Listed" : "17,81%\n3,8K/21K",
+  "FloorPrice" : "0,37",
+  "Volume" : "287,01",
+  "Liquidity" : "3,04%\nGiao dịch: 638",
+  "Collection" : "apts",
+  "Base" : "APT"
+}, {
+  "Listed" : "2,74%\n69/2,6K",
+  "FloorPrice" : "3,69",
+  "Volume" : "27,41",
+  "Liquidity" : "0,28%\nGiao dịch: 7",
+  "Collection" : "Bullyz Crew",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,74%\n365/21,1K",
+  "FloorPrice" : "0,049",
+  "Volume" : "1,07",
+  "Liquidity" : "0,04%\nGiao dịch: 7",
+  "Collection" : "SHIB YARD",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,62%\n775/47,9K",
+  "FloorPrice" : "0,03",
+  "Volume" : "1,07",
+  "Liquidity" : "0,07%\nGiao dịch: 29",
+  "Collection" : "The Seekers",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,62%\n11/304",
+  "FloorPrice" : "0,037",
+  "Volume" : "1,06",
+  "Liquidity" : "0,66%\nGiao dịch: 2",
+  "Collection" : "Memories of Landscape 303 by Dao Bomb",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,96%\n65/3,4K",
+  "FloorPrice" : "0,28",
+  "Volume" : "1,06",
+  "Liquidity" : "0,13%\nGiao dịch: 4",
+  "Collection" : "PG GEN 2",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,74%\n125/7,2K",
+  "FloorPrice" : "1,39",
+  "Volume" : "27,01",
+  "Liquidity" : "0,25%\nGiao dịch: 18",
+  "Collection" : "Yaku | Capsule X",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,52%\n18/3,5K",
+  "FloorPrice" : "0,25",
+  "Volume" : "1,05",
+  "Liquidity" : "0,15%\nGiao dịch: 5",
+  "Collection" : "CEDEN Keystone NFT Nodes",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,77%\n477/10K",
+  "FloorPrice" : "0,012",
+  "Volume" : "1,05",
+  "Liquidity" : "0,3%\nGiao dịch: 30",
+  "Collection" : "ENS Maxis",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,11%\n211/10K",
+  "FloorPrice" : "1,468",
+  "Volume" : "26,64",
+  "Liquidity" : "0,23%\nGiao dịch: 22",
+  "Collection" : "Subber K3Y",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,35%\n292/8,8K",
+  "FloorPrice" : "0,09",
+  "Volume" : "1,04",
+  "Liquidity" : "0,13%\nGiao dịch: 11",
+  "Collection" : "Wonky Stonks",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,23%\n116/3,6K",
+  "FloorPrice" : "0,74",
+  "Volume" : "26,56",
+  "Liquidity" : "0,81%\nGiao dịch: 29",
+  "Collection" : "Alchemy Gods",
+  "Base" : "SOL"
+}, {
+  "Listed" : "5,62%\n209/3,8K",
+  "FloorPrice" : "0,03",
+  "Volume" : "1,04",
+  "Liquidity" : "0,7%\nGiao dịch: 26",
+  "Collection" : "JUUNI Zodia",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,67%\n16/600",
+  "FloorPrice" : "0,038",
+  "Volume" : "1,03",
+  "Liquidity" : "0,67%\nGiao dịch: 4",
+  "Collection" : "U_KEY by ULTILAND",
+  "Base" : "ETH"
+}, {
+  "Listed" : "10,74%\n286/2,6K",
+  "FloorPrice" : "0,92",
+  "Volume" : "26,17",
+  "Liquidity" : "1,09%\nGiao dịch: 27",
+  "Collection" : "Degen Dolphin Business",
+  "Base" : "SOL"
+}, {
+  "Listed" : "6,53%\n209/3,3K",
+  "FloorPrice" : "2,49",
+  "Volume" : "26,13",
+  "Liquidity" : "0,32%\nGiao dịch: 10",
+  "Collection" : "Avotar",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,82%\n9/1,2K",
+  "FloorPrice" : "0,012",
+  "Volume" : "0,06",
+  "Liquidity" : "0,55%\nGiao dịch: 6",
+  "Collection" : "Ordinal Bears",
+  "Base" : "BTC"
+}, {
+  "Listed" : "5,55%\n33,3K/599,9K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "1,02",
+  "Liquidity" : "0,04%\nGiao dịch: 222",
+  "Collection" : "Illuvitars",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,26%\n75/3,4K",
+  "FloorPrice" : "0,248",
+  "Volume" : "1,02",
+  "Liquidity" : "0,13%\nGiao dịch: 4",
+  "Collection" : "Zeeverse: Genesis Masks",
+  "Base" : "ETH"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,06",
+  "Liquidity" : "0,67%\nGiao dịch: 2",
+  "Collection" : "ACSM by Nullish",
+  "Base" : "BTC"
+}, {
+  "Listed" : "0,05%\n5/10K",
+  "FloorPrice" : "0,54",
+  "Volume" : "1,01",
+  "Liquidity" : "0,02%\nGiao dịch: 2",
+  "Collection" : "Rollbots",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,77%\n1,5K/186,6K",
+  "FloorPrice" : "3,965",
+  "Volume" : "2,87K",
+  "Liquidity" : "0,13%\nGiao dịch: 233",
+  "Collection" : "Crypto Unicorns Market",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "10%\n15/150",
+  "FloorPrice" : "0,51",
+  "Volume" : "1",
+  "Liquidity" : "1,34%\nGiao dịch: 2",
+  "Collection" : "Baboon Tools Pass",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,64%\n32/691",
+  "FloorPrice" : "0,95",
+  "Volume" : "1",
+  "Liquidity" : "0,15%\nGiao dịch: 1",
+  "Collection" : "Forgotten Souls",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,11%\n19/901",
+  "FloorPrice" : "1,15",
+  "Volume" : "1",
+  "Liquidity" : "0,12%\nGiao dịch: 1",
+  "Collection" : "Station3 Patron",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,94%\n260/6,7K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "8,34",
+  "Liquidity" : "3,41%\nGiao dịch: 159",
+  "Collection" : "AIT iPASS NFT",
+  "Base" : "BNB"
+}, {
+  "Listed" : "1,95%\n195/10K",
+  "FloorPrice" : "0,065",
+  "Volume" : "0,99",
+  "Liquidity" : "0,16%\nGiao dịch: 16",
+  "Collection" : "PXN: Ghost Division",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,5%\n2/401",
+  "FloorPrice" : "1,5",
+  "Volume" : "0,98",
+  "Liquidity" : "0,25%\nGiao dịch: 1",
+  "Collection" : "BLHZ Medel",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,2%\n419/10K",
+  "FloorPrice" : "1,85",
+  "Volume" : "25,07",
+  "Liquidity" : "0,15%\nGiao dịch: 14",
+  "Collection" : "Shadowy Super Coder DAO",
+  "Base" : "SOL"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "24,97",
+  "Liquidity" : "11,12%\nGiao dịch: 1",
+  "Collection" : "Cryptic Gold Coins",
+  "Base" : "SOL"
+}, {
+  "Listed" : "17,81%\n52/292",
+  "FloorPrice" : "27",
+  "Volume" : "24,95",
+  "Liquidity" : "0,35%\nGiao dịch: 1",
+  "Collection" : "Monkey Baby Business",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,67%\n1/149",
+  "FloorPrice" : "20,9",
+  "Volume" : "24,92",
+  "Liquidity" : "1,35%\nGiao dịch: 2",
+  "Collection" : "DashAIO",
+  "Base" : "SOL"
+}, {
+  "Listed" : "87,5%\n7/8",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,97",
+  "Liquidity" : "0,05%\nGiao dịch: 4",
+  "Collection" : "Nidum Items Collection",
+  "Base" : "ETH"
+}, {
+  "Listed" : "9,65%\n188/2K",
+  "FloorPrice" : "2,5",
+  "Volume" : "24,67",
+  "Liquidity" : "0,42%\nGiao dịch: 8",
+  "Collection" : "MixMob - Gen0 Masks",
+  "Base" : "SOL"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,05",
+  "Liquidity" : "0,75%\nGiao dịch: 6",
+  "Collection" : "Chainspace",
+  "Base" : "BTC"
+}, {
+  "Listed" : "10,09%\n343/3,4K",
+  "FloorPrice" : "0,058",
+  "Volume" : "24,63",
+  "Liquidity" : "3,71%\nGiao dịch: 126",
+  "Collection" : "Bit Monkey Club",
+  "Base" : "SOL"
+}, {
+  "Listed" : "5,45%\n27/496",
+  "FloorPrice" : "13,3",
+  "Volume" : "24,61",
+  "Liquidity" : "0,41%\nGiao dịch: 2",
+  "Collection" : "Wasta Corp",
+  "Base" : "SOL"
+}, {
+  "Listed" : "7,48%\n166/2,3K",
+  "FloorPrice" : "0,08",
+  "Volume" : "0,96",
+  "Liquidity" : "0,32%\nGiao dịch: 7",
+  "Collection" : "SAINTS of LA",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,61%\n363/10,1K",
+  "FloorPrice" : "0,123",
+  "Volume" : "0,96",
+  "Liquidity" : "0,08%\nGiao dịch: 8",
+  "Collection" : "Lazy Lions",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,94%\n414/44,5K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,96",
+  "Liquidity" : "1,86%\nGiao dịch: 327",
+  "Collection" : "Captain ＆ Company - Certificates",
+  "Base" : "ARB_ETH"
+}, {
+  "Listed" : "3,53%\n111/3,2K",
+  "FloorPrice" : "0,148",
+  "Volume" : "0,96",
+  "Liquidity" : "0,23%\nGiao dịch: 7",
+  "Collection" : "OOZ ＆ mates Official",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,41%\n120/2,3K",
+  "FloorPrice" : "1,76",
+  "Volume" : "24,47",
+  "Liquidity" : "0,64%\nGiao dịch: 14",
+  "Collection" : "Promised Land",
+  "Base" : "SOL"
+}, {
+  "Listed" : "14,21%\n1,5K/10K",
+  "FloorPrice" : "0,28",
+  "Volume" : "24,45",
+  "Liquidity" : "0,83%\nGiao dịch: 82",
+  "Collection" : "keks SPL20",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,43%\n42/10K",
+  "FloorPrice" : "0,05",
+  "Volume" : "0,96",
+  "Liquidity" : "0,18%\nGiao dịch: 17",
+  "Collection" : "OOZ ＆ mates: Spaceships Official",
+  "Base" : "ETH"
+}, {
+  "Listed" : "6,75%\n143/2,2K",
+  "FloorPrice" : "0,03",
+  "Volume" : "0,95",
+  "Liquidity" : "1,89%\nGiao dịch: 40",
+  "Collection" : "Streets of Milady",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,69%\n2K/116,1K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,95",
+  "Liquidity" : "0,03%\nGiao dịch: 28",
+  "Collection" : "WAGMI Defense",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,99%\n162/2,8K",
+  "FloorPrice" : "0,162",
+  "Volume" : "0,95",
+  "Liquidity" : "0,23%\nGiao dịch: 6",
+  "Collection" : "alignDRAW",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,66%\n159/9,6K",
+  "FloorPrice" : "0,096",
+  "Volume" : "0,94",
+  "Liquidity" : "0,11%\nGiao dịch: 10",
+  "Collection" : "FLUF World: Thingies",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,02%\n102/10,1K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,05",
+  "Liquidity" : "0,28%\nGiao dịch: 28",
+  "Collection" : "JSON Maxi Biz （JMB）",
+  "Base" : "BTC"
+}, {
+  "Listed" : "4,77%\n696/14,6K",
+  "FloorPrice" : "13",
+  "Volume" : "2,62K",
+  "Liquidity" : "0,45%\nGiao dịch: 65",
+  "Collection" : "DOLZ Trading Cards",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "3,11%\n226/7,3K",
+  "FloorPrice" : "0,03",
+  "Volume" : "0,92",
+  "Liquidity" : "0,22%\nGiao dịch: 16",
+  "Collection" : "Broadside",
+  "Base" : "ETH"
+}, {
+  "Listed" : "17,27%\n48/278",
+  "FloorPrice" : "0,015",
+  "Volume" : "0,05",
+  "Liquidity" : "1,8%\nGiao dịch: 5",
+  "Collection" : "Pokemon Pixels",
+  "Base" : "BTC"
+}, {
+  "Listed" : "0,39%\n2/520",
+  "FloorPrice" : "1,19",
+  "Volume" : "0,91",
+  "Liquidity" : "0,2%\nGiao dịch: 1",
+  "Collection" : "Citizen Capital",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,85%\n245/5,1K",
+  "FloorPrice" : "0,039",
+  "Volume" : "0,91",
+  "Liquidity" : "0,64%\nGiao dịch: 32",
+  "Collection" : "Candy Collective: Candy Pills",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,71%\n76/1,7K",
+  "FloorPrice" : "0,85",
+  "Volume" : "23,33",
+  "Liquidity" : "1,99%\nGiao dịch: 32",
+  "Collection" : "Pengu Bots",
+  "Base" : "SOL"
+}, {
+  "Listed" : "7,03%\n158/2,3K",
+  "FloorPrice" : "7,19",
+  "Volume" : "23,19",
+  "Liquidity" : "0,14%\nGiao dịch: 3",
+  "Collection" : "Thugbirdz",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,63%\n18/1,2K",
+  "FloorPrice" : "20",
+  "Volume" : "241,99",
+  "Liquidity" : "1,54%\nGiao dịch: 17",
+  "Collection" : "AptoRobos",
+  "Base" : "APT"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "2,57K",
+  "Liquidity" : "66,67%\nGiao dịch: 2",
+  "Collection" : "META",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "0,2%\n20/10K",
+  "FloorPrice" : "0,75",
+  "Volume" : "0,9",
+  "Liquidity" : "0,01%\nGiao dịch: 1",
+  "Collection" : "ASM AIFA Genesis",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,16%\n41/987",
+  "FloorPrice" : "0,95",
+  "Volume" : "0,9",
+  "Liquidity" : "0,11%\nGiao dịch: 1",
+  "Collection" : "Art Blocks",
+  "Base" : "ETH"
+}, {
+  "Listed" : "10%\n3/30",
+  "FloorPrice" : "1,195",
+  "Volume" : "0,9",
+  "Liquidity" : "3,34%\nGiao dịch: 1",
+  "Collection" : "[ Serendipity | 素敵な偶然 ]",
+  "Base" : "ETH"
+}, {
+  "Listed" : "28,2%\n437/1,6K",
+  "FloorPrice" : "0,24",
+  "Volume" : "22,93",
+  "Liquidity" : "5,81%\nGiao dịch: 90",
+  "Collection" : "goosolana",
+  "Base" : "SOL"
+}, {
+  "Listed" : "80%\n12/15",
+  "FloorPrice" : "0,8",
+  "Volume" : "0,89",
+  "Liquidity" : "0,22%\nGiao dịch: 1",
+  "Collection" : "Parallel Companions",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,79%\n6/337",
+  "FloorPrice" : "23",
+  "Volume" : "22,79",
+  "Liquidity" : "0,3%\nGiao dịch: 1",
+  "Collection" : "1337",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3%\n90/3K",
+  "FloorPrice" : "1",
+  "Volume" : "22,76",
+  "Liquidity" : "0,34%\nGiao dịch: 10",
+  "Collection" : "LucidPunks",
+  "Base" : "SOL"
+}, {
+  "Listed" : "5,25%\n73/1,4K",
+  "FloorPrice" : "383,329",
+  "Volume" : "2,51K",
+  "Liquidity" : "0,58%\nGiao dịch: 8",
+  "Collection" : "Fableborne Primordials",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "2,84%\n283/10K",
+  "FloorPrice" : "0,18",
+  "Volume" : "0,88",
+  "Liquidity" : "0,06%\nGiao dịch: 5",
+  "Collection" : "goblintown.wtf",
+  "Base" : "ETH"
+}, {
+  "Listed" : "7,79%\n94/1,3K",
+  "FloorPrice" : "0,64",
+  "Volume" : "22,23",
+  "Liquidity" : "3,82%\nGiao dịch: 44",
+  "Collection" : "Insomnia",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,19%\n104/8,8K",
+  "FloorPrice" : "0,24",
+  "Volume" : "0,79",
+  "Liquidity" : "0,04%\nGiao dịch: 3",
+  "Collection" : "Looki",
+  "Base" : "ETH"
+}, {
+  "Listed" : "100%\n1/1",
+  "FloorPrice" : "0,1",
+  "Volume" : "0,79",
+  "Liquidity" : "0,24%\nGiao dịch: 6",
+  "Collection" : "The Ape List",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,77%\n584/33,1K",
+  "FloorPrice" : "0,13",
+  "Volume" : "37,72",
+  "Liquidity" : "0,53%\nGiao dịch: 172",
+  "Collection" : "AVC-20 APES",
+  "Base" : "AVAX"
+}, {
+  "Listed" : "10,32%\n619/6K",
+  "FloorPrice" : "3",
+  "Volume" : "20,1",
+  "Liquidity" : "0,11%\nGiao dịch: 6",
+  "Collection" : "Bored Ape Solana Club",
+  "Base" : "SOL"
+}, {
+  "Listed" : "6,54%\n51/780",
+  "FloorPrice" : "0,619",
+  "Volume" : "20,06",
+  "Liquidity" : "5,13%\nGiao dịch: 40",
+  "Collection" : "Monki",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,31%\n494/21,5K",
+  "FloorPrice" : "0,092",
+  "Volume" : "0,79",
+  "Liquidity" : "0,02%\nGiao dịch: 4",
+  "Collection" : "World of Women Galaxy",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,27%\n159/7,1K",
+  "FloorPrice" : "1,2",
+  "Volume" : "20,02",
+  "Liquidity" : "0,29%\nGiao dịch: 20",
+  "Collection" : "Yaku Engineering ONI-S01",
+  "Base" : "SOL"
+}, {
+  "Listed" : "100%\n1/1",
+  "FloorPrice" : "1",
+  "Volume" : "0,78",
+  "Liquidity" : "0,27%\nGiao dịch: 1",
+  "Collection" : "The Forgotten Runes Infinity Veil",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,62%\n123/20K",
+  "FloorPrice" : "3,8",
+  "Volume" : "19,95",
+  "Liquidity" : "0,03%\nGiao dịch: 5",
+  "Collection" : "Degen Fat Cats",
+  "Base" : "SOL"
+}, {
+  "Listed" : "9,29%\n65/700",
+  "FloorPrice" : "0,54",
+  "Volume" : "19,95",
+  "Liquidity" : "5,15%\nGiao dịch: 36",
+  "Collection" : "Office Boys",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,74%\n152/5,6K",
+  "FloorPrice" : "0,065",
+  "Volume" : "0,78",
+  "Liquidity" : "0,46%\nGiao dịch: 25",
+  "Collection" : "Karafuru",
+  "Base" : "ETH"
+}, {
+  "Listed" : "83,09%\n8,4K/10K",
+  "FloorPrice" : "57,94",
+  "Volume" : "2,2K",
+  "Liquidity" : "0,1%\nGiao dịch: 10",
+  "Collection" : "The Legend of CryptoTab: Age of Eggs III",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "2,23%\n356/16K",
+  "FloorPrice" : "0,1",
+  "Volume" : "0,78",
+  "Liquidity" : "0,02%\nGiao dịch: 2",
+  "Collection" : "Forgotten Runes Warriors Guild",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,26%\n253/7,8K",
+  "FloorPrice" : "0,022",
+  "Volume" : "0,77",
+  "Liquidity" : "0,07%\nGiao dịch: 5",
+  "Collection" : "Isekai Meta",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,77%\n77/10K",
+  "FloorPrice" : "23,69",
+  "Volume" : "19,68",
+  "Liquidity" : "0,01%\nGiao dịch: 1",
+  "Collection" : "Degenerate Ape Academy",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,28%\n177/5,4K",
+  "FloorPrice" : "0,912",
+  "Volume" : "19,67",
+  "Liquidity" : "0,67%\nGiao dịch: 36",
+  "Collection" : "West 57th Clubhouse",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,13%\n319/15K",
+  "FloorPrice" : "0,057",
+  "Volume" : "0,77",
+  "Liquidity" : "0,08%\nGiao dịch: 11",
+  "Collection" : "Akutars",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,4%\n140/10K",
+  "FloorPrice" : "0,07",
+  "Volume" : "0,77",
+  "Liquidity" : "0,11%\nGiao dịch: 11",
+  "Collection" : "PREMINT Collector Pass - OFFICIAL",
+  "Base" : "ETH"
+}, {
+  "Listed" : "11,6%\n1,2K/10K",
+  "FloorPrice" : "0,613",
+  "Volume" : "19,61",
+  "Liquidity" : "0,28%\nGiao dịch: 27",
+  "Collection" : "BASC",
+  "Base" : "SOL"
+}, {
+  "Listed" : "9,66%\n75/777",
+  "FloorPrice" : "0,2",
+  "Volume" : "0,76",
+  "Liquidity" : "0,52%\nGiao dịch: 4",
+  "Collection" : "Quaere Genesis Pass",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,53%\n33/1,4K",
+  "FloorPrice" : "4,69",
+  "Volume" : "19,39",
+  "Liquidity" : "0,31%\nGiao dịch: 4",
+  "Collection" : "Honeyland Genesis",
+  "Base" : "SOL"
+}, {
+  "Listed" : "10,12%\n91/900",
+  "FloorPrice" : "119,69",
+  "Volume" : "2,15K",
+  "Liquidity" : "1,89%\nGiao dịch: 18",
+  "Collection" : "FIFA+ Collect",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "11,48%\n287/2,5K",
+  "FloorPrice" : "0,62",
+  "Volume" : "19,26",
+  "Liquidity" : "1,01%\nGiao dịch: 25",
+  "Collection" : "Solabrador NFT",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,99%\n35/411",
+  "FloorPrice" : "3,38",
+  "Volume" : "19,18",
+  "Liquidity" : "1,71%\nGiao dịch: 7",
+  "Collection" : "Underground DAO",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,1%\n35/37,8K",
+  "FloorPrice" : "140",
+  "Volume" : "2,13K",
+  "Liquidity" : "0,02%\nGiao dịch: 6",
+  "Collection" : "Gas Hero Coupon NFT",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "2,13K",
+  "Liquidity" : "37,01%\nGiao dịch: 48",
+  "Collection" : "Fungiball",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "2,96%\n263/8,9K",
+  "FloorPrice" : "0,027",
+  "Volume" : "0,75",
+  "Liquidity" : "0,29%\nGiao dịch: 25",
+  "Collection" : "FunApes NFT",
+  "Base" : "ETH"
+}, {
+  "Listed" : "8,84%\n220/2,5K",
+  "FloorPrice" : "0,08",
+  "Volume" : "0,74",
+  "Liquidity" : "0,49%\nGiao dịch: 12",
+  "Collection" : "White Hearts 1.0",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1%\n50/5K",
+  "FloorPrice" : "122,02",
+  "Volume" : "2,1K",
+  "Liquidity" : "0,06%\nGiao dịch: 3",
+  "Collection" : "DeRace Jockey Club",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "9,93%\n26/262",
+  "FloorPrice" : "0,385",
+  "Volume" : "0,73",
+  "Liquidity" : "0,77%\nGiao dịch: 2",
+  "Collection" : "House of cards",
+  "Base" : "ETH"
+}, {
+  "Listed" : "17,95%\n54/301",
+  "FloorPrice" : "9",
+  "Volume" : "18,64",
+  "Liquidity" : "0,67%\nGiao dịch: 2",
+  "Collection" : "Playground Waves",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,18%\n118/10K",
+  "FloorPrice" : "0,26",
+  "Volume" : "0,73",
+  "Liquidity" : "0,03%\nGiao dịch: 3",
+  "Collection" : "FULL SEND METACARD NFT",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,08%\n131/2,6K",
+  "FloorPrice" : "0,087",
+  "Volume" : "0,73",
+  "Liquidity" : "0,35%\nGiao dịch: 9",
+  "Collection" : "Denizens of ZenAcademy",
+  "Base" : "ETH"
+}, {
+  "Listed" : "34,39%\n229/666",
+  "FloorPrice" : "0,649",
+  "Volume" : "18,41",
+  "Liquidity" : "3,31%\nGiao dịch: 22",
+  "Collection" : "DWHG",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,23%\n10/450",
+  "FloorPrice" : "0,012",
+  "Volume" : "0,04",
+  "Liquidity" : "0,45%\nGiao dịch: 2",
+  "Collection" : "OG Satoshis 450x Block 9",
+  "Base" : "BTC"
+}, {
+  "Listed" : "5,23%\n290/5,6K",
+  "FloorPrice" : "6,5",
+  "Volume" : "18,4",
+  "Liquidity" : "0,06%\nGiao dịch: 3",
+  "Collection" : "THE WHALES",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,83%\n82/10K",
+  "FloorPrice" : "0,082",
+  "Volume" : "0,72",
+  "Liquidity" : "0,09%\nGiao dịch: 8",
+  "Collection" : "TCG Dragon Cave Club",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,97%\n220/5,6K",
+  "FloorPrice" : "0,299",
+  "Volume" : "0,71",
+  "Liquidity" : "0,04%\nGiao dịch: 2",
+  "Collection" : "SuperCreators - Gen Z",
+  "Base" : "ETH"
+}, {
+  "Listed" : "16,5%\n111/673",
+  "FloorPrice" : "0,069",
+  "Volume" : "0,71",
+  "Liquidity" : "2,09%\nGiao dịch: 14",
+  "Collection" : "Gruffters",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,35%\n1/23",
+  "FloorPrice" : "11,6",
+  "Volume" : "0,71",
+  "Liquidity" : "4,35%\nGiao dịch: 1",
+  "Collection" : "FOUND Smart Claim",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,36%\n247/10,6K",
+  "FloorPrice" : "0,045",
+  "Volume" : "0,71",
+  "Liquidity" : "0,2%\nGiao dịch: 20",
+  "Collection" : "Bulls and Apes Project - Genesis",
+  "Base" : "ETH"
+}, {
+  "Listed" : "13,51%\n2,9K/21K",
+  "FloorPrice" : "0,04",
+  "Volume" : "17,8",
+  "Liquidity" : "2,28%\nGiao dịch: 477",
+  "Collection" : "mackerel",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,16%\n208/5K",
+  "FloorPrice" : "0,014",
+  "Volume" : "0,7",
+  "Liquidity" : "1,9%\nGiao dịch: 95",
+  "Collection" : "The Knowers",
+  "Base" : "ARB_ETH"
+}, {
+  "Listed" : "4%\n40/1,1K",
+  "FloorPrice" : "0,289",
+  "Volume" : "0,69",
+  "Liquidity" : "0,3%\nGiao dịch: 3",
+  "Collection" : "HUGO x Imaginary Ones: Embrace Your Emotions",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,24%\n122/9,9K",
+  "FloorPrice" : "0,069",
+  "Volume" : "0,69",
+  "Liquidity" : "0,14%\nGiao dịch: 13",
+  "Collection" : "CryptoArte",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,49%\n99/6,7K",
+  "FloorPrice" : "0,069",
+  "Volume" : "0,69",
+  "Liquidity" : "0,05%\nGiao dịch: 3",
+  "Collection" : "Based Ghouls",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,52%\n88/2,5K",
+  "FloorPrice" : "0,17",
+  "Volume" : "0,69",
+  "Liquidity" : "0,16%\nGiao dịch: 4",
+  "Collection" : "Element Pass Genesis",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,79%\n210/11,8K",
+  "FloorPrice" : "0,059",
+  "Volume" : "0,69",
+  "Liquidity" : "0,09%\nGiao dịch: 10",
+  "Collection" : "Wolf Game - Farmer",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,64%\n164/10K",
+  "FloorPrice" : "0,09",
+  "Volume" : "0,69",
+  "Liquidity" : "0,07%\nGiao dịch: 7",
+  "Collection" : "Sipherian Flash",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,35%\n855/245K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,69",
+  "Liquidity" : "<0,01%\nGiao dịch: 3",
+  "Collection" : "Zerion DNA 1.0",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,92%\n461/9,4K",
+  "FloorPrice" : "22,849",
+  "Volume" : "1,94K",
+  "Liquidity" : "0,21%\nGiao dịch: 19",
+  "Collection" : "Courtyard.io",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "1,67%\n35/2,1K",
+  "FloorPrice" : "0,39",
+  "Volume" : "0,68",
+  "Liquidity" : "0,1%\nGiao dịch: 2",
+  "Collection" : "Frank Stella: Geometries",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,63%\n62/10K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,04",
+  "Liquidity" : "0,21%\nGiao dịch: 20",
+  "Collection" : "BTC Virus",
+  "Base" : "BTC"
+}, {
+  "Listed" : "1,56%\n36/2,4K",
+  "FloorPrice" : "0,619",
+  "Volume" : "0,68",
+  "Liquidity" : "0,05%\nGiao dịch: 1",
+  "Collection" : "WAGMI Game Genesis",
+  "Base" : "ETH"
+}, {
+  "Listed" : "10,34%\n574/5,6K",
+  "FloorPrice" : "1,998",
+  "Volume" : "17,32",
+  "Liquidity" : "0,17%\nGiao dịch: 9",
+  "Collection" : "Critters Cult",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,95%\n239/4,9K",
+  "FloorPrice" : "0,176",
+  "Volume" : "0,67",
+  "Liquidity" : "0,09%\nGiao dịch: 4",
+  "Collection" : "Ether",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,7%\n242/9K",
+  "FloorPrice" : "2,407",
+  "Volume" : "16,99",
+  "Liquidity" : "0,08%\nGiao dịch: 7",
+  "Collection" : "Fidelion",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,16%\n1,3K/39,4K",
+  "FloorPrice" : "0,075",
+  "Volume" : "0,67",
+  "Liquidity" : "0,03%\nGiao dịch: 8",
+  "Collection" : "Art Blocks Explorations",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,78%\n178/10K",
+  "FloorPrice" : "0,039",
+  "Volume" : "0,66",
+  "Liquidity" : "0,2%\nGiao dịch: 20",
+  "Collection" : "Utility Wen",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,95%\n195/10K",
+  "FloorPrice" : "0,09",
+  "Volume" : "0,66",
+  "Liquidity" : "0,08%\nGiao dịch: 8",
+  "Collection" : "Finiliar",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,58%\n132/5,2K",
+  "FloorPrice" : "0,03",
+  "Volume" : "0,66",
+  "Liquidity" : "0,41%\nGiao dịch: 21",
+  "Collection" : "TheBitcoinStandardDAO",
+  "Base" : "ARB_ETH"
+}, {
+  "Listed" : "1%\n10/1K",
+  "FloorPrice" : "0,055",
+  "Volume" : "0,04",
+  "Liquidity" : "0,1%\nGiao dịch: 1",
+  "Collection" : "Unordinals",
+  "Base" : "BTC"
+}, {
+  "Listed" : "2,6%\n26/1K",
+  "FloorPrice" : "0,392",
+  "Volume" : "0,66",
+  "Liquidity" : "0,2%\nGiao dịch: 2",
+  "Collection" : "Bursted Bubbles by Deblock",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,92%\n297/5,1K",
+  "FloorPrice" : "0,068",
+  "Volume" : "0,66",
+  "Liquidity" : "0,14%\nGiao dịch: 7",
+  "Collection" : "God Hates NFTees",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,8%\n14/500",
+  "FloorPrice" : "0,394",
+  "Volume" : "0,65",
+  "Liquidity" : "0,4%\nGiao dịch: 2",
+  "Collection" : "Sparkle Book of Destiny",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,33%\n144/3,4K",
+  "FloorPrice" : "0,325",
+  "Volume" : "0,65",
+  "Liquidity" : "0,07%\nGiao dịch: 2",
+  "Collection" : "The Plooshies",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,14%\n190/8,9K",
+  "FloorPrice" : "0,1",
+  "Volume" : "0,65",
+  "Liquidity" : "0,1%\nGiao dịch: 8",
+  "Collection" : "MekaVerse",
+  "Base" : "ETH"
+}, {
+  "Listed" : "6,39%\n119/1,9K",
+  "FloorPrice" : "0,165",
+  "Volume" : "0,65",
+  "Liquidity" : "0,17%\nGiao dịch: 3",
+  "Collection" : "Art Blocks x Bright Moments",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,21%\n52/999",
+  "FloorPrice" : "100",
+  "Volume" : "1,82K",
+  "Liquidity" : "1,91%\nGiao dịch: 19",
+  "Collection" : "First Aesar Founders Chests",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "15,52%\n155/999",
+  "FloorPrice" : "125",
+  "Volume" : "1,82K",
+  "Liquidity" : "1,41%\nGiao dịch: 14",
+  "Collection" : "DeCats Meow Сollection",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "1,51%\n2/133",
+  "FloorPrice" : "0,015",
+  "Volume" : "0,03",
+  "Liquidity" : "2,26%\nGiao dịch: 3",
+  "Collection" : "Shadow Smokers",
+  "Base" : "BTC"
+}, {
+  "Listed" : "3,2%\n319/10K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,56",
+  "Liquidity" : "1,54%\nGiao dịch: 153",
+  "Collection" : "Based OnChain Punks",
+  "Base" : "BASE_ETH"
+}, {
+  "Listed" : "67,15%\n47/70",
+  "FloorPrice" : "0,01",
+  "Volume" : "0,56",
+  "Liquidity" : "<0,01%\nGiao dịch: 3",
+  "Collection" : "The Watch",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,6%\n72/2,8K",
+  "FloorPrice" : "0,049",
+  "Volume" : "0,56",
+  "Liquidity" : "0,55%\nGiao dịch: 15",
+  "Collection" : "Habbo Portraits",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,86%\n186/10K",
+  "FloorPrice" : "0,049",
+  "Volume" : "0,56",
+  "Liquidity" : "0,14%\nGiao dịch: 14",
+  "Collection" : "ChainFaces",
+  "Base" : "ETH"
+}, {
+  "Listed" : "35,72%\n5/14",
+  "FloorPrice" : "0,19",
+  "Volume" : "0,55",
+  "Liquidity" : "0,37%\nGiao dịch: 1",
+  "Collection" : "Editions x Lisa Fogarty",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,85%\n82/4,5K",
+  "FloorPrice" : "0,179",
+  "Volume" : "0,55",
+  "Liquidity" : "0,03%\nGiao dịch: 1",
+  "Collection" : "Apes Together Strong Official NFT",
+  "Base" : "ETH"
+}, {
+  "Listed" : "66,67%\n2/3",
+  "FloorPrice" : "0,059",
+  "Volume" : "0,55",
+  "Liquidity" : "0,44%\nGiao dịch: 10",
+  "Collection" : "The Bridge by Star Im",
+  "Base" : "ETH"
+}, {
+  "Listed" : "14,8%\n37/250",
+  "FloorPrice" : "0,12",
+  "Volume" : "0,55",
+  "Liquidity" : "1,6%\nGiao dịch: 4",
+  "Collection" : "Seal Everydays",
+  "Base" : "ETH"
+}, {
+  "Listed" : "49%\n49/100",
+  "FloorPrice" : "0,92",
+  "Volume" : "14,02",
+  "Liquidity" : "11%\nGiao dịch: 11",
+  "Collection" : "Solana Stones",
+  "Base" : "SOL"
+}, {
+  "Listed" : "5,61%\n622/11,2K",
+  "FloorPrice" : "0,106",
+  "Volume" : "0,55",
+  "Liquidity" : "0,05%\nGiao dịch: 5",
+  "Collection" : "Highrise Creature Club",
+  "Base" : "ETH"
+}, {
+  "Listed" : "11,91%\n347/3K",
+  "FloorPrice" : "1,75",
+  "Volume" : "13,95",
+  "Liquidity" : "0,14%\nGiao dịch: 4",
+  "Collection" : "Solana Monke Rejects",
+  "Base" : "SOL"
+}, {
+  "Listed" : "12,49%\n416/3,4K",
+  "FloorPrice" : "0,155",
+  "Volume" : "13,89",
+  "Liquidity" : "2,47%\nGiao dịch: 82",
+  "Collection" : "Sketchy Scales",
+  "Base" : "SOL"
+}, {
+  "Listed" : "9,75%\n421/4,4K",
+  "FloorPrice" : "0,019",
+  "Volume" : "0,55",
+  "Liquidity" : "0,4%\nGiao dịch: 17",
+  "Collection" : "bitbeast",
+  "Base" : "ETH"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,03",
+  "Liquidity" : "0,1%\nGiao dịch: 2",
+  "Collection" : "The Final Pattern by Nullish",
+  "Base" : "BTC"
+}, {
+  "Listed" : "4,73%\n42/888",
+  "FloorPrice" : "0,669",
+  "Volume" : "0,54",
+  "Liquidity" : "0,12%\nGiao dịch: 1",
+  "Collection" : "OnChain Buccaneers （OCB）",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,81%\n249/8,9K",
+  "FloorPrice" : "0,13",
+  "Volume" : "0,54",
+  "Liquidity" : "0,05%\nGiao dịch: 4",
+  "Collection" : "Ninja Squad Official",
+  "Base" : "ETH"
+}, {
+  "Listed" : "6,85%\n377/4,6K",
+  "FloorPrice" : "0,8",
+  "Volume" : "13,72",
+  "Liquidity" : "0,4%\nGiao dịch: 18",
+  "Collection" : "Bozo Collective",
+  "Base" : "SOL"
+}, {
+  "Listed" : "100%\n6/6",
+  "FloorPrice" : "0,02",
+  "Volume" : "0,53",
+  "Liquidity" : "0,06%\nGiao dịch: 10",
+  "Collection" : "Imaginary Artifacts",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,41%\n60/1,2K",
+  "FloorPrice" : "0,42",
+  "Volume" : "0,53",
+  "Liquidity" : "0,1%\nGiao dịch: 1",
+  "Collection" : "byteGANs",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,57%\n50/8,8K",
+  "FloorPrice" : "3,3",
+  "Volume" : "13,45",
+  "Liquidity" : "0,05%\nGiao dịch: 4",
+  "Collection" : "The Heist Land",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,57%\n365/8K",
+  "FloorPrice" : "0,989",
+  "Volume" : "13,32",
+  "Liquidity" : "0,19%\nGiao dịch: 15",
+  "Collection" : "Sentries",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,38%\n22/1,6K",
+  "FloorPrice" : "3,59",
+  "Volume" : "13,29",
+  "Liquidity" : "0,26%\nGiao dịch: 4",
+  "Collection" : "The Heist: Orangutans",
+  "Base" : "SOL"
+}, {
+  "Listed" : "11,93%\n501/4,2K",
+  "FloorPrice" : "0,3",
+  "Volume" : "13,25",
+  "Liquidity" : "1,27%\nGiao dịch: 53",
+  "Collection" : "Inscribed Monkee",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,55%\n201/4,5K",
+  "FloorPrice" : "1,744",
+  "Volume" : "13,23",
+  "Liquidity" : "0,19%\nGiao dịch: 8",
+  "Collection" : "BitBrawl",
+  "Base" : "SOL"
+}, {
+  "Listed" : "5,92%\n29/490",
+  "FloorPrice" : "3",
+  "Volume" : "13,16",
+  "Liquidity" : "1,03%\nGiao dịch: 5",
+  "Collection" : "Underground Decoders",
+  "Base" : "SOL"
+}, {
+  "Listed" : "50,27%\n187/372",
+  "FloorPrice" : "0,013",
+  "Volume" : "0,52",
+  "Liquidity" : "0,2%\nGiao dịch: 3",
+  "Collection" : "Fake Rares",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,9%\n390/10,1K",
+  "FloorPrice" : "0,945",
+  "Volume" : "13,08",
+  "Liquidity" : "0,09%\nGiao dịch: 9",
+  "Collection" : "Dandies",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,16%\n182/8,5K",
+  "FloorPrice" : "0,033",
+  "Volume" : "0,51",
+  "Liquidity" : "0,14%\nGiao dịch: 11",
+  "Collection" : "KillaCubs",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,54%\n49/9,1K",
+  "FloorPrice" : "0,06",
+  "Volume" : "0,51",
+  "Liquidity" : "0,05%\nGiao dịch: 4",
+  "Collection" : "LinksDAO",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,75%\n64/2,4K",
+  "FloorPrice" : "0,05",
+  "Volume" : "0,51",
+  "Liquidity" : "0,48%\nGiao dịch: 11",
+  "Collection" : "MetaRebelz",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,38%\n276/11,6K",
+  "FloorPrice" : "0,13",
+  "Volume" : "0,51",
+  "Liquidity" : "0,03%\nGiao dịch: 3",
+  "Collection" : "Habbo Avatars",
+  "Base" : "ETH"
+}, {
+  "Listed" : "6,06%\n179/3K",
+  "FloorPrice" : "0,083",
+  "Volume" : "0,51",
+  "Liquidity" : "0,17%\nGiao dịch: 5",
+  "Collection" : "Gutter Dogs",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,36%\n19/355",
+  "FloorPrice" : "0,575",
+  "Volume" : "0,5",
+  "Liquidity" : "0,29%\nGiao dịch: 1",
+  "Collection" : "Alpha Wolves DAO",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,34%\n34/10K",
+  "FloorPrice" : "0,55",
+  "Volume" : "0,5",
+  "Liquidity" : "0,01%\nGiao dịch: 1",
+  "Collection" : "RENGA Black Box",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,67%\n5/757",
+  "FloorPrice" : "0,99",
+  "Volume" : "0,5",
+  "Liquidity" : "0,14%\nGiao dịch: 1",
+  "Collection" : "B3L B3ASTS",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,18%\n59/5,1K",
+  "FloorPrice" : "0,229",
+  "Volume" : "0,5",
+  "Liquidity" : "0,04%\nGiao dịch: 2",
+  "Collection" : "Somnium Space Land",
+  "Base" : "ETH"
+}, {
+  "Listed" : "10,97%\n43/392",
+  "FloorPrice" : "0,169",
+  "Volume" : "0,5",
+  "Liquidity" : "0,77%\nGiao dịch: 3",
+  "Collection" : "Aleph-0",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,88%\n104/5,1K",
+  "FloorPrice" : "0,3",
+  "Volume" : "12,69",
+  "Liquidity" : "0,54%\nGiao dịch: 27",
+  "Collection" : "DegenDAO",
+  "Base" : "SOL"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "1,41K",
+  "Liquidity" : "100%\nGiao dịch: 2",
+  "Collection" : "Collection 1638",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "100%\n1/1",
+  "FloorPrice" : "0,03",
+  "Volume" : "0,5",
+  "Liquidity" : "0,58%\nGiao dịch: 9",
+  "Collection" : "Planet Atmos | MKIV Datacard",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,3%\n13/1K",
+  "FloorPrice" : "0,055",
+  "Volume" : "0,5",
+  "Liquidity" : "0,9%\nGiao dịch: 9",
+  "Collection" : "Magic Axe by Frogmoney",
+  "Base" : "ARB_ETH"
+}, {
+  "Listed" : "2,63%\n129/5K",
+  "FloorPrice" : "4,25",
+  "Volume" : "12,61",
+  "Liquidity" : "0,07%\nGiao dịch: 3",
+  "Collection" : "sharx by sharky.fi",
+  "Base" : "SOL"
+}, {
+  "Listed" : "21,63%\n168/777",
+  "FloorPrice" : "0,4",
+  "Volume" : "12,59",
+  "Liquidity" : "2,45%\nGiao dịch: 19",
+  "Collection" : "Solian",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,79%\n101/2,7K",
+  "FloorPrice" : "0,16",
+  "Volume" : "0,49",
+  "Liquidity" : "0,15%\nGiao dịch: 4",
+  "Collection" : "ParaVault",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,65%\n254/6,9K",
+  "FloorPrice" : "114,103",
+  "Volume" : "1,39K",
+  "Liquidity" : "0,18%\nGiao dịch: 12",
+  "Collection" : "Drill Club",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "3,07%\n307/9,6K",
+  "FloorPrice" : "0,153",
+  "Volume" : "12,41",
+  "Liquidity" : "0,73%\nGiao dịch: 69",
+  "Collection" : "Space Monkeys",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,34%\n5/1,5K",
+  "FloorPrice" : "0,65",
+  "Volume" : "0,48",
+  "Liquidity" : "0,14%\nGiao dịch: 2",
+  "Collection" : "Yield Hacker Pass YHP - Caio Vicentino",
+  "Base" : "ETH"
+}, {
+  "Listed" : "58,57%\n24,7K/42,2K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "1,37K",
+  "Liquidity" : "0,02%\nGiao dịch: 7",
+  "Collection" : "NFT Creation - Polygon",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "2,14%\n205/9,7K",
+  "FloorPrice" : "0,048",
+  "Volume" : "0,48",
+  "Liquidity" : "0,09%\nGiao dịch: 8",
+  "Collection" : "ROTA Official",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,3%\n644/15K",
+  "FloorPrice" : "0,096",
+  "Volume" : "0,48",
+  "Liquidity" : "0,02%\nGiao dịch: 3",
+  "Collection" : "Pixl Pets - Genesis Collection",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,19%\n10/5,5K",
+  "FloorPrice" : "321,443",
+  "Volume" : "1,36K",
+  "Liquidity" : "0,06%\nGiao dịch: 3",
+  "Collection" : "RWA-DA-AGE-S1",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "2,87%\n200/7K",
+  "FloorPrice" : "0,08",
+  "Volume" : "0,48",
+  "Liquidity" : "0,08%\nGiao dịch: 5",
+  "Collection" : "MONGS NFT",
+  "Base" : "ETH"
+}, {
+  "Listed" : "7%\n7/100",
+  "FloorPrice" : "0,81",
+  "Volume" : "0,48",
+  "Liquidity" : "1%\nGiao dịch: 1",
+  "Collection" : "JAKE FRIED: NORTH STAR",
+  "Base" : "ETH"
+}, {
+  "Listed" : "7%\n21/300",
+  "FloorPrice" : "0,25",
+  "Volume" : "0,48",
+  "Liquidity" : "0,67%\nGiao dịch: 2",
+  "Collection" : "Enforcer Founder Edition Spaceship",
+  "Base" : "ETH"
+}, {
+  "Listed" : "100%\n1/1",
+  "FloorPrice" : "0,117",
+  "Volume" : "0,48",
+  "Liquidity" : "0,08%\nGiao dịch: 5",
+  "Collection" : "My Keyboard",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,65%\n13/165",
+  "FloorPrice" : "12",
+  "Volume" : "12,06",
+  "Liquidity" : "0,61%\nGiao dịch: 1",
+  "Collection" : "Honeyland Tickets",
+  "Base" : "SOL"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,03",
+  "Liquidity" : "0,27%\nGiao dịch: 3",
+  "Collection" : "Sats Hunters",
+  "Base" : "BTC"
+}, {
+  "Listed" : "0,47%\n59/12,8K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,03",
+  "Liquidity" : "0,07%\nGiao dịch: 8",
+  "Collection" : "Bitcoin Digits",
+  "Base" : "BTC"
+}, {
+  "Listed" : "5,07%\n75/1,5K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,03",
+  "Liquidity" : "0,54%\nGiao dịch: 8",
+  "Collection" : "Bitcoin Cats",
+  "Base" : "BTC"
+}, {
+  "Listed" : "8,23%\n110/1,4K",
+  "FloorPrice" : "0,035",
+  "Volume" : "0,47",
+  "Liquidity" : "0,75%\nGiao dịch: 2",
+  "Collection" : "Champions Arena",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,17%\n184/3,6K",
+  "FloorPrice" : "0,125",
+  "Volume" : "0,47",
+  "Liquidity" : "0,12%\nGiao dịch: 4",
+  "Collection" : "YAYO NFT",
+  "Base" : "ETH"
+}, {
+  "Listed" : "9,57%\n911/9,6K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,47",
+  "Liquidity" : "0,27%\nGiao dịch: 25",
+  "Collection" : "BLOCKLORDS HEROES",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,57%\n305/19,6K",
+  "FloorPrice" : "0,03",
+  "Volume" : "0,47",
+  "Liquidity" : "0,11%\nGiao dịch: 21",
+  "Collection" : "Webaverse Genesis Pass",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,42%\n142/10K",
+  "FloorPrice" : "0,062",
+  "Volume" : "0,47",
+  "Liquidity" : "0,08%\nGiao dịch: 8",
+  "Collection" : "Cozy Penguins NFT",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,83%\n33/1,9K",
+  "FloorPrice" : "6,99",
+  "Volume" : "11,83",
+  "Liquidity" : "0,06%\nGiao dịch: 1",
+  "Collection" : "Tomorrowland: A Letter from the Universe",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,89%\n216/5,6K",
+  "FloorPrice" : "0,611",
+  "Volume" : "11,83",
+  "Liquidity" : "0,29%\nGiao dịch: 16",
+  "Collection" : "Bombaz",
+  "Base" : "SOL"
+}, {
+  "Listed" : "8,6%\n44/512",
+  "FloorPrice" : "0,145",
+  "Volume" : "0,46",
+  "Liquidity" : "0,59%\nGiao dịch: 3",
+  "Collection" : "Blokkendoos",
+  "Base" : "ETH"
+}, {
+  "Listed" : "6,13%\n147/2,4K",
+  "FloorPrice" : "1,2",
+  "Volume" : "11,79",
+  "Liquidity" : "0,34%\nGiao dịch: 8",
+  "Collection" : "Debonair Degen Hawks",
+  "Base" : "SOL"
+}, {
+  "Listed" : "14,67%\n202/1,4K",
+  "FloorPrice" : "0,04",
+  "Volume" : "0,46",
+  "Liquidity" : "0,8%\nGiao dịch: 11",
+  "Collection" : "Cult",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,38%\n63/4,6K",
+  "FloorPrice" : "0,079",
+  "Volume" : "0,41",
+  "Liquidity" : "0,2%\nGiao dịch: 9",
+  "Collection" : "JUUNI Grimoire",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,02%\n119/6K",
+  "FloorPrice" : "0,24",
+  "Volume" : "0,41",
+  "Liquidity" : "0,04%\nGiao dịch: 2",
+  "Collection" : "Pixel Vault Founder's DAO",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,85%\n4/476",
+  "FloorPrice" : "0,41",
+  "Volume" : "0,41",
+  "Liquidity" : "0,22%\nGiao dịch: 1",
+  "Collection" : "Dyad NFT",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,24%\n641/19,9K",
+  "FloorPrice" : "0,016",
+  "Volume" : "0,41",
+  "Liquidity" : "0,12%\nGiao dịch: 23",
+  "Collection" : "Gutter Clones",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,96%\n377/12,8K",
+  "FloorPrice" : "0,145",
+  "Volume" : "0,4",
+  "Liquidity" : "<0,01%\nGiao dịch: 1",
+  "Collection" : "OCM Karma",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,68%\n17/364",
+  "FloorPrice" : "0,18",
+  "Volume" : "0,4",
+  "Liquidity" : "0,55%\nGiao dịch: 2",
+  "Collection" : "Walker World: The Lost Walkers",
+  "Base" : "ETH"
+}, {
+  "Listed" : "82,61%\n19/23",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,4",
+  "Liquidity" : "0,02%\nGiao dịch: 1",
+  "Collection" : "10KTF Stockroom",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,74%\n30/4,1K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,4",
+  "Liquidity" : "0,05%\nGiao dịch: 2",
+  "Collection" : "Hashes",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,76%\n76/10K",
+  "FloorPrice" : "0,21",
+  "Volume" : "0,4",
+  "Liquidity" : "0,02%\nGiao dịch: 2",
+  "Collection" : "Anonymice",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,39%\n23K/1,7M",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,4",
+  "Liquidity" : "<0,01%\nGiao dịch: 77",
+  "Collection" : "Arbitrum Odyssey NFT",
+  "Base" : "ARB_ETH"
+}, {
+  "Listed" : "1%\n5/504",
+  "FloorPrice" : "0,5",
+  "Volume" : "106,95",
+  "Liquidity" : "19,45%\nGiao dịch: 98",
+  "Collection" : "Squarepants Villagers",
+  "Base" : "APT"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,03",
+  "Liquidity" : "3,45%\nGiao dịch: 1",
+  "Collection" : "Smilodonz",
+  "Base" : "BTC"
+}, {
+  "Listed" : "50,95%\n243/477",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,4",
+  "Liquidity" : "0,13%\nGiao dịch: 8",
+  "Collection" : "KILLATRAITS",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4%\n320/8K",
+  "FloorPrice" : "0,18",
+  "Volume" : "0,4",
+  "Liquidity" : "0,03%\nGiao dịch: 2",
+  "Collection" : "Women Unite - 10k Assemble",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5%\n25/500",
+  "FloorPrice" : "0,011",
+  "Volume" : "0,03",
+  "Liquidity" : "0,4%\nGiao dịch: 2",
+  "Collection" : "iDclub Pass",
+  "Base" : "BTC"
+}, {
+  "Listed" : "1,66%\n166/10K",
+  "FloorPrice" : "0,025",
+  "Volume" : "0,4",
+  "Liquidity" : "0,13%\nGiao dịch: 13",
+  "Collection" : "Arcadeland",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,95%\n95/10K",
+  "FloorPrice" : "0,058",
+  "Volume" : "0,4",
+  "Liquidity" : "0,07%\nGiao dịch: 7",
+  "Collection" : "DigiDaigaku Dragon Eggs",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,51%\n593/39,4K",
+  "FloorPrice" : "19,013",
+  "Volume" : "1,12K",
+  "Liquidity" : "0,08%\nGiao dịch: 31",
+  "Collection" : "Crypto Unicorns Land Market",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "0,03%\n1/4,1K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,02",
+  "Liquidity" : "0,42%\nGiao dịch: 17",
+  "Collection" : "ovo",
+  "Base" : "BTC"
+}, {
+  "Listed" : "1,28%\n102/8K",
+  "FloorPrice" : "0,52",
+  "Volume" : "0,4",
+  "Liquidity" : "0,02%\nGiao dịch: 1",
+  "Collection" : "Realms （for Adventurers）",
+  "Base" : "ETH"
+}, {
+  "Listed" : "98,2%\n109/111",
+  "FloorPrice" : "0,014",
+  "Volume" : "0,39",
+  "Liquidity" : "0,02%\nGiao dịch: 2",
+  "Collection" : "Noble Gallery",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,93%\n293/10K",
+  "FloorPrice" : "0,886",
+  "Volume" : "9,95",
+  "Liquidity" : "0,13%\nGiao dịch: 12",
+  "Collection" : "HelioX Pass",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,07%\n213/20K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,02",
+  "Liquidity" : "0,24%\nGiao dịch: 48",
+  "Collection" : "Bitamigos",
+  "Base" : "BTC"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,02",
+  "Liquidity" : "25%\nGiao dịch: 1",
+  "Collection" : "THINKY THURSDAY",
+  "Base" : "BTC"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,02",
+  "Liquidity" : "0,31%\nGiao dịch: 1",
+  "Collection" : "wizardz",
+  "Base" : "BTC"
+}, {
+  "Listed" : "0,54%\n50/9,4K",
+  "FloorPrice" : "0,129",
+  "Volume" : "3,23",
+  "Liquidity" : "0,03%\nGiao dịch: 2",
+  "Collection" : "YuliMysteryBox",
+  "Base" : "BNB"
+}, {
+  "Listed" : "3,55%\n197/5,6K",
+  "FloorPrice" : "0,031",
+  "Volume" : "0,39",
+  "Liquidity" : "0,22%\nGiao dịch: 12",
+  "Collection" : "Khuga by Khuga Labs",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,24%\n11/888",
+  "FloorPrice" : "9,9",
+  "Volume" : "9,83",
+  "Liquidity" : "0,12%\nGiao dịch: 1",
+  "Collection" : "Anon Evolved",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,62%\n162/10K",
+  "FloorPrice" : "0,098",
+  "Volume" : "0,39",
+  "Liquidity" : "0,03%\nGiao dịch: 3",
+  "Collection" : "Desperate ApeWives",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,5%\n257/5,8K",
+  "FloorPrice" : "0,842",
+  "Volume" : "9,78",
+  "Liquidity" : "0,2%\nGiao dịch: 11",
+  "Collection" : "Dazed Ducks V2",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,71%\n22/1,1K",
+  "FloorPrice" : "10,86",
+  "Volume" : "9,72",
+  "Liquidity" : "0,1%\nGiao dịch: 1",
+  "Collection" : "Gamerooms",
+  "Base" : "SOL"
+}, {
+  "Listed" : "13,92%\n698/5,1K",
+  "FloorPrice" : "0,395",
+  "Volume" : "9,71",
+  "Liquidity" : "0,36%\nGiao dịch: 18",
+  "Collection" : "SILICONS",
+  "Base" : "SOL"
+}, {
+  "Listed" : "5,06%\n5/99",
+  "FloorPrice" : "0,015",
+  "Volume" : "0,02",
+  "Liquidity" : "2,03%\nGiao dịch: 2",
+  "Collection" : "3D BITCOIN PUNKS",
+  "Base" : "BTC"
+}, {
+  "Listed" : "1,49%\n193/13K",
+  "FloorPrice" : "0,084",
+  "Volume" : "0,38",
+  "Liquidity" : "0,04%\nGiao dịch: 4",
+  "Collection" : "CyberKongz Genkai",
+  "Base" : "ETH"
+}, {
+  "Listed" : "13,38%\n136/1,1K",
+  "FloorPrice" : "0,036",
+  "Volume" : "0,38",
+  "Liquidity" : "1,48%\nGiao dịch: 15",
+  "Collection" : "Opepunk by Doy",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,25%\n24/9,9K",
+  "FloorPrice" : "0,019",
+  "Volume" : "0,38",
+  "Liquidity" : "0,22%\nGiao dịch: 20",
+  "Collection" : "Fortuna NFT",
+  "Base" : "ARB_ETH"
+}, {
+  "Listed" : "2,85%\n145/5,1K",
+  "FloorPrice" : "1,799",
+  "Volume" : "9,56",
+  "Liquidity" : "0,12%\nGiao dịch: 6",
+  "Collection" : "Genesis Genopets Habitats",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,34%\n34/10K",
+  "FloorPrice" : "0,395",
+  "Volume" : "0,37",
+  "Liquidity" : "0,01%\nGiao dịch: 1",
+  "Collection" : "PUNKS Comic",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,58%\n26/4,6K",
+  "FloorPrice" : "0,177",
+  "Volume" : "0,37",
+  "Liquidity" : "0,05%\nGiao dịch: 2",
+  "Collection" : "456 Collectors Club",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,63%\n35/1,4K",
+  "FloorPrice" : "2,682",
+  "Volume" : "1,05K",
+  "Liquidity" : "0,21%\nGiao dịch: 44",
+  "Collection" : "The Sandbox's ASSETs （Polygon）",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "10,1%\n101/999",
+  "FloorPrice" : "0,91",
+  "Volume" : "9,45",
+  "Liquidity" : "1,11%\nGiao dịch: 11",
+  "Collection" : "Jimmy",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,98%\n99/3,4K",
+  "FloorPrice" : "0,19",
+  "Volume" : "0,37",
+  "Liquidity" : "0,07%\nGiao dịch: 2",
+  "Collection" : "KILLABITS",
+  "Base" : "ETH"
+}, {
+  "Listed" : "13,52%\n135/999",
+  "FloorPrice" : "0,69",
+  "Volume" : "17,58",
+  "Liquidity" : "2,71%\nGiao dịch: 27",
+  "Collection" : "AvaxRocks",
+  "Base" : "AVAX"
+}, {
+  "Listed" : "2,61%\n520/20K",
+  "FloorPrice" : "0,034",
+  "Volume" : "0,37",
+  "Liquidity" : "0,03%\nGiao dịch: 4",
+  "Collection" : "Wolf Game - Genesis Land",
+  "Base" : "ETH"
+}, {
+  "Listed" : "7,4%\n297/4,1K",
+  "FloorPrice" : "0,03",
+  "Volume" : "0,37",
+  "Liquidity" : "0,28%\nGiao dịch: 11",
+  "Collection" : "Garbage Friends",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,88%\n165/4,3K",
+  "FloorPrice" : "1,18",
+  "Volume" : "9,33",
+  "Liquidity" : "0,12%\nGiao dịch: 5",
+  "Collection" : "ORCADE: Genesis Orcs",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,04%\n138/13,4K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,02",
+  "Liquidity" : "0,09%\nGiao dịch: 11",
+  "Collection" : "XBT Names",
+  "Base" : "BTC"
+}, {
+  "Listed" : "3,77%\n194/5,2K",
+  "FloorPrice" : "0,095",
+  "Volume" : "0,36",
+  "Liquidity" : "0,08%\nGiao dịch: 4",
+  "Collection" : "Sybil Samurai",
+  "Base" : "ETH"
+}, {
+  "Listed" : "100%\n1/1",
+  "FloorPrice" : "5",
+  "Volume" : "1,03K",
+  "Liquidity" : "62%\nGiao dịch: 29",
+  "Collection" : "Monkey Hell",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "3,91%\n82/2,1K",
+  "FloorPrice" : "0,064",
+  "Volume" : "0,36",
+  "Liquidity" : "0,29%\nGiao dịch: 6",
+  "Collection" : "Halo Wallet Genesis Pass",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,54%\n247/9,2K",
+  "FloorPrice" : "0,849",
+  "Volume" : "9,14",
+  "Liquidity" : "0,14%\nGiao dịch: 12",
+  "Collection" : "MOB",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,39%\n139/10K",
+  "FloorPrice" : "0,098",
+  "Volume" : "0,36",
+  "Liquidity" : "0,04%\nGiao dịch: 4",
+  "Collection" : "Volted Dragons Sailors Club - VDSC",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,69%\n569/10K",
+  "FloorPrice" : "0,053",
+  "Volume" : "0,36",
+  "Liquidity" : "0,06%\nGiao dịch: 6",
+  "Collection" : "Pixelady Maker",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,05%\n225/5,6K",
+  "FloorPrice" : "0,4",
+  "Volume" : "0,36",
+  "Liquidity" : "0,13%\nGiao dịch: 6",
+  "Collection" : "Weirdo Ghost Gang",
+  "Base" : "ETH"
+}, {
+  "Listed" : "7,54%\n502/6,7K",
+  "FloorPrice" : "0,489",
+  "Volume" : "9,06",
+  "Liquidity" : "0,19%\nGiao dịch: 12",
+  "Collection" : "TombStoned",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,97%\n29/3K",
+  "FloorPrice" : "8,8",
+  "Volume" : "9,03",
+  "Liquidity" : "0,04%\nGiao dịch: 1",
+  "Collection" : "Pioneer Legends",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,34%\n100/3K",
+  "FloorPrice" : "0,052",
+  "Volume" : "0,36",
+  "Liquidity" : "0,11%\nGiao dịch: 3",
+  "Collection" : "Gutter Rats",
+  "Base" : "ETH"
+}, {
+  "Listed" : "4,15%\n327/7,9K",
+  "FloorPrice" : "0,05",
+  "Volume" : "0,35",
+  "Liquidity" : "0,03%\nGiao dịch: 2",
+  "Collection" : "League of Kingdoms Land （Ethereum）",
+  "Base" : "ETH"
+}, {
+  "Listed" : "75%\n3/4",
+  "FloorPrice" : "0,011",
+  "Volume" : "0,35",
+  "Liquidity" : "0,06%\nGiao dịch: 1",
+  "Collection" : "Living on the Internet",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,42%\n93/22,3K",
+  "FloorPrice" : "0,062",
+  "Volume" : "2,93",
+  "Liquidity" : "0,32%\nGiao dịch: 43",
+  "Collection" : "Ultiverse - Moonlight",
+  "Base" : "BNB"
+}, {
+  "Listed" : "1,97%\n321/16,4K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,35",
+  "Liquidity" : "0,38%\nGiao dịch: 62",
+  "Collection" : "Cradles Crystal Pass",
+  "Base" : "ARB_ETH"
+}, {
+  "Listed" : "5,37%\n607/11,4K",
+  "FloorPrice" : "0,094",
+  "Volume" : "0,35",
+  "Liquidity" : "0,04%\nGiao dịch: 4",
+  "Collection" : "BASTARD GAN PUNKS V2",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,5%\n35/1K",
+  "FloorPrice" : "9,218",
+  "Volume" : "8,83",
+  "Liquidity" : "0,1%\nGiao dịch: 1",
+  "Collection" : "Bear Drop ＃2: Boombox",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,53%\n230/6,6K",
+  "FloorPrice" : "0,129",
+  "Volume" : "0,35",
+  "Liquidity" : "0,05%\nGiao dịch: 3",
+  "Collection" : "Lost Miners of the Ether",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,65%\n10/1,6K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,02",
+  "Liquidity" : "0,52%\nGiao dịch: 8",
+  "Collection" : "Bitcoinbirds",
+  "Base" : "BTC"
+}, {
+  "Listed" : "2,68%\n54/2,1K",
+  "FloorPrice" : "30",
+  "Volume" : "972,11",
+  "Liquidity" : "0,55%\nGiao dịch: 11",
+  "Collection" : "Affine Pass",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "5,6%\n56/1K",
+  "FloorPrice" : "0,04",
+  "Volume" : "0,35",
+  "Liquidity" : "1,1%\nGiao dịch: 11",
+  "Collection" : "The Fractured",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,91%\n122/4,2K",
+  "FloorPrice" : "9,33",
+  "Volume" : "8,75",
+  "Liquidity" : "0,03%\nGiao dịch: 1",
+  "Collection" : "Stoned Ape Crew",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,15%\n22/700",
+  "FloorPrice" : "0,41",
+  "Volume" : "0,35",
+  "Liquidity" : "0,15%\nGiao dịch: 1",
+  "Collection" : "Forgotten Runiverse Watcher's Rings",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,74%\n56/2,1K",
+  "FloorPrice" : "0,35",
+  "Volume" : "0,34",
+  "Liquidity" : "0,05%\nGiao dịch: 1",
+  "Collection" : "DeBox Guardians Cobra",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,05%\n214/4,3K",
+  "FloorPrice" : "1,385",
+  "Volume" : "7,7",
+  "Liquidity" : "0,12%\nGiao dịch: 5",
+  "Collection" : "PRNT",
+  "Base" : "SOL"
+}, {
+  "Listed" : "5,81%\n508/8,8K",
+  "FloorPrice" : "1,1",
+  "Volume" : "7,7",
+  "Liquidity" : "0,09%\nGiao dịch: 7",
+  "Collection" : "Pesky Penguins",
+  "Base" : "SOL"
+}, {
+  "Listed" : "96,04%\n97/101",
+  "FloorPrice" : "142,102",
+  "Volume" : "852,62",
+  "Liquidity" : "0,13%\nGiao dịch: 6",
+  "Collection" : "Trump Digital Trading Cards MugShot Edition",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "7,2%\n72/1K",
+  "FloorPrice" : "0,319",
+  "Volume" : "0,3",
+  "Liquidity" : "0,1%\nGiao dịch: 1",
+  "Collection" : "Velocity Series: Velocity Pass",
+  "Base" : "ETH"
+}, {
+  "Listed" : "9,68%\n88/910",
+  "FloorPrice" : "0,19",
+  "Volume" : "0,3",
+  "Liquidity" : "0,11%\nGiao dịch: 1",
+  "Collection" : "Grails by PROOF",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,14%\n15/1,4K",
+  "FloorPrice" : "0,355",
+  "Volume" : "0,3",
+  "Liquidity" : "0,08%\nGiao dịch: 1",
+  "Collection" : "EVMavericks",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,11%\n311/10K",
+  "FloorPrice" : "0,11",
+  "Volume" : "0,3",
+  "Liquidity" : "0,02%\nGiao dịch: 2",
+  "Collection" : "Wonders of The First: Character Proofs",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,32%\n118/2,3K",
+  "FloorPrice" : "2,818",
+  "Volume" : "7,68",
+  "Liquidity" : "0,14%\nGiao dịch: 3",
+  "Collection" : "Everseed Rangers",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,68%\n168/10K",
+  "FloorPrice" : "0,13",
+  "Volume" : "0,3",
+  "Liquidity" : "0,02%\nGiao dịch: 2",
+  "Collection" : "Sipherian Surge",
+  "Base" : "ETH"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,02",
+  "Liquidity" : "1%\nGiao dịch: 1",
+  "Collection" : "PryptoCunks",
+  "Base" : "BTC"
+}, {
+  "Listed" : "4,31%\n43/999",
+  "FloorPrice" : "0,2",
+  "Volume" : "0,3",
+  "Liquidity" : "0,11%\nGiao dịch: 1",
+  "Collection" : "Katana Inu Takeru",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,08%\n15/1,4K",
+  "FloorPrice" : "12,88",
+  "Volume" : "79,39",
+  "Liquidity" : "0,79%\nGiao dịch: 11",
+  "Collection" : "[REDACTED] Keys",
+  "Base" : "APT"
+}, {
+  "Listed" : "1,96%\n196/10K",
+  "FloorPrice" : "0,64",
+  "Volume" : "7,53",
+  "Liquidity" : "0,13%\nGiao dịch: 13",
+  "Collection" : "Toys R Us",
+  "Base" : "SOL"
+}, {
+  "Listed" : "5,22%\n522/10K",
+  "FloorPrice" : "0,037",
+  "Volume" : "0,3",
+  "Liquidity" : "0,05%\nGiao dịch: 5",
+  "Collection" : "Rare Apepes",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,02%\n210/7K",
+  "FloorPrice" : "0,14",
+  "Volume" : "0,3",
+  "Liquidity" : "0,03%\nGiao dịch: 2",
+  "Collection" : "Cryptoon Goonz",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,24%\n323/10K",
+  "FloorPrice" : "0,027",
+  "Volume" : "0,3",
+  "Liquidity" : "0,11%\nGiao dịch: 10",
+  "Collection" : "Saved Souls",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,7%\n102/6K",
+  "FloorPrice" : "0,35",
+  "Volume" : "0,29",
+  "Liquidity" : "0,02%\nGiao dịch: 1",
+  "Collection" : "Crypto Citizens",
+  "Base" : "ETH"
+}, {
+  "Listed" : "8,94%\n725/8,2K",
+  "FloorPrice" : "0,059",
+  "Volume" : "0,29",
+  "Liquidity" : "0,07%\nGiao dịch: 5",
+  "Collection" : "VOX Collectibles: The Walking Dead",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,5%\n75/5K",
+  "FloorPrice" : "1,226",
+  "Volume" : "7,42",
+  "Liquidity" : "0,09%\nGiao dịch: 4",
+  "Collection" : "Doubloons",
+  "Base" : "SOL"
+}, {
+  "Listed" : "7,55%\n151/2,1K",
+  "FloorPrice" : "1,279",
+  "Volume" : "7,41",
+  "Liquidity" : "0,35%\nGiao dịch: 7",
+  "Collection" : "Bad* Environment Club",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,8%\n105/5,9K",
+  "FloorPrice" : "536,942",
+  "Volume" : "818,8",
+  "Liquidity" : "0,04%\nGiao dịch: 2",
+  "Collection" : "Champions Ascension - Prime Eternal",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "2,71%\n24/888",
+  "FloorPrice" : "0,165",
+  "Volume" : "0,29",
+  "Liquidity" : "0,34%\nGiao dịch: 3",
+  "Collection" : "888ALIEN",
+  "Base" : "ARB_ETH"
+}, {
+  "Listed" : "7%\n233/3,4K",
+  "FloorPrice" : "0,045",
+  "Volume" : "0,29",
+  "Liquidity" : "0,19%\nGiao dịch: 6",
+  "Collection" : "Spellborne Monsters",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,28%\n16/1,3K",
+  "FloorPrice" : "0,013",
+  "Volume" : "0,02",
+  "Liquidity" : "0,08%\nGiao dịch: 1",
+  "Collection" : "Pingoos",
+  "Base" : "BTC"
+}, {
+  "Listed" : "6,88%\n688/10K",
+  "FloorPrice" : "0,045",
+  "Volume" : "0,29",
+  "Liquidity" : "0,03%\nGiao dịch: 3",
+  "Collection" : "Lazy Ape Official",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,25%\n1/400",
+  "FloorPrice" : "0,25",
+  "Volume" : "0,02",
+  "Liquidity" : "0,5%\nGiao dịch: 2",
+  "Collection" : "metablocks",
+  "Base" : "BTC"
+}, {
+  "Listed" : "8,47%\n845/9,5K",
+  "FloorPrice" : "0,85",
+  "Volume" : "7,22",
+  "Liquidity" : "0,12%\nGiao dịch: 9",
+  "Collection" : "Claynosaurz: Claymaker",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,79%\n26/3,4K",
+  "FloorPrice" : "0,093",
+  "Volume" : "0,28",
+  "Liquidity" : "0,13%\nGiao dịch: 4",
+  "Collection" : "CEDEN Mint Pass",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,11%\n111/10K",
+  "FloorPrice" : "0,072",
+  "Volume" : "0,28",
+  "Liquidity" : "0,04%\nGiao dịch: 4",
+  "Collection" : "Pop Art Cats by Matt Chessco",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,86%\n185/10K",
+  "FloorPrice" : "0,048",
+  "Volume" : "0,28",
+  "Liquidity" : "0,09%\nGiao dịch: 8",
+  "Collection" : "Boss Beauties",
+  "Base" : "ETH"
+}, {
+  "Listed" : "9,81%\n50/509",
+  "FloorPrice" : "7,28",
+  "Volume" : "7,16",
+  "Liquidity" : "0,2%\nGiao dịch: 1",
+  "Collection" : "GUIDE",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,88%\n188/6,6K",
+  "FloorPrice" : "0,055",
+  "Volume" : "0,28",
+  "Liquidity" : "0,1%\nGiao dịch: 6",
+  "Collection" : "Walker World: Women",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,74%\n448/12K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,28",
+  "Liquidity" : "0,19%\nGiao dịch: 22",
+  "Collection" : "Cloud original",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "1,16%\n9/777",
+  "FloorPrice" : "0,013",
+  "Volume" : "0,02",
+  "Liquidity" : "0,13%\nGiao dịch: 1",
+  "Collection" : "BTC Mutant Virus",
+  "Base" : "BTC"
+}, {
+  "Listed" : "13,52%\n15/111",
+  "FloorPrice" : "1,08",
+  "Volume" : "7,11",
+  "Liquidity" : "12,62%\nGiao dịch: 14",
+  "Collection" : "Sols SPL30",
+  "Base" : "SOL"
+}, {
+  "Listed" : "4,26%\n405/9,6K",
+  "FloorPrice" : "0,149",
+  "Volume" : "0,28",
+  "Liquidity" : "0,04%\nGiao dịch: 3",
+  "Collection" : "Worldwide Webb Land",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,08%\n8/711",
+  "FloorPrice" : "0,8",
+  "Volume" : "7,02",
+  "Liquidity" : "0,29%\nGiao dịch: 2",
+  "Collection" : "THE HEIST",
+  "Base" : "SOL"
+}, {
+  "Listed" : "100%\n1/1",
+  "FloorPrice" : "0,075",
+  "Volume" : "0,28",
+  "Liquidity" : "0,02%\nGiao dịch: 4",
+  "Collection" : "RTFKT - MNLTH X",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,09%\n308/10K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,02",
+  "Liquidity" : "0,15%\nGiao dịch: 14",
+  "Collection" : "MutantPunks",
+  "Base" : "BTC"
+}, {
+  "Listed" : "3,88%\n576/14,9K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,28",
+  "Liquidity" : "0,49%\nGiao dịch: 72",
+  "Collection" : "Habbo Tokens",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,22%\n222/10,1K",
+  "FloorPrice" : "0,067",
+  "Volume" : "0,28",
+  "Liquidity" : "0,04%\nGiao dịch: 4",
+  "Collection" : "SupDucks",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,94%\n31/1,1K",
+  "FloorPrice" : "0,048",
+  "Volume" : "2,28",
+  "Liquidity" : "4,84%\nGiao dịch: 50",
+  "Collection" : "DogeWalk.io DWD Token Voucher",
+  "Base" : "BNB"
+}, {
+  "Listed" : "1,92%\n134/7K",
+  "FloorPrice" : "0,057",
+  "Volume" : "0,27",
+  "Liquidity" : "0,09%\nGiao dịch: 6",
+  "Collection" : "Fragments By James Jean",
+  "Base" : "ETH"
+}, {
+  "Listed" : "14,5%\n505/3,5K",
+  "FloorPrice" : "0,04",
+  "Volume" : "6,73",
+  "Liquidity" : "3,43%\nGiao dịch: 119",
+  "Collection" : "Mojo",
+  "Base" : "SOL"
+}, {
+  "Listed" : "100%\n5/5",
+  "FloorPrice" : "0,069",
+  "Volume" : "0,27",
+  "Liquidity" : "0,03%\nGiao dịch: 4",
+  "Collection" : "oncyber labs",
+  "Base" : "ETH"
+}, {
+  "Listed" : "13,54%\n90/662",
+  "FloorPrice" : "0,6",
+  "Volume" : "6,73",
+  "Liquidity" : "2,12%\nGiao dịch: 14",
+  "Collection" : "Solana Surfers",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,65%\n181/11K",
+  "FloorPrice" : "19,781",
+  "Volume" : "742,06",
+  "Liquidity" : "0,03%\nGiao dịch: 3",
+  "Collection" : "Derby Stars",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "0,1%\n117/129K",
+  "FloorPrice" : "70,718",
+  "Volume" : "741,21",
+  "Liquidity" : "<0,01%\nGiao dịch: 10",
+  "Collection" : "Lens Protocol Profiles",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "1,38%\n3,8K/272,6K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "6,68",
+  "Liquidity" : "0,22%\nGiao dịch: 593",
+  "Collection" : "Leia The Cat",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,9%\n29/1K",
+  "FloorPrice" : "0,35",
+  "Volume" : "0,26",
+  "Liquidity" : "0,1%\nGiao dịch: 1",
+  "Collection" : "HUXLEY Robots",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,6%\n5,6K/943,9K",
+  "FloorPrice" : "0,04",
+  "Volume" : "599,32",
+  "Liquidity" : "0,22%\nGiao dịch: 2K",
+  "Collection" : "Smart Cats",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "7,78%\n594/7,5K",
+  "FloorPrice" : "0,655",
+  "Volume" : "5,4",
+  "Liquidity" : "0,07%\nGiao dịch: 5",
+  "Collection" : "Wolf Capital",
+  "Base" : "SOL"
+}, {
+  "Listed" : "5,06%\n135/2,7K",
+  "FloorPrice" : "0,048",
+  "Volume" : "0,21",
+  "Liquidity" : "0,27%\nGiao dịch: 7",
+  "Collection" : "Sakura Park",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,25%\n10/800",
+  "FloorPrice" : "0,27",
+  "Volume" : "0,21",
+  "Liquidity" : "0,13%\nGiao dịch: 1",
+  "Collection" : "Mintify Lifetime Membership",
+  "Base" : "ETH"
+}, {
+  "Listed" : "0,98%\n174/17,9K",
+  "FloorPrice" : "0,013",
+  "Volume" : "0,21",
+  "Liquidity" : "0,11%\nGiao dịch: 19",
+  "Collection" : "zkSync Glory NFT",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "2%\n1,9K/94,8K",
+  "FloorPrice" : "0,014",
+  "Volume" : "0,21",
+  "Liquidity" : "0,02%\nGiao dịch: 18",
+  "Collection" : "Gemesis",
+  "Base" : "ETH"
+}, {
+  "Listed" : "87,04%\n94/108",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,21",
+  "Liquidity" : "0,02%\nGiao dịch: 4",
+  "Collection" : "Parallel Cosmetics",
+  "Base" : "ETH"
+}, {
+  "Listed" : "31,8%\n159/500",
+  "FloorPrice" : "1,75",
+  "Volume" : "5,33",
+  "Liquidity" : "0,6%\nGiao dịch: 3",
+  "Collection" : "Sol SRFR",
+  "Base" : "SOL"
+}, {
+  "Listed" : "8,5%\n64/753",
+  "FloorPrice" : "5",
+  "Volume" : "5,33",
+  "Liquidity" : "0,14%\nGiao dịch: 1",
+  "Collection" : "Disko Kittiez",
+  "Base" : "SOL"
+}, {
+  "Listed" : "2,09%\n166/8K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,02",
+  "Liquidity" : "0,18%\nGiao dịch: 14",
+  "Collection" : "Node Wizards",
+  "Base" : "BTC"
+}, {
+  "Listed" : "9,63%\n44/457",
+  "FloorPrice" : "5,3",
+  "Volume" : "3,76",
+  "Liquidity" : "0,22%\nGiao dịch: 1",
+  "Collection" : "Verse Estate - Los Angeles",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,26%\n31/953",
+  "FloorPrice" : "0,02",
+  "Volume" : "0,15",
+  "Liquidity" : "0,63%\nGiao dịch: 6",
+  "Collection" : "Equation Founders Club",
+  "Base" : "ARB_ETH"
+}, {
+  "Listed" : "4,06%\n608/15K",
+  "FloorPrice" : "0,255",
+  "Volume" : "3,7",
+  "Liquidity" : "0,09%\nGiao dịch: 14",
+  "Collection" : "Future Trader",
+  "Base" : "SOL"
+}, {
+  "Listed" : "10,77%\n139/1,3K",
+  "FloorPrice" : "1,248",
+  "Volume" : "3,7",
+  "Liquidity" : "0,24%\nGiao dịch: 3",
+  "Collection" : "ORCADE: Genesis Orcs",
+  "Base" : "SOL"
+}, {
+  "Listed" : "100%\n1/1",
+  "FloorPrice" : "0,031",
+  "Volume" : "0,15",
+  "Liquidity" : "0,02%\nGiao dịch: 4",
+  "Collection" : "MetaHero: MintPass",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,17%\n224/7,1K",
+  "FloorPrice" : "0,21",
+  "Volume" : "37,97",
+  "Liquidity" : "0,57%\nGiao dịch: 40",
+  "Collection" : "Aptos Cool Kids",
+  "Base" : "APT"
+}, {
+  "Listed" : "3,14%\n127/3,9K",
+  "FloorPrice" : "4,665",
+  "Volume" : "3,62",
+  "Liquidity" : "0,03%\nGiao dịch: 1",
+  "Collection" : "Matrica Labs: Pixels",
+  "Base" : "SOL"
+}, {
+  "Listed" : "1,13%\n398/35,3K",
+  "FloorPrice" : "25,86",
+  "Volume" : "400,16",
+  "Liquidity" : "0,05%\nGiao dịch: 16",
+  "Collection" : "Chicken Derby",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "17,95%\n82/456",
+  "FloorPrice" : "3,9",
+  "Volume" : "3,61",
+  "Liquidity" : "0,22%\nGiao dịch: 1",
+  "Collection" : "Abstratica",
+  "Base" : "SOL"
+}, {
+  "Listed" : "3,83%\n124/3,3K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,34%\nGiao dịch: 11",
+  "Collection" : "OrdGoose",
+  "Base" : "BTC"
+}, {
+  "Listed" : "0,18%\n4/2,3K",
+  "FloorPrice" : "341,045",
+  "Volume" : "284,21",
+  "Liquidity" : "0,05%\nGiao dịch: 1",
+  "Collection" : "BOBO OFFICIAL CLUB",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "0,02%\n3/22,3K",
+  "FloorPrice" : "1,422K",
+  "Volume" : "284,21",
+  "Liquidity" : "<0,01%\nGiao dịch: 1",
+  "Collection" : "Bomb Park Epic Box NFT",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "0,7%\n70/10K",
+  "FloorPrice" : "0,11",
+  "Volume" : "0,1",
+  "Liquidity" : "0,01%\nGiao dịch: 1",
+  "Collection" : "TheMafiaAnimalsSoldiers",
+  "Base" : "ETH"
+}, {
+  "Listed" : "3,09%\n1,4K/42,5K",
+  "FloorPrice" : "0,01",
+  "Volume" : "0,1",
+  "Liquidity" : "<0,01%\nGiao dịch: 1",
+  "Collection" : "SuperRare",
+  "Base" : "ETH"
+}, {
+  "Listed" : "60,6%\n20,9K/34,4K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,1",
+  "Liquidity" : "<0,01%\nGiao dịch: 1",
+  "Collection" : "NFT Creation - ETH 1155",
+  "Base" : "ETH"
+}, {
+  "Listed" : "5,76%\n72/1,3K",
+  "FloorPrice" : "0,055",
+  "Volume" : "0,1",
+  "Liquidity" : "0,16%\nGiao dịch: 2",
+  "Collection" : "The Art Pass by Iconic Moments",
+  "Base" : "ETH"
+}, {
+  "Listed" : "2,23%\n88/4K",
+  "FloorPrice" : "0,1",
+  "Volume" : "0,1",
+  "Liquidity" : "0,03%\nGiao dịch: 1",
+  "Collection" : "Cheers UP Official",
+  "Base" : "ETH"
+}, {
+  "Listed" : "100%\n1/1",
+  "FloorPrice" : "13,5",
+  "Volume" : "284,02",
+  "Liquidity" : "1,9%\nGiao dịch: 21",
+  "Collection" : "1",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,4%\nGiao dịch: 1",
+  "Collection" : "Eggtoshis",
+  "Base" : "BTC"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "<0.01",
+  "Liquidity" : "1,45%\nGiao dịch: 1",
+  "Collection" : "Doge Capital Ordinals",
+  "Base" : "BTC"
+}, {
+  "Listed" : "17,05%\n568/3,4K",
+  "FloorPrice" : "0,037",
+  "Volume" : "1,66",
+  "Liquidity" : "1,63%\nGiao dịch: 54",
+  "Collection" : "$WIF SPL20",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,28%\n9/3,4K",
+  "FloorPrice" : "177",
+  "Volume" : "182,63",
+  "Liquidity" : "0,04%\nGiao dịch: 1",
+  "Collection" : "BoomLand - Genesis T1 Chests",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "1,61%\n62/3,9K",
+  "FloorPrice" : "113,682",
+  "Volume" : "180,76",
+  "Liquidity" : "0,03%\nGiao dịch: 1",
+  "Collection" : "Cryptoys Classics",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "0,04%\n59/176,6K",
+  "FloorPrice" : "6",
+  "Volume" : "180,42",
+  "Liquidity" : "<0,01%\nGiao dịch: 5",
+  "Collection" : "Polish Crypto Stamp - Official Collection",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "5,74%\n711/8,5K",
+  "FloorPrice" : "0,14",
+  "Volume" : "1,63",
+  "Liquidity" : "0,09%\nGiao dịch: 7",
+  "Collection" : "DeFi Land - Utility NFTs",
+  "Base" : "SOL"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "3,03",
+  "Liquidity" : "0,04%\nGiao dịch: 2",
+  "Collection" : "Myna Tokenized Item",
+  "Base" : "AVAX"
+}, {
+  "Listed" : "1,79%\n374/21K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,02%\nGiao dịch: 3",
+  "Collection" : "OSH （ORC-CASH）",
+  "Base" : "BTC"
+}, {
+  "Listed" : "1,34%\n67/5K",
+  "FloorPrice" : "28,421",
+  "Volume" : "177,55",
+  "Liquidity" : "0,16%\nGiao dịch: 8",
+  "Collection" : "The Smurfs’ Society | Access Crystals",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "0,5%\n1/200",
+  "FloorPrice" : "10",
+  "Volume" : "16,71",
+  "Liquidity" : "8,5%\nGiao dịch: 17",
+  "Collection" : "Pepe Aptos",
+  "Base" : "APT"
+}, {
+  "Listed" : "6,42%\n57/844",
+  "FloorPrice" : "48,031",
+  "Volume" : "175,16",
+  "Liquidity" : "0,48%\nGiao dịch: 4",
+  "Collection" : "Blast Royale: Corpos",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "0,39%\n19/5K",
+  "FloorPrice" : "137,555",
+  "Volume" : "113,69",
+  "Liquidity" : "0,03%\nGiao dịch: 1",
+  "Collection" : "Decentral Games ICE Poker All Access Wearables",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "13,49%\n321/2,4K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,04",
+  "Liquidity" : "0,09%\nGiao dịch: 2",
+  "Collection" : "MetaZoo Games PFP 2.0",
+  "Base" : "ETH"
+}, {
+  "Listed" : "9,33%\n7K/74,8K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,04",
+  "Liquidity" : "0,02%\nGiao dịch: 9",
+  "Collection" : "BLOCKLORDS BANNERS",
+  "Base" : "ETH"
+}, {
+  "Listed" : "1,71%\n264/15,5K",
+  "FloorPrice" : "27,99",
+  "Volume" : "113,26",
+  "Liquidity" : "0,02%\nGiao dịch: 3",
+  "Collection" : "League of Kingdoms Skin （Polygon）",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "1,58%\n33/2,1K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,05%\nGiao dịch: 1",
+  "Collection" : "Bsos",
+  "Base" : "BTC"
+}, {
+  "Listed" : "1,1%\n119/11K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,04",
+  "Liquidity" : "0,3%\nGiao dịch: 32",
+  "Collection" : "Crypto Base",
+  "Base" : "BASE_ETH"
+}, {
+  "Listed" : "4,33%\n16/370",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,04",
+  "Liquidity" : "2,17%\nGiao dịch: 8",
+  "Collection" : "zk Mfers",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "0,4%\n16/4K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,04",
+  "Liquidity" : "0,2%\nGiao dịch: 8",
+  "Collection" : "zk AI_Rein 1.01",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "0,64%\n428/67,3K",
+  "FloorPrice" : "2,1",
+  "Volume" : "110,39",
+  "Liquidity" : "<0,01%\nGiao dịch: 3",
+  "Collection" : "Muzzle Run",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "3,69%\n191/2,7K",
+  "FloorPrice" : "1",
+  "Volume" : "1",
+  "Liquidity" : "0,04%\nGiao dịch: 1",
+  "Collection" : "Sol Slugs",
+  "Base" : "SOL"
+}, {
+  "Listed" : "0,32%\n38/12K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,03",
+  "Liquidity" : "3,66%\nGiao dịch: 226",
+  "Collection" : "LUNA",
+  "Base" : "BASE_ETH"
+}, {
+  "Listed" : "0,22%\n280/128,9K",
+  "FloorPrice" : "16,118",
+  "Volume" : "64,7",
+  "Liquidity" : "<0,01%\nGiao dịch: 4",
+  "Collection" : "Lens Handles",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "0,11%\n14/13,1K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,03",
+  "Liquidity" : "0,07%\nGiao dịch: 9",
+  "Collection" : "Base Day One",
+  "Base" : "BASE_ETH"
+}, {
+  "Listed" : "0,06%\n2/3,8K",
+  "FloorPrice" : "80",
+  "Volume" : "62,76",
+  "Liquidity" : "0,03%\nGiao dịch: 1",
+  "Collection" : "Bullieverse - Barbearians",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "2,83%\n347/12,3K",
+  "FloorPrice" : "0,49",
+  "Volume" : "61,08",
+  "Liquidity" : "0,67%\nGiao dịch: 82",
+  "Collection" : "MATICS",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "0,01%\n1/10K",
+  "FloorPrice" : "1,5",
+  "Volume" : "5,75",
+  "Liquidity" : "0,51%\nGiao dịch: 51",
+  "Collection" : "Aptos Ape Club",
+  "Base" : "APT"
+}, {
+  "Listed" : "0,99%\n42/4,3K",
+  "FloorPrice" : "19,95",
+  "Volume" : "60,71",
+  "Liquidity" : "0,08%\nGiao dịch: 3",
+  "Collection" : "Tails of the AfterGlow",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "9,8%\n49/500",
+  "FloorPrice" : "20",
+  "Volume" : "60,05",
+  "Liquidity" : "0,6%\nGiao dịch: 3",
+  "Collection" : "LeptopApe",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "36,67%\n22/60",
+  "FloorPrice" : "24,133",
+  "Volume" : "59,63",
+  "Liquidity" : "5%\nGiao dịch: 3",
+  "Collection" : "Insomnia Girls",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "0,1%\n127/135,5K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,03",
+  "Liquidity" : "<0,01%\nGiao dịch: 4",
+  "Collection" : "The Beacon",
+  "Base" : "ARB_ETH"
+}, {
+  "Listed" : "1,54%\n170/11,1K",
+  "FloorPrice" : "0,015",
+  "Volume" : "0,1",
+  "Liquidity" : "0,03%\nGiao dịch: 3",
+  "Collection" : "Blucamon",
+  "Base" : "BNB"
+}, {
+  "Listed" : "0,87%\n69/8K",
+  "FloorPrice" : "0,028",
+  "Volume" : "0,1",
+  "Liquidity" : "0,04%\nGiao dịch: 3",
+  "Collection" : "Pome Rumble Unit",
+  "Base" : "BNB"
+}, {
+  "Listed" : "2,49%\n58/2,4K",
+  "FloorPrice" : "32,173",
+  "Volume" : "31,43",
+  "Liquidity" : "0,05%\nGiao dịch: 1",
+  "Collection" : "Hell's Kitchen Avatars",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "0,29%\n7/2,5K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,09%\nGiao dịch: 2",
+  "Collection" : "Bitcoin Reapers",
+  "Base" : "BTC"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,1",
+  "Liquidity" : "0,17%\nGiao dịch: 9",
+  "Collection" : "LingLong dde401",
+  "Base" : "OP_BNB"
+}, {
+  "Listed" : "11,48%\n570/5K",
+  "FloorPrice" : "1,225",
+  "Volume" : "30,57",
+  "Liquidity" : "0,09%\nGiao dịch: 4",
+  "Collection" : "CryptoPunksLSDLegends",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "1,23%\n123/10K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,02",
+  "Liquidity" : "0,21%\nGiao dịch: 21",
+  "Collection" : "Optimistically Bored",
+  "Base" : "OP_ETH"
+}, {
+  "Listed" : "1,25%\n112/9,1K",
+  "FloorPrice" : "47,9",
+  "Volume" : "30,33",
+  "Liquidity" : "0,02%\nGiao dịch: 1",
+  "Collection" : "The Visitors",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "0,91%\n70/7,8K",
+  "FloorPrice" : "15",
+  "Volume" : "30,07",
+  "Liquidity" : "0,03%\nGiao dịch: 2",
+  "Collection" : "Owlpha Core",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "3,01%\n100/3,4K",
+  "FloorPrice" : "11",
+  "Volume" : "29,77",
+  "Liquidity" : "0,07%\nGiao dịch: 2",
+  "Collection" : "Rogue Nation: Genesis Elemints",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "63,33%\n3,9K/6,2K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,02%\nGiao dịch: 1",
+  "Collection" : "NFT Creation - Arbitrum One",
+  "Base" : "ARB_ETH"
+}, {
+  "Listed" : "5,41%\n42/777",
+  "FloorPrice" : "17,8",
+  "Volume" : "14,78",
+  "Liquidity" : "0,13%\nGiao dịch: 1",
+  "Collection" : "Metaland Wolfpack",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "0,39%\n10/2,6K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,04%\nGiao dịch: 1",
+  "Collection" : "ZinoPet NFT",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "0,06%\n2/3,4K",
+  "FloorPrice" : "0,49",
+  "Volume" : "0,05",
+  "Liquidity" : "0,12%\nGiao dịch: 4",
+  "Collection" : "Puff Classic",
+  "Base" : "BNB"
+}, {
+  "Listed" : "0,38%\n1,2K/301,7K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "<0,01%\nGiao dịch: 2",
+  "Collection" : "SPACE ID .arb Name Service",
+  "Base" : "ARB_ETH"
+}, {
+  "Listed" : "4,16%\n78/1,9K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,11%\nGiao dịch: 2",
+  "Collection" : "ronin cat",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "0,13%\n19/15,6K",
+  "FloorPrice" : "0,042",
+  "Volume" : "0,05",
+  "Liquidity" : "<0,01%\nGiao dịch: 1",
+  "Collection" : "Rare Pandra King",
+  "Base" : "BNB"
+}, {
+  "Listed" : "0,19%\n8/4,4K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,07%\nGiao dịch: 3",
+  "Collection" : "Figuring myself out...",
+  "Base" : "ARB_ETH"
+}, {
+  "Listed" : "64,16%\n6K/9,3K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "0,05",
+  "Liquidity" : "0,02%\nGiao dịch: 1",
+  "Collection" : "AI NFT - BSC",
+  "Base" : "BNB"
+}, {
+  "Listed" : "0,15%\n1/714",
+  "FloorPrice" : "10",
+  "Volume" : "1,34",
+  "Liquidity" : "0,43%\nGiao dịch: 3",
+  "Collection" : "Kreachers",
+  "Base" : "APT"
+}, {
+  "Listed" : "8,94%\n177/2K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "1,22%\nGiao dịch: 24",
+  "Collection" : "zkSync Manga Baby Azuki",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,57",
+  "Liquidity" : "2,07%\nGiao dịch: 19",
+  "Collection" : "Aptos Apocalypse Cets",
+  "Base" : "APT"
+}, {
+  "Listed" : "1,34%\n410/30,7K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "<0,01%\nGiao dịch: 3",
+  "Collection" : "Opts",
+  "Base" : "OP_ETH"
+}, {
+  "Listed" : "0,05%\n3/7,2K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,19%\nGiao dịch: 13",
+  "Collection" : "Nauru",
+  "Base" : "BASE_ETH"
+}, {
+  "Listed" : "29,46%\n2,7K/8,9K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,24%\nGiao dịch: 21",
+  "Collection" : "zk Cookies",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,55",
+  "Liquidity" : "0,52%\nGiao dịch: 11",
+  "Collection" : "Angry Piraptos",
+  "Base" : "APT"
+}, {
+  "Listed" : "0,61%\n5,9K/964K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "<0,01%\nGiao dịch: 43",
+  "Collection" : "zkSync Era Name Service",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "0,12%\n60/54,5K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "<0,01%\nGiao dịch: 2",
+  "Collection" : "Reveel - Introducing",
+  "Base" : "OP_ETH"
+}, {
+  "Listed" : "76%\n1,6K/2K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "1,63%\nGiao dịch: 32",
+  "Collection" : "zk CastleGlobal",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "47,4%\n3,4K/7K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,4%\nGiao dịch: 26",
+  "Collection" : "zk Din8Bits",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "2,87%\n344/12K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,24%\nGiao dịch: 28",
+  "Collection" : "Casper 8f4fd1",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,23",
+  "Liquidity" : "2%\nGiao dịch: 5",
+  "Collection" : "Aptos Alphabet",
+  "Base" : "APT"
+}, {
+  "Listed" : "5,45%\n121/2,3K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,46%\nGiao dịch: 9",
+  "Collection" : "zkSync wOOts",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "1,76%\n340/19,4K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,05%\nGiao dịch: 8",
+  "Collection" : "zk HARRY POTTER",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,02%\nGiao dịch: 1",
+  "Collection" : "Bart Fan Club",
+  "Base" : "POLYGON_ETH"
+}, {
+  "Listed" : "0,16%\n341/225,6K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "<0,01%\nGiao dịch: 2",
+  "Collection" : "SyncSwap x Galxe",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "10,22%\n14/137",
+  "FloorPrice" : "4,799",
+  "Volume" : "2,28",
+  "Liquidity" : "0,73%\nGiao dịch: 1",
+  "Collection" : "Pizza-ception by Lucivaryas x Reddit Collectible Avatars",
+  "Base" : "MATIC"
+}, {
+  "Listed" : "0,61%\n52/8,6K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,02%\nGiao dịch: 1",
+  "Collection" : "Figuring myself out...",
+  "Base" : "OP_ETH"
+}, {
+  "Listed" : "14,37%\n1,5K/10K",
+  "FloorPrice" : "<0.01",
+  "Volume" : "<0.01",
+  "Liquidity" : "0,12%\nGiao dịch: 11",
+  "Collection" : "Opepen Coin Edition",
+  "Base" : "ERA_ETH"
+}, {
+  "Listed" : "--",
+  "FloorPrice" : "--",
+  "Volume" : "0,21",
+  "Liquidity" : "0,11%\nGiao dịch: 1",
+  "Collection" : "Aptos Alpha Phoenix",
+  "Base" : "APT"
+} ]

@@ -1,7 +1,6 @@
 package model.collection;
-import data.crawl.IDataFrame;
 
-public class TopCollection implements IDataFrame{
+public class TopCollection{
 	private int top;
 	private String name ;
 	private String volume ;
