@@ -9,6 +9,10 @@ import java.util.*;
 import java.util.Map.Entry;
 
 public class HashtagRanking {
+    private static int maxLikes = 0;
+    private static int maxReplies = 0;
+    private static int maxRetweets = 0;
+    private static int maxAppearances = 0;
 
     public static void main(String[] args) {
         ObjectMapper objectMapper = new ObjectMapper();
@@ -19,21 +23,12 @@ public class HashtagRanking {
 
             // Count hashtag occurrences and calculate engagement metrics
             Map<String, HashtagStats> hashtagStatsMap = new HashMap<>();
-            int maxLikes = 0;
-            int maxReplies = 0;
-            int maxRetweets = 0;
-            int maxAppearances = 0;
 
             for (JsonNode tweetNode : tweetsNode) {
                 if (tweetNode.has("Hastags")) {
                     int likes = tweetNode.get("Like").asInt();
                     int replies = tweetNode.get("Reply").asInt();
                     int retweets = tweetNode.get("Retweet").asInt();
-
-                    // Update max values for normalization
-                    maxLikes = Math.max(maxLikes, likes);
-                    maxReplies = Math.max(maxReplies, replies);
-                    maxRetweets = Math.max(maxRetweets, retweets);
 
                     String hashtags = tweetNode.get("Hastags").asText().toLowerCase();
                     String[] hashtagArray = hashtags.split("#");
@@ -42,18 +37,18 @@ public class HashtagRanking {
                     for (int i = 1; i < hashtagArray.length; i++) {
                         String hashtag = "#" + hashtagArray[i].split("\\s")[0];  // Extract the hashtag, excluding any additional characters
 
-                        // Update max appearances
-                        maxAppearances = Math.max(maxAppearances, hashtagStatsMap.computeIfAbsent(hashtag, k -> new HashtagStats()).incrementAppearances());
-                        
                         // Update hashtag stats
-                        hashtagStatsMap.get(hashtag).updateStats(likes, replies, retweets);
+                        hashtagStatsMap.computeIfAbsent(hashtag, k -> new HashtagStats()).updateStats(likes, replies, retweets);
                     }
                 }
             }
 
-            // Normalize the engagement metrics
+            // Update max values for normalization
             for (HashtagStats stats : hashtagStatsMap.values()) {
-                stats.normalize(maxLikes, maxReplies, maxRetweets, maxAppearances);
+                maxLikes = Math.max(maxLikes, stats.likes);
+                maxReplies = Math.max(maxReplies, stats.replies);
+                maxRetweets = Math.max(maxRetweets, stats.retweets);
+                maxAppearances = Math.max(maxAppearances, stats.appearances);
             }
 
             // Create a list of hashtag entries for sorting
@@ -66,7 +61,7 @@ public class HashtagRanking {
             System.out.println("Hashtag Ranking:");
             for (int i = 0; i < hashtagList.size(); i++) {
                 Map.Entry<String, HashtagStats> entry = hashtagList.get(i);
-                System.out.println((i + 1) + ". " + entry.getKey() + ": " + entry.getValue());
+                printStats(i + 1, entry.getKey(), entry.getValue());
             }
 
         } catch (IOException e) {
@@ -74,52 +69,41 @@ public class HashtagRanking {
         }
     }
 
-    private static class HashtagStats {
-        private double normalizedLikes;
-        private double normalizedReplies;
-        private double normalizedRetweets;
-        private double normalizedAppearances;
+    private static void printStats(int rank, String hashtag, HashtagStats stats) {
+        System.out.println(rank + ". " + hashtag + ": " + stats);
+    }
 
-        public int incrementAppearances() {
-            // Increment appearances and return the updated count
-            return (int) ++normalizedAppearances;
-        }
+    public static class HashtagStats {
+        private int likes;
+        private int replies;
+        private int retweets;
+        private int appearances;
 
         public void updateStats(int likes, int replies, int retweets) {
-            // Update normalized values
-            normalizedLikes += normalize(likes);
-            normalizedReplies += normalize(replies);
-            normalizedRetweets += normalize(retweets);
-        }
-
-        public void normalize(int maxLikes, int maxReplies, int maxRetweets, int maxAppearances) {
-            // Normalize the values to be between 0 and 1
-            normalizedLikes /= maxLikes;
-            normalizedReplies /= maxReplies;
-            normalizedRetweets /= maxRetweets;
-            normalizedAppearances /= maxAppearances;
+            this.likes += likes;
+            this.replies += replies;
+            this.retweets += retweets;
+            this.appearances++;
         }
 
         public double getNormalizedTotalEngagement() {
             // Calculate the total engagement with a 0.5 weight for each metric
-            return 0.5 * (0.5 * normalizedAppearances + 0.5 * (normalizedLikes + normalizedReplies + normalizedRetweets));
-        }
+            double normalizedLikes = this.likes / (double) maxLikes;
+            double normalizedReplies = this.replies / (double) maxReplies;
+            double normalizedRetweets = this.retweets / (double) maxRetweets;
+            double normalizedAppearances = (double) this.appearances / maxAppearances;
 
-        private double normalize(int value) {
-            // Normalize the value to be between 0 and 1
-            return (double) value / Math.max(1, value);  // Avoid division by zero
+            return 0.5 * normalizedAppearances + (0.5/3) * (normalizedLikes + normalizedReplies + normalizedRetweets);
         }
 
         @Override
         public String toString() {
-            return "Normalized Engagement - Likes: " + normalizedLikes +
-                    ", Replies: " + normalizedReplies +
-                    ", Retweets: " + normalizedRetweets +
-                    ", Appearances: " + normalizedAppearances +
+            // Return a string representation of the normalized metrics
+            return "Normalized Engagement - Likes: " + likes +
+                    ", Replies: " + replies +
+                    ", Retweets: " + retweets +
+                    ", Appearances: " + appearances +
                     ", Total: " + getNormalizedTotalEngagement();
         }
     }
 }
-
-
-
