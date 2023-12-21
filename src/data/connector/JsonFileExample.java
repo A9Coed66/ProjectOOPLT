@@ -9,7 +9,7 @@ import java.util.List;
 public class JsonFileExample {
     public static void main(String[] args) {
         // Đường dẫn đến tệp JSON của bạn
-        String filePath = "D:\\a_learning_code\\java\\ProjectOOPLT\\data\\json\\datatwitter.json";
+        String filePath = "data/json/datatwitter.json";
 
         // Sử dụng ObjectMapper để chuyển đổi JSON từ tệp thành List<TwitterData>
         ObjectMapper objectMapper = new ObjectMapper();
