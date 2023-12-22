@@ -15,6 +15,10 @@ public class DataPointv1 {
         return nftRanking;
     }
 
+    public float getVolume(){
+        return volume;
+    }
+
     public int getTweetBlogRanking() {
         return tweetblogRanking;
     }
@@ -29,6 +33,16 @@ public class DataPointv1 {
         this.name = name;
         this.nftRanking = nftRanking;
         this.volume = volume;
+    }
+
+    public Number getProperty(String type) {
+        return switch (type) {
+            case "Trending" -> nftRanking;
+            case "Volume" -> volume;
+            // Todo dễ thấy có lỗi sai ở đây nhỉ =))
+            case "Hashtag" -> volume;
+            default -> throw new IllegalArgumentException("Invalid type: " + type);
+        };
     }
 }
 

@@ -1,6 +1,9 @@
 package controller.page;
 import java.io.IOException;
 
+import analyze.CorrelationAnalysisController;
+import analyze.CorrelationAnalysisControllerv1;
+import analyze.CorrelationAnalysisPagev1;
 import controller.algorithm.JsonFileReadAlgorithm;
 import controller.post.TweetViewController;
 import data.crawl.TwitterCrawlerController;
@@ -9,6 +12,7 @@ import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -84,7 +88,20 @@ public class SearchPageController {
     
 	@FXML
 	void trendingButtonPressed(ActionEvent event) {
-
+		try{
+			final String ANALYSIS_PAGE_FXML_FILE_PATH = "/view/page/CorrelationAnalysisPagev1.fxml";
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(ANALYSIS_PAGE_FXML_FILE_PATH));
+			CorrelationAnalysisControllerv1 controller = new CorrelationAnalysisControllerv1();
+			fxmlLoader.setController(controller);
+			Parent root = fxmlLoader.load();
+			Scene scene = new Scene(root);
+			scene.getStylesheets().add(getClass().getResource("/analyze/chart.css").toExternalForm());
+			Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+			stage.setScene(scene);
+			stage.show();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	    
 	@FXML
