@@ -1,14 +1,15 @@
 package analyze;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import controller.algorithm.getTopCollectionFromJsonFile;
 import javafx.fxml.FXML;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.ComboBox;
 
-public class CorrelationAnalysisController {
+import java.util.ArrayList;
+import java.util.List;
+
+public class CorrelationAnalysisControllerv1 {
 
     @FXML
     private LineChart<Number, Number> trendingHashtagChart;
@@ -190,7 +191,8 @@ public class CorrelationAnalysisController {
         }
     }
 
-    private ArrayList<DataPoint> top10TrendingCollection;
+    private String TOP_COLLECTION_DATA_FILE = "data/json/collection/okx/topcollection_20231221_160726.json";
+    private ArrayList<DataPointv1> dataPointsList = new getTopCollectionFromJsonFile(TOP_COLLECTION_DATA_FILE).jsonReadAlgorithm();
 
     // Get data of top 10 trending colelction
     private ArrayList<DataPoint> getData(){
@@ -200,4 +202,10 @@ public class CorrelationAnalysisController {
         //1. Top ranking; 2. Name of collection; 3. Volume per hour; 4. Number of post (hashtag) in a day
         return tempArr;
     }
+
+    public static void main(String[] args){
+        String TOP_COLLECTION_DATA_FILE = "data/json/collection/okx/topcollection_20231221_160726.json";
+        ArrayList<DataPointv1> dataPointsList = new getTopCollectionFromJsonFile(TOP_COLLECTION_DATA_FILE).jsonReadAlgorithm();
+    }
+
 }

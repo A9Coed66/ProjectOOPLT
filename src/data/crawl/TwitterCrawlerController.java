@@ -117,7 +117,7 @@ public class TwitterCrawlerController  {
  	    	 return javafx.beans.binding.Bindings.createObjectBinding(() -> formattedContent);
  	    });
  	    
- 	    listItems = new FilteredList<Tweet>(JsonFileReadAlgorithm.jsonReadAlgorithm());
+ 	    listItems = new FilteredList<Tweet>(new JsonFileReadAlgorithm("data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json").jsonReadAlgorithm());
  	    
  	    if(listItems != null ) tblPost.setItems(listItems);
  	    

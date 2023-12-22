@@ -22,17 +22,17 @@ import model.post.BlogPost;
 import model.post.Tweet;
 
 public class JsonFileReadAlgorithm {
-	private String filepath;
+	private static String filePath;
 
-	public JsonFileReadAlgorithm(String filepath) {
+	public JsonFileReadAlgorithm(String filePath) {
 		super();
-		this.filepath = filepath;
+		this.filePath = filePath;
 	}
 	
 	public static ObservableList<Tweet> jsonReadAlgorithm() {
 		
 		ObservableList<Tweet> tweetPosts = FXCollections.observableArrayList();
-		String filePath = "data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json";
+//		String filePath = "data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json";
 
         // Sử dụng ObjectMapper để chuyển đổi JSON từ tệp thành List<TwitterData>
         ObjectMapper objectMapper = new ObjectMapper();

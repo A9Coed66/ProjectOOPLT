@@ -32,11 +32,11 @@ public class SearchPageController {
 	
 	public SearchPageController(TableView<Tweet> tblPost) {
 		this.tblPost = tblPost;
-		SearchPageController.listItems = new FilteredList<Tweet>(JsonFileReadAlgorithm.jsonReadAlgorithm());
+		SearchPageController.listItems = new FilteredList<Tweet>(new JsonFileReadAlgorithm("data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json").jsonReadAlgorithm());
 	}
 	
 	public SearchPageController() {
-		SearchPageController.listItems = new FilteredList<Tweet>(JsonFileReadAlgorithm.jsonReadAlgorithm());
+		SearchPageController.listItems = new FilteredList<Tweet>(new JsonFileReadAlgorithm("data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json").jsonReadAlgorithm());
 	}
 	
 	//**
