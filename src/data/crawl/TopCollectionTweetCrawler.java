@@ -28,7 +28,7 @@ import data.connector.CollectionDB;
 public class TopCollectionTweetCrawler{
 	static String url = "https://nitter.net/search?f=tweets";
 	final static String[] LABELS ={"Avatar","Name","UserName","TimeStamp","Tweet","Reply","Retweet","Like","PostUrl","Hastags","Tags","Image"};
-	final static String PATH_TO_WEBDRIVER = "E:\\DOWNLOADS\\chromedriver-win64\\chromedriver.exe";
+	final static String PATH_TO_WEBDRIVER = "chromedriver-win64/chromedriver.exe";
 
 	
 	public static void crawler() throws InterruptedException {
@@ -64,7 +64,7 @@ public class TopCollectionTweetCrawler{
                  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='q']")));
                  driver.findElement(By.xpath("//input[@name='q']")).sendKeys(query);
                  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='timeline-item ']")));
-                 String curl=driver.getCurrentUrl()+"&e-nativeretweets=on";
+                 String curl=driver.getCurrentUrl()+"&e-nativeretweets=on&since=2023-12-21&until=2023-12-22";
                  driver.get(curl);
                  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='timeline-item ']")));
                  List<WebElement> items = driver.findElements(By.xpath("//div[@class='timeline-item ']"));
@@ -77,9 +77,9 @@ public class TopCollectionTweetCrawler{
          		                WebElement nameElement = item.findElement(By.xpath(".//a[@class='fullname']"));
          		                WebElement usernameElement = item.findElement(By.xpath("//a[@class='username']"));
          		                WebElement timeElement = item.findElement(By.xpath(".//span[@class='tweet-date']/a"));
-         		                WebElement replyElement = item.findElement(By.xpath(".//span[@class='icon-comment']"));
-         		                WebElement reTweetElement = item.findElement(By.xpath(".//span[@class='icon-retweet']"));
-         		                WebElement likeElement = item.findElement(By.xpath(".//span[@class='icon-heart']"));
+         		                WebElement replyElement = item.findElement(By.xpath(".//span[@class='tweet-stat'][1]/div[@class='icon-container']"));
+         		                WebElement reTweetElement = item.findElement(By.xpath(".//span[@class='tweet-stat'][2]/div[@class='icon-container']"));
+         		                WebElement likeElement = item.findElement(By.xpath(".//span[@class='tweet-stat'][4]/div[@class='icon-container']"));
          		                WebElement tweetElement = item.findElement(By.xpath(".//div[@class='tweet-content media-body']"));
          		                WebElement postLinkElement = item.findElement(By.xpath(".//span[@class='tweet-date']/a"));
          		             // Lấy thông tin từ các yếu tố
@@ -214,7 +214,7 @@ public class TopCollectionTweetCrawler{
 		    private static void writeJsonFile(List<Map<String,String>> jsonData) throws IOException {
 		    	ObjectMapper objectMapper = new ObjectMapper();
 		        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-		        String fileName = "data/json/post/nitter/tweet_top10collection_timecrawl-" + timestamp + ".json";
+		        String fileName = "data/json/post/nitter/tweet_1d_top10collection_timecrawl-" + timestamp + ".json";
 
 		        try {
 		        	objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
