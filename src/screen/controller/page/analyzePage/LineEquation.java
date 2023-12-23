@@ -1,4 +1,4 @@
-package analyze;
+package screen.controller.page.analyzePage;
 
 public class LineEquation {
     private final double slope;

@@ -1,6 +1,6 @@
-package controller.algorithm;
+package algorithm;
 
-import analyze.DataPointv1;
+import model.dataPoint.DataPointv1;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import data.connector.CollectionDB;
 
@@ -10,13 +10,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class getTopCollectionFromJsonFile {
+public class GetTopCollectionFromJsonFile {
 	// Khác so với file trước đó, file này làm nhiệm vụ đọc và trả về dữ liệu cho một điểm dataPoint
 	private static String filePath;
 	private static int numberCollectionGet = 10;
 	private static int currentNumberCollectionGet = 0;
 
-	public getTopCollectionFromJsonFile(String filePath) {
+	public GetTopCollectionFromJsonFile(String filePath) {
 		super();
 		this.filePath = filePath;
 	}
@@ -37,7 +37,7 @@ public class getTopCollectionFromJsonFile {
 						break;
 					}
 					System.out.println("UserName: " + collectionData.getBase());
-					System.out.println("Tweet: " + collectionData.getCollection());
+					System.out.println("Collection name : " + collectionData.getCollection());
 					System.out.println();
 					currentNumberCollectionGet+=1;
 					String name = collectionData.getCollection();
@@ -63,6 +63,6 @@ public class getTopCollectionFromJsonFile {
 	}
 	public static void main(String[] args){
 		// test
-		new getTopCollectionFromJsonFile("data/json/collection/okx/topcollection_20231221_160726.json").jsonReadAlgorithm();
+		new GetTopCollectionFromJsonFile("data/json/collection/okx/topcollection_20231221_160726.json").jsonReadAlgorithm();
 	}
 }

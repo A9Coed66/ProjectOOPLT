@@ -1,14 +1,28 @@
-package analyze;
+package screen.controller.page.analyzePage;
 
+import algorithm.GetTopCollectionFromJsonFile;
+import model.dataPoint.DataPoint;
+import model.dataPoint.DataPointv1;
+import screen.controller.page.searchPage.SearchPageController;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.XYChart;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javafx.fxml.FXML;
-import javafx.scene.chart.LineChart;
-import javafx.scene.chart.XYChart;
-import javafx.scene.control.ComboBox;
-
-public class CorrelationAnalysisController {
+public class CorrelationAnalysisControllerv1 {
+    String TOP_COLLECTION_DATA_FILE = "data/json/collection/okx/topcollection_20231221_160726.json";
+    ArrayList<DataPointv1> dataPointsList = new GetTopCollectionFromJsonFile(TOP_COLLECTION_DATA_FILE).jsonReadAlgorithm();
 
     @FXML
     private LineChart<Number, Number> trendingHashtagChart;
@@ -33,6 +47,24 @@ public class CorrelationAnalysisController {
 
     @FXML
     private ComboBox<String> tweetBlogAspectComboBox;
+    @FXML
+    private Button searchButton;
+
+    @FXML
+    void openSearchPage(ActionEvent event) {
+        try{
+            final String SEARCH_PAGE_FXML_FILE_PATH = "/screen/view/page/SearchPageView.fxml";
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(SEARCH_PAGE_FXML_FILE_PATH));
+            SearchPageController searchPageController = new SearchPageController();
+            fxmlLoader.setController(searchPageController);
+            Parent root = fxmlLoader.load();
+            Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     @FXML
     private void initialize() {
@@ -95,22 +127,23 @@ public class CorrelationAnalysisController {
 
 
     // Lấy dữ liệu và hiển thị lên bảng
-    private void fetchAndDisplayData(String nftAspect, String tweetBlogAspect) {
-        List<DataPoint> dataPoints = fetchDataFromDatabase(nftAspect, tweetBlogAspect);
-
+    private void fetchAndDisplayData(String nftAspect, String tweetBlogAspect){
         // Calculate linear regression
-        LineEquation regressionLine = calculateLinearRegression(dataPoints);
+        /* XXX: cần thêm dữ liệu các bài tweet, từ đó thực hiện sắp xếp để tìm ra thứ collection nà có nhiều bài nhất
+            * để set cho giá trị rank của các datapoint */
+        LineEquation regressionLine = calculateLinearRegression(dataPointsList);
 
         // Add data series
+        // Todo đây là nơi mình tạo các điểm dữ liệu
         XYChart.Series<Number, Number> dataSeries = new XYChart.Series<>();
-        for (DataPoint dataPoint : dataPoints) {
-            dataSeries.getData().add(new XYChart.Data<>(dataPoint.getNftRanking(), dataPoint.getTweetBlogRanking()));
+        for (DataPointv1 dataPoint : dataPointsList) {
+            dataSeries.getData().add(new XYChart.Data<>(dataPoint.getProperty(nftAspect), dataPoint.getProperty(tweetBlogAspect)));
         }
 
         // Add trendline
         XYChart.Series<Number, Number> trendlineSeries = new XYChart.Series<>();
-        int minX = dataPoints.stream().mapToInt(DataPoint::getNftRanking).min().orElse(0);
-        int maxX = dataPoints.stream().mapToInt(DataPoint::getNftRanking).max().orElse(10);
+        int minX = dataPointsList.stream().mapToInt(DataPointv1::getNftRanking).min().orElse(0);
+        int maxX = dataPointsList.stream().mapToInt(DataPointv1::getNftRanking).max().orElse(10);
         trendlineSeries.getData().add(new XYChart.Data<>(minX, regressionLine.calculateY(minX)));
         trendlineSeries.getData().add(new XYChart.Data<>(maxX, regressionLine.calculateY(maxX)));
 
@@ -126,36 +159,16 @@ public class CorrelationAnalysisController {
         
     }
 
-    private List<DataPoint> fetchDataFromDatabase(String nftAspect, String tweetBlogAspect) {
-        // Placeholder logic to fetch data from the database
-        // Replace with your actual database query
-        // Example: JDBC query
-        String query = "SELECT nft_ranking, tweet_blog_ranking FROM your_table WHERE nft_aspect = ? AND tweet_blog_aspect = ?";
-        // Execute the query and retrieve results
-        return executeQuery(query, nftAspect, tweetBlogAspect);
-    }
-
-    private List<DataPoint> executeQuery(String query, String nftAspect, String tweetBlogAspect) {
-        // Execute the query and return the result
-        // This is a placeholder, replace it with actual database access logic
-        return List.of(
-                new DataPoint("Point1", 5, 3),
-                new DataPoint("Point2", 8, 6),
-                new DataPoint("Point3", 3, 4),
-                new DataPoint("Point4", 10, 8)
-        );
-    }
-
-    private LineEquation calculateLinearRegression(List<DataPoint> dataPoints) {
+    private LineEquation calculateLinearRegression(List<DataPointv1> dataPoints) {
         int n = dataPoints.size();
         double sumX = 0;
         double sumY = 0;
         double sumXY = 0;
         double sumXSquare = 0;
 
-        for (DataPoint dataPoint : dataPoints) {
+        for (DataPointv1 dataPoint : dataPoints) {
             double x = dataPoint.getNftRanking();
-            double y = dataPoint.getTweetBlogRanking();
+            double y = dataPoint.getVolume();
 
             sumX += x;
             sumY += y;
@@ -190,8 +203,6 @@ public class CorrelationAnalysisController {
         }
     }
 
-    private ArrayList<DataPoint> top10TrendingCollection;
-
     // Get data of top 10 trending colelction
     private ArrayList<DataPoint> getData(){
         ArrayList<DataPoint> tempArr = new ArrayList<DataPoint>();
@@ -200,4 +211,9 @@ public class CorrelationAnalysisController {
         //1. Top ranking; 2. Name of collection; 3. Volume per hour; 4. Number of post (hashtag) in a day
         return tempArr;
     }
+
+    public static void main(String[] args){
+
+    }
+
 }

@@ -1,4 +1,4 @@
-package analyze;
+package model.dataPoint;
 
 public class DataPointv1 {
     // Collection data point properties: name, nftRanking, number tweet blog, ranking tweet blog, volume in a day

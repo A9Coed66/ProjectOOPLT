@@ -1,4 +1,4 @@
-package controller.post;
+package screen.controller.post;
 
 import java.io.IOException;
 import java.net.URL;

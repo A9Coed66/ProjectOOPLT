@@ -1,36 +1,27 @@
 package data.crawl;
 
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import controller.algorithm.JsonFileReadAlgorithm;
-import controller.page.SearchPageController;
+import algorithm.GetTweetPostFromJsonFile;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.control.TextFormatter;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
-import javafx.util.converter.NumberStringConverter;
 import model.post.Tweet;
 
 public class TwitterCrawlerController  {
@@ -117,7 +108,7 @@ public class TwitterCrawlerController  {
  	    	 return javafx.beans.binding.Bindings.createObjectBinding(() -> formattedContent);
  	    });
  	    
- 	    listItems = new FilteredList<Tweet>(new JsonFileReadAlgorithm("data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json").jsonReadAlgorithm());
+ 	    listItems = new FilteredList<Tweet>(new GetTweetPostFromJsonFile("data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json").jsonReadAlgorithm());
  	    
  	    if(listItems != null ) tblPost.setItems(listItems);
  	    

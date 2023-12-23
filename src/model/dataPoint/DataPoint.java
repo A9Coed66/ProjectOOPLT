@@ -1,4 +1,4 @@
-package analyze;
+package model.dataPoint;
 
 public class DataPoint {
     private String name;

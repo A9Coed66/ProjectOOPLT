@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
@@ -57,15 +56,24 @@
             <GridPane prefHeight="597.0" prefWidth="984.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="954.1999267578125" minWidth="10.0" prefWidth="905.799951171875" />
-                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="20.0" prefWidth="50.0" />
               </columnConstraints>
               <rowConstraints>
-                  <RowConstraints maxHeight="290.4" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
                 <RowConstraints maxHeight="576.0000198364257" minHeight="10.0" prefHeight="534.1999877929687" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="576.0000198364257" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                     <LineChart fx:id="trendingHashtagChart" prefHeight="101.0" prefWidth="984.0" visible="true" GridPane.rowIndex="1">
+                     <LineChart fx:id="trendingHashtagChart" prefHeight="101.0" prefWidth="984.0" visible="true">
+                         <xAxis>
+                             <NumberAxis />
+                         </xAxis>
+                         <yAxis>
+                             <NumberAxis />
+                         </yAxis>
+                     <GridPane.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </GridPane.margin>
+                     </LineChart>
+                     
+                        <LineChart fx:id="salesHashtagChart" visible="false">
                          <xAxis>
                              <NumberAxis />
                          </xAxis>
@@ -77,7 +85,7 @@
                      </GridPane.margin>
                      </LineChart>
                      
-                        <LineChart fx:id="salesHashtagChart" visible="false" GridPane.rowIndex="1">
+                        <LineChart fx:id="volumeHashtagChart" visible="false">
                          <xAxis>
                              <NumberAxis />
                          </xAxis>
@@ -89,7 +97,7 @@
                      </GridPane.margin>
                      </LineChart>
                      
-                        <LineChart fx:id="volumeHashtagChart" visible="false" GridPane.rowIndex="1">
+                        <LineChart fx:id="trendingKeywordChart" visible="false">
                          <xAxis>
                              <NumberAxis />
                          </xAxis>
@@ -101,7 +109,7 @@
                      </GridPane.margin>
                      </LineChart>
                      
-                        <LineChart fx:id="trendingKeywordChart" visible="false" GridPane.rowIndex="1">
+                        <LineChart fx:id="salesKeywordChart" visible="false">
                          <xAxis>
                              <NumberAxis />
                          </xAxis>
@@ -113,7 +121,7 @@
                      </GridPane.margin>
                      </LineChart>
                      
-                        <LineChart fx:id="salesKeywordChart" visible="false" GridPane.rowIndex="1">
+                        <LineChart fx:id="volumeKeywordChart" visible="false">
                          <xAxis>
                              <NumberAxis />
                          </xAxis>
@@ -124,35 +132,6 @@
                         <Insets left="50.0" />
                      </GridPane.margin>
                      </LineChart>
-                     
-                        <LineChart fx:id="volumeKeywordChart" visible="false" GridPane.rowIndex="1">
-                         <xAxis>
-                             <NumberAxis />
-                         </xAxis>
-                         <yAxis>
-                             <NumberAxis />
-                         </yAxis>
-                     <GridPane.margin>
-                        <Insets left="50.0" />
-                     </GridPane.margin>
-                     </LineChart>
-                  <Label text="Column name">
-                     <font>
-                        <Font name="System Bold" size="16.0" />
-                     </font>
-                     <GridPane.margin>
-                        <Insets left="50.0" />
-                     </GridPane.margin>
-                  </Label>
-                  <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <children>
-                        <Label layoutX="-5.0" layoutY="483.0" text="Row Name">
-                           <font>
-                              <Font size="16.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </Pane>
                </children>
             </GridPane>
          </children>

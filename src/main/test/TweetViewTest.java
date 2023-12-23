@@ -2,7 +2,7 @@ package main.test;
 
 import java.io.IOException;
 
-import controller.post.TweetViewController;
+import screen.controller.post.TweetViewController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

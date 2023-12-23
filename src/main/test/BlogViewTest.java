@@ -2,7 +2,7 @@ package main.test;
 
 
 
-import controller.post.BlogViewController;
+import screen.controller.post.BlogViewController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,7 +14,7 @@ public class BlogViewTest extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
-		final String BLOG_POST_FXML_FILE_PATH = "/view/post/BlogView.fxml";
+		final String BLOG_POST_FXML_FILE_PATH = "/screen/view/post/BlogView.fxml";
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(BLOG_POST_FXML_FILE_PATH));
 //		ViewStoreController viewStoreController = new ViewStoreController(store);
 		BlogViewController blogPostViewController = new BlogViewController(blogPost, 180);
