@@ -107,6 +107,7 @@ public class CorrelationAnalysisControllerv1 {
         }
         
         // Your logic to fetch data and update the corresponding chart
+//        fetchAndDisplayData("Trending", "Hashtag");
         fetchAndDisplayData(nftAspect, tweetBlogAspect);
     }
     
@@ -158,25 +159,25 @@ public class CorrelationAnalysisControllerv1 {
         
     }
 
-    private List<DataPoint> fetchDataFromDatabase(String nftAspect, String tweetBlogAspect) {
-        // Placeholder logic to fetch data from the database
-        // Replace with your actual database query
-        // Example: JDBC query
-        String query = "SELECT nft_ranking, tweet_blog_ranking FROM your_table WHERE nft_aspect = ? AND tweet_blog_aspect = ?";
-        // Execute the query and retrieve results
-        return executeQuery(query, nftAspect, tweetBlogAspect);
-    }
-
-    private List<DataPoint> executeQuery(String query, String nftAspect, String tweetBlogAspect) {
-        // Execute the query and return the result
-        // This is a placeholder, replace it with actual database access logic
-        return List.of(
-                new DataPoint("Point1", 5, 3),
-                new DataPoint("Point2", 8, 6),
-                new DataPoint("Point3", 3, 4),
-                new DataPoint("Point4", 10, 8)
-        );
-    }
+//    private List<DataPoint> fetchDataFromDatabase(String nftAspect, String tweetBlogAspect) {
+//        // Placeholder logic to fetch data from the database
+//        // Replace with your actual database query
+//        // Example: JDBC query
+//        String query = "SELECT nft_ranking, tweet_blog_ranking FROM your_table WHERE nft_aspect = ? AND tweet_blog_aspect = ?";
+//        // Execute the query and retrieve results
+//        return executeQuery(query, nftAspect, tweetBlogAspect);
+//    }
+//
+//    private List<DataPoint> executeQuery(String query, String nftAspect, String tweetBlogAspect) {
+//        // Execute the query and return the result
+//        // This is a placeholder, replace it with actual database access logic
+//        return List.of(
+//                new DataPoint("Point1", 5, 3),
+//                new DataPoint("Point2", 8, 6),
+//                new DataPoint("Point3", 3, 4),
+//                new DataPoint("Point4", 10, 8)
+//        );
+//    }
 
     private LineEquation calculateLinearRegression(List<DataPointv1> dataPoints) {
         int n = dataPoints.size();
