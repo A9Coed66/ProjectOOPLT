@@ -19,6 +19,10 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
@@ -26,6 +30,9 @@ import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
+import javafx.stage.Stage;
+import screen.controller.page.analyzePage.CorrelationAnalysisControllerv1;
+import screen.controller.page.searchPage.SearchPageController;
 
 public class TrendingPageController {
 	@FXML
@@ -74,12 +81,36 @@ public class TrendingPageController {
     
     @FXML
     void analysisButtonPressed(ActionEvent event) {
-
+    	try{
+			final String ANALYSIS_PAGE_FXML_FILE_PATH = "/screen/view/page/CorrelationAnalysisPagev1.fxml";
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(ANALYSIS_PAGE_FXML_FILE_PATH));
+			CorrelationAnalysisControllerv1 controller = new CorrelationAnalysisControllerv1();
+			fxmlLoader.setController(controller);
+			Parent root = fxmlLoader.load();
+			Scene scene = new Scene(root);
+			scene.getStylesheets().add(getClass().getResource("/screen/controller/page/analyzePage/chart.css").toExternalForm());
+			Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+			stage.setScene(scene);
+			stage.show();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
     }
 
     @FXML
     void searchButtonPressed(ActionEvent event) {
-
+    	try {
+			final String SEARCH_PAGE_FXML_FILE_PATH = "/screen/view/page/SearchPageView.fxml";
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(SEARCH_PAGE_FXML_FILE_PATH));
+			SearchPageController searchPageController = new SearchPageController();
+			fxmlLoader.setController(searchPageController);
+			Parent root = fxmlLoader.load();
+			Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+			stage.setScene(new Scene(root));
+			stage.show();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
     }
     
     @FXML

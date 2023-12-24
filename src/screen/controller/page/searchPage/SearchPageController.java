@@ -1,12 +1,11 @@
 package screen.controller.page.searchPage;
 import java.io.IOException;
 
-import screen.controller.page.analyzePage.CorrelationAnalysisControllerv1;
 import algorithm.GetTweetPostFromJsonFile;
-import screen.controller.post.TweetViewController;
 import data.crawl.TwitterCrawlerController;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.collections.transformation.FilteredList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -24,7 +23,9 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import model.post.Tweet;
-import javafx.collections.transformation.FilteredList;
+import screen.controller.page.analyzePage.CorrelationAnalysisControllerv1;
+import screen.controller.page.trendingPage.TrendingPageController;
+import screen.controller.post.TweetViewController;
 
 public class SearchPageController {
 	
@@ -84,8 +85,24 @@ public class SearchPageController {
         });
     }
     
+    @FXML
+    void trendingButtonPressed(ActionEvent event) {
+        try {
+            final String TRENDING_PAGE_FXML_FILE_PATH = "/screen/view/page/TrendingPage.fxml";
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(TRENDING_PAGE_FXML_FILE_PATH));
+            TrendingPageController trendingPageController = new TrendingPageController();
+            fxmlLoader.setController(trendingPageController);
+            Parent root = fxmlLoader.load();
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
 	@FXML
-	void trendingButtonPressed(ActionEvent event) {
+	void analysisButtonPressed(ActionEvent event) {
 		// TODO có lỗi ở đoạn code này song tôi chưa tìm thấy được :>
 		try{
 			final String ANALYSIS_PAGE_FXML_FILE_PATH = "/screen/view/page/CorrelationAnalysisPagev1.fxml";

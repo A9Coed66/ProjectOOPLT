@@ -21,6 +21,7 @@ import javafx.stage.Stage;
 import model.dataPoint.DataPoint;
 import model.dataPoint.DataPointv1;
 import screen.controller.page.searchPage.SearchPageController;
+import screen.controller.page.trendingPage.TrendingPageController;
 
 public class CorrelationAnalysisControllerv1 {
 	String TOP_COLLECTION_DATA_FILE = "data/json/collection/okx/topcollection_20231221_160726.json";
@@ -44,9 +45,29 @@ public class CorrelationAnalysisControllerv1 {
 
 	@FXML
 	private ComboBox<String> tweetBlogAspectComboBox;
+	
+	@FXML
+    private Button trendingButton;
+	
 	@FXML
 	private Button searchButton;
 
+	@FXML
+    void trendingButtonPressed(ActionEvent event) {
+        try {
+            final String TRENDING_PAGE_FXML_FILE_PATH = "/screen/view/page/TrendingPage.fxml";
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(TRENDING_PAGE_FXML_FILE_PATH));
+            TrendingPageController trendingPageController = new TrendingPageController();
+            fxmlLoader.setController(trendingPageController);
+            Parent root = fxmlLoader.load();
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+	
 	@FXML
 	void openSearchPage(ActionEvent event) {
 		try {
@@ -252,10 +273,6 @@ public class CorrelationAnalysisControllerv1 {
 			System.out.println("Tweet Blog Ranking: " + dataPoint.getTweetRanking());
 			System.out.println();
 		}
-	}
-
-	public static void main(String[] args) {
-
 	}
 
 }
