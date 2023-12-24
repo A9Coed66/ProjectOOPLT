@@ -10,6 +10,7 @@ import data.connector.TweetDB;
 import data.crawl.TwitterCrawlerController;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.collections.transformation.FilteredList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -29,7 +30,9 @@ import javafx.stage.Stage;
 import model.post.BlogPost;
 import model.post.Post;
 import model.post.Tweet;
-import javafx.collections.transformation.FilteredList;
+import screen.controller.page.analyzePage.CorrelationAnalysisControllerv1;
+import screen.controller.page.trendingPage.TrendingPageController;
+import screen.controller.post.TweetViewController;
 
 public class SearchPageController {
 	final String FILE_TO_BLOGPOST= "data/json/post/steemit/blog_timecrawl-20231225_020025.json";
@@ -97,8 +100,24 @@ public class SearchPageController {
         });
     }
     
+    @FXML
+    void trendingButtonPressed(ActionEvent event) {
+        try {
+            final String TRENDING_PAGE_FXML_FILE_PATH = "/screen/view/page/TrendingPage.fxml";
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(TRENDING_PAGE_FXML_FILE_PATH));
+            TrendingPageController trendingPageController = new TrendingPageController();
+            fxmlLoader.setController(trendingPageController);
+            Parent root = fxmlLoader.load();
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
 	@FXML
-	void trendingButtonPressed(ActionEvent event) {
+	void analysisButtonPressed(ActionEvent event) {
 		// TODO có lỗi ở đoạn code này song tôi chưa tìm thấy được :>
 		try{
 			final String ANALYSIS_PAGE_FXML_FILE_PATH = "/screen/view/page/CorrelationAnalysisPagev1.fxml";
