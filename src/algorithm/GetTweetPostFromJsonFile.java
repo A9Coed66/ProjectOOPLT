@@ -7,7 +7,7 @@ import java.util.List;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import data.connector.TwitterDB;
+import data.connector.TweetDB;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import model.post.Tweet;
@@ -19,7 +19,6 @@ public class GetTweetPostFromJsonFile {
 		super();
 		this.filePath = filePath;
 	}
-	
 	public static ObservableList<Tweet> jsonReadAlgorithm() {
 		
 		ObservableList<Tweet> tweetPosts = FXCollections.observableArrayList();
@@ -28,10 +27,10 @@ public class GetTweetPostFromJsonFile {
         // Sử dụng ObjectMapper để chuyển đổi JSON từ tệp thành List<TwitterData>
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            List<TwitterDB> twitterDataList = Arrays.asList(objectMapper.readValue(new File(filePath), TwitterDB[].class));
+            List<TweetDB> twitterDataList = Arrays.asList(objectMapper.readValue(new File(filePath), TweetDB[].class));
 
             // Bây giờ bạn có thể làm việc với List<TwitterData>
-            for (TwitterDB twitterData : twitterDataList) {
+            for (TweetDB twitterData : twitterDataList) {
 //                System.out.println("UserName: " + twitterData.getUserName());
 //                System.out.println("Tweet: " + twitterData.getTweet());
 //                System.out.println();

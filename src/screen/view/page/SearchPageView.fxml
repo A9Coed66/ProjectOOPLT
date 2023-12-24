@@ -25,6 +25,7 @@
                </font>
             </Label>
             <Region prefHeight="70.0" prefWidth="384.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="togglePost" mnemonicParsing="false" onAction="#btnSwitchPostPressed" prefHeight="52.0" prefWidth="98.0" text="Blog" />
             <Button fx:id="crawlButton" mnemonicParsing="false" onAction="#btnCrawlPressed" prefHeight="50.0" prefWidth="100.0" text="Crawl" />
             <Button fx:id="tredingButton" mnemonicParsing="false" onAction="#trendingButtonPressed" prefHeight="50.0" prefWidth="100.0" text="Trending" />
          </children>
@@ -62,6 +63,7 @@
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin></Button>
+                  <Button mnemonicParsing="false" text="Button" />
                </children>
             </HBox>
             <TableView fx:id="tblPost" prefHeight="598.0" prefWidth="970.0" VBox.vgrow="ALWAYS">

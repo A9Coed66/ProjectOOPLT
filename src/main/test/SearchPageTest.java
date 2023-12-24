@@ -13,11 +13,11 @@ public class SearchPageTest extends Application{
 //	CSVFileReadAlgorithm csvFileReadAlgorithm = new CSVFileReadAlgorithm("data/csv/blog_new (1).csv");
 //	List<String> listItems = csvFileReadAlgorithm.csvFileRead();
 	
-	GetTweetPostFromJsonFile jsonFileReadAlgorithm = new GetTweetPostFromJsonFile("data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json");
+	GetTweetPostFromJsonFile jsonFileReadAlgorithm = new GetTweetPostFromJsonFile("data/json/post/nitter/tweet_1d_top10collection_timecrawl-20231222_140522.json");
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
-		final String SEARCH_PAGE_FXML_FILE_PATH = "/view/page/SearchPageView.fxml";
+		final String SEARCH_PAGE_FXML_FILE_PATH = "/screen/view/page/SearchPageView.fxml";
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(SEARCH_PAGE_FXML_FILE_PATH));
 		SearchPageController searchPageController = new SearchPageController();
 		fxmlLoader.setController(searchPageController);

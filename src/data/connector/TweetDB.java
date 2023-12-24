@@ -1,8 +1,51 @@
 package data.connector;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import java.io.File;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
-public class TwitterDB {
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import model.post.Post;
+import model.post.Tweet;
+
+public class TweetDB implements IPostDB{
+	public ObservableList<Post> getPosts(String filePath){
+		ObservableList<Post> tweetPosts = FXCollections.observableArrayList();
+//		String filePath = "data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json";
+
+        // Sử dụng ObjectMapper để chuyển đổi JSON từ tệp thành List<TwitterData>
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            List<TweetDB> twitterDataList = Arrays.asList(objectMapper.readValue(new File(filePath), TweetDB[].class));
+
+            // Bây giờ bạn có thể làm việc với List<TwitterData>
+            for (TweetDB twitterData : twitterDataList) {
+//                System.out.println("UserName: " + twitterData.getUserName());
+//                System.out.println("Tweet: " + twitterData.getTweet());
+//                System.out.println();
+            	String content = twitterData.getTweet();
+            	String imageUrl = twitterData.getImage();
+            	String author = twitterData.getUserName();
+            	String dateCreated = twitterData.getTimeStamp();
+            	String url = twitterData.getPostUrl();
+            	String reply = twitterData.getReply();
+            	String like = twitterData.getLike();
+            	String avatarUrl = twitterData.getAvatar();
+            	String hashtag = twitterData.getHashtags();
+            	String retweet = twitterData.getRetweet();
+            	tweetPosts.add(new Tweet(content,imageUrl,author,dateCreated,url,reply,like,avatarUrl,hashtag,retweet));
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+		return tweetPosts;
+	};
+	
     @JsonProperty("Hastags")
     private String hashtags;
     

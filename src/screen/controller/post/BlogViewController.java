@@ -17,15 +17,15 @@ import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import model.post.BlogPost;
+import model.post.Post;
 
-public class BlogViewController {
+public class BlogViewController implements PostViewController{
 	
 	//**
 	//Constructor
 	//**
 	
-    public BlogViewController(BlogPost blogPost, int maxTextLength) {
-		super();
+    public void constructor(BlogPost blogPost, int maxTextLength) {
 		this.blogPost = blogPost;
 		this.maxTextLength = maxTextLength;
 	}
@@ -102,7 +102,8 @@ public class BlogViewController {
     	Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
     	final String BLOG_POST_FXML_FILE_PATH = "/view/post/BlogView.fxml";
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(BLOG_POST_FXML_FILE_PATH));
-		BlogViewController blogPostViewController = new BlogViewController(blogPost, maxTextLength);
+		BlogViewController blogPostViewController = new BlogViewController();
+		blogPostViewController.constructor(blogPost, maxTextLength);;
 		fxmlLoader.setController(blogPostViewController);
 		Parent root = fxmlLoader.load();
 		blogPostViewController.setData(blogPost, false);
@@ -158,4 +159,9 @@ public class BlogViewController {
     private BlogPost blogPost;
 	private int maxTextLength = 180; 
 	private Boolean isRefresh = true;
+	@Override
+	public void constructor(Post post, int maxTextLength) {
+		// TODO Auto-generated method stub
+		
+	}
 }

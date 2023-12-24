@@ -1,9 +1,11 @@
 package screen.controller.page.searchPage;
 import java.io.IOException;
 
-import screen.controller.page.analyzePage.CorrelationAnalysisControllerv1;
 import algorithm.GetTweetPostFromJsonFile;
+import screen.controller.page.analyzePage.CorrelationAnalysisControllerv1;
+import screen.controller.post.PostViewController;
 import screen.controller.post.TweetViewController;
+import data.connector.TweetDB;
 import data.crawl.TwitterCrawlerController;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -23,6 +25,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import model.post.Post;
 import model.post.Tweet;
 import javafx.collections.transformation.FilteredList;
 
@@ -32,13 +35,13 @@ public class SearchPageController {
 	//Constructor
 	//**
 	
-	public SearchPageController(TableView<Tweet> tblPost) {
+	public SearchPageController(TableView<Post> tblPost) {
 		this.tblPost = tblPost;
-		SearchPageController.listItems = new FilteredList<Tweet>(new GetTweetPostFromJsonFile("data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json").jsonReadAlgorithm());
+		SearchPageController.listItems = new FilteredList<Post>(new TweetDB().getPosts("data/json/post/nitter/tweet_1d_top10collection_timecrawl-20231222_140522.json"));
 	}
 	
 	public SearchPageController() {
-		SearchPageController.listItems = new FilteredList<Tweet>(new GetTweetPostFromJsonFile("data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json").jsonReadAlgorithm());
+		SearchPageController.listItems = new FilteredList<Post>(new TweetDB().getPosts("data/json/post/nitter/tweet_1d_top10collection_timecrawl-20231222_140522.json"));
 	}
 	
 	//**
@@ -47,9 +50,9 @@ public class SearchPageController {
 		    
 	@FXML
 	public void initialize() {
-		colUserName.setCellValueFactory(new PropertyValueFactory<Tweet, String>("author"));
-		colTime.setCellValueFactory(new PropertyValueFactory<Tweet, String>("dateCreated"));
-		colHashtag.setCellValueFactory(new PropertyValueFactory<Tweet, String>("hashtag"));
+		colUserName.setCellValueFactory(new PropertyValueFactory<Post, String>("author"));
+		colTime.setCellValueFactory(new PropertyValueFactory<Post, String>("dateCreated"));
+		colHashtag.setCellValueFactory(new PropertyValueFactory<Post, String>("hashtag"));
 		colContent.setCellValueFactory(cellData -> {
 			String fullContent = cellData.getValue().getContent();
 		    String formattedContent = (fullContent.replaceAll("\n", "\\n"));
@@ -102,15 +105,19 @@ public class SearchPageController {
 			e.printStackTrace();
 		}
 	}
-	    
+	   
+	@FXML 
+	void btnSwitchPostPressed(ActionEvent event) throws IOException{
+		
+	}
 	@FXML
 	void btnCrawlPressed(ActionEvent event) throws IOException {
-	    dataCrawlPopUp();
+//	    dataCrawlPopUp();
 	}
 
 	@FXML
 	void detailButtonPressed(ActionEvent event) throws IOException {
-		tweetDetailPopUp();
+		PostDetailPopUp();
 	}
 
 	@FXML
@@ -136,67 +143,48 @@ public class SearchPageController {
 		if(selectedButton == radioBtnFilterContent) {
 			listItems.setPredicate(item -> item.getContent().contains(filter));
 		} else {
-			listItems.setPredicate(item -> item.getHashtag().contains(filter));
+//			listItems.setPredicate(item -> item.getHashtag().contains(filter));
 		}
 	}
 	
-	private void dataCrawlPopUp() throws IOException {
-		final String FXML_FILE_PATH = "/data/crawl/TwitterCrawlerView.fxml";
-		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(FXML_FILE_PATH));
-		TwitterCrawlerController twitterCrawlerController = new TwitterCrawlerController(tblPost, colContent, colHashtag, colTime, colUserName, crawlButton, tfQuery, filterCategory, radioBtnFilterContent);
-		fxmlLoader.setController(twitterCrawlerController);
-		Parent root = fxmlLoader.load();
-		Stage stage = new Stage();
-		stage.setTitle("Crawler");
-		stage.setScene(new Scene(root));
-		stage.show();
-		crawlButton.setDisable(true);
-	}
+//	private void dataCrawlPopUp() throws IOException {
+//		final String FXML_FILE_PATH = "/data/crawl/TwitterCrawlerView.fxml";
+//		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(FXML_FILE_PATH));
+//		TwitterCrawlerController twitterCrawlerController = new TwitterCrawlerController(tblPost, colContent, colHashtag, colTime, colUserName, crawlButton, tfQuery, filterCategory, radioBtnFilterContent);
+//		fxmlLoader.setController(twitterCrawlerController);
+//		Parent root = fxmlLoader.load();
+//		Stage stage = new Stage();
+//		stage.setTitle("Crawler");
+//		stage.setScene(new Scene(root));
+//		stage.show();
+//		crawlButton.setDisable(true);
+//	}
 	
-	private void tweetDetailPopUp() throws IOException {
-		Tweet tweet = tblPost.getSelectionModel().getSelectedItem();
-//		System.out.println(tweet.getAuthor());
-//		System.out.println("--------------------------------------------------------------------------------------------");
-//		System.out.println(tweet.getAvatarUrl());
-//		System.out.println("--------------------------------------------------------------------------------------------");
-//		System.out.println(tweet.getContent());
-//		System.out.println("--------------------------------------------------------------------------------------------");
-//		System.out.println(tweet.getDateCreated());
-//		System.out.println("--------------------------------------------------------------------------------------------");
-//		System.out.println(tweet.getHashtag());
-//		System.out.println("--------------------------------------------------------------------------------------------");
-//		System.out.println(tweet.getImageUrl());
-//		System.out.println("--------------------------------------------------------------------------------------------");
-//		System.out.println(tweet.getLike());
-//		System.out.println("--------------------------------------------------------------------------------------------");
-//		System.out.println(tweet.getReply());
-//		System.out.println("--------------------------------------------------------------------------------------------");
-//		System.out.println(tweet.getRetweet());
-//		System.out.println("--------------------------------------------------------------------------------------------");
-//		System.out.println(tweet.getUrl());
-		final String TWITTER_POST_FXML_FILE_PATH = "/view/post/TweetView.fxml";
+	private void PostDetailPopUp() throws IOException {
+		Post Post = tblPost.getSelectionModel().getSelectedItem();
+		final String TWITTER_POST_FXML_FILE_PATH = "/screen/view/post/TweetView.fxml";
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(TWITTER_POST_FXML_FILE_PATH));
-		TweetViewController tweetViewController = new TweetViewController(tweet, 180);
-		fxmlLoader.setController(tweetViewController);
+		TweetViewController PostViewController = new TweetViewController((Tweet)Post, 180);
+		fxmlLoader.setController(PostViewController);
 		Parent root = fxmlLoader.load();
 		Stage stage = new Stage();
-		tweetViewController.setData(tweet, true);
+		PostViewController.setData((Tweet)Post, true);
 		stage.setTitle("Twitter");
 		stage.setScene(new Scene(root));
 		stage.show();
 	}
 	
     @FXML
-    private TableColumn<Tweet, String> colContent;
+    private TableColumn<Post, String> colContent;
 
     @FXML
-    private TableColumn<Tweet, String> colHashtag;
+    private TableColumn<Post, String> colHashtag;
 
     @FXML
-    private TableColumn<Tweet, String> colTime;
+    private TableColumn<Post, String> colTime;
 
     @FXML
-    private TableColumn<Tweet,String> colUserName;
+    private TableColumn<Post,String> colUserName;
 
     @FXML
     private ToggleGroup filterCategory;
@@ -208,7 +196,7 @@ public class SearchPageController {
     private RadioButton radioBtnFilterHastag;
 
     @FXML
-    private TableView<Tweet> tblPost;
+    private TableView<Post> tblPost;
 
     @FXML
     private TextField tfQuery;
@@ -222,6 +210,6 @@ public class SearchPageController {
     @FXML
     private Button crawlButton;
     
-    private static FilteredList<Tweet> listItems;
+    private static FilteredList<Post> listItems;
 
 }
