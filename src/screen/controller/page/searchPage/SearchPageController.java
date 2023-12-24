@@ -32,6 +32,8 @@ import model.post.Tweet;
 import javafx.collections.transformation.FilteredList;
 
 public class SearchPageController {
+	final String FILE_TO_BLOGPOST= "data/json/post/steemit/blog_timecrawl-20231225_020025.json";
+	final String FILE_TO_TWEET="data/json/post/twitter/datatwitter.json";
 	private IPostDB postDB;
 	private TweetDB tweetDB=  new TweetDB();
 	private BlogPostDB blogPostDB = new BlogPostDB();
@@ -42,14 +44,14 @@ public class SearchPageController {
 	public SearchPageController(TableView<Post> tblPost) {
 		this.tblPost = tblPost;
 		this.postDB =  new TweetDB();
-		listItems = new FilteredList<Post>(postDB.init("data/json/post/nitter/tweet_1d_top10collection_timecrawl-20231222_140522.json"));
+		listItems = new FilteredList<Post>(postDB.init(FILE_TO_TWEET));
 	}
 	
 	public SearchPageController() {
 		this.postDB =  new TweetDB();
-		listItems = new FilteredList<Post>(postDB.init("data/json/post/nitter/tweet_1d_top10collection_timecrawl-20231222_140522.json"));
-		this.blogPostDB.init("data/csv/blogPostNew.csv");
-		this.tweetDB.init("data/json/post/nitter/tweet_1d_top10collection_timecrawl-20231222_140522.json");
+		listItems = new FilteredList<Post>(postDB.init(FILE_TO_TWEET));
+		this.blogPostDB.init(FILE_TO_BLOGPOST);
+		this.tweetDB.init(FILE_TO_TWEET);
 	}
 	
 	//**
@@ -124,13 +126,14 @@ public class SearchPageController {
 		}
 		else {
 			togglePost.setText("Blog");
-			tblPost.setItems(listItems);
 			listItems = new FilteredList<Post>(tweetDB.getPosts());
+			tblPost.setItems(listItems);
+			
 		}
 	}
 	@FXML
 	void btnCrawlPressed(ActionEvent event) throws IOException {
-//	    dataCrawlPopUp();
+	    dataCrawlPopUp();
 	}
 
 	@FXML
@@ -148,6 +151,10 @@ public class SearchPageController {
 		clearSearchTextField();
     }
     
+	public void refresh() {
+		listItems = new FilteredList<Post>(postDB.init(FILE_TO_TWEET));
+		tblPost.setItems(listItems);
+	}
 	//**
 	//Action
 	//**
@@ -165,18 +172,18 @@ public class SearchPageController {
 		}
 	}
 	
-//	private void dataCrawlPopUp() throws IOException {
-//		final String FXML_FILE_PATH = "/data/crawl/TwitterCrawlerView.fxml";
-//		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(FXML_FILE_PATH));
-//		TwitterCrawlerController twitterCrawlerController = new TwitterCrawlerController(tblPost, colContent, colHashtag, colTime, colUserName, crawlButton, tfQuery, filterCategory, radioBtnFilterContent);
-//		fxmlLoader.setController(twitterCrawlerController);
-//		Parent root = fxmlLoader.load();
-//		Stage stage = new Stage();
-//		stage.setTitle("Crawler");
-//		stage.setScene(new Scene(root));
-//		stage.show();
-//		crawlButton.setDisable(true);
-//	}
+	private void dataCrawlPopUp() throws IOException {
+		final String FXML_FILE_PATH = "/data/crawl/TwitterCrawlerView.fxml";
+		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(FXML_FILE_PATH));
+		TwitterCrawlerController twitterCrawlerController = new TwitterCrawlerController(this);
+		fxmlLoader.setController(twitterCrawlerController);
+		Parent root = fxmlLoader.load();
+		Stage stage = new Stage();
+		stage.setTitle("Crawler");
+		stage.setScene(new Scene(root));
+		stage.show();
+		crawlButton.setDisable(true);
+	}
 	
 	private void PostDetailPopUp() throws IOException {
 		Post post = tblPost.getSelectionModel().getSelectedItem();
@@ -193,8 +200,8 @@ public class SearchPageController {
 			stage.show();
 		}
 		if (post instanceof BlogPost) {
-			final String TWITTER_POST_FXML_FILE_PATH = "/screen/view/post/TweetView.fxml";
-			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(TWITTER_POST_FXML_FILE_PATH));
+			final String BLOG_POST_FXML_FILE_PATH = "/screen/view/post/BlogView.fxml";
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(BLOG_POST_FXML_FILE_PATH));
 			BlogViewController PostViewController = new BlogViewController((BlogPost)post, 180);
 			fxmlLoader.setController(PostViewController);
 			Parent root = fxmlLoader.load();

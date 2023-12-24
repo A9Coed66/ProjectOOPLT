@@ -22,7 +22,7 @@ public class TwitterCrawler {
 		static String query;
 		static int number;
 		final static String[] LABELS ={"Avatar","Name","UserName","TimeStamp","Tweet","Reply","Retweet","Like","PostUrl","Hastags","Tags","Image"};
-		final static String PATH_TO_JSON ="data/json/datatwitter.json";
+		final static String PATH_TO_JSON ="data/json/post/twitter/datatwitter.json";
 		final static String PATH_TO_WEBDRIVER = "E:\\DOWNLOADS\\chromedriver-win64\\chromedriver.exe";
 		
 	    public static void main(String args1,int args2) {
@@ -115,27 +115,33 @@ public class TwitterCrawler {
 			            	 	images.add("");
 			            	   System.out.println("Bài viết không có ảnh");
 			             }
-			         // Lấy hashtag thành chuỗi hashtags
-		                Pattern patternHastag = Pattern.compile("#\\w+");
-		                Matcher matcherHastag = patternHastag.matcher(tweet);
-		                StringBuilder stringBuilder1 = new StringBuilder();
-		                while (matcherHastag.find()) {
-		                    String hashtag = matcherHastag.group();
-		                    stringBuilder1.append(hashtag);
-		                }
-		                String hashtags = stringBuilder1.toString().trim();
+			            try {
+			            	 // Lấy hashtag thành chuỗi hashtags
+			                Pattern patternHastag = Pattern.compile("#\\w+");
+			                Matcher matcherHastag = patternHastag.matcher(tweet);
+			                StringBuilder stringBuilder1 = new StringBuilder();
+			                while (matcherHastag.find()) {
+			                    String hashtag = matcherHastag.group();
+			                    stringBuilder1.append(hashtag);
+			                }
+			                String hashtags = stringBuilder1.toString().trim();
+				            
+			             // Lấy Tag thành chuỗi Tags
+			                Pattern patternTag = Pattern.compile("@\\w+");
+			                Matcher matcherTag = patternTag.matcher(tweet);
+			                StringBuilder stringBuilder2 = new StringBuilder();
+			                while (matcherTag.find()) {
+			                    String tag = matcherHastag.group();
+			                    stringBuilder2.append(tag);
+			                }
+			                String tags = stringBuilder2.toString().trim();
+			                tagss.add(tags);
+			                hashtagss.add(hashtags);
+			            } catch(Exception e){
+			            	System.out.println("khong co hashtag/tag");
+			            }
+			        
 			            
-		             // Lấy Tag thành chuỗi Tags
-		                Pattern patternTag = Pattern.compile("#\\w+");
-		                Matcher matcherTag = patternTag.matcher(tweet);
-		                StringBuilder stringBuilder2 = new StringBuilder();
-		                while (matcherTag.find()) {
-		                    String tag = matcherHastag.group();
-		                    stringBuilder2.append(tag);
-		                }
-		                String tags = stringBuilder2.toString().trim();
-		                tagss.add(tags);
-			            hashtagss.add(hashtags);
 			            avatars.add(avatar);
 		                names.add(name);
 		                userNames.add(userName);
@@ -206,7 +212,6 @@ public class TwitterCrawler {
 	            writeJsonFile(jsonData, PATH_TO_JSON);
 	            System.out.println("Dữ liệu đã được xuất ra file JSON thành công.");
 	        } catch (IOException e) {
-	            e.printStackTrace();
 	        }
 	        
 	        

@@ -65,9 +65,13 @@ public class BlogViewController {
         	moreButton.setVisible(false);
         }
         
-
-        Image image = new Image(blogPost.getImageUrl(), true);
-        blogimageview.setImage(image);
+        if(blogPost.getImageUrl().isEmpty()) {
+        	
+        } else {
+        	Image image = new Image(blogPost.getImageUrl(), true);
+        	blogimageview.setImage(image);
+        }
+        
         
         Image avatarImage = new Image(blogPost.getAvatarUrl(), true);
         avatarImageView.setImage(avatarImage);

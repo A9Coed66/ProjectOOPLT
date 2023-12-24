@@ -63,7 +63,6 @@
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin></Button>
-                  <Button mnemonicParsing="false" text="Button" />
                </children>
             </HBox>
             <TableView fx:id="tblPost" prefHeight="598.0" prefWidth="970.0" VBox.vgrow="ALWAYS">

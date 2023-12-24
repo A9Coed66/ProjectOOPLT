@@ -23,23 +23,15 @@ import javafx.scene.control.ToggleGroup;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import model.post.Tweet;
+import screen.controller.page.searchPage.SearchPageController;
 
 public class TwitterCrawlerController  {
-	
+	SearchPageController parent;
 	//**
 	//Constructor
 	//**
-	public TwitterCrawlerController(TableView<Tweet> tblPost, TableColumn<Tweet, String> colContent, TableColumn<Tweet, String> colHashtag,TableColumn<Tweet, String> colTime,TableColumn<Tweet,String> colUserName, Button crawlButton, TextField tfQuery, ToggleGroup filterCategory, RadioButton radioBtnFilterContent) {
-		this.tblPost = tblPost;
-		this.colContent = colContent;
-		this.colHashtag = colHashtag;
-		this.colTime = colTime;
-		this.colUserName = colUserName;
-		this.crawlButton = crawlButton;
-		
-		this.tfQuery = tfQuery;
-		this.filterCategory = filterCategory;
-		this.radioBtnFilterContent = radioBtnFilterContent;
+	public TwitterCrawlerController(SearchPageController parent) {
+		this.parent = parent;
 	}
 	
 	//**
@@ -98,40 +90,7 @@ public class TwitterCrawlerController  {
 	
     @FXML
     void refreshSearchPageButtonPressed(ActionEvent event) {
-//    	colUserName.setCellValueFactory(new PropertyValueFactory<Tweet, String>("author"));
-// 	    colTime.setCellValueFactory(new PropertyValueFactory<Tweet, String>("dateCreated"));
-// 	    colHashtag.setCellValueFactory(new PropertyValueFactory<Tweet, String>("hashtag"));
-// 	    colContent.setCellValueFactory(cellData -> {
-// 	    	 String fullContent = cellData.getValue().getContent();
-// 	    	 String formattedContent = (fullContent.replaceAll("\n", "\\n"));
-// 	    	        
-// 	    	 return javafx.beans.binding.Bindings.createObjectBinding(() -> formattedContent);
-// 	    });
-// 	    
-// 	    listItems = new FilteredList<Post>(new TweetDB().init("data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json"));
-// 	    
-// 	    if(listItems != null ) tblPost.setItems(listItems);
-// 	    
-// 	    tfQuery.textProperty().addListener(new ChangeListener<String>(){
-// 		  			@Override
-// 		  			public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-// 		  				showFilteredPost(newValue);
-// 		  			}
-//
-//					private void showFilteredPost(String filter) {
-//						// TODO Auto-generated method stub
-//						RadioButton selectedButton = (RadioButton)filterCategory.getSelectedToggle();
-//						if(selectedButton == radioBtnFilterContent) {
-//							listItems.setPredicate(item -> item.getContent().contains(filter));
-//						} else {
-//							listItems.setPredicate(item -> item.getHashtag().contains(filter));
-//						}
-//					}
-// 		          });
-// 		   
-// 	    crawlButton.setDisable(false);
-// 	    Stage currentStage = (Stage) refreshSearchPageButton.getScene().getWindow();
-// 	    currentStage.close();
+    		parent.refresh();
     }
     
 	public class MonthConverter {
