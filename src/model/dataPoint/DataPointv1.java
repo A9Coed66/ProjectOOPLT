@@ -1,48 +1,48 @@
 package model.dataPoint;
 
 public class DataPointv1 {
-    // Collection data point properties: name, nftRanking, number tweet blog, ranking tweet blog, volume in a day
-    private String name;
-    private int nftRanking;
-    private float volume; // Co the update thanh list luu volume trong 1-7-30 ngay
-    private int numberTweetblog;
-    private int tweetblogRanking;
-    public String getName() {
-        return name;
-    }
+	// Collection data point properties: name, nftRanking, number tweet blog,
+	// ranking tweet blog, volume in a day
+	private String name;
+	private int nftRanking;
+	private float volume; // Co the update thanh list luu volume trong 1-7-30 ngay
+	private int numberTweetblog;
+	private int tweetRanking;
 
-    public int getNftRanking() {
-        return nftRanking;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public float getVolume(){
-        return volume;
-    }
+	public int getNftRanking() {
+		return nftRanking;
+	}
 
-    public int getTweetBlogRanking() {
-        return tweetblogRanking;
-    }
+	public float getVolume() {
+		return volume;
+	}
 
-    public DataPointv1(String name, int nftRanking, int tweetblogRanking) {
-        this.name = name;
-        this.nftRanking = nftRanking;
-        this.tweetblogRanking = tweetblogRanking;
-    }
+	public int getTweetRanking() {
+		return tweetRanking;
+	}
 
-    public DataPointv1(String name, int nftRanking, float volume){
-        this.name = name;
-        this.nftRanking = nftRanking;
-        this.volume = volume;
-    }
+	public DataPointv1(String name, int nftRanking, int tweetRanking) {
+		this.name = name;
+		this.nftRanking = nftRanking;
+		this.tweetRanking = tweetRanking;
+	}
 
-    public Number getProperty(String type) {
-        return switch (type) {
-            case "Trending" -> nftRanking;
-            case "Volume" -> volume;
-            // Todo dễ thấy có lỗi sai ở đây nhỉ =))
-            case "Hashtag" -> volume;
-            default -> throw new IllegalArgumentException("Invalid type: " + type);
-        };
-    }
+	public DataPointv1(String name, int nftRanking, float volume) {
+		this.name = name;
+		this.nftRanking = nftRanking;
+		this.volume = volume;
+	}
+
+	public Number getProperty(String type) {
+		return switch (type) {
+		case "Trending" -> nftRanking;
+		case "Volume" -> volume;
+		case "Hashtag" -> tweetRanking;
+		default -> throw new IllegalArgumentException("Invalid type: " + type);
+		};
+	}
 }
-
