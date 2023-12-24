@@ -13,6 +13,7 @@ public class Post {
 	private String reply;
 	private String like;
 	private String avatarUrl;
+	private String hashtag;
 	
 //	**
 //	Getter and Setter
@@ -73,7 +74,7 @@ public class Post {
 		super();
 	}
 	
-	public Post(String content, String imageUrl, String author, String dateCreated, String url, String reply, String like, String avatarUrl) {
+	public Post(String content, String imageUrl, String author, String dateCreated, String url, String reply, String like, String avatarUrl, String hashtag) {
 		super();
 		this.content = content;
 		this.imageUrl = imageUrl;
@@ -83,11 +84,18 @@ public class Post {
 		this.reply = reply;
 		this.like = like;
 		this.avatarUrl = avatarUrl;
+		this.hashtag = hashtag;
 	}
 	
 	@Override
 	public String toString() {
 		return author + " " + dateCreated + " " + content;
+	}
+	public String getHashtag() {
+		return hashtag;
+	}
+	public void setHashtag(String hashtag) {
+		this.hashtag = hashtag;
 	}
 	
 	

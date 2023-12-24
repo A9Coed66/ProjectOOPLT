@@ -14,17 +14,18 @@ import model.post.Post;
 import model.post.Tweet;
 
 public class TweetDB implements IPostDB{
-	public ObservableList<Post> getPosts(String filePath){
+	private ObservableList<Post> posts = FXCollections.observableArrayList();
+	public ObservableList<Post> init(String filePath){
 		ObservableList<Post> tweetPosts = FXCollections.observableArrayList();
 //		String filePath = "data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json";
 
         // Sử dụng ObjectMapper để chuyển đổi JSON từ tệp thành List<TwitterData>
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            List<TweetDB> twitterDataList = Arrays.asList(objectMapper.readValue(new File(filePath), TweetDB[].class));
+            List<TweetDataFrame> twitterDataList = Arrays.asList(objectMapper.readValue(new File(filePath), TweetDataFrame[].class));
 
             // Bây giờ bạn có thể làm việc với List<TwitterData>
-            for (TweetDB twitterData : twitterDataList) {
+            for (TweetDataFrame twitterData : twitterDataList) {
 //                System.out.println("UserName: " + twitterData.getUserName());
 //                System.out.println("Tweet: " + twitterData.getTweet());
 //                System.out.println();
@@ -43,10 +44,19 @@ public class TweetDB implements IPostDB{
         } catch (IOException e) {
             e.printStackTrace();
         }
+        this.posts= tweetPosts;
 		return tweetPosts;
 	};
 	
-    @JsonProperty("Hastags")
+	public ObservableList<Post> getPosts(){
+		return this.posts;
+	}
+	
+    
+	
+}
+class TweetDataFrame{
+	@JsonProperty("Hastags")
     private String hashtags;
     
     @JsonProperty("Avatar")
@@ -177,5 +187,4 @@ public class TweetDB implements IPostDB{
 	public void setName(String name) {
 		this.name = name;
 	}
-	
 }

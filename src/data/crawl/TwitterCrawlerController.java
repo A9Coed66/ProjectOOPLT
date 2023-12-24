@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import algorithm.GetTweetPostFromJsonFile;
+import data.connector.TweetDB;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -98,40 +98,40 @@ public class TwitterCrawlerController  {
 	
     @FXML
     void refreshSearchPageButtonPressed(ActionEvent event) {
-    	colUserName.setCellValueFactory(new PropertyValueFactory<Tweet, String>("author"));
- 	    colTime.setCellValueFactory(new PropertyValueFactory<Tweet, String>("dateCreated"));
- 	    colHashtag.setCellValueFactory(new PropertyValueFactory<Tweet, String>("hashtag"));
- 	    colContent.setCellValueFactory(cellData -> {
- 	    	 String fullContent = cellData.getValue().getContent();
- 	    	 String formattedContent = (fullContent.replaceAll("\n", "\\n"));
- 	    	        
- 	    	 return javafx.beans.binding.Bindings.createObjectBinding(() -> formattedContent);
- 	    });
- 	    
- 	    listItems = new FilteredList<Tweet>(new GetTweetPostFromJsonFile("data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json").jsonReadAlgorithm());
- 	    
- 	    if(listItems != null ) tblPost.setItems(listItems);
- 	    
- 	    tfQuery.textProperty().addListener(new ChangeListener<String>(){
- 		  			@Override
- 		  			public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
- 		  				showFilteredPost(newValue);
- 		  			}
-
-					private void showFilteredPost(String filter) {
-						// TODO Auto-generated method stub
-						RadioButton selectedButton = (RadioButton)filterCategory.getSelectedToggle();
-						if(selectedButton == radioBtnFilterContent) {
-							listItems.setPredicate(item -> item.getContent().contains(filter));
-						} else {
-							listItems.setPredicate(item -> item.getHashtag().contains(filter));
-						}
-					}
- 		          });
- 		   
- 	    crawlButton.setDisable(false);
- 	    Stage currentStage = (Stage) refreshSearchPageButton.getScene().getWindow();
- 	    currentStage.close();
+//    	colUserName.setCellValueFactory(new PropertyValueFactory<Tweet, String>("author"));
+// 	    colTime.setCellValueFactory(new PropertyValueFactory<Tweet, String>("dateCreated"));
+// 	    colHashtag.setCellValueFactory(new PropertyValueFactory<Tweet, String>("hashtag"));
+// 	    colContent.setCellValueFactory(cellData -> {
+// 	    	 String fullContent = cellData.getValue().getContent();
+// 	    	 String formattedContent = (fullContent.replaceAll("\n", "\\n"));
+// 	    	        
+// 	    	 return javafx.beans.binding.Bindings.createObjectBinding(() -> formattedContent);
+// 	    });
+// 	    
+// 	    listItems = new FilteredList<Post>(new TweetDB().init("data/json/post/nitter/tweet_top10collection_timecrawl-20231221_184804.json"));
+// 	    
+// 	    if(listItems != null ) tblPost.setItems(listItems);
+// 	    
+// 	    tfQuery.textProperty().addListener(new ChangeListener<String>(){
+// 		  			@Override
+// 		  			public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+// 		  				showFilteredPost(newValue);
+// 		  			}
+//
+//					private void showFilteredPost(String filter) {
+//						// TODO Auto-generated method stub
+//						RadioButton selectedButton = (RadioButton)filterCategory.getSelectedToggle();
+//						if(selectedButton == radioBtnFilterContent) {
+//							listItems.setPredicate(item -> item.getContent().contains(filter));
+//						} else {
+//							listItems.setPredicate(item -> item.getHashtag().contains(filter));
+//						}
+//					}
+// 		          });
+// 		   
+// 	    crawlButton.setDisable(false);
+// 	    Stage currentStage = (Stage) refreshSearchPageButton.getScene().getWindow();
+// 	    currentStage.close();
     }
     
 	public class MonthConverter {

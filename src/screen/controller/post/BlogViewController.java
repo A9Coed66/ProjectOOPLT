@@ -19,13 +19,11 @@ import javafx.stage.Stage;
 import model.post.BlogPost;
 import model.post.Post;
 
-public class BlogViewController implements PostViewController{
-	
+public class BlogViewController {
 	//**
 	//Constructor
 	//**
-	
-    public void constructor(BlogPost blogPost, int maxTextLength) {
+    public BlogViewController(BlogPost blogPost, int maxTextLength) {
 		this.blogPost = blogPost;
 		this.maxTextLength = maxTextLength;
 	}
@@ -53,7 +51,7 @@ public class BlogViewController implements PostViewController{
     	postTitlelbl.setText(blogPost.getTitle());
     	postDatelbl.setText(blogPost.getDateCreated());
     	authorlbl.setText(blogPost.getAuthor());
-    	taglbl.setText(blogPost.getTag());
+    	taglbl.setText(blogPost.getHashtag());
     	pricelbl.setText("Price: "+blogPost.getNftPrice()+"");
     	votelbl.setText("Votes: "+blogPost.getLike()+"");
     	responselbl.setText("Responses: "+blogPost.getReply());
@@ -102,8 +100,7 @@ public class BlogViewController implements PostViewController{
     	Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
     	final String BLOG_POST_FXML_FILE_PATH = "/view/post/BlogView.fxml";
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(BLOG_POST_FXML_FILE_PATH));
-		BlogViewController blogPostViewController = new BlogViewController();
-		blogPostViewController.constructor(blogPost, maxTextLength);;
+		BlogViewController blogPostViewController = new BlogViewController(blogPost, maxTextLength);
 		fxmlLoader.setController(blogPostViewController);
 		Parent root = fxmlLoader.load();
 		blogPostViewController.setData(blogPost, false);
@@ -159,9 +156,5 @@ public class BlogViewController implements PostViewController{
     private BlogPost blogPost;
 	private int maxTextLength = 180; 
 	private Boolean isRefresh = true;
-	@Override
-	public void constructor(Post post, int maxTextLength) {
-		// TODO Auto-generated method stub
-		
-	}
+
 }

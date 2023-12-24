@@ -1,29 +1,23 @@
-package algorithm;
+package data.connector;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import model.post.BlogPost;
+import model.post.Post;
 
-public class CSVFileReadAlgorithm {
+public class BlogPostDB implements IPostDB{
+	private ObservableList<Post> posts = FXCollections.observableArrayList();
+	public ObservableList<Post> init(String filePath){
 	
-	private String filePath = "data/csv/blogPostNew.csv";
-	
-	
-	 public CSVFileReadAlgorithm(String filePath) {
-		super();
-//		this.filePath = filePath;
-	}
-
-	 public List<String> csvFileRead() {
-		 
 		 String line = "";
 	     String cvsSplitBy = ",";
 
-	     List<String> blogPostList = new ArrayList<>();
+	     ObservableList<Post> blogPosts= FXCollections.observableArrayList();
 		 try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
 	            // Skipping the header line
 	            br.readLine();
@@ -51,7 +45,7 @@ public class CSVFileReadAlgorithm {
 	                float floatPrice = Float.parseFloat(stringPrice);
 	                System.out.println(floatPrice);
 	                // Processing or printing out the variables
-	                blogPostList.add(new BlogPost(contents, image, author, date, link, comment, vote, avatarImage, title, floatPrice, tags).toString());
+	                blogPosts.add(new BlogPost(contents, image, author, date, link, comment, vote, avatarImage, title, floatPrice, tags));
 	                // ... and so on for other variables
 	            }
 
@@ -60,14 +54,12 @@ public class CSVFileReadAlgorithm {
 	        }
 		 
 		 
-		 
-		return blogPostList;
+		 this.posts =blogPosts;
+		return blogPosts;
 		
 		
 	 }
-	 
-	 public static void main(String[] args) {
-		 new CSVFileReadAlgorithm("").csvFileRead();
-		 
-	 }
+	public ObservableList<Post> getPosts( ){
+		return null;
+	};
 }

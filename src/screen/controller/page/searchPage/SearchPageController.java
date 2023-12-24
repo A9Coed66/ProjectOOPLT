@@ -1,10 +1,11 @@
 package screen.controller.page.searchPage;
 import java.io.IOException;
 
-import algorithm.GetTweetPostFromJsonFile;
 import screen.controller.page.analyzePage.CorrelationAnalysisControllerv1;
-import screen.controller.post.PostViewController;
+import screen.controller.post.BlogViewController;
 import screen.controller.post.TweetViewController;
+import data.connector.BlogPostDB;
+import data.connector.IPostDB;
 import data.connector.TweetDB;
 import data.crawl.TwitterCrawlerController;
 import javafx.beans.value.ChangeListener;
@@ -25,23 +26,30 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import model.post.BlogPost;
 import model.post.Post;
 import model.post.Tweet;
 import javafx.collections.transformation.FilteredList;
 
 public class SearchPageController {
-	
+	private IPostDB postDB;
+	private TweetDB tweetDB=  new TweetDB();
+	private BlogPostDB blogPostDB = new BlogPostDB();
 	//**
 	//Constructor
 	//**
 	
 	public SearchPageController(TableView<Post> tblPost) {
 		this.tblPost = tblPost;
-		SearchPageController.listItems = new FilteredList<Post>(new TweetDB().getPosts("data/json/post/nitter/tweet_1d_top10collection_timecrawl-20231222_140522.json"));
+		this.postDB =  new TweetDB();
+		listItems = new FilteredList<Post>(postDB.init("data/json/post/nitter/tweet_1d_top10collection_timecrawl-20231222_140522.json"));
 	}
 	
 	public SearchPageController() {
-		SearchPageController.listItems = new FilteredList<Post>(new TweetDB().getPosts("data/json/post/nitter/tweet_1d_top10collection_timecrawl-20231222_140522.json"));
+		this.postDB =  new TweetDB();
+		listItems = new FilteredList<Post>(postDB.init("data/json/post/nitter/tweet_1d_top10collection_timecrawl-20231222_140522.json"));
+		this.blogPostDB.init("data/csv/blogPostNew.csv");
+		this.tweetDB.init("data/json/post/nitter/tweet_1d_top10collection_timecrawl-20231222_140522.json");
 	}
 	
 	//**
@@ -108,7 +116,17 @@ public class SearchPageController {
 	   
 	@FXML 
 	void btnSwitchPostPressed(ActionEvent event) throws IOException{
-		
+		if( togglePost.getText().equals("Blog")) {
+			
+			listItems =  new FilteredList<Post>(blogPostDB.getPosts());
+			tblPost.setItems(listItems);
+			togglePost.setText("Tweet");
+		}
+		else {
+			togglePost.setText("Blog");
+			tblPost.setItems(listItems);
+			listItems = new FilteredList<Post>(tweetDB.getPosts());
+		}
 	}
 	@FXML
 	void btnCrawlPressed(ActionEvent event) throws IOException {
@@ -143,7 +161,7 @@ public class SearchPageController {
 		if(selectedButton == radioBtnFilterContent) {
 			listItems.setPredicate(item -> item.getContent().contains(filter));
 		} else {
-//			listItems.setPredicate(item -> item.getHashtag().contains(filter));
+			listItems.setPredicate(item -> item.getHashtag().contains(filter));
 		}
 	}
 	
@@ -161,17 +179,31 @@ public class SearchPageController {
 //	}
 	
 	private void PostDetailPopUp() throws IOException {
-		Post Post = tblPost.getSelectionModel().getSelectedItem();
-		final String TWITTER_POST_FXML_FILE_PATH = "/screen/view/post/TweetView.fxml";
-		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(TWITTER_POST_FXML_FILE_PATH));
-		TweetViewController PostViewController = new TweetViewController((Tweet)Post, 180);
-		fxmlLoader.setController(PostViewController);
-		Parent root = fxmlLoader.load();
-		Stage stage = new Stage();
-		PostViewController.setData((Tweet)Post, true);
-		stage.setTitle("Twitter");
-		stage.setScene(new Scene(root));
-		stage.show();
+		Post post = tblPost.getSelectionModel().getSelectedItem();
+		if (post instanceof Tweet) {
+			final String TWITTER_POST_FXML_FILE_PATH = "/screen/view/post/TweetView.fxml";
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(TWITTER_POST_FXML_FILE_PATH));
+			TweetViewController PostViewController = new TweetViewController((Tweet)post, 180);
+			fxmlLoader.setController(PostViewController);
+			Parent root = fxmlLoader.load();
+			Stage stage = new Stage();
+			PostViewController.setData((Tweet)post, true);
+			stage.setTitle("Twitter");
+			stage.setScene(new Scene(root));
+			stage.show();
+		}
+		if (post instanceof BlogPost) {
+			final String TWITTER_POST_FXML_FILE_PATH = "/screen/view/post/TweetView.fxml";
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(TWITTER_POST_FXML_FILE_PATH));
+			BlogViewController PostViewController = new BlogViewController((BlogPost)post, 180);
+			fxmlLoader.setController(PostViewController);
+			Parent root = fxmlLoader.load();
+			Stage stage = new Stage();
+			PostViewController.setData((BlogPost)post, true);
+			stage.setTitle("Twitter");
+			stage.setScene(new Scene(root));
+			stage.show();
+		}
 	}
 	
     @FXML
@@ -209,6 +241,8 @@ public class SearchPageController {
 
     @FXML
     private Button crawlButton;
+    @FXML
+    private Button togglePost;
     
     private static FilteredList<Post> listItems;
 
