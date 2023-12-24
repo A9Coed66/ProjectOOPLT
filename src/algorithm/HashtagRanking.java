@@ -19,7 +19,7 @@ public class HashtagRanking {
 
         try {
             // Read the tweets from datatwitter.json
-            JsonNode tweetsNode = objectMapper.readTree(new File("data/json/post/twitter/datatwitter.json"));
+            JsonNode tweetsNode = objectMapper.readTree(new File("data/json/post/nitter/tweet_1d_top10collection_timecrawl-20231224_231828.json"));
 
             // Count hashtag occurrences and calculate engagement metrics
             Map<String, HashtagStats> hashtagStatsMap = new HashMap<>();

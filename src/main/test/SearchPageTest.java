@@ -1,6 +1,6 @@
 package main.test;
 
-import algorithm.GetTweetPostFromJsonFile;
+//import algorithm.GetTweetPostFromJsonFile;
 import screen.controller.page.searchPage.SearchPageController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,7 +13,7 @@ public class SearchPageTest extends Application{
 //	CSVFileReadAlgorithm csvFileReadAlgorithm = new CSVFileReadAlgorithm("data/csv/blog_new (1).csv");
 //	List<String> listItems = csvFileReadAlgorithm.csvFileRead();
 	
-	GetTweetPostFromJsonFile jsonFileReadAlgorithm = new GetTweetPostFromJsonFile("data/json/post/nitter/tweet_1d_top10collection_timecrawl-20231222_140522.json");
+//	GetTweetPostFromJsonFile jsonFileReadAlgorithm = new GetTweetPostFromJsonFile("data/json/post/nitter/tweet_1d_top10collection_timecrawl-20231222_140522.json");
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
