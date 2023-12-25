@@ -1,5 +1,7 @@
 package model.dataPoint;
 
+import java.util.ArrayList;
+
 public class DataPointv1 {
 	// Collection data point properties: name, nftRanking, number tweet blog,
 	// ranking tweet blog, volume in a day
@@ -8,6 +10,7 @@ public class DataPointv1 {
 	private float volume; // Co the update thanh list luu volume trong 1-7-30 ngay
 	private int numberTweetblog;
 	private int tweetRanking;
+	private int hashtagRanking;
 
 	public String getName() {
 		return name;
@@ -22,6 +25,8 @@ public class DataPointv1 {
 	}
 
 	public int getTweetRanking() {
+		
+		
 		return tweetRanking;
 	}
 
@@ -44,5 +49,13 @@ public class DataPointv1 {
 		case "Hashtag" -> tweetRanking;
 		default -> throw new IllegalArgumentException("Invalid type: " + type);
 		};
+	}
+
+	public int getHashtagRanking() {
+		return hashtagRanking;
+	}
+
+	public void setHashtagRanking(int hashtagRanking) {
+		this.hashtagRanking = hashtagRanking;
 	}
 }

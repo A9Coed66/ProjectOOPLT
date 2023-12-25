@@ -7,6 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.TimeZone;
 
@@ -140,7 +141,7 @@ public class TrendingPageController {
         updateUI(topHashtags);
     }
 
-    private List<JsonNode> filterTweetsByTimeInterval(String timeInterval) {
+    public List<JsonNode> filterTweetsByTimeInterval(String timeInterval) {
     	ObjectMapper objectMapper = new ObjectMapper();
     	List<JsonNode> filteredTweets = new ArrayList<>();
 
@@ -158,13 +159,17 @@ public class TrendingPageController {
 
         try {
             // Read the tweets from the specified JSON file
-            JsonNode tweetsNode = objectMapper.readTree(new File("data/json/post/twitter/datatwitter.json"));
+            JsonNode tweetsNode = objectMapper.readTree(new File("data/json/post/nitter/tweet_1d_top10collection_timecrawl-20231224_231828.json"));
 
             // Iterate through each tweet and filter based on the time interval
             for (JsonNode tweetNode : tweetsNode) {
                 // Parse the timestamp from the tweet
                 String timestampString = tweetNode.get("TimeStamp").asText();
-                Date tweetTimestamp = dateFormat.parse(timestampString);
+                timestampString = timestampString.replace(" · ", " "); // Remove non-standard character
+                SimpleDateFormat inputFormat = new SimpleDateFormat("MMM dd, yyyy h:mm a z", Locale.ENGLISH);
+                
+                inputFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
+                Date tweetTimestamp = inputFormat.parse(timestampString);
 
                 // Calculate the time difference between the current time and tweet timestamp
                 long timeDifference = currentTime - tweetTimestamp.getTime();
@@ -186,13 +191,13 @@ public class TrendingPageController {
     }
 
 
-    private List<Map.Entry<String, HashtagStats>> calculateTopHashtags(List<JsonNode> tweets) {
+    public List<Map.Entry<String, HashtagStats>> calculateTopHashtags(List<JsonNode> tweets) {
         return HashtagRanking.calculateTopHashtags(tweets);
     }
 
     private void updateUI(List<Map.Entry<String, HashtagStats>> topHashtags) {
         hashtagList.clear();
-        for (int i = 0; i < Math.min(topHashtags.size(), 10); i++) {
+        for (int i = 0; i < Math.min(topHashtags.size(), 100); i++) {
             Map.Entry<String, HashtagStats> entry = topHashtags.get(i);
             String hashtag = entry.getKey();
             HashtagStats stats = entry.getValue();

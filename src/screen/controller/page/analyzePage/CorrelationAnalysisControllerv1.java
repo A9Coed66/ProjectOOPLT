@@ -157,7 +157,7 @@ public class CorrelationAnalysisControllerv1 {
 
 			switch (tweetBlogAspect) {
 			case "Hashtag":
-				yValue = dataPoint.getTweetRanking();
+				yValue = (int) dataPoint.getHashtagRanking();
 				break;
 			case "Keyword":
 				break;
@@ -190,10 +190,10 @@ public class CorrelationAnalysisControllerv1 {
 				// Handle other types or provide a default value
 				return 0;
 			}
-		}).max().orElse(10);
-
-		trendlineSeries.getData().add(new XYChart.Data<>(minX, regressionLine.calculateY(minX)));
-		trendlineSeries.getData().add(new XYChart.Data<>(maxX, regressionLine.calculateY(maxX)));
+		}).max().orElse(100);
+//
+//		trendlineSeries.getData().add(new XYChart.Data<>(minX, regressionLine.calculateY(minX)));
+//		trendlineSeries.getData().add(new XYChart.Data<>(maxX, regressionLine.calculateY(maxX)));
 
 		// Set chart properties
 		LineChart<Number, Number> selectedChart = getSelectedChart(nftAspect, tweetBlogAspect);

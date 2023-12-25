@@ -85,6 +85,9 @@ class TweetDataFrame{
 
     @JsonProperty("TimeStamp")
     private String timeStamp;
+    
+    @JsonProperty("Collection")
+    private String collection;
 
     @JsonProperty("Tags")
     private String tags;

@@ -1,14 +1,22 @@
 package algorithm;
 
 import model.dataPoint.DataPointv1;
+import screen.controller.page.trendingPage.TrendingPageController;
+
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import algorithm.HashtagRanking.HashtagStats;
 import data.connector.CollectionDB;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 public class GetTopCollectionFromJsonFile {
 	// Khác so với file trước đó, file này làm nhiệm vụ đọc và trả về dữ liệu cho một điểm dataPoint
@@ -21,7 +29,7 @@ public class GetTopCollectionFromJsonFile {
 		this.filePath = filePath;
 	}
 	
-	public static ArrayList<DataPointv1> jsonReadAlgorithm() {
+	public ArrayList<DataPointv1> jsonReadAlgorithm() {
 
 		ArrayList<DataPointv1> dataPoints = new ArrayList<DataPointv1>();
 
@@ -49,9 +57,23 @@ public class GetTopCollectionFromJsonFile {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        
+        List<JsonNode> filteredTweets = new TrendingPageController().filterTweetsByTimeInterval("month");
+        List<Map.Entry<String, HashtagStats>> topHashtags = new TrendingPageController().calculateTopHashtags(filteredTweets);
+        for (int i = 0; i < Math.min(topHashtags.size(), 100); i++) {
+            Map.Entry<String, HashtagStats> entry = topHashtags.get(i);
+            for(DataPointv1 p1: dataPoints) {
+            	System.out.println(p1.getName()+ entry.getKey()+topHashtags.size());
+            	if((p1.getName().replaceAll(" ", "").toLowerCase()).contains(entry.getKey().replace("#", "").toLowerCase())) {
+            		
+            		p1.setHashtagRanking(i);
+            	}
+            }
+            
+        }
 		return dataPoints;
 	}
-
+	
 	private static float parseFloatWithComma(String input) {
 		// Thay thế dấu "," bằng dấu "."
 		String formattedInput = input.replace(",", ".");

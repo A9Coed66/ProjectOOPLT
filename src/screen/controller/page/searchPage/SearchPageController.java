@@ -30,13 +30,11 @@ import javafx.stage.Stage;
 import model.post.BlogPost;
 import model.post.Post;
 import model.post.Tweet;
-import screen.controller.page.analyzePage.CorrelationAnalysisControllerv1;
 import screen.controller.page.trendingPage.TrendingPageController;
-import screen.controller.post.TweetViewController;
 
 public class SearchPageController {
 	final String FILE_TO_BLOGPOST= "data/json/post/steemit/blog_timecrawl-20231225_020025.json";
-	final String FILE_TO_TWEET="data/json/post/twitter/datatwitter.json";
+	final String FILE_TO_TWEET="data/json/post/nitter/tweet_1d_top10collection_timecrawl-20231224_231828.json";
 	private IPostDB postDB;
 	private TweetDB tweetDB=  new TweetDB();
 	private BlogPostDB blogPostDB = new BlogPostDB();
@@ -226,7 +224,7 @@ public class SearchPageController {
 			Parent root = fxmlLoader.load();
 			Stage stage = new Stage();
 			PostViewController.setData((BlogPost)post, true);
-			stage.setTitle("Twitter");
+			stage.setTitle("Blog");
 			stage.setScene(new Scene(root));
 			stage.show();
 		}

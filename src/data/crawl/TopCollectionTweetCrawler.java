@@ -53,18 +53,19 @@ public class TopCollectionTweetCrawler{
 
 
         try {
-            JsonNode rootNode = objectMapper.readTree(new File("data/json/collection/okx/topcollection_20231221_160726.json"));
+            JsonNode rootNode = objectMapper.readTree(new File("data/json/collection/okx/topcollectionETH25_12_23.json"));
             int i = 0;
             for (JsonNode node : rootNode) {
-            	
+            	CollectionDB collectionDB = objectMapper.treeToValue(node, CollectionDB.class);
+            	if(collectionDB.getBase()!= "ETH")
             	i++;
             	driver.get(url);
-            	CollectionDB collectionDB = objectMapper.treeToValue(node, CollectionDB.class);
+            	
             	String query = collectionDB.getCollection()+"\n";
                  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='q']")));
                  driver.findElement(By.xpath("//input[@name='q']")).sendKeys(query);
                  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='timeline-item ']")));
-                 String curl=driver.getCurrentUrl()+"&e-nativeretweets=on&since=2023-12-21&until=2023-12-22";
+                 String curl=driver.getCurrentUrl()+"&e-nativeretweets=on&since=2023-12-23&until=2023-12-24";
                  driver.get(curl);
                  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='timeline-item ']")));
                  List<WebElement> items = driver.findElements(By.xpath("//div[@class='timeline-item ']"));
